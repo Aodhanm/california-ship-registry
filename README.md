@@ -11,3 +11,5 @@
 - Public as a working draft since v0.1.6 (banner marks status); essays + core sources land by v1.0. DOI on publication.
 
 Author: Aodhan (ORCID 0009-0002-8630-3768). Built with Claude-assisted extraction; method statement in the site's About pane.
+
+- Data quality: see `FALSE-POSITIVE-REGISTER.md` (7 fake-ship classes + guards) and `REVIEW-QUEUE.md`.
