@@ -58,7 +58,7 @@ page = """<!DOCTYPE html>
 <nav>
  <button data-pane="visits" class="on">Visits (chronological)</button>
  <button data-pane="ships">Ships</button>
- <button data-pane="map">Map</button>
+ <button data-pane="mappane">Map</button>
  <button data-pane="curve">Traffic curve</button>
  <button data-pane="copres">In port together</button>
  <button data-pane="about">About &amp; method</button>
@@ -83,7 +83,11 @@ page = """<!DOCTYPE html>
  <div class="count" id="scount"></div>
  <table id="stbl"><thead><tr><th>ship</th><th>name variants (as written)</th><th>flag</th><th>seen</th><th>visits</th></tr></thead><tbody></tbody></table>
 </div>
-<div id="map" class="pane"></div>
+<div id="mappane" class="pane">
+ <div class="filters"><select id="mapPurpose"><option value="">all purposes</option><option value="exploration">exploration only</option><option value="otter">otter</option><option value="supply">supply</option><option value="contraband">contraband</option><option value="warship">warship</option></select>
+ <span class="count">circle size = documented visits at that anchorage (filtered)</span></div>
+ <div id="map"></div>
+</div>
 <div id="curve" class="pane"><svg id="svg"></svg>
  <div class="count">Documented ship events per year by flag hint. Click a bar to open that year's visits. Dashed lines mark reference events. Draft data: this measures the archive's coverage as much as the traffic &mdash; the Bancroft and Ogden layers (v0.2&ndash;0.3) will begin to separate the two.</div></div>
 <div id="copres" class="pane">
@@ -176,18 +180,29 @@ document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()
  document.querySelectorAll('nav button').forEach(x=>x.classList.remove('on'));
  document.querySelectorAll('.pane').forEach(x=>x.classList.remove('on'));
  b.classList.add('on');document.getElementById(b.dataset.pane).classList.add('on');
- if(b.dataset.pane==='map'&&!window._map)initMap();
+ if(b.dataset.pane==='mappane'){if(!window._map)initMap();else setTimeout(()=>_map.invalidateSize(),50)}
 }));
+let _layer=null;
+function drawMarkers(){
+ if(_layer)_layer.remove();
+ _layer=L.layerGroup().addTo(_map);
+ const pf=document.getElementById('mapPurpose').value;
+ const byA={};V.forEach(v=>{if(!v.anchorage||!G[v.anchorage])return;
+  if(pf&&!v.purpose.split('|').includes(pf))return;
+  (byA[v.anchorage]=byA[v.anchorage]||[]).push(v)});
+ Object.entries(byA).forEach(([a,vs])=>{
+  const[lat,lon]=G[a];
+  const expl=vs.some(v=>v.purpose.split('|').includes('exploration'));
+  L.circleMarker([lat,lon],{radius:4+Math.sqrt(vs.length)*2.2,color:pf==='exploration'?'#7a4a12':'#1f3a5f',fillColor:pf==='exploration'?'#b7791f':'#2d4a73',fillOpacity:.55})
+   .bindPopup('<b>'+a+'</b><br>'+vs.length+' documented visits'+(pf?' ('+pf+')':'')+'<br>'+
+     [...new Set(vs.map(v=>v.ship_id))].slice(0,14).join(', '))
+   .addTo(_layer)});
+}
 function initMap(){
  window._map=L.map('map').setView([34.5,-119.5],5);
  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OSM'}).addTo(_map);
- const byA={};V.forEach(v=>{if(v.anchorage&&G[v.anchorage]){(byA[v.anchorage]=byA[v.anchorage]||[]).push(v)}});
- Object.entries(byA).forEach(([a,vs])=>{
-  const[lat,lon]=G[a];
-  L.circleMarker([lat,lon],{radius:4+Math.sqrt(vs.length)*2.2,color:'#1f3a5f',fillColor:'#2d4a73',fillOpacity:.55})
-   .bindPopup('<b>'+a+'</b><br>'+vs.length+' documented visits<br>'+
-     [...new Set(vs.map(v=>v.ship_id))].slice(0,12).join(', '))
-   .addTo(_map)});
+ document.getElementById('mapPurpose').addEventListener('input',drawMarkers);
+ drawMarkers();
 }
 // curve — full-width stacked bars, y-axis, annotations, click-to-filter
 (function(){
