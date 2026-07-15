@@ -20,7 +20,7 @@ for v in visits:
 page = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>California Ship Registry, 1769–1848 (v0.1 draft)</title>
+<title>California Ship Registry, 1769–1846 (v0.1 draft)</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
  body{font-family:Georgia,serif;margin:0;background:#f7f4ee;color:#222}
@@ -52,7 +52,7 @@ page = """<!DOCTYPE html>
  .about{max-width:760px;line-height:1.55;font-size:.95em}
  .chartbar{fill:#2d4a73}
 </style></head><body>
-<header><h1>California Ship Registry, 1769&ndash;1848</h1>
+<header><h1>California Ship Registry, 1769&ndash;1846</h1>
 <div class="sub">A registry of documented vessel visits to the Californias &middot; companion to the <i>Archives of California</i> calendar</div></header>
 <div class="banner">v0.1 DRAFT (live for review) &mdash; machine-seeded from the C-A calendar + first curated expedition rows; most rows status=draft; Bancroft/Ogden/Russian source families pending (see About &amp; method)</div>
 <nav>
@@ -99,7 +99,7 @@ page = """<!DOCTYPE html>
 </div>
 <div id="about" class="pane about">
  <h2>About</h2>
- <p>The first machine-readable registry of documented vessel visits to the Californias, 1769&ndash;1848.
+ <p>The first machine-readable registry of documented vessel visits to the Californias, 1769&ndash;1846.
  Unit of record: the <b>visit</b> &mdash; one vessel, one anchorage, one time &mdash; each row carrying its evidence
  (currently: leaf-verified records of the Savage transcripts via the <a href="https://aodhanm.github.io/archives-of-california">Archives of California</a> calendar,
  with links to the manuscript scans). Fields and vocabularies: see CODEBOOK.md in this repository.</p>

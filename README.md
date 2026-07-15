@@ -1,4 +1,6 @@
-# California Ship Registry, 1769–1848
+# California Ship Registry, 1769–1846
+
+*(Title span reflects the data: no post-1846 rows yet; extends to 1848 when the conquest/gold-eve shipping lands in Phase 2.)*
 
 **v0.1 — LIVE DRAFT: https://aodhanm.github.io/california-ship-registry/** The first machine-readable registry of documented vessel visits to the Californias, from the founding of Alta California to the eve of the gold rush. Companion to the [*Archives of California*](https://aodhanm.github.io/archives-of-california) calendar of the Savage transcripts.
 

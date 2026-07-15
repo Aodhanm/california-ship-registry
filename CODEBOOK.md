@@ -1,4 +1,4 @@
-# California Ship Registry, 1769–1848 — Codebook (v0.1 draft)
+# California Ship Registry, 1769–1846 — Codebook (v0.1 draft)
 
 *The codebook is part of the dataset. Every field and vocabulary below is normative; changes are versioned.*
 
