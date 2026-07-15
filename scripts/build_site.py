@@ -40,6 +40,10 @@ page = """<!DOCTYPE html>
  tr:hover td{background:#fbf7ec}
  .vid{color:#888;font-size:.85em;white-space:nowrap}
  .draft{color:#b7791f;font-size:.78em}
+ tr.st-draft td:first-child{border-left:3px solid #d9a84a}
+ tr.st-reviewed td:first-child{border-left:3px solid #6a9fb5}
+ tr.st-verified td:first-child{border-left:3px solid #2e8b57}
+ .spark{height:16px;vertical-align:middle}
  .flag{font-variant:small-caps}
  .cite a{color:#1f5f8b;text-decoration:none;font-size:.85em}
  .count{margin:8px 0;color:#555;font-size:.85em}
@@ -56,6 +60,7 @@ page = """<!DOCTYPE html>
  <button data-pane="ships">Ships</button>
  <button data-pane="map">Map</button>
  <button data-pane="curve">Traffic curve</button>
+ <button data-pane="copres">In port together</button>
  <button data-pane="about">About &amp; method</button>
 </nav>
 <main>
@@ -81,6 +86,11 @@ page = """<!DOCTYPE html>
 <div id="map" class="pane"></div>
 <div id="curve" class="pane"><svg id="svg"></svg>
  <div class="count">Documented ship events per year by flag hint. Click a bar to open that year's visits. Dashed lines mark reference events. Draft data: this measures the archive's coverage as much as the traffic &mdash; the Bancroft and Ogden layers (v0.2&ndash;0.3) will begin to separate the two.</div></div>
+<div id="copres" class="pane">
+ <div class="filters"><select id="cpAnch"></select><input id="cpYear" placeholder="year" size="6" value="1803"></div>
+ <div class="count">Ships documented at the same anchorage in the same year &mdash; where encounters live. (Draft precision: year-level co-presence, not same-day.)</div>
+ <div id="cpOut"></div>
+</div>
 <div id="about" class="pane about">
  <h2>About</h2>
  <p>The first machine-readable registry of documented vessel visits to the Californias, 1769&ndash;1848.
@@ -118,7 +128,7 @@ function render(){
  document.getElementById('count').textContent=rows.length+' visits ('+rows.filter(r=>r.ship_id!=='(unnamed vessel)').length+' named)';
  const tb=document.querySelector('#tbl tbody');tb.innerHTML='';
  rows.slice(0,800).forEach(v=>{
-  const tr=document.createElement('tr');
+  const tr=document.createElement('tr');tr.className='st-'+v.status;
   const cites=v.citations.map(c=>c.url?'<a href="'+c.url+'" target="_blank">C-A '+c.ca+' d'+c.doc+'</a>':(c.type+' '+(c.ref||''))).join(' · ');
   tr.innerHTML='<td class="vid">'+v.visit_id+' <span class="draft">'+v.status+'</span></td>'+
    '<td>'+(v.date_from||'—')+(v.date_to&&v.date_to!==v.date_from?'&nbsp;–&nbsp;'+v.date_to:'')+'</td>'+
@@ -136,6 +146,25 @@ S.forEach(s=>{const tr=document.createElement('tr');
  tr.innerHTML='<td><b>'+s.ship_id+'</b></td><td>'+s.name_variants+'</td><td class="flag">'+(s.flag_guess||'')+'</td><td>'+(s.first_seen||'')+(s.last_seen&&s.last_seen!==s.first_seen?'–'+s.last_seen:'')+'</td><td>'+s.n_visits+'</td>';
  stb.appendChild(tr)});
 document.getElementById('scount').textContent=S.length+' vessels (draft identities; variants preserved as written)';
+// co-presence
+(function(){
+ const sel=document.getElementById('cpAnch');
+ const anks=[...new Set(V.map(v=>v.anchorage).filter(x=>x))].sort();
+ anks.forEach(a=>{const o=document.createElement('option');o.value=a;o.textContent=a;sel.appendChild(o)});
+ sel.value='San Francisco';
+ function cp(){
+  const a=sel.value,y=parseInt(document.getElementById('cpYear').value)||0;
+  const here=V.filter(v=>v.anchorage===a&&yr(v)===y);
+  const byShip={};here.forEach(v=>{(byShip[v.ship_id]=byShip[v.ship_id]||[]).push(v)});
+  const out=document.getElementById('cpOut');
+  const ships=Object.keys(byShip).sort();
+  out.innerHTML='<h3>'+a+', '+y+' — '+ships.length+' vessels documented</h3>'+
+   ships.map(sh=>'<p><b>'+sh+'</b>'+(byShip[sh][0].flag?' <span class="flag">'+femo(byShip[sh][0].flag)+byShip[sh][0].flag+'</span>':'')+
+    ' — '+byShip[sh].map(v=>(v.date_from||'')+' '+(v.outcome||'')).join('; ')+
+    '<br><span style="color:#888;font-size:.85em">'+byShip[sh][0].excerpt+'</span></p>').join('');
+ }
+ sel.addEventListener('input',cp);document.getElementById('cpYear').addEventListener('input',cp);cp();
+})();
 // tabs
 document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>{
  document.querySelectorAll('nav button').forEach(x=>x.classList.remove('on'));
