@@ -3,7 +3,10 @@
 Single-file pattern (the calendar's): all data embedded as JSON; Leaflet from
 CDN for the map. Regenerate after any data change: python3 scripts/build_site.py
 """
-import csv, json, os, html
+import csv, json, os, html, subprocess, sys
+g = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'check.py')])
+if g.returncode != 0:
+    sys.exit('GUARDS FAILED — index.html NOT rebuilt')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -20,7 +23,7 @@ for v in visits:
 page = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>California Ship Registry, 1769–1846 (v0.1 draft)</title>
+<title>California Ship Registry, 1769–1846 (v0.2 draft)</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
  body{font-family:Georgia,serif;margin:0;background:#f7f4ee;color:#222}
@@ -54,7 +57,7 @@ page = """<!DOCTYPE html>
 </style></head><body>
 <header><h1>California Ship Registry, 1769&ndash;1846</h1>
 <div class="sub">A registry of documented vessel visits to the Californias &middot; companion to the <i>Archives of California</i> calendar</div></header>
-<div class="banner">v0.1 DRAFT (live for review) &mdash; machine-seeded from the C-A calendar + first curated expedition rows; most rows status=draft; Bancroft/Ogden/Russian source families pending (see About &amp; method)</div>
+<div class="banner">v0.2 DRAFT (live for review) &mdash; machine-seeded from the C-A calendar + first curated expedition rows; most rows status=draft; Bancroft/Ogden/Russian source families pending (see About &amp; method)</div>
 <nav>
  <button data-pane="visits" class="on">Visits (chronological)</button>
  <button data-pane="ships">Ships</button>

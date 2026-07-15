@@ -8,7 +8,7 @@ alert,Alerta (3); Alert (2),usa,1837,1842,4,draft
 alexander,Alexander (11); ALEXANDER (3),usa,1803,1810,12,draft
 andes,Andes (2),usa,1829,1829,2,draft
 ann,Ann (1),britain,1841,1841,1,draft
-antonio,Antonio (1),britain,1817,1817,1,draft
+antonio,Antonio (1),britain,1769,1823,32,draft
 apollon,Apolo (4); Apollo (2),russia,1822,1825,6,draft
 apolonia,Apolonia (1),usa,1823,1823,1,draft
 aquatic,Aquatic (1),britain,1830,1830,1,draft
@@ -21,7 +21,7 @@ atala,Atala (1),usa,1815,1815,1,draft
 ayacucho,Ayacucho (10),spain,1830,1839,10,draft
 baikal,Baikal (11); Vaycal (1); Baykal (1); Bagol (1),russia,1825,1840,13,draft
 barnstable,Barnstable (1),usa,1846,1846,1,draft
-betsy,Betsy (4),usa,1800,null,4,draft
+betsy,Betsy (4),usa,1800,1807,4,draft
 bordelais,Bordelais (3),france,1815,1817,3,draft
 boussole,Boussole (1),france,1786,1786,1,draft
 brookline,Brookline (3),usa,1829,1830,3,draft
@@ -32,14 +32,14 @@ cadiac,Cadiac (1),,1827,1827,1,draft
 caledonia,Caledonia (1),,1833,1833,1,draft
 califa,Califa (1),usa,1833,1833,1,draft
 californio,Californio (2),spain,1785,1800,2,draft
-caminante,Caminante (1),,1817,1817,1,draft
+caminante,Caminante (1),,1817,1818,2,draft
 cariotide,Cariótide (1),britain,1841,1841,1,draft
 carmen,Carmen (1),,1809,1809,1,draft
 catalina,Catalina (7); CATALINA (1),spain,1831,1842,8,draft
 cazadora,Cazadora (2),britain,1817,1817,2,draft
 chatham,Chatham (4),britain,1792,1795,4,draft
 chirikov,Chirikov (2),russia,1815,1816,2,draft
-clara,Clara (1),,1840,1840,1,draft
+clara,Clara (1),,1769,1840,14,draft
 clarion,Clarion (1),usa,1818,1818,1,draft
 clarita,Clarita (5),spain,1840,1845,5,draft
 claudine,Claudine (1),britain,1822,1822,1,draft
@@ -65,7 +65,7 @@ daedalus,Daedalus (1),britain,1792,1793,1,draft
 danube,Danube (3),usa,1829,1830,3,draft
 descubierta,Descubierta (4); La Descubierta (2),spain,1792,1821,6,draft
 diga,Diga (1),russia,1823,1823,1,draft
-discovery,Discovery (5),britain,1792,1794,5,draft
+discovery,Discovery (5),britain,1770,1794,7,draft
 don quijote,Don Quijote (2),spain,1839,1845,2,draft
 dos hermanos,Dos Hermanos (1),usa,1829,1829,1,draft
 dromo,Dromo (1),usa,1808,1808,1,draft
@@ -81,7 +81,7 @@ emilia,Emilia (1),usa,1828,1828,1,draft
 emily marshall,Emily Marshall (2),britain,1830,1830,2,draft
 enrique,Enrique (3),,1797,1840,3,draft
 enriqueta,Enriqueta (2),,1830,1830,2,draft
-enterprise,Enterprise (2),russia,1824,null,2,draft
+enterprise,Enterprise (2),russia,1824,1824,2,draft
 envoy,Envoy (1),,1831,1831,1,draft
 esmeralda,Esmeralda (1),,1844,1844,1,draft
 ester,Ester (1),,1828,1828,1,draft
@@ -101,7 +101,7 @@ gen. bravo,Gen. Bravo (2),,1826,1826,2,draft
 genovesa flora,Genovesa Flora (1),,1834,1834,1,draft
 globe,Globe (1),,1831,1831,1,draft
 goleta real pacifico,Goleta Real Pacífico (1),,1835,1835,1,draft
-golovnin,Golovnín (1),russia,1827,1827,1,draft
+golovnin,Golovnín (1),russia,1818,1827,3,draft
 grafton,Grafton (1),usa,1831,1831,1,draft
 guadalupe,Guadalupe (2),spain,1805,1831,2,draft
 guillermo chiquito,Guillermo Chiquito (1),russia,1831,1831,1,draft
@@ -148,14 +148,14 @@ louisa,Louisa (3),russia,1831,1831,3,draft
 lydia,Lydia (6),usa,1816,1828,6,draft
 magallanes,Magallanes (2),spain,1797,1797,2,draft
 margarita,Margarita (2),spain,1831,1834,2,draft
-maria,María (2),russia,1814,1834,2,draft
+maria,María (2),russia,1782,1834,16,draft
 maria ester,María Ester (15); María Esther (3); Santa María Ester (1),spain,1826,1835,18,draft
 mariquita,Mariquita (2),spain,1833,1834,2,draft
 massachusetts,Massachusetts (1),usa,1827,1827,1,draft
 matamoros,Matamoros (1),spain,1827,1827,1,draft
 mentor,Mentor (2),usa,1823,1824,2,draft
 mercedes,Mercedes (4),usa,1797,1801,4,draft
-mercury,Mercurio (12); Mercury (2); MERCURIO (1),usa,1790,1826,14,draft
+mercury,Mercurio (12); Mercury (2); MERCURIO (1),usa,1790,1826,16,draft
 merope,Merope (1),usa,1825,1825,1,draft
 mexicana,Mexicana (10),mexico,1791,1831,10,draft
 morelos,Morelos (17),russia,1825,1834,17,draft
@@ -176,13 +176,13 @@ ntra. sra. del carmen,Ntra. Sra. del Carmen (2),,1800,1801,2,draft
 nuestra senora del carmen,Nuestra Señora del Carmen (1),spain,1797,1797,1,draft
 nuestra senora del rosario,Nuestra Señora del Rosario (1),spain,1783,1783,1,draft
 nueva reyna de los angeles,Nueva Reyna de los Ángeles (2),spain,1819,1819,2,draft
-o'cain,O'Cain (5); O'CAIN (2),usa,1804,1806,6,draft
+o'cain,O'Cain (5); O'CAIN (2),usa,1804,1807,7,draft
 oguahi,Oguahí (1),usa,1824,1824,1,draft
 olive branch,Olive Branch (2),,1826,1826,2,draft
 ontario,Ontario (1),usa,1822,1822,1,draft
 orcasitas,Horcasitas (4); Orcasitas (1),spain,1795,1803,5,draft
-orion,Orion (1),usa,1827,1827,1,draft
-otter,El otro Boston (1),usa,1796,1796,1,draft
+orion,Orion (1),usa,1822,1827,2,draft
+otter,El otro Boston (1); Otter (El otro Boston) (1),usa,1788,1822,8,draft
 pacifico,Pacífico (5),,1834,1836,5,draft
 panther,Panther (2),russia,1822,1822,2,draft
 paraiso,Paraíso (1),,1827,1827,1,draft
@@ -203,9 +203,10 @@ primavera,Primavera (1),,1845,1845,1,draft
 princesa,Princesa (69); La Princesa (1),spain,1779,1810,70,draft
 princesa real,Princesa Real (2),britain,1790,1791,2,draft
 principe,Príncipe (8),spain,1772,1778,8,draft
+providence,Providence (1),britain,1796,1796,1,draft
 rama de oliva,Rama de Oliva (1),,1826,1826,1,draft
 rambler,Rambler (1),usa,1829,1829,1,draft
-refugio,Refugio (1),usa,1833,1833,1,draft
+refugio,Refugio (1),usa,1816,1833,2,draft
 reina de los angeles,Reina de los Ángeles (7); Reyna de los Ángeles (3); Reyna de los Angeles (1),spain,1787,1823,11,draft
 reisos,Reisos. (1),usa,1806,1806,1,draft
 resolution,Resolución (4); Resolution (1),britain,1795,1796,5,draft
@@ -216,24 +217,24 @@ rosalia,Rosalía (1),spain,1820,1820,1,draft
 rosalind,Rosalind (2); Rosalinda (1),usa,1841,1842,2,draft
 rover,Rover (16),usa,1823,1829,16,draft
 royal george,Royal George (1),britain,1824,1824,1,draft
-ruperto,Ruperto (1),,,null,1,draft
+ruperto,Ruperto (1),,,,1,draft
 rurik,Rurik (9),russia,1815,1824,9,draft
 sachem,Sachem (8); Jáchem (1),usa,1822,1826,8,draft
-san antonio,San Antonio (4),spain,1772,1839,4,draft
-san carlos,San Carlos (54); S. Carlos (6); La Carlos (1); El Carlos (1),spain,1769,1822,60,draft
-san francisco,San Francisco (3),spain,1797,1827,3,draft
+san antonio,San Antonio (4),spain,1769,1839,11,draft
+san carlos,San Carlos (54); S. Carlos (6); La Carlos (1); El Carlos (1),spain,1769,1822,63,draft
+san francisco,San Francisco (3),spain,1769,1827,22,draft
 san francisco de paula,San Francisco de Paula (1),,1786,1786,1,draft
 san francisco javier,San Francisco Javier (2),spain,1820,1821,2,draft
 san javier,San Javier (1),spain,1820,1820,1,draft
-san joaquin,San Joaquín (2),,1803,1805,2,draft
+san joaquin,San Joaquín (2),,1772,1805,3,draft
 san jose,San José (5),spain,1779,1795,5,draft
 san jose de filipinas,San José de Filipinas (1),spain,1793,1793,1,draft
-santa barbara,Santa Bárbara (4),usa,1777,1833,4,draft
+santa barbara,Santa Bárbara (4),usa,1777,1833,10,draft
 santa elena,Santa Elena (1),russia,1825,1825,1,draft
 santa gertrudis,Santa Gertrudis (5); Sta Gertrudis (2),spain,1785,1849,7,draft
 santa maria,Santa María (1),,1835,1835,1,draft
 santa rosa,Santa Rosa (2),russia,1823,1831,2,draft
-santiago,Santiago (13),spain,1775,null,13,draft
+santiago,Santiago (13),spain,1775,1794,13,draft
 saturnina,Saturnina (16); Santa Saturnina (4),spain,1791,1803,20,draft
 senoriano,Señoriano (2),spain,1821,1822,2,draft
 sirena,Sirena (1),spain,1827,1827,1,draft
@@ -243,7 +244,7 @@ sonora,Sonora (6),spain,1775,1777,6,draft
 spray,Spray (1),,1826,1826,1,draft
 spy,Spy (1),usa,1825,1825,1,draft
 st. louis,St. Louis (1),,1840,1840,1,draft
-sta barbara,Sta Bárbara (1),,1829,1829,1,draft
+sta barbara,Sta Bárbara (1),,1798,1829,6,draft
 sto domingo,Sto Domingo (1),,1784,1784,1,draft
 sultan,Sultan (1),russia,1816,1816,1,draft
 sutil,Sutil (9),spain,1785,1825,9,draft
