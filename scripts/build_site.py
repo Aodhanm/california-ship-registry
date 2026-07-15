@@ -71,7 +71,7 @@ page = """<!DOCTYPE html>
   <select id="fPurpose"><option value="">purpose: all</option></select>
   <select id="fOutcome"><option value="">outcome: all</option></select>
   <select id="fAnch"><option value="">anchorage: all</option></select>
-  <input id="y1" placeholder="from yr" size="6"><input id="y2" placeholder="to yr" size="6">
+  <input id="y1" placeholder="from yr" size="6" value="1769"><input id="y2" placeholder="to yr" size="6" value="1846">
  </div>
  <div class="count" id="count"></div>
  <table id="tbl"><thead><tr>
@@ -91,8 +91,10 @@ page = """<!DOCTYPE html>
 <div id="curve" class="pane"><svg id="svg"></svg>
  <div class="count">Documented ship events per year by flag hint. Click a bar to open that year's visits. Dashed lines mark reference events. Draft data: this measures the archive's coverage as much as the traffic &mdash; the Bancroft and Ogden layers (v0.2&ndash;0.3) will begin to separate the two.</div></div>
 <div id="copres" class="pane">
- <div class="filters"><select id="cpAnch"></select><input id="cpYear" placeholder="year" size="6" value="1803"></div>
- <div class="count">Ships documented at the same anchorage in the same year &mdash; where encounters live. (Draft precision: year-level co-presence, not same-day.)</div>
+ <div class="filters"><select id="cpAnch"></select>
+  <input id="cpY1" placeholder="from" size="6" value="1769"><input id="cpY2" placeholder="to" size="6" value="1846">
+  <label style="font-size:.85em"><input type="checkbox" id="cpMulti" checked> only years with 2+ vessels (the encounters)</label></div>
+ <div class="count">Vessels documented at the same anchorage in the same year &mdash; where encounters live. Year-level precision at this draft stage; the review pass will tighten to same-week where dates allow.</div>
  <div id="cpOut"></div>
 </div>
 <div id="about" class="pane about">
@@ -161,19 +163,37 @@ document.getElementById('scount').textContent=S.length+' vessels (draft identiti
  const sel=document.getElementById('cpAnch');
  const anks=[...new Set(V.map(v=>v.anchorage).filter(x=>x))].sort();
  anks.forEach(a=>{const o=document.createElement('option');o.value=a;o.textContent=a;sel.appendChild(o)});
- sel.value='San Francisco';
+ sel.value='Monterey';
  function cp(){
-  const a=sel.value,y=parseInt(document.getElementById('cpYear').value)||0;
-  const here=V.filter(v=>v.anchorage===a&&yr(v)===y);
-  const byShip={};here.forEach(v=>{(byShip[v.ship_id]=byShip[v.ship_id]||[]).push(v)});
+  const a=sel.value,
+   y1=parseInt(document.getElementById('cpY1').value)||1769,
+   y2=parseInt(document.getElementById('cpY2').value)||1846,
+   multi=document.getElementById('cpMulti').checked;
+  const byYear={};
+  V.forEach(v=>{const y=yr(v);
+   if(v.anchorage!==a||!y||y<y1||y>y2)return;
+   if(v.visit_type==='mention')return;
+   (byYear[y]=byYear[y]||{});(byYear[y][v.ship_id]=byYear[y][v.ship_id]||[]).push(v)});
   const out=document.getElementById('cpOut');
-  const ships=Object.keys(byShip).sort();
-  out.innerHTML='<h3>'+a+', '+y+' — '+ships.length+' vessels documented</h3>'+
-   ships.map(sh=>'<p><b>'+sh+'</b>'+(byShip[sh][0].flag?' <span class="flag">'+femo(byShip[sh][0].flag)+byShip[sh][0].flag+'</span>':'')+
-    ' — '+byShip[sh].map(v=>(v.date_from||'')+' '+(v.outcome||'')).join('; ')+
-    '<br><span style="color:#888;font-size:.85em">'+byShip[sh][0].excerpt+'</span></p>').join('');
+  let html='',nYears=0,nEnc=0;
+  Object.keys(byYear).sort().forEach(y=>{
+   const byShip=byYear[y];
+   const named=Object.keys(byShip).filter(k=>k!=='(unnamed vessel)');
+   const isEnc=named.length>=2;
+   if(multi&&!isEnc)return;
+   nYears++;if(isEnc)nEnc++;
+   html+='<div style="background:#fff;border:1px solid #e3ddce;border-radius:5px;padding:8px 12px;margin:8px 0'+(isEnc?';border-left:4px solid #1f3a5f':'')+'">'
+    +'<b style="font-size:1.05em">'+y+'</b> — '+Object.keys(byShip).length+' vessels'+(isEnc?' <span style="color:#1f3a5f;font-size:.85em">⚓ encounter year</span>':'')
+    +Object.keys(byShip).sort().map(sh=>'<p style="margin:5px 0"><b>'+(sh==='(unnamed vessel)'?'<i>(unnamed)</i>':sh)+'</b>'
+      +(byShip[sh][0].flag?' <span class="flag">'+femo(byShip[sh][0].flag)+byShip[sh][0].flag+'</span>':'')
+      +' — '+byShip[sh].map(v=>(v.date_from||'')+(v.outcome?' ('+v.outcome.split('|')[0]+')':'')).join('; ')
+      +'<br><span style="color:#888;font-size:.85em">'+byShip[sh][0].excerpt+'</span></p>').join('')
+    +'</div>'});
+  out.innerHTML='<h3>'+a+', '+y1+'–'+y2+'</h3><div class="count">'+nYears+' years shown'+(multi?' (encounter years only — untick to see all)':' · '+nEnc+' encounter years')+'</div>'+
+   (html||'<p style="color:#888">No matching years — widen the range or untick the encounters-only box.</p>');
  }
- sel.addEventListener('input',cp);document.getElementById('cpYear').addEventListener('input',cp);cp();
+ ['cpY1','cpY2','cpMulti'].forEach(id=>document.getElementById(id).addEventListener('input',cp));
+ sel.addEventListener('input',cp);cp();
 })();
 // tabs
 document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>{
