@@ -6,7 +6,7 @@
 import csv, json, sys, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FLAGS = {'', 'spain', 'usa', 'russia', 'britain', 'mexico', 'france'}
+FLAGS = {'', 'spain', 'usa', 'russia', 'britain', 'mexico', 'france', 'hawaii', 'chile', 'peru', 'ecuador'}
 VTYPES = {'port-call', 'port-call?', 'offshore-presence', 'resident', 'sighting',
           'reported?', 'mention', 'unlocated'}
 STATUS = {'draft', 'reviewed', 'verified'}
