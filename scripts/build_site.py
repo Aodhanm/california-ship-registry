@@ -79,8 +79,8 @@ page = """<!DOCTYPE html>
  <table id="stbl"><thead><tr><th>ship</th><th>name variants (as written)</th><th>flag</th><th>seen</th><th>visits</th></tr></thead><tbody></tbody></table>
 </div>
 <div id="map" class="pane"></div>
-<div id="curve" class="pane"><svg id="svg" width="1100" height="420"></svg>
- <div class="count">Documented ship events per year, colored by flag hint (draft data &mdash; measures the archive's coverage as much as the traffic; that asymmetry is part of the finding).</div></div>
+<div id="curve" class="pane"><svg id="svg"></svg>
+ <div class="count">Documented ship events per year by flag hint. Click a bar to open that year's visits. Dashed lines mark reference events. Draft data: this measures the archive's coverage as much as the traffic &mdash; the Bancroft and Ogden layers (v0.2&ndash;0.3) will begin to separate the two.</div></div>
 <div id="about" class="pane about">
  <h2>About</h2>
  <p>The first machine-readable registry of documented vessel visits to the Californias, 1769&ndash;1848.
@@ -97,6 +97,8 @@ page = """<!DOCTYPE html>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const V=__VISITS__;const S=__SHIPS__;const G=__GAZ__;
+const FLAGEMO={spain:'🇪🇸',usa:'🇺🇸',russia:'🇷🇺',britain:'🇬🇧',mexico:'🇲🇽',france:'🇫🇷'};
+function femo(f){return FLAGEMO[f]?FLAGEMO[f]+' ':''}
 function opts(sel,vals){const s=document.getElementById(sel);[...new Set(vals)].filter(x=>x).sort().forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o)})}
 opts('fFlag',V.map(v=>v.flag));opts('fAnch',V.map(v=>v.anchorage));
 opts('fPurpose',V.flatMap(v=>v.purpose.split('|')));opts('fOutcome',V.flatMap(v=>v.outcome.split('|')));
@@ -152,24 +154,40 @@ function initMap(){
      [...new Set(vs.map(v=>v.ship_id))].slice(0,12).join(', '))
    .addTo(_map)});
 }
-// curve
+// curve — full-width stacked bars, y-axis, annotations, click-to-filter
 (function(){
  const byY={};V.forEach(v=>{const y=yr(v);if(!y||y<1769||y>1848)return;
   byY[y]=byY[y]||{};const f=v.flag||'unknown';byY[y][f]=(byY[y][f]||0)+1});
  const flags=['spain','usa','russia','britain','mexico','france','unknown'];
- const cols={spain:'#c0392b',usa:'#2d4a73',russia:'#1e7e34',britain:'#8e44ad',mexico:'#b7791f',france:'#16a085',unknown:'#999'};
- const svg=document.getElementById('svg');const W=1100,H=420,mx=40,my=24;
+ const cols={spain:'#c0392b',usa:'#2d4a73',russia:'#1e7e34',britain:'#8e44ad',mexico:'#b7791f',france:'#16a085',unknown:'#a99'};
+ const svg=document.getElementById('svg');const W=1140,H=520,mx=48,my=30,mb=46;
+ svg.setAttribute('width',W);svg.setAttribute('height',H);
  let maxN=0;for(const y in byY){maxN=Math.max(maxN,Object.values(byY[y]).reduce((a,b)=>a+b,0))}
  const yrs=[];for(let y=1769;y<=1848;y++)yrs.push(y);
- const bw=(W-2*mx)/yrs.length;
+ const bw=(W-mx-10)/yrs.length, ph=H-my-mb;
  let out='';
+ const step=maxN>40?10:5;
+ for(let n=0;n<=maxN;n+=step){const gy=H-mb-n/maxN*ph;
+  out+='<line x1="'+mx+'" y1="'+gy+'" x2="'+(W-8)+'" y2="'+gy+'" stroke="#ddd"/>'+
+       '<text x="'+(mx-6)+'" y="'+(gy+4)+'" font-size="10" fill="#777" text-anchor="end">'+n+'</text>';}
  yrs.forEach((y,i)=>{let acc=0;const d=byY[y]||{};
+  const tot=Object.values(d).reduce((a,b)=>a+b,0);
   flags.forEach(f=>{const n=d[f]||0;if(!n)return;
-   const h=n/maxN*(H-2*my);
-   out+='<rect x="'+(mx+i*bw)+'" y="'+(H-my-acc-h)+'" width="'+(bw-1)+'" height="'+h+'" fill="'+cols[f]+'"><title>'+y+' '+f+': '+n+'</title></rect>';acc+=h});
-  if(y%10===0)out+='<text x="'+(mx+i*bw)+'" y="'+(H-6)+'" font-size="11" fill="#555">'+y+'</text>'});
- let lx=mx;flags.forEach(f=>{out+='<rect x="'+lx+'" y="4" width="10" height="10" fill="'+cols[f]+'"/><text x="'+(lx+13)+'" y="13" font-size="11">'+f+'</text>';lx+=f.length*7+40});
+   const h=n/maxN*ph;
+   out+='<rect class="yb" data-y="'+y+'" x="'+(mx+i*bw)+'" y="'+(H-mb-acc-h)+'" width="'+Math.max(bw-1.2,2)+'" height="'+h+'" fill="'+cols[f]+'" style="cursor:pointer"><title>'+y+' — '+f+': '+n+' (year total '+tot+')</title></rect>';acc+=h});
+  if(y%5===0)out+='<text x="'+(mx+i*bw)+'" y="'+(H-mb+14)+'" font-size="10" fill="#555">'+y+'</text>';});
+ const ann=[[1769,'Alta CA founded'],[1775,'Trinidad possession'],[1796,'the Otter — first US ship'],[1806,'Rezanov / the Juno'],[1812,'Ross founded'],[1813,'Mercury seized'],[1821,'Mexican independence'],[1834,'secularization'],[1846,'US conquest']];
+ ann.forEach((a,k)=>{const y=a[0],label=a[1];const i=y-1769;const x=mx+i*bw;
+  out+='<line x1="'+x+'" y1="'+my+'" x2="'+x+'" y2="'+(H-mb)+'" stroke="#999" stroke-dasharray="3,3"/>'+
+       '<text x="'+(x+3)+'" y="'+(my+10+(k%3)*13)+'" font-size="9.5" fill="#666">'+label+'</text>';});
+ let lx=mx;flags.forEach(f=>{out+='<rect x="'+lx+'" y="'+(H-16)+'" width="10" height="10" fill="'+cols[f]+'"/><text x="'+(lx+13)+'" y="'+(H-7)+'" font-size="11">'+f+'</text>';lx+=f.length*7+50;});
  svg.innerHTML=out;
+ svg.addEventListener('click',e=>{const y=e.target.dataset&&e.target.dataset.y;if(!y)return;
+  document.getElementById('y1').value=y;document.getElementById('y2').value=y;render();
+  document.querySelectorAll('nav button').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.pane').forEach(x=>x.classList.remove('on'));
+  document.querySelector('nav button[data-pane=visits]').classList.add('on');
+  document.getElementById('visits').classList.add('on');});
 })();
 </script></body></html>"""
 
