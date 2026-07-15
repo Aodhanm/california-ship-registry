@@ -3,7 +3,7 @@
 *The confident merges/drops are applied (see harvest.py ALIAS + STOP_NAMES). These need a human ruling or a source check. Add rulings here; the alias table encodes them.*
 
 ## Identity conflations to split
-- **descubierta** — the cluster mixes Malaspina's corvette *Descubierta* (Monterey 1791) with Savage's rendering of Vancouver's *Discovery* as "Fragata Descubierta" (the 1793 reservadísima!). Split by date/context: 1791 = Malaspina; 1792–94 = Vancouver.
+- ✅ **descubierta SPLIT 2026-07-15** (Aodhan caught the fake 1794 US ship): 1792–95 → merged into *discovery* (Vancouver, British); 1819–21 → *descubierta-rus* (the Russian imperial corvette); pre-1792 Malaspina reserved. The 1794 'American Descubierta' was a PHANTOM = C-A 7 d284, a foreign-EXCLUSION policy order (no ship) — dropped via NONSHIP_RECORDS. Flags for the core Spanish fleet made authoritative (the Aránzazu-carrying-an-Irishman was mis-flagged USA → now spain).
 - **washington** (5v, 1825–29) — likely more than one vessel (the *Washington* schooner vs others).
 - **enrique** (1797–1840) — at least the 1800 courier ship + later uses; probably 2–3 vessels.
 - **eagle** (1807–22) — the 1807 New-York warning (a *report*, not a visit) vs the 1816 *Eagle* on the coast.
