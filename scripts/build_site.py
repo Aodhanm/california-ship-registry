@@ -24,6 +24,7 @@ page = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>California Ship Registry, 1769–1846 (v0.2 draft)</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%231f3a5f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='16' cy='6' r='2.6'/%3E%3Cline x1='16' y1='9' x2='16' y2='27'/%3E%3Cline x1='10' y1='13' x2='22' y2='13'/%3E%3Cpath d='M6 19 a10 10 0 0 0 20 0'/%3E%3Cline x1='6' y1='19' x2='3.5' y2='16.5'/%3E%3Cline x1='6' y1='19' x2='8.5' y2='16.5'/%3E%3Cline x1='26' y1='19' x2='23.5' y2='16.5'/%3E%3Cline x1='26' y1='19' x2='28.5' y2='16.5'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
  body{font-family:Georgia,serif;margin:0;background:#f7f4ee;color:#222}
