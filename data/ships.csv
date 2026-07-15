@@ -1,4 +1,5 @@
 ship_id,name_variants,flag_guess,first_seen,last_seen,n_visits,status
+activa,Activa (1),spain,1792,1793,1,draft
 activo,Activo (24),spain,1793,1805,24,draft
 actwo,Actwo (3),,1805,1805,3,draft
 actwwo,Actwwo (5),,1807,1807,5,draft
@@ -28,6 +29,7 @@ ayacucho,Ayacucho (10),spain,1830,1839,10,draft
 baikal,Baikal (11); Vaycal (1); Baykal (1); Bagol (1),russia,1825,1840,13,draft
 barnstable,Barnstable (6),usa,1842,1846,6,draft
 becket,Becket (1),,1824,1824,1,draft
+betsey of london,Betsey of London (1),britain,1799,1799,1,draft
 betsy,Betsy (4),usa,1800,1807,4,draft
 bordeaux packet,Bordeaux Packet (3),,1817,1817,3,draft
 bordelais,Bordelais (4),france,1815,1818,4,draft
@@ -149,6 +151,7 @@ joven tartaro,Joven Tártaro (2); Joven Sartaro (1),britain,1824,1826,3,draft
 juan jose,Juan José (1),,1841,1841,1,draft
 juno-1767,Juno (1),spain,1767,1767,1,draft
 juno-rac,Juno (4),russia,1806,1806,4,draft
+kamchatka,Kamchatka (1),russia,1818,1818,1,draft
 kamehameha,Kamehameha (1),,1827,1827,1,draft
 karimoko,Karimoko (1),britain,1828,1828,1,draft
 karimoku,Karimoku (4),,1828,1828,4,draft
