@@ -15,7 +15,8 @@ A **visit**: one vessel at one anchorage (or in one documented offshore event) a
 | date_confidence | exact / year / inferred / mixed (constituents disagree) |
 | anchorage | canonical name from gazetteer.csv; empty = not yet located |
 | region | alta / baja / alta-baja? — the completeness claim covers ALTA only (Baja incidental after the 1804 split) |
-| flag | best-evidence national flag (spain, usa, russia, britain, mexico, france); draft rows carry the harvester's hint |
+| flag | best-evidence national flag (spain, usa, russia, britain, mexico, france) |
+| flag_basis | **how the flag is known**: `stated` = the evidencing record says it ("fragata americana") · `attested/inferred` = filled from the hand table in merge.py (SHIP_FLAGS) — vessels whose nationality is beyond doubt from standard authorities (Bancroft, Ogden 1941, Thurman 1967) or from context (the San Blas royal fleet, expedition vessels). Marked † in the viewer. Ambiguous names (e.g. two Columbias) are deliberately NOT filled |
 | purpose | supply · exploration · otter · contraband · whaler · warship · (hide-tallow, missionary reserved) |
 | outcome | arrived · departed · seized · wrecked · refused · deserters · traded |
 | visit_type | port-call / offshore-presence / resident / sighting / unlocated (draft) |
