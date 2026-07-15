@@ -1,0 +1,899 @@
+ship,name,entry,date_from,date_to,conf,anchorage,offshore
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Monterey,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Monterey,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Santa Bárbara,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Diego,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Monterey,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Santa Bárbara,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Diego,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Monterey,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Francisco,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Francisco,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Monterey,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823-11-15,1823-11-15,exact,Santa Bárbara,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Diego,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Santa Bárbara,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,Santa Bárbara,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823-10-24,1823-10-24,exact,Monterey,False
+caauifrornia,CaAuIFrorniA,"CaAuIFrorniA, 1823-1831",1823,1823,year,San Blas,False
+butterworth,Butterworth,"Butterworth, 1793",1793,1793,year,Santa Cruz,False
+butterworth,Butterworth,"Butterworth, 1793",1793,1793,year,San Francisco,True
+jackal,Jackal,"Jackal, 1793",1793,1793,year,Monterey,False
+jackal,Jackal,"Jackal, 1793",1793,1793,year,Bodega,False
+prince lee boo,Prince Lee Boo,"Prince Lee Boo, 1793",1793-03,1793-03,inferred,Bodega,False
+prince lee boo,Prince Lee Boo,"Prince Lee Boo, 1793",1793,1793,year,Monterey,False
+prince lee boo,Prince Lee Boo,"Prince Lee Boo, 1793",1793,1793,year,Bodega,False
+phoenix,Phoenix,"Phoenix, 1795",1795,1795,year,Santa Bárbara,False
+otter,Otter,"Otter, 1796",1796,1796,year,Santa Cruz,False
+otter,Otter,"Otter, 1796",1796-11-06,1796-11-06,exact,Monterey,False
+eliza,Eliza,"Eliza, 1799",1799,1799,year,San Francisco,False
+eliza,Eliza,"Eliza, 1799",1799,1799,year,San Blas,False
+betsy,Betsy,"Betsy, 1800",1800-09-04,1800-09-04,exact,San Diego,False
+betsy,Betsy,"Betsy, 1800",1800,1800,year,San Quintín,False
+betsy,Betsy,"Betsy, 1800",1800,1800,year,San Blas,False
+enterprise,Enterprise,"Enterprise, 1801",1801-01-08,1801-01-08,exact,San Blas,False
+enterprise,Enterprise,"Enterprise, 1801",1801,1801,year,San Diego,False
+enterprise,Enterprise,"Enterprise, 1801",1801,1801,year,San Quintín,False
+alexander,Alexander,"Alexander, 1803",1803,1803,year,San Diego,False
+alexander,Alexander,"Alexander, 1803",1803,1803,year,San Juan Capistrano,False
+alexander,Alexander,"Alexander, 1803",1803-05,1803-05,inferred,San Francisco,False
+alexander,Alexander,"Alexander, 1803",1803,1803,year,Monterey,False
+alexander,Alexander,"Alexander, 1803",1803,1803,year,San Juan Capistrano,False
+alexander,Alexander,"Alexander, 1803",1803,1803,year,San Quintín,False
+hazard,Hazard,"Hazard, 1803",1803,1803,year,San Francisco,False
+hazard,Hazard,"Hazard, 1803",1803,1803,year,Santa Bárbara,False
+hazard,Hazard,"Hazard, 1803",1803,1803,year,San Juan Capistrano,False
+hazard,Hazard,"Hazard, 1803",1803,1803,year,San Diego,True
+hazard,Hazard,"Hazard, 1803",1803,1803,year,Monterey,True
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1803",1803-01-25,1803-01-25,exact,San Blas,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1803",1803,1803,year,San Diego,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1803",1803-05-03,1803-05-03,exact,San Quintín,False
+o’ cain,O’ Cain,"O’ Cain, 1803-1804",1803,1803,year,San Diego,False
+o’ cain,O’ Cain,"O’ Cain, 1803-1804",1804-03-26,1804-03-26,exact,San Quintín,False
+hazard,Hazard,"Hazard, 1804",1804,1804,year,San Francisco,False
+hazard,Hazard,"Hazard, 1804",1804,1804,year,San Diego,True
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1804",1804,1804,year,Trinidad,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1804",1804,1804,year,San Francisco,False
+actwo,Actwo,"Actwo, 1805",1805,1805,year,San Blas,False
+actwo,Actwo,"Actwo, 1805",1805,1805,year,Monterey,False
+actwo,Actwo,"Actwo, 1805",1805,1805,year,San Francisco,False
+actwo,Actwo,"Actwo, 1805",1805,1805,year,San Blas,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805,1805,year,San Luis Obispo,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805,1805,year,Santa Bárbara,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805,1805,year,Santa Catalina I.,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805,1805,year,San Pedro,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805,1805,year,San Diego,True
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805-06-09,1805-06-09,exact,Santa Catalina I.,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805,1805,year,San Pedro,False
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805,1805,year,Santa Bárbara,True
+lelia byrd,Lelia Byrd,"Lelia Byrd, 1805",1805,1805,year,San Diego,True
+princesa,Princesa,"Princesa, 1805",1805,1805,year,San Blas,False
+princesa,Princesa,"Princesa, 1805",1805,1805,year,Monterey,False
+princesa,Princesa,"Princesa, 1805",1805,1805,year,San Francisco,False
+princesa,Princesa,"Princesa, 1805",1805,1805,year,San Blas,False
+liclipse,Liclipse,"Liclipse, 1806",1806,1806,year,San Juan Capistrano,True
+liclipse,Liclipse,"Liclipse, 1806",1806,1806,year,San Diego,False
+liclipse,Liclipse,"Liclipse, 1806",1806,1806,year,San Quintín,False
+o’cain,O’Cain,"O’Cain, 1806",1806,1806,year,Trinidad,False
+o’cain,O’Cain,"O’Cain, 1806",1806,1806,year,San Quintín,False
+peacock,Peacock,"Peacock, 1806",1806,1806,year,San Juan Capistrano,True
+peacock,Peacock,"Peacock, 1806",1806,1806,year,San Diego,True
+tamana,Tamana,"Tamana, 1806",1806,1806,year,San Luis Obispo,False
+tamana,Tamana,"Tamana, 1806",1806,1806,year,San Pedro,False
+mercury,Mercury,"Mercury, 1806-1807",1806,1806,year,San Luis Obispo,False
+mercury,Mercury,"Mercury, 1806-1807",1806,1806,year,Santa Bárbara,False
+mercury,Mercury,"Mercury, 1806-1807",1806,1806,year,San Juan Capistrano,False
+actwwo,Actwwo,"Actwwo, 1807",1807,1807,year,San Blas,False
+actwwo,Actwwo,"Actwwo, 1807",1807,1807,year,Monterey,False
+actwwo,Actwwo,"Actwwo, 1807",1807,1807,year,San Francisco,False
+actwwo,Actwwo,"Actwwo, 1807",1807-07-01,1807-07-01,exact,Santa Bárbara,False
+actwwo,Actwwo,"Actwwo, 1807",1807,1807,year,San Diego,False
+actwwo,Actwwo,"Actwwo, 1807",1807,1807,year,San Blas,False
+o’cain,O’Cain,"O’Cain, 1807",1807,1807,year,San Pedro,False
+o’cain,O’Cain,"O’Cain, 1807",1807,1807,year,Santa Catalina I.,False
+o’cain,O’Cain,"O’Cain, 1807",1807,1807,year,San Quintín,False
+o’cain,O’Cain,"O’Cain, 1807",1807,1807,year,San Quintín,False
+peacock,Peacock,"Peacock, 1807",1807,1807,year,San Quintín,False
+peacock,Peacock,"Peacock, 1807",1807,1807,year,San Blas,False
+peacock,Peacock,"Peacock, 1807",1807,1807,year,Monterey,False
+peacock,Peacock,"Peacock, 1807",1807-07-01,1807-07-01,exact,Santa Bárbara,False
+peacock,Peacock,"Peacock, 1807",1807,1807,year,San Diego,False
+peacock,Peacock,"Peacock, 1807",1807,1807,year,Monterey,False
+peacock,Peacock,"Peacock, 1807",1807,1807,year,Monterey,False
+peacock,Peacock,"Peacock, 1807",1807,1807,year,San Blas,False
+tamana,Tamana,"Tamana, 1807",1807,1807,year,Santa Catalina I.,False
+kodiak,Kodiak,"Kodiak, 1808-1809",1808,1808,year,Trinidad,False
+kodiak,Kodiak,"Kodiak, 1808-1809",1809-08-18,1809-08-18,exact,Bodega,False
+mercury,Mercury,"Mercury, 1808-1809",1808,1808,year,Bodega,False
+mercury,Mercury,"Mercury, 1808-1809",1808,1808,year,San Francisco,False
+mercury,Mercury,"Mercury, 1808-1809",1808,1808,year,Trinidad,False
+mercury,Mercury,"Mercury, 1808-1809",1808,1808,year,San Diego,False
+mercury,Mercury,"Mercury, 1808-1809",1808,1808,year,San Pedro,False
+mercury,Mercury,"Mercury, 1808-1809",1808,1808,year,San Juan Capistrano,False
+mercury,Mercury,"Mercury, 1809-1810",1809,1809,year,San Luis Obispo,False
+mercury,Mercury,"Mercury, 1809-1810",1809,1809,year,Refugio,True
+mercury,Mercury,"Mercury, 1809-1810",1809,1809,year,Santa Bárbara,False
+mercury,Mercury,"Mercury, 1809-1810",1809,1809,year,San Quintín,False
+albatross,Albatross,"Albatross, 1810",1810,1810,year,Trinidad,False
+mercury,Mercury,"Mercury, 1810",1810,1810,year,San Quintín,False
+albatross,Albatross,"Albatross, 1810-1811",1810,1810,year,San Luis Obispo,False
+albatross,Albatross,"Albatross, 1810-1811",1810,1810,year,San Quintín,False
+isabella,Isabella,"Isabella, 1810-1811",1810,1810,year,Bodega,False
+o’cain,O’Cain,"O’Cain, 1810-1811",1809,1809,year,San Quintín,False
+chirikov,Chirikov,"Chirikov, 1811",1811-06-20,1811-06-20,exact,Bodega,False
+chirikov,Chirikov,"Chirikov, 1811-1812",1811,1811,year,Bodega,False
+amethyst,Amethyst,"Amethyst, 1812",1812,1812,year,San Quintín,False
+charon,Charon,"Charon, 1812",1812,1812,year,San Quintín,False
+katherine,Katherine,"Katherine, 1812",1812,1812,year,San Quintín,False
+mercury,Mercury,"Mercury, 1812",1812,1812,year,Bodega,False
+mercury,Mercury,"Mercury, 1812",1812,1812,year,San Luis Obispo,False
+mercury,Mercury,"Mercury, 1812",1812,1812,year,Refugio,True
+mercury,Mercury,"Mercury, 1812",1812,1812,year,San Quintín,False
+mercury,Mercury,"Mercury, 1812",1812,1812,year,San Quintín,False
+mercury,Mercury,"Mercury, 1812",1812,1812,year,Refugio,False
+mercury,Mercury,"Mercury, 1813",1813,1813,year,Bodega,False
+mercury,Mercury,"Mercury, 1813",1813,1813,year,San Luis Obispo,False
+mercury,Mercury,"Mercury, 1813",1813,1813,year,Santa Bárbara,False
+forester,Forester,"Forester, 1814",1814,1814,year,Bodega,False
+forester,Forester,"Forester, 1814",1814,1814,year,San Luis Obispo,False
+forester,Forester,"Forester, 1814",1814,1814,year,Bodega,False
+forester,Forester,"Forester, 1814",1814,1814,year,San Francisco,False
+forester,Forester,"Forester, 1814",1814,1814,year,San Pedro,False
+pedler,Pedler,"Pedler, 1814",1814,1814,year,Bodega,False
+pedler,Pedler,"Pedler, 1814",1814,1814,year,San Luis Obispo,False
+forester,Forester,"Forester, 1814-1815",1814,1814,year,Loreto,False
+forester,Forester,"Forester, 1814-1815",1814,1814,year,San Diego,True
+forester,Forester,"Forester, 1814-1815",1814,1814,year,Bodega,False
+ilmen,Ilmen,"Ilmen, 1815",1815,1815,year,San Pedro,True
+ilmen,Ilmen,"Ilmen, 1815",1815,1815,year,San Pedro,True
+ilmen,Ilmen,"Ilmen, 1815",1815,1815,year,San Luis Obispo,False
+ilmen,Ilmen,"Ilmen, 1815",1815,1815,year,Refugio,True
+ilmen,Ilmen,"Ilmen, 1815",1815,1815,year,Bodega,False
+albatross,Albatross,"Albatross, 1816",1816,1816,year,Santa Bárbara,True
+albatross,Albatross,"Albatross, 1816",1816,1816,year,Refugio,False
+atala,Atala,"Atala, 1816",1816,1816,year,Monterey,False
+lydia,Lydia,"Lydia, 1816",1816,1816,year,Fort Ross,False
+lydia,Lydia,"Lydia, 1816",1816,1816,year,Refugio,False
+lydia,Lydia,"Lydia, 1816",1816-02-02,1816-02-02,exact,Santa Bárbara,False
+lydia,Lydia,"Lydia, 1816",1816,1816,year,Monterey,False
+lydia,Lydia,"Lydia, 1816",1816-03-15,1816-03-15,exact,Santa Bárbara,False
+sultan,Sultan,"Sultan, 1816",1816,1816,year,San Luis Obispo,False
+sultan,Sultan,"Sultan, 1816",1816,1816,year,Monterey,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,Bodega,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,Santa Bárbara,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,San Diego,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,San Quintín,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,Loreto,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,Monterey,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,San Luis Obispo,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,Santa Bárbara,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,Santa Bárbara,False
+traveller,Traveller,"Traveller, 1816-1817",1816,1816,year,Loreto,False
+avon,Avon,"Avon, 1817",1817,1817,year,San Pedro,False
+avon,Avon,"Avon, 1817",1817,1817,year,Santa Bárbara,False
+bordeaux packet,Bordeaux Packet,"Bordeaux Packet, 1817",1817,1817,year,Loreto,True
+bordeaux packet,Bordeaux Packet,"Bordeaux Packet, 1817",1817,1817,year,San Juan Capistrano,False
+bordeaux packet,Bordeaux Packet,"Bordeaux Packet, 1817",1817,1817,year,San Luis Obispo,False
+bordelais,Bordelais,"Bordelais, 1817",1817,1817,year,San Francisco,False
+bordelais,Bordelais,"Bordelais, 1817",1817,1817,year,Bodega,False
+bordelais,Bordelais,"Bordelais, 1817",1817-11-20,1817-11-20,exact,San Francisco,False
+chirtkov,Chirtkov,"Chirtkov, 1817",1817,1817,year,Bodega,False
+chirtkov,Chirtkov,"Chirtkov, 1817",1817,1817,year,San Francisco,False
+chirtkov,Chirtkov,"Chirtkov, 1817",1817,1817,year,Monterey,False
+chirtkov,Chirtkov,"Chirtkov, 1817",1817,1817,year,Santa Bárbara,False
+columbia,Columbia,"Columbia, 1817",1817,1817,year,Trinidad,False
+columbia,Columbia,"Columbia, 1817",1817-08-08,1817-08-08,exact,Bodega,False
+columbia,Columbia,"Columbia, 1817",1817,1817,year,Trinidad,False
+kutusov,Kutusov,"Kutusov, 1817",1817,1817,year,Bodega,False
+kutusov,Kutusov,"Kutusov, 1817",1817,1817,year,San Francisco,False
+kutusov,Kutusov,"Kutusov, 1817",1817,1817,year,San Francisco,False
+bordelais,Bordelais,"Bordelais, 1818",1818-10-20,1818-10-20,exact,San Francisco,False
+clarion,Clarion,"Clarion, 1818",1818,1818,year,Santa Bárbara,False
+kutusov,Kutusov,"Kutusov, 1818",1818,1818,year,Monterey,False
+kutusov,Kutusov,"Kutusov, 1818",1818,1818,year,Santa Cruz,False
+kutusov,Kutusov,"Kutusov, 1818",1818,1818,year,Monterey,False
+okhotsk,Okhotsk,"Okhotsk, 1818",1818,1818,year,Bodega,False
+iimen,Iimen,"Iimen, 1820",1820,1820,year,Monterey,False
+iimen,Iimen,"Iimen, 1820",1820,1820,year,Santa Bárbara,False
+iimen,Iimen,"Iimen, 1820",1820,1820,year,San Francisco,False
+iimen,Iimen,"Iimen, 1820",1820,1820,year,Monterey,False
+eagle,Eagle,"Eagle, 1821",1821,1821,year,Bodega,False
+eagle,Eagle,"Eagle, 1821",1821-09-03,1821-09-03,exact,San Francisco,False
+eagle,Eagle,"Eagle, 1821",1821,1821,year,Santa Bárbara,False
+eagle,Eagle,"Eagle, 1821",1821,1821,year,Santa Catalina I.,False
+eagle,Eagle,"Eagle, 1821",1821,1821,year,San Diego,False
+eagle,Eagle,"Eagle, 1821",1821,1821,year,San Pedro,False
+eagle,Eagle,"Eagle, 1821",1821,1821,year,San Juan Capistrano,False
+eagle,Eagle,"Eagle, 1822",1822,1822,year,Monterey,False
+eagle,Eagle,"Eagle, 1822",1822,1822,year,Santa Bárbara,False
+volga,Volga,"Volga, 1822",1822,1822,year,San Francisco,False
+volga,Volga,"Volga, 1822",1822,1822,year,Monterey,False
+sachem,Sachem,"Sachem, 1822-1823",1822,1822,year,Monterey,False
+sachem,Sachem,"Sachem, 1822-1823",1822,1822,year,San Diego,False
+sachem,Sachem,"Sachem, 1822-1823",1822,1822,year,San Diego,False
+sachem,Sachem,"Sachem, 1822-1823",1822,1822,year,San Francisco,False
+sachem,Sachem,"Sachem, 1822-1823",1822,1822,year,San Francisco,False
+sachem,Sachem,"Sachem, 1822-1823",1822,1822,year,Monterey,False
+ann,Ann,"Ann, 1823",1823,1823,year,Monterey,False
+ann,Ann,"Ann, 1823",1823,1823,year,Monterey,False
+ann,Ann,"Ann, 1823",1823,1823,year,San Luis Obispo,False
+ann,Ann,"Ann, 1823",1823,1823,year,San Blas,False
+buldakov,Buldakov,"Buldakov, 1823",1823,1823,year,San Francisco,False
+buldakov,Buldakov,"Buldakov, 1823",1823,1823,year,Santa Cruz,False
+mentor,Mentor,"Mentor, 1823",1823,1823,year,Bodega,False
+mentor,Mentor,"Mentor, 1823",1823,1823,year,Monterey,False
+mentor,Mentor,"Mentor, 1823",1823,1823,year,San Francisco,False
+mentor,Mentor,"Mentor, 1823",1823,1823,year,Monterey,False
+rover,Rover,"Rover, 1823",1823-06-11,1823-06-11,exact,San Francisco,False
+rover,Rover,"Rover, 1823",1823,1823,year,Santa Cruz,False
+rover,Rover,"Rover, 1823",1823-07-19,1823-07-19,exact,Monterey,False
+rover,Rover,"Rover, 1823-1824",1824-01-18,1824-01-18,exact,Monterey,False
+rover,Rover,"Rover, 1823-1824",1824,1824,year,San Francisco,False
+rover,Rover,"Rover, 1823-1824",1824,1824,year,Monterey,False
+becket,Becket,"Becket, 1824",1824,1824,year,San Pedro,False
+mentor,Mentor,"Mentor, 1824",1824,1824,year,Bodega,False
+mentor,Mentor,"Mentor, 1824",1824,1824,year,Monterey,False
+mentor,Mentor,"Mentor, 1824",1824,1824,year,San Francisco,False
+mentor,Mentor,"Mentor, 1824",1824,1824,year,Santa Bárbara,False
+mentor,Mentor,"Mentor, 1824",1824,1824,year,San Diego,False
+owhyhee,Owhyhee,"Owhyhee, 1824",1824,1824,year,Bodega,False
+owhyhee,Owhyhee,"Owhyhee, 1824",1824,1824,year,San Francisco,False
+owhyhee,Owhyhee,"Owhyhee, 1824",1824,1824,year,San Pedro,False
+owhyhee,Owhyhee,"Owhyhee, 1824",1824,1824,year,Monterey,False
+washington,Washington,"Washington, 1824",1824,1824,year,Bodega,False
+washington,Washington,"Washington, 1824",1824,1824,year,San Francisco,False
+washington,Washington,"Washington, 1824",1824,1824,year,Monterey,False
+washington,Washington,"Washington, 1824",1824,1824,year,San Luis Obispo,False
+rover,Rover,"Rover, 1824-1825",1824,1824,year,Monterey,False
+rover,Rover,"Rover, 1824-1825",1824-12-01,1824-12-01,exact,Bodega,False
+rover,Rover,"Rover, 1824-1825",1824,1824,year,San Francisco,False
+rover,Rover,"Rover, 1824-1825",1824-03-23,1824-03-23,exact,Monterey,False
+nile,Nile,"Nile, 1825",1825,1825,year,Bodega,False
+nile,Nile,"Nile, 1825",1825,1825,year,San Francisco,False
+nile,Nile,"Nile, 1825",1825,1825,year,Santa Bárbara,False
+tamaahmaah,Tamaahmaah,"Tamaahmaah, 1825",1825,1825,year,San Francisco,False
+washington,Washington,"Washington, 1825",1825,1825,year,San Francisco,False
+washington,Washington,"Washington, 1825",1825,1825,year,Monterey,False
+washington,Washington,"Washington, 1825",1825,1825,year,San Diego,False
+washington,Washington,"Washington, 1825",1825,1825,year,Monterey,False
+washington,Washington,"Washington, 1825",1825,1825,year,San Diego,False
+harbinger,Harbinger,"Harbinger, 1826",1826,1826,year,San Diego,False
+owhyhee,Owhyhee,"Owhyhee, 1826",1826,1826,year,San Diego,False
+owhyhee,Owhyhee,"Owhyhee, 1826",1826-07-16,1826-07-16,exact,Monterey,False
+owhyhee,Owhyhee,"Owhyhee, 1826",1826,1826,year,Santa Bárbara,False
+owhyhee,Owhyhee,"Owhyhee, 1826",1826-08-15,1826-08-15,exact,San Diego,False
+owhyhee,Owhyhee,"Owhyhee, 1826",1826,1826,year,Santa Bárbara,False
+owhyhee,Owhyhee,"Owhyhee, 1826",1826-12-17,1826-12-17,exact,Monterey,False
+owhyhee,Owhyhee,"Owhyhee, 1826",1826,1826,year,Monterey,False
+washington,Washington,"Washington, 1826",1826,1826,year,San Francisco,False
+washington,Washington,"Washington, 1826",1826,1826,year,Santa Bárbara,False
+waverly,Waverly,"Waverly, 1826",1826,1826,year,San Francisco,False
+waverly,Waverly,"Waverly, 1826",1826,1826,year,San Diego,False
+waverly,Waverly,"Waverly, 1826",1826,1826,year,Santa Bárbara,False
+waverly,Waverly,"Waverly, 1826",1826,1826,year,Santa Bárbara,False
+harbinger,Harbinger,"Harbinger, 1826-1827",1826,1826,year,Monterey,False
+harbinger,Harbinger,"Harbinger, 1826-1827",1826,1826,year,San Diego,False
+harbinger,Harbinger,"Harbinger, 1827",1827,1827,year,San Francisco,False
+harbinger,Harbinger,"Harbinger, 1827",1827,1827,year,Santa Bárbara,False
+harbinger,Harbinger,"Harbinger, 1827",1827,1827,year,San Diego,False
+harbinger,Harbinger,"Harbinger, 1827",1827,1827,year,San Pedro,False
+harbinger,Harbinger,"Harbinger, 1827",1827,1827,year,Santa Bárbara,False
+harbinger,Harbinger,"Harbinger, 1827",1827,1827,year,San Juan Capistrano,False
+harbinger,Harbinger,"Harbinger, 1827",1827,1827,year,San Diego,False
+harbinger,Harbinger,"Harbinger, 1827",1827,1827,year,Monterey,False
+kamehameha,Kamehameha,"Kamehameha, 1827",1827,1827,year,Santa Bárbara,False
+tamaahmaah,Tamaahmaah,"Tamaahmaah, 1827",1827,1827,year,San Francisco,False
+waverly,Waverly,"Waverly, 1827-1828",1827,1827,year,Monterey,False
+waverly,Waverly,"Waverly, 1827-1828",1827,1827,year,Santa Bárbara,False
+waverly,Waverly,"Waverly, 1827-1828",1827,1827,year,San Diego,False
+waverly,Waverly,"Waverly, 1827-1828",1827,1827,year,San Pedro,False
+waverly,Waverly,"Waverly, 1827-1828",1827,1827,year,Santa Bárbara,False
+waverly,Waverly,"Waverly, 1827-1828",1827,1827,year,Monterey,False
+waverly,Waverly,"Waverly, 1827-1828",1827,1827,year,Santa Bárbara,False
+griffon,Griffon,"Griffon, 1828",1828,1828,year,San Francisco,False
+griffon,Griffon,"Griffon, 1828",1828,1828,year,Monterey,False
+griffon,Griffon,"Griffon, 1828",1828-08-27,1828-08-27,exact,San Diego,False
+karimoku,Karimoku,"Karimoku, 1828",1828,1828,year,San Pedro,False
+karimoku,Karimoku,"Karimoku, 1828",1828,1828,year,San Francisco,False
+karimoku,Karimoku,"Karimoku, 1828",1828,1828,year,Monterey,False
+karimoku,Karimoku,"Karimoku, 1828",1828,1828,year,San Pedro,False
+karimoku,Karimoku,"Karimoku, 1828",1828,1828,year,San Diego,False
+karimoku,Karimoku,"Karimoku, 1828",1828,1828,year,San Diego,False
+baikal,Baikal,"Baikal, 1828-1829",1828,1828,year,San Diego,False
+baikal,Baikal,"Baikal, 1828-1829",1828,1828,year,San Diego,False
+baikal,Baikal,"Baikal, 1828-1829",1828,1828,year,San Quintín,False
+baikal,Baikal,"Baikal, 1828-1829",1828,1828,year,San Diego,False
+washington,Washington,"Washington, 1828-1829",1828,1828,year,Monterey,False
+washington,Washington,"Washington, 1828-1829",1828,1828,year,Santa Bárbara,False
+washington,Washington,"Washington, 1828-1829",1828,1828,year,San Diego,False
+waverly,Waverly,"Waverly, 1828-1829",1828,1828,year,San Diego,False
+waverly,Waverly,"Waverly, 1828-1829",1828,1828,year,Bodega,False
+waverly,Waverly,"Waverly, 1828-1829",1828,1828,year,Santa Bárbara,False
+waverly,Waverly,"Waverly, 1828-1829",1828-12-21,1828-12-21,exact,Monterey,False
+waverly,Waverly,"Waverly, 1828-1829",1829-01-30,1829-01-30,exact,Santa Bárbara,False
+dhualle,Dhualle,"Dhualle, 1829",1829,1829,year,Monterey,False
+dhualle,Dhualle,"Dhualle, 1829",1829,1829,year,Santa Bárbara,False
+dhualle,Dhualle,"Dhualle, 1829",1829,1829,year,Santa Bárbara,False
+diana,Diana,"Diana, 1829",1829,1829,year,Monterey,False
+volunteer,Volunteer,"Volunteer, 1829",1829,1829,year,San Francisco,False
+volunteer,Volunteer,"Volunteer, 1829",1829,1829,year,Monterey,False
+washington,Washington,"Washington, 1829",1829,1829,year,San Diego,False
+washington,Washington,"Washington, 1829",1829,1829,year,Santa Bárbara,False
+washington,Washington,"Washington, 1829",1829,1829,year,Monterey,False
+brookline,Brookline,"Brookline, 1829-1830",1829-03-17,1829-03-17,exact,Monterey,False
+brookline,Brookline,"Brookline, 1829-1830",1829-04-29,1829-04-29,exact,San Diego,False
+brookline,Brookline,"Brookline, 1829-1830",1829-06-03,1829-06-03,exact,Santa Bárbara,False
+brookline,Brookline,"Brookline, 1829-1830",1829,1829,year,San Diego,False
+brookline,Brookline,"Brookline, 1829-1830",1829,1829,year,San Francisco,False
+brookline,Brookline,"Brookline, 1829-1830",1829,1829,year,Santa Bárbara,False
+brookline,Brookline,"Brookline, 1829-1830",1829,1829,year,San Diego,False
+brookline,Brookline,"Brookline, 1829-1830",1829-05-09,1829-05-09,exact,Monterey,False
+brookline,Brookline,"Brookline, 1829-1830",1829,1829,year,Santa Bárbara,False
+brookline,Brookline,"Brookline, 1829-1830",1829,1829,year,Santa Bárbara,False
+volunteer,Volunteer,"Volunteer, 1830",1830,1830,year,Monterey,False
+volunteer,Volunteer,"Volunteer, 1830",1830-05-08,1830-05-08,exact,Monterey,False
+volunteer,Volunteer,"Volunteer, 1830",1830,1830,year,San Blas,False
+volunteer,Volunteer,"Volunteer, 1830",1830,1830,year,San Blas,False
+convoy,Convoy,"Convoy, 1831",1831,1831,year,Monterey,False
+convoy,Convoy,"Convoy, 1831",1831,1831,year,Monterey,False
+convoy,Convoy,"Convoy, 1831",1831,1831,year,Santa Bárbara,False
+convoy,Convoy,"Convoy, 1831",1831,1831,year,San Pedro,False
+convoy,Convoy,"Convoy, 1831",1831,1831,year,Monterey,False
+convoy,Convoy,"Convoy, 1831",1831,1831,year,San Diego,False
+convoy,Convoy,"Convoy, 1831",1831,1831,year,Monterey,False
+convoy,Convoy,"Convoy, 1831",1831,1831,year,San Pedro,False
+griffon,Griffon,"Griffon, 1831",1831,1831,year,San Quintín,False
+loussa,Loussa,"Loussa, 1831",1831,1831,year,Monterey,False
+loussa,Loussa,"Loussa, 1831",1831,1831,year,Santa Bárbara,False
+loussa,Loussa,"Loussa, 1831",1831-08-22,1831-08-22,exact,San Diego,False
+william inttle,William Inttle,"William Inttle, 1831",1831,1831,year,Santa Bárbara,False
+william inttle,William Inttle,"William Inttle, 1831",1831,1831,year,Monterey,False
+william inttle,William Inttle,"William Inttle, 1831",1831,1831,year,Santa Bárbara,False
+plant,Plant,"Plant, 1832",1832,1832,year,Santa Bárbara,False
+plant,Plant,"Plant, 1832",1832,1832,year,Santa Bárbara,False
+victoria,Victoria,"Victoria, 1832",1832,1832,year,Monterey,False
+crusader,Crusader,"Crusader, 1832-1833",1832,1832,year,Monterey,False
+convoy,Convoy,"Convoy, 1833",1833,1833,year,Santa Bárbara,False
+convoy,Convoy,"Convoy, 1833",1833,1833,year,San Pedro,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,San Francisco,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,Santa Bárbara,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,San Diego,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,Santa Bárbara,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,San Diego,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,San Pedro,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,Monterey,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,San Pedro,False
+harriet blanchard,Harriet Blanchard,"Harriet Blanchard, 1833",1833,1833,year,San Diego,False
+maraquita,Maraquita,"Maraquita, 1833",1833,1833,year,Santa Bárbara,False
+maraquita,Maraquita,"Maraquita, 1833",1833,1833,year,San Pedro,False
+maraquita,Maraquita,"Maraquita, 1833",1833,1833,year,Santa Bárbara,False
+loriot,Loriot,"Loriot, 1833-1834",1833-09-05,1833-09-05,exact,Monterey,False
+loriot,Loriot,"Loriot, 1833-1834",1833,1833,year,San Francisco,False
+loriot,Loriot,"Loriot, 1833-1834",1833,1833,year,San Francisco,False
+loriot,Loriot,"Loriot, 1833-1834",1833,1833,year,San Francisco,False
+loriot,Loriot,"Loriot, 1833-1834",1833,1833,year,San Francisco,False
+loriot,Loriot,"Loriot, 1833-1834",1833,1833,year,Santa Bárbara,False
+loriot,Loriot,"Loriot, 1833-1834",1833,1833,year,San Pedro,False
+loriot,Loriot,"Loriot, 1833-1834",1833,1833,year,Santa Bárbara,False
+loriot,Loriot,"Loriot, 1833-1834",1833,1833,year,Santa Bárbara,False
+volunteer,Volunteer,"Volunteer, 1833-1834",1833,1833,year,Monterey,False
+volunteer,Volunteer,"Volunteer, 1833-1834",1833,1833,year,Santa Bárbara,False
+volunteer,Volunteer,"Volunteer, 1833-1834",1833,1833,year,San Pedro,False
+volunteer,Volunteer,"Volunteer, 1833-1834",1833,1833,year,San Diego,False
+volunteer,Volunteer,"Volunteer, 1833-1834",1833-09-17,1833-09-17,exact,San Francisco,False
+volunteer,Volunteer,"Volunteer, 1833-1834",1833,1833,year,Santa Bárbara,False
+volunteer,Volunteer,"Volunteer, 1833-1834",1833,1833,year,San Diego,False
+don quixote,Don Quixote,"Don Quixote, 1834",1834,1834,year,Monterey,False
+don quixote,Don Quixote,"Don Quixote, 1834",1834,1834,year,San Francisco,False
+don quixote,Don Quixote,"Don Quixote, 1834",1834,1834,year,Monterey,False
+don quixote,Don Quixote,"Don Quixote, 1834",1834,1834,year,Santa Bárbara,False
+don quixote,Don Quixote,"Don Quixote, 1834",1834,1834,year,San Pedro,False
+don quixote,Don Quixote,"Don Quixote, 1834",1834,1834,year,San Diego,False
+don quixote,Don Quixote,"Don Quixote, 1834",1834,1834,year,San Pedro,False
+avon,Avon,"Avon, 1835",1835,1835,year,Monterey,False
+avon,Avon,"Avon, 1835",1835-11-07,1835-11-07,exact,Santa Bárbara,False
+avon,Avon,"Avon, 1835",1835,1835,year,San Pedro,False
+avon,Avon,"Avon, 1835",1835,1835,year,Santa Bárbara,False
+diana,Diana,"Diana, 1836",1836-01-06,1836-01-06,exact,Monterey,False
+don quixote,Don Quixote,"Don Quixote, 1836",1836,1836,year,Monterey,False
+don quixote,Don Quixote,"Don Quixote, 1836",1836-07-09,1836-07-09,exact,San Francisco,False
+don quixote,Don Quixote,"Don Quixote, 1836",1836,1836,year,Monterey,False
+don quixote,Don Quixote,"Don Quixote, 1836",1836,1836,year,Santa Cruz,False
+don quixote,Don Quixote,"Don Quixote, 1836",1836,1836,year,San Diego,False
+don quixote,Don Quixote,"Don Quixote, 1836",1836,1836,year,San Francisco,False
+don quixote,Don Quixote,"Don Quixote, 1836",1836,1836,year,Santa Bárbara,False
+joseph peabody,Joseph Peabody,"Joseph Peabody, 1836",1836,1836,year,Santa Catalina I.,False
+clementine,Clementine,"Clementine, 1837",1837,1837,year,Monterey,False
+clementine,Clementine,"Clementine, 1837",1837,1837,year,San Francisco,False
+rasselas,Rasselas,"Rasselas, 1837-1838",1837,1837,year,Santa Bárbara,False
+rasselas,Rasselas,"Rasselas, 1837-1838",1837,1837,year,Monterey,False
+rasselas,Rasselas,"Rasselas, 1837-1838",1837,1837,year,San Francisco,False
+rasselas,Rasselas,"Rasselas, 1837-1838",1837,1837,year,Monterey,False
+rasselas,Rasselas,"Rasselas, 1837-1838",1837,1837,year,San Francisco,False
+morse,Morse,"Morse, 1839-1840",1839,1839,year,Monterey,False
+morse,Morse,"Morse, 1839-1840",1839,1839,year,Monterey,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,Santa Bárbara,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,Monterey,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,San Francisco,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,San Pedro,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,San Francisco,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,San Diego,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,San Francisco,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,Monterey,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,San Diego,False
+monsoon,Monsoon,"Monsoon, 1839-1841",1839,1839,year,San Diego,False
+alciope,Alciope,"Alciope, 1840",1840-05-27,1840-05-27,exact,Monterey,False
+alciope,Alciope,"Alciope, 1840",1840-06-02,1840-06-02,exact,Santa Cruz,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Francisco,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,Monterey,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,Santa Bárbara,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Pedro,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Francisco,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Diego,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Diego,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Francisco,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,Monterey,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,Santa Bárbara,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Pedro,False
+alciope,Alciope,"Alciope, 1840",1840-09-05,1840-09-05,exact,San Pedro,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,Santa Bárbara,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,Monterey,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Diego,False
+alciope,Alciope,"Alciope, 1840",1840,1840,year,San Diego,False
+fama,Fama,"Fama, 1841-1842",1841,1841,year,San Pedro,False
+fama,Fama,"Fama, 1841-1842",1841,1841,year,Monterey,False
+fama,Fama,"Fama, 1841-1842",1841,1841,year,San Francisco,False
+fama,Fama,"Fama, 1841-1842",1841,1841,year,Monterey,False
+fama,Fama,"Fama, 1841-1842",1841,1841,year,Santa Bárbara,False
+fama,Fama,"Fama, 1841-1842",1841,1841,year,San Pedro,False
+fama,Fama,"Fama, 1841-1842",1841,1841,year,Santa Bárbara,False
+maryland,Maryland,"Maryland, 1841-1842",1842-01-03,1842-01-03,exact,Monterey,False
+maryland,Maryland,"Maryland, 1841-1842",1842,1842,year,Santa Bárbara,False
+maryland,Maryland,"Maryland, 1841-1842",1842,1842,year,San Diego,False
+maryland,Maryland,"Maryland, 1841-1842",1842,1842,year,San Blas,False
+maryland,Maryland,"Maryland, 1841-1842",1842,1842,year,San Pedro,False
+maryland,Maryland,"Maryland, 1841-1842",1842,1842,year,San Francisco,False
+maryland,Maryland,"Maryland, 1841-1842",1842,1842,year,Monterey,False
+maryland,Maryland,"Maryland, 1841-1842",1842,1842,year,San Blas,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Monterey,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Francisco,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Santa Bárbara,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Pedro,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Pedro,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Francisco,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Pedro,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Francisco,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Diego,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Monterey,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Diego,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Monterey,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Santa Bárbara,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Francisco,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Pedro,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Diego,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Pedro,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Francisco,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Diego,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Santa Bárbara,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Monterey,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Santa Bárbara,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Diego,True
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Pedro,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,Santa Bárbara,False
+barnstable,Barnstable,"Barnstable, 1842-1844",1842,1842,year,San Pedro,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,Monterey,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,Santa Bárbara,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,San Pedro,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,San Francisco,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,Monterey,False
+admittance,Admittance,"Admittance, 1843-1846",1843-12-17,1843-12-17,exact,San Diego,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,San Francisco,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,San Pedro,False
+admittance,Admittance,"Admittance, 1843-1846",1843-05-02,1843-05-02,exact,Monterey,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,San Francisco,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,Santa Bárbara,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,San Pedro,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,Santa Bárbara,False
+admittance,Admittance,"Admittance, 1843-1846",1843,1843,year,San Pedro,False
+califorma,Califorma,"Califorma, 1845-1846",1845,1845,year,Monterey,False
+califorma,Califorma,"Califorma, 1845-1846",1845,1845,year,Monterey,False
+califorma,Califorma,"Califorma, 1845-1846",1845,1845,year,San Francisco,False
+califorma,Califorma,"Califorma, 1845-1846",1845,1845,year,San Diego,False
+califorma,Califorma,"Califorma, 1845-1846",1845,1845,year,Monterey,False
+califorma,Califorma,"Califorma, 1845-1846",1845,1845,year,San Pedro,False
+califorma,Califorma,"Califorma, 1845-1846",1846-02-04,1846-02-04,exact,San Diego,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Diego,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Francisco,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Pedro,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Diego,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,Monterey,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Francisco,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Diego,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Francisco,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Diego,False
+tasso,Tasso,"Tasso, 1845-1848",1845,1845,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Pedro,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1847,1847,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Quintín,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1796,1796,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Bodega,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Pedro,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Luis Obispo,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1806,1806,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Cruz,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Juan Capistrano,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Pedro,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Cruz,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Pedro,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Refugio,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Bodega,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Refugio,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Farallones,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Bodega,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Bodega,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Loreto,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Monterey,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Refugio,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Bodega,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Diego,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Blas,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Juan Capistrano,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Luis Obispo,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Catalina I.,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Cruz,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Pedro,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Quintín,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Simeón,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Santa Bárbara,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Fort Ross,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,Trinidad,False
+loo choo,Loo Choo,"Loo Choo, 1847",1824,1824,year,San Francisco,False
