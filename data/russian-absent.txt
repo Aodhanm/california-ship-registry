@@ -1,0 +1,99 @@
+Russian-flag rows WITHOUT a Russian-side citation (stated absence, v0.4):
+? apollon 1824
+? apollon 1825
+? apollon 1825
+? ayacucho 1831
+? bordelais 1815
+? bruja 1834
+? catalina 1831
+? clarita 1841
+? columbia 1815
+? concepcion 1794
+? constantine 1841
+? constantine 1846
+? convoy 1831
+? corsario 1839
+? courier 1826
+? descubierta 1819
+? descubierta 1821
+? diga 1823
+? eagle 1814
+? eagle 1822
+? elena 1838
+? elena 1840
+? enterprise 1824
+? europa 1821
+? europa 1822
+? flora 1813
+? franklin 1827
+? guillermo chiquito 1831
+? john begg 1822
+? kniaz 1824
+? kutuzov 1821
+? kutuzov 1821
+? kutuzov 1822
+? louisa 1831
+? lydia 1816
+? margarita 1834
+? maria 1814
+? maria 1834
+? mercury 1813
+? morelos 1833
+? morelos 1834
+? natalia 1834
+? nicolas 1840
+? nicolas 1840
+? panther 1822
+? paz y religion 1816
+? pedler 1814
+? pocahontas 1831
+? reina de los angeles 1821
+? reina de los angeles 1821
+? rover 1824
+? rover 1826
+? rurik 1815
+? rurik 1815
+? rurik 1815
+? rurik 1824
+? rurik 1824
+? sachem 1822
+? sachem 1825
+? santa elena 1825
+? santa rosa 1831
+? senoriano 1822
+? snipe 1822
+? sultan 1816
+? suvorov 1811
+? tomasa ann 1824
+? volunteer 1831
+? william lee 1834
+? (unnamed vessel) 1809
+? (unnamed vessel) 1810
+? (unnamed vessel) 1810
+? (unnamed vessel) 1812
+? (unnamed vessel) 1814
+? (unnamed vessel) 1815
+? (unnamed vessel) 1815
+? (unnamed vessel) 1816
+? (unnamed vessel) 1817
+? (unnamed vessel) 1817
+? (unnamed vessel) 1817
+? (unnamed vessel) 1819
+? (unnamed vessel) 1821
+? (unnamed vessel) 1812
+? (unnamed vessel) 1818
+? (unnamed vessel) 1820
+? (unnamed vessel) 1839
+? (unnamed vessel) 1830
+? (unnamed vessel) 1832
+? (unnamed vessel) 1833
+? (unnamed vessel) 1786
+? (unnamed vessel) 1813
+? (unnamed vessel) 1813
+? (unnamed vessel) 1816
+? (unnamed vessel) 1816
+? (unnamed vessel) 1833
+? (unnamed vessel) 1820
+? (unnamed vessel) 1816
+? (unnamed vessel) 1826
+? (unnamed vessel) 1848
