@@ -71,7 +71,7 @@ page = """<!DOCTYPE html>
   <select id="fPurpose"><option value="">purpose: all</option></select>
   <select id="fOutcome"><option value="">outcome: all</option></select>
   <select id="fAnch"><option value="">anchorage: all</option></select>
-  <input id="y1" placeholder="from yr" size="6" value="1769"><input id="y2" placeholder="to yr" size="6" value="1846">
+  <input id="y1" placeholder="from yr" size="6" value="1767"><input id="y2" placeholder="to yr" size="6" value="1846">
  </div>
  <div class="count" id="count"></div>
  <table id="tbl"><thead><tr>
@@ -92,7 +92,7 @@ page = """<!DOCTYPE html>
  <div class="count">Documented ship events per year by flag hint. Click a bar to open that year's visits. Dashed lines mark reference events. Draft data: this measures the archive's coverage as much as the traffic &mdash; the Bancroft and Ogden layers (v0.2&ndash;0.3) will begin to separate the two.</div></div>
 <div id="copres" class="pane">
  <div class="filters"><select id="cpAnch"></select>
-  <input id="cpY1" placeholder="from" size="6" value="1769"><input id="cpY2" placeholder="to" size="6" value="1846">
+  <input id="cpY1" placeholder="from" size="6" value="1767"><input id="cpY2" placeholder="to" size="6" value="1846">
   <label style="font-size:.85em"><input type="checkbox" id="cpMulti" checked> only years with 2+ vessels (the encounters)</label></div>
  <div class="count">Vessels documented at the same anchorage in the same year &mdash; where encounters live. Year-level precision at this draft stage; the review pass will tighten to same-week where dates allow.</div>
  <div id="cpOut"></div>
@@ -166,7 +166,7 @@ document.getElementById('scount').textContent=S.length+' vessels (draft identiti
  sel.value='Monterey';
  function cp(){
   const a=sel.value,
-   y1=parseInt(document.getElementById('cpY1').value)||1769,
+   y1=parseInt(document.getElementById('cpY1').value)||1767,
    y2=parseInt(document.getElementById('cpY2').value)||1846,
    multi=document.getElementById('cpMulti').checked;
   const byYear={};
