@@ -133,7 +133,7 @@ function render(){
   tr.innerHTML='<td class="vid">'+v.visit_id+' <span class="draft">'+v.status+'</span></td>'+
    '<td>'+(v.date_from||'—')+(v.date_to&&v.date_to!==v.date_from?'&nbsp;–&nbsp;'+v.date_to:'')+'</td>'+
    '<td><b>'+(v.ship_id==='(unnamed vessel)'?'<i>(unnamed)</i>':v.ship_id)+'</b>'+(v.name_as_written?'<br><span style="color:#777;font-size:.85em">as written: '+v.name_as_written+'</span>':'')+'</td>'+
-   '<td class="flag">'+(v.flag||'')+'</td><td>'+(v.anchorage||'')+'</td>'+
+   '<td class="flag">'+femo(v.flag)+(v.flag||'')+(v.flag_basis&&v.flag_basis!=='stated'&&v.flag?'<span style="color:#999" title="flag by hand adjudication (attested/inferred) — see codebook">†</span>':'')+'</td><td>'+(v.anchorage||'')+'</td>'+
    '<td>'+v.purpose.replace(/\\|/g,', ')+'</td><td>'+v.outcome.replace(/\\|/g,', ')+'</td>'+
    '<td class="cite">'+cites+'<br><span style="color:#888;font-size:.82em">'+v.excerpt+'</span></td>';
   tb.appendChild(tr)});
@@ -141,9 +141,15 @@ function render(){
 ['q','fFlag','fPurpose','fOutcome','fAnch','y1','y2'].forEach(id=>document.getElementById(id).addEventListener('input',render));
 render();
 // ships
+const yrsOf={};V.forEach(v=>{const y=yr(v);if(y&&v.ship_id)(yrsOf[v.ship_id]=yrsOf[v.ship_id]||[]).push(y)});
+function spark(id){const ys=yrsOf[id];if(!ys)return'';
+ const c={};ys.forEach(y=>c[y]=(c[y]||0)+1);const mx=Math.max(...Object.values(c));
+ let o='<svg class="spark" width="160" height="16">';
+ for(let y=1769;y<=1848;y++){if(c[y])o+='<rect x="'+((y-1769)*2)+'" y="'+(16-c[y]/mx*14)+'" width="1.6" height="'+(c[y]/mx*14)+'" fill="#2d4a73"/>'}
+ return o+'</svg>'}
 const stb=document.querySelector('#stbl tbody');
 S.forEach(s=>{const tr=document.createElement('tr');
- tr.innerHTML='<td><b>'+s.ship_id+'</b></td><td>'+s.name_variants+'</td><td class="flag">'+(s.flag_guess||'')+'</td><td>'+(s.first_seen||'')+(s.last_seen&&s.last_seen!==s.first_seen?'–'+s.last_seen:'')+'</td><td>'+s.n_visits+'</td>';
+ tr.innerHTML='<td><b>'+s.ship_id+'</b></td><td>'+s.name_variants+'</td><td class="flag">'+femo(s.flag_guess)+(s.flag_guess||'')+'</td><td>'+(s.first_seen||'')+(s.last_seen&&s.last_seen!==s.first_seen?'–'+s.last_seen:'')+' '+spark(s.ship_id)+'</td><td>'+s.n_visits+'</td>';
  stb.appendChild(tr)});
 document.getElementById('scount').textContent=S.length+' vessels (draft identities; variants preserved as written)';
 // co-presence
