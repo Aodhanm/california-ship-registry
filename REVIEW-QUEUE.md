@@ -2,6 +2,14 @@
 
 *The confident merges/drops are applied (see harvest.py ALIAS + STOP_NAMES). These need a human ruling or a source check. Add rulings here; the alias table encodes them.*
 
+## ⭐ PENDING SOURCE-FAMILY INGEST — C-A 40 (staged 2026-07-16, NOT yet merged)
+Staged from **C-A 40** (Dep. St. Pap., Benicia — *Commissary & Treasury*, `168036070_81_2`), a fresh archival customs source — **independent corroboration of the 1826 Santa Bárbara port activity** already partly captured from C-A 41/C-A 18. Files: `data/ca40-new.csv` (**12 new visits**) + `data/ca40-attach.csv` (**4 corroborations**). Validated against the guard vocab (flags/visit_type/status) + the 7 false-positive classes; all `status=draft`.
+- **The 1826 Sta Bárbara customs ledger (C-A 40 d68, n65)** = a ship-by-ship duty register → precise arrival dates + duty amounts. New rows: **Spry** (19 Jun), **Jackson** (27 Jun), **Fígaro** (13 Sep), **Thomas Nowlan** (22 Oct), **Courier** (28 Oct), **McCulloch[?]** (9 Dec). NEW ship_ids to create: `spry, jackson, figaro, mcculloch, wilcox, bravo, morelos`.
+- **Individual-document visits**: *Rover* at Monterey from **Canton** (Capⁿ J.R. Cooper, d38); *Jackson* at Monterey w/ supercargo **Wm A. Gale** (d9); *Wilcox* at Sta Bárbara $1824 duties (d7, later a charge vs Comisario Herrera); *Harbinger* at San Diego from the **Sandwich Islands**, left without sales (d54/d55); *Bravo* (mexico, tobacco-monopoly supply from Acapulco, d60); *Morelos* (mexico national warship, presidio supply, d2/d11).
+- **Corroborations (ca40-attach.csv)** → add a C-A 40 citation to existing rows: *Eliza* v1449 (ledger 2 Sep vs C-A 18's 31 Aug — minor date disagreement), *Rover* v1457, *Washington* v1458/v1469, *Olive Branch* v1468.
+- ⚠ **Washington** & **Eliza** are common names (see the split-queue note below) — the ledger visit is a discrete duty entry; confirm same vessel before collapsing. **McCulloch[?]** = uncertain Savage rendering.
+- **TO MERGE**: fold `ca40-new.csv` into `visits.csv` (assign v-ids), add the 7 new ships to `ships.csv`, apply `ca40-attach.csv` citations, then re-run `check.py` + the data-quality gate. *(Left un-merged here to avoid hand-reimplementing the build assembly; the source rows are validated & ready.)*
+
 ## Identity conflations to split
 - ✅ **descubierta SPLIT 2026-07-15** (Aodhan caught the fake 1794 US ship): 1792–95 → merged into *discovery* (Vancouver, British); 1819–21 → *descubierta-rus* (the Russian imperial corvette); pre-1792 Malaspina reserved. The 1794 'American Descubierta' was a PHANTOM = C-A 7 d284, a foreign-EXCLUSION policy order (no ship) — dropped via NONSHIP_RECORDS. Flags for the core Spanish fleet made authoritative (the Aránzazu-carrying-an-Irishman was mis-flagged USA → now spain).
 - **washington** (5v, 1825–29) — likely more than one vessel (the *Washington* schooner vs others).
