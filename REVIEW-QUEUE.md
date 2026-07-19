@@ -73,3 +73,6 @@ Phase 0 harvested the calendar at ~13k records; it now holds **19,755 / 60 volum
 ## FIRSTS-derivation artifacts (2026-07-18)
 - **Nootka-anchorage rows counted as CA visits** (v0177 *Mercury* 1790, v0178 *Princesa Real* 1790…) — decide: exclude `anchorage=Nootka` from the CA completeness claim / tag region.
 - ***la hermosa mexicana*** (v1105, 1817, flag=mexico, pre-independence) — person-name FP suspect ("the beautiful Mexican woman"?); check the record.
+
+## v0.5 calendar2 — PARTIAL FOLD (2026-07-18 late)
+Per the merge rule ("attach folds sooner; existing-ship lower-risk"): **18 attaches applied** + **39 existing-ship visits merged (v2149–v2187)** → registry **2,187 visits / 430 ships**, guards HARD 0. Still gated: **21 held rows** in `ca-calendar2-new.csv` (the 9 would-be new ships + suspect-note rows — Aodhan rules) and **22 ambiguous attaches** left in `ca-calendar2-attach.csv` (multi-match ship+year — need per-row disambiguation, e.g. concepcion-1797 ×19).

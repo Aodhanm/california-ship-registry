@@ -5,9 +5,9 @@ actwo,Actwo (3),,1805,1805,3,draft
 actwwo,Actwwo (5),,1807,1807,5,draft
 adela,Adela (1),,1837,1837,1,draft
 admittance,Admittance (6),,1843,1843,6,draft
-aguila,Águila (7),usa,1822,1829,7,draft
+aguila,Águila (7),usa,1822,1829,8,draft
 alabama,Alabama (1),usa,1829,1829,1,draft
-albatross,Albatross (6),usa,1810,1816,6,draft
+albatross,Albatross (6),usa,1810,1826,9,draft
 alciope,Alciope (8),,1840,1840,8,draft
 alert,Alerta (3); Alert (1),usa,1837,1842,4,draft
 alexander,Alexander (11); ALEXANDER (3),usa,1803,1810,12,draft
@@ -21,7 +21,7 @@ ann,Ann (4),britain,1823,1841,4,draft
 antonio,Antonio (1),britain,1817,1817,1,draft
 antonita,Antonita (1),,1847,1847,1,draft
 apoho,Apoho (1),,1825,1828,1,draft
-apollon,Apolo (4); Apollo (2),russia,1822,1825,6,draft
+apollon,Apolo (4); Apollo (2),russia,1822,1825,7,draft
 aquatic,Aquatic (1),britain,1830,1830,1,draft
 aquiles,Aquiles (2),,1825,1829,2,draft
 aranzazu,Aránzazu (27); Aranzazu (16); Aranzazú (12),spain,1784,1801,52,draft
@@ -58,12 +58,12 @@ caledonia,Caledonia (1),,1833,1833,1,draft
 califa,Califa (1),usa,1833,1833,1,draft
 califorma,Califorma (5),,1845,1846,5,draft
 california,,,1770,1824,8,draft
-californio,Californio (1),britain,1800,1800,1,draft
+californio,Californio (1),britain,1785,1800,2,draft
 caminante,Caminante (1),,1817,1817,1,draft
 cariotide,Cariótide (1),britain,1841,1841,1,draft
 carmen,Carmen (1),,1809,1827,2,draft
 caroline,Caroline (2),usa,1843,1846,2,draft
-catalina,Catalina (7); CATALINA (1),spain,1831,1842,8,draft
+catalina,Catalina (7); CATALINA (1),spain,1831,1844,12,draft
 cazadora,Cazadora (2),britain,1817,1817,2,draft
 chalcedony,Chalcedony (2),usa,1830,1835,2,draft
 charon,Charon (1),,1812,1812,1,draft
@@ -71,11 +71,11 @@ chatham,Chatham (4),britain,1792,1795,4,draft
 chato,Chato (1),mexico,1841,1843,1,draft
 chirikov,Chirikov (4),russia,1811,1816,4,draft
 chirtkov,Chirtkov (4),,1817,1817,4,draft
-clara,Clara (1),,1840,1840,1,draft
+clara,Clara (1),,1840,1844,2,draft
 clarion,Clarion (1),usa,1818,1818,1,draft
 clarita,Clarita (5),spain,1840,1845,5,draft
 claudine,Claudine (1),britain,1822,1822,1,draft
-clementina,Clementina (1),,1839,1839,1,draft
+clementina,Clementina (1),,1836,1839,2,draft
 clementine,Clementine (2),,1837,1837,2,draft
 clio,Clio (1),usa,1828,1828,1,draft
 columbia,Columbia (5),usa,1815,1817,5,draft
@@ -85,7 +85,7 @@ concepcion,Concepción (93),spain,1775,1808,93,draft
 congreso mejicano,Congreso Mejicano (1),,1827,1827,1,draft
 consecuencia,Consecuencia (1),,1818,1818,1,draft
 constancia,Constancia (1),,1824,1824,1,draft
-constante,Constante (6),,1825,1825,6,draft
+constante,Constante (6),,1825,1842,7,draft
 constantine,Constantine (2),russia,1841,1846,2,draft
 convoy,Convoy (6),russia,1831,1833,6,draft
 copia,Copia (1),usa,1847,1847,1,draft
@@ -107,7 +107,7 @@ diana,Diana (2),,1829,1836,2,draft
 diga,Diga (1),russia,1823,1823,1,draft
 discovery,Discovery (6); Descubierta (2); La Descubierta (1),britain,1792,1794,7,draft
 don,Don (1),,1830,1830,1,draft
-don quijote,Don Quijote (2),spain,1839,1845,2,draft
+don quijote,Don Quijote (2),spain,1834,1845,3,draft
 don quixote,Don Quixote (11),,1834,1836,11,draft
 dos hermanos,Dos Hermanos (1),usa,1829,1829,1,draft
 dromo,Dromo (1),usa,1808,1808,1,draft
@@ -160,10 +160,10 @@ goleta real pacifico,Goleta Real Pacífico (1),,1835,1835,1,draft
 golovnin,Golovnín (1),russia,1827,1827,1,draft
 grafton,Grafton (1),usa,1831,1831,1,draft
 griffon,Griffon (4),,1828,1831,4,draft
-guadalupe,Guadalupe (2),spain,1805,1831,2,draft
+guadalupe,Guadalupe (2),spain,1805,1844,3,draft
 guadidupc,Guadidupc (1),,1831,1831,1,draft
 guillermo chiquito,Guillermo Chiquito (1),russia,1831,1831,1,draft
-guipuzcoana,Guipuzcoana (2),mexico,1833,1841,2,draft
+guipuzcoana,Guipuzcoana (2),mexico,1833,1844,4,draft
 hamilton,Hamilton (1),,1841,1845,1,draft
 hannah,Hannah (1),usa,1846,1846,1,draft
 harbinger,Harbinger (3),usa,1826,1829,4,draft
@@ -182,7 +182,7 @@ iris,Iris (1),usa,1846,1848,1,draft
 iron tarlar,Iron Tarlar (1),,1824,1824,1,draft
 isaac tarlar,Isaac Tarlar (1),britain,1824,1824,1,draft
 isaac todd,Isaac Todd (1),britain,1814,1814,1,draft
-isabel,Isabel (3); Ysabela (1),usa,1827,1841,4,draft
+isabel,Isabel (3); Ysabela (1),usa,1826,1841,5,draft
 isabella,Isabella (1),usa,1810,1810,1,draft
 jackal,Jackal (2),,1793,1793,2,draft
 janus,Janus (1),usa,1846,1846,1,draft
@@ -221,13 +221,13 @@ las dos hermanas,Las dos hermanas (1),usa,1823,1823,1,draft
 legaspi,Legaspi (1),spain,1833,1833,1,draft
 lelia byrd,Lelia Bird (2); Lelia Byrd (2); LELIA BIRD (1); William Shaler (1),usa,1803,1805,4,draft
 leon,Leon (1),,1835,1835,1,draft
-leonidas,Leonidas (2),spain,1836,1840,2,draft
-leonor,Leonor (5),spain,1830,1836,5,draft
+leonidas,Leonidas (2),spain,1836,1841,3,draft
+leonor,Leonor (5),spain,1828,1836,6,draft
 liclipse,Liclipse (3),,1806,1806,3,draft
-lidia,Lidia (2),usa,1816,1816,2,draft
+lidia,Lidia (2),usa,1816,1826,4,draft
 loo choo,Loo Choo (41),,1796,1847,41,draft
 loretana,Loretana (8),spain,1786,1797,8,draft
-loriot,Loriot (3),britain,1823,1833,3,draft
+loriot,Loriot (3),britain,1823,1835,6,draft
 louisa,Louisa (3),russia,1831,1831,3,draft
 loussa,Loussa (3),,1831,1831,3,draft
 lydia,Lydia (6),usa,1816,1828,6,draft
@@ -237,7 +237,7 @@ magnolia,Magnolia (1),usa,1846,1848,1,draft
 maraquita,Maraquita (2),,1833,1833,2,draft
 marcus,Marcus (1),,1831,1831,1,draft
 margarita,Margarita (2),spain,1831,1834,2,draft
-maria,María (2),russia,1814,1834,2,draft
+maria,María (2),russia,1814,1845,3,draft
 maria ester,María Ester (14); María Esther (3); Santa María Ester (1),spain,1826,1835,17,draft
 mariquita,Mariquita (2),spain,1833,1834,2,draft
 maryland,Maryland (7),,1842,1842,7,draft
@@ -255,7 +255,7 @@ mona,Mona (1),,1841,1845,1,draft
 monmouth,Monmouth (1),,1844,1844,1,draft
 monsoon,Monsoon (5),,1839,1839,5,draft
 moor,Moor (1),,1825,1826,1,draft
-morelos,Morelos (17),russia,1825,1834,18,draft
+morelos,Morelos (17),russia,1825,1834,19,draft
 morgan,Morgan (1),usa,1843,1844,1,draft
 morison,Morison (1),,1840,1840,1,draft
 morse,Morse (1),,1839,1839,1,draft
@@ -270,7 +270,7 @@ newton,Newton (1),,1844,1844,1,draft
 nicolas,Nicolás (2),russia,1840,1840,2,draft
 nieves,Nieves (4),spain,1825,1827,4,draft
 nile,Nile (2),usa,1825,1827,2,draft
-ninfa,Ninfa (3),france,1840,1841,3,draft
+ninfa,Ninfa (3),france,1826,1841,4,draft
 nowlan,Nowlan (2),,1829,1829,2,draft
 ntra sra del rosario,Ntra Sra del Rosario (1),spain,1782,1782,1,draft
 ntra. sra. de guadalupe,Ntra. Sra. de Guadalupe (1),,1803,1803,1,draft
@@ -319,8 +319,8 @@ primavera,Primavera (1),,1845,1845,1,draft
 prince lee boo,Prince Lee Boo (3),,1793,1793,3,draft
 princesa,Princesa (69); La Princesa (1),spain,1779,1810,70,draft
 princesa real,Princesa Real (2),britain,1790,1791,2,draft
-principe,Príncipe (8),spain,1772,1778,8,draft
-providence,Providence (1),britain,1796,1796,1,draft
+principe,Príncipe (8),spain,1769,1778,9,draft
+providence,Providence (1),britain,1796,1796,2,draft
 rama de oliva,Rama de Oliva (1),,1826,1826,1,draft
 rambler,Rambler (1),usa,1829,1829,1,draft
 rasselas,Rasselas (3),,1837,1837,3,draft
@@ -340,7 +340,7 @@ ruperto,Ruperto (1),,,,1,draft
 rurik,Rurik (9),russia,1815,1824,9,draft
 sabine,Sabine (1),usa,1848,1848,1,draft
 sachem,Sachem (8); Jáchem (1),usa,1822,1826,8,draft
-sacramento,Sacramento (1),,1841,1844,1,draft
+sacramento,Sacramento (1),,1841,1844,2,draft
 sagadahoc,Sagadahoc (1),usa,1846,1848,1,draft
 san antonio,San Antonio (4),spain,1772,1839,4,draft
 san carlos,San Carlos (54); S. Carlos (6); La Carlos (1); El Carlos (1),spain,1769,1822,60,draft
@@ -365,10 +365,10 @@ sitka,,,1805,1823,8,draft
 snipe,Snipe (2),britain,1822,1822,2,draft
 soberana guelman,Soberana Guelman (1),,1826,1826,1,draft
 solitude,Solitude (1),usa,1825,1826,1,draft
-sonora,Sonora (6),spain,1775,1777,6,draft
+sonora,Sonora (6),spain,1775,1835,7,draft
 spray,Spray (1),,1826,1826,1,draft
 spy,Spy (1),usa,1825,1825,2,draft
-st. louis,St. Louis (1),,1840,1840,1,draft
+st. louis,St. Louis (1),,1840,1841,3,draft
 sta barbara,Sta Bárbara (1),,1829,1829,1,draft
 stonington,Stonington (1),usa,1846,1847,1,draft
 suaanita,Suaanita (1),,1848,1848,1,draft
@@ -382,11 +382,11 @@ tamaahmaah,Tamaahmaah (3),,1825,1829,3,draft
 tamana,Tamana (3),,1806,1807,3,draft
 tartar,,,1824,1824,1,draft
 tartaro,Tártaro (3),usa,1825,1825,3,draft
-tasso,Tasso (3),usa,1845,1845,3,draft
+tasso,Tasso (3),usa,1840,1845,4,draft
 tester,Tester (1),usa,1799,1799,1,draft
 thankful,Thankful (1),,1829,1829,1,draft
 thomas nowlan,Thomas Nowlan (6); Tomasa Nowlan (1),britain,1825,1830,9,draft
-thomas perkins,Thomas Perkins (2); Tomás Perkins (2),usa,1841,1841,3,draft
+thomas perkins,Thomas Perkins (2); Tomás Perkins (2),usa,1840,1841,4,draft
 tic-me-mash,Tic-me-mash (1),usa,1825,1825,1,draft
 times,,,1799,1800,2,draft
 timorelan,Timorelan (1),,1825,1827,1,draft
@@ -414,11 +414,11 @@ vitor,Vitor (1),spain,1830,1830,1,draft
 volga,Volga (2),russia,1822,1822,2,draft
 voluntario,Voluntario (1),,1829,1829,1,draft
 volunteer,Volunteer (12),usa,1829,1833,12,draft
-vulture,Buitre (2); Vulture (1),britain,1828,1828,3,draft
+vulture,Buitre (2); Vulture (1),britain,1828,1828,4,draft
 wa'oe,Wa'oe (1),,1848,1848,1,draft
 warren,Warren (2),usa,1826,1845,2,draft
 washington,Washington (15),usa,1824,1829,15,draft
-waverly,Waverly (12),,1826,1829,12,draft
+waverly,Waverly (12),,1826,1836,13,draft
 william inttle,William Inttle (2),,1831,1831,2,draft
 william lee,William Lee (1),russia,1834,1834,1,draft
 xylon,Xylon (1),usa,1847,1848,1,draft
@@ -426,6 +426,6 @@ ynez,Ynez (1),,1831,1831,1,draft
 jackman,Jackman (1),usa,1826,1826,1,draft
 figaro,Fígaro (1),usa,1826,1826,1,draft
 mcculloch,McCulloch[?] (1),usa,1826,1826,1,draft
-nilo,Nilo (1),usa,1825,1825,1,draft
+nilo,Nilo (1),usa,1825,1826,2,draft
 francesa,Francesa (1),,1827,1827,1,draft
 amiga,Amiga (1),usa,1827,1827,1,draft
