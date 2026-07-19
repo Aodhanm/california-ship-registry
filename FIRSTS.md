@@ -9,7 +9,7 @@
 | First British naval visit | Vancouver's *Discovery* & *Chatham*, SF/Monterey, Nov 1792 | ✅ solid |
 | First Russian **ship** at a CA port | *Juno* (Rezanov), San Francisco, Apr 1806 | likely — confirm no earlier Russian hull (the 1786 "russia" row is a report, not a visit) |
 | First Russian **warship** | *Apollon* wintering at SF, 1822–23 ("*Apolo*", C-A 57 d2) | candidate |
-| First whaler | — | ⚠ naive winner (*Resolution* 1795) is Cook's sloop, not a whaler; needs a real derivation from purpose codes |
+| First whaler (any CA coast) | English whaler *Resolución* (Capt. Locke), Ensenada de Todos Santos, Dec 1795 (v0434, ca7-d500) | ✅ audit-verified — but **Baja** anchorage; first *Alta* whaler still open |
 | First Mexican-flag vessel | — | ⚠ naive winner (*la hermosa mexicana*, 1817) is pre-independence and probably a person-name FP → routed to REVIEW-QUEUE |
 
 ⚠ **Derivation artifacts caught by this draft** (now in REVIEW-QUEUE): rows anchored at **Nootka** counted as "California" visits (the 1790 *Mercury*/*Princesa Real* Nootka-crisis records); *la hermosa mexicana* (1817, flag=mexico) — person-name suspect.
