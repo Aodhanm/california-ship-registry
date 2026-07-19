@@ -54,3 +54,12 @@ The vessel that first entered Humboldt Bay (June 1806) was the **O'Cain** — Am
 - **courier flag conflict:** ships.csv has `flag_guess=russia`, but the C-A 40 1826 SB ledger reads "frag. **Amⁿ** 'Courier'" (and HoC's Courier is the Boston hide-drogher, Capt. Cunningham — cf. v1485). Almost certainly **usa**; rule + fix flag.
 - **thomas nowlan flag conflict:** ships.csv `flag_guess=britain` vs the C-A 40 ledger's "frag. **Amⁿ** 'Thomas Nowlan'". Sources disagree (movement reports call her Eng.); rule.
 - **courier 1827 ledger entries ≠ existing rows:** the C-A 40 1827 ledger (n81) has Courier duty entries 4 May SB ($312), 24 May San Pedro ($81), 21 Aug SB ($240) — neither v1485 (Jan, San Pedro) nor v1494 (9 Jul, SF) matches. Likely 1–3 **new** 1827 Courier visits; create rows or rule as passes of the same coasting voyage.
+
+## ⭐ v0.5 CALENDAR RE-HARVEST — STAGED (2026-07-18, NOT merged)
+Phase 0 harvested the calendar at ~13k records; it now holds **19,755 / 60 volumes**. Re-ran harvest (redirected, drafts untouched) → diffed against every ca-record citation in the live table → **202 fresh rows** from post-Phase-0 volumes (33/29/30/62/39/57/28/40/23…). Files:
+- `data/ca-calendar2-new.csv` — **60 new-visit candidates** (incl. the 1830s–40s ships the registry lacked: ***Natalia*** [the Híjar–Padrés colony brig], *Loriot*, *Leonidas*, *St. Louis*, *Alert*, *Thomas Perkins*, *Clementina*; + variants re-aliased to existing ships: albatros→albatross, providencia→providence, **apolo→apollon** [the 1823 SF wintering], **"Anglo-Am. Nº 8"→nilo**).
+- `data/ca-calendar2-attach.csv` — **40 corroboration candidates** (existing ship+year matches).
+- `data/ca-calendar2-stage.csv` — **84 unnamed-vessel events** (evidence of traffic, not mintable).
+- `data/ca-calendar2-dropped.csv` — **18 documented-phantom recurrences** dropped w/ reasons (the FP classes recurring in fresh records, exactly as the standing rule predicts: persons *Apolonia/Cleusa/Ester*, the fort *Ross*, the pack-train *Recua*, the month *Junio*…).
+- ⚠ **9 would-be NEW ships need a ruling before minting:** *carolina, congreso* (USS **Congress** 1846?), *descubierta* (era-adjudication), *el carlos* (= the *San Carlos*?), *juliann* (Julia Ann garble?), *magdalena, nueva california, orizaba, rosa* (10 rows — one Rosa or several?).
+- **MERGE RULE:** manuscript-derived names get the C-A 40 lesson — leaf-verify ledger-class documents before minting; the *attach* file is lower-risk and can fold sooner.
