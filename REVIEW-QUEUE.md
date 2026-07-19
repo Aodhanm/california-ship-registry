@@ -63,3 +63,9 @@ Phase 0 harvested the calendar at ~13k records; it now holds **19,755 / 60 volum
 - `data/ca-calendar2-dropped.csv` — **18 documented-phantom recurrences** dropped w/ reasons (the FP classes recurring in fresh records, exactly as the standing rule predicts: persons *Apolonia/Cleusa/Ester*, the fort *Ross*, the pack-train *Recua*, the month *Junio*…).
 - ⚠ **9 would-be NEW ships need a ruling before minting:** *carolina, congreso* (USS **Congress** 1846?), *descubierta* (era-adjudication), *el carlos* (= the *San Carlos*?), *juliann* (Julia Ann garble?), *magdalena, nueva california, orizaba, rosa* (10 rows — one Rosa or several?).
 - **MERGE RULE:** manuscript-derived names get the C-A 40 lesson — leaf-verify ledger-class documents before minting; the *attach* file is lower-risk and can fold sooner.
+
+## 📋 TRIAGE RESULTS (2026-07-18, A4 pre-classification) — the human list is SHORT
+- **HoC staging (1,906 events) → `data/hoc-triage.csv`:** **284 auto-attach-safe** (ship+year already live; mechanical fold, sanction as a batch) · **538 strong-new** (known ship, dated, no row — mergeable after a sample-check) · **17 review-new-ship** (the actual rulings) · 1,020 weak (leave staged) · 47 noise.
+- **Ogden 288 (`ogden-new.csv`):** ⭐ **every one already has a live same-ship-same-year row** — so this is ONE policy call (fold as attach-citations vs. keep as separate visit rows), not 288 rulings.
+- **Mexlist garbles (63) → `data/mexlist-suspects-triage.csv`:** auto-proposed repairs w/ confidence scores; rest marked (manual) — a quick eyeball pass.
+- **Aodhan's actual v1.0 decision set:** ① sanction the 284 auto-attaches ② the Ogden fold policy ③ the 17 new-ship rulings ④ the 9 calendar2 new-ship rulings (above) ⑤ the garble approvals ⑥ the standing identity splits (washington/enrique/eagle/Francesa/flag conflicts). Everything else is staged and safe.
