@@ -13,3 +13,5 @@
 Author: Aodhan (ORCID 0009-0002-8630-3768). Built with Claude-assisted extraction; method statement in the site's About pane.
 
 - Data quality: see `FALSE-POSITIVE-REGISTER.md` (7 fake-ship classes + guards) and `REVIEW-QUEUE.md`.
+
+**More:** [Method statement](METHOD.md) · [Phantom Ships — the vessels that never were](PHANTOM-SHIPS.md) · [Firsts (draft)](FIRSTS.md) · [Codebook](CODEBOOK.md) · [Review queue](REVIEW-QUEUE.md)

@@ -69,3 +69,7 @@ Phase 0 harvested the calendar at ~13k records; it now holds **19,755 / 60 volum
 - **Ogden 288 (`ogden-new.csv`):** ⭐ **every one already has a live same-ship-same-year row** — so this is ONE policy call (fold as attach-citations vs. keep as separate visit rows), not 288 rulings.
 - **Mexlist garbles (63) → `data/mexlist-suspects-triage.csv`:** auto-proposed repairs w/ confidence scores; rest marked (manual) — a quick eyeball pass.
 - **Aodhan's actual v1.0 decision set:** ① sanction the 284 auto-attaches ② the Ogden fold policy ③ the 17 new-ship rulings ④ the 9 calendar2 new-ship rulings (above) ⑤ the garble approvals ⑥ the standing identity splits (washington/enrique/eagle/Francesa/flag conflicts). Everything else is staged and safe.
+
+## FIRSTS-derivation artifacts (2026-07-18)
+- **Nootka-anchorage rows counted as CA visits** (v0177 *Mercury* 1790, v0178 *Princesa Real* 1790…) — decide: exclude `anchorage=Nootka` from the CA completeness claim / tag region.
+- ***la hermosa mexicana*** (v1105, 1817, flag=mexico, pre-independence) — person-name FP suspect ("the beautiful Mexican woman"?); check the record.
