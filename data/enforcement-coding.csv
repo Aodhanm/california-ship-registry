@@ -1,0 +1,249 @@
+visit_id,date,ship_id,code,confidence,evidence
+v0021,1775-03-24,(unnamed vessel),license-granted,ok, | Published superior order / Art. 18 of Instrucción: no vessel may sail from any port of this dept. without licence; *caus
+v0063,1778-08-08,san carlos,duties-paid,ok, | [cluster] Bando reducing gold duties to 3% (quinto in America) / 2% (entering Spain); bando ordering surgeons to treat t
+v0079,1780-12,santiago,noise,adjudicated,"[adj: mission-debt embargo]  | Mission debts ($3,500 embargo; P. Nicolás Muñoz; Álvarez Osorio report); *Santiago* arrival (Esteban Martín"
+v0129,1785-12-19,fama,license-granted,ok," | Embarkation permit for a licenciado & family (via his grandson Santiago Hernández, on the *Fama*)"
+v0173,1789-08,(unnamed vessel),seized,adjudicated-kept,seized | 'Testimonio de las diligencias formadas á instancia del Defensor de Temporalidades D. José Mª Estrada' — a legal interro
+v0178,1790-12-11,princesa real,seized,adjudicated-kept,seized | Reports (per two letters of 3 Oct) the arrival of the balandra *Princesa Real* + paquebot *San Carlos* — ⚠ *possibly the
+v0179,1790-12-11,san carlos,seized,adjudicated-kept,seized | Reports (per two letters of 3 Oct) the arrival of the balandra *Princesa Real* + paquebot *San Carlos* — ⚠ *possibly the
+v0257,1793,princesa,seized,adjudicated-kept,arrived|seized|deserters | English ships at SF + Monterey — 2 English ships sighted; one anchored at Monterey requesting water/firewood. Eng
+v0322,1794-07-31,(unnamed vessel),license-granted,ok, | License to Ramón Márquez (comercio de Indias): trial trade expedition Cádiz→San Blas→California ports; provide all aid i
+v0323,1794-08-04,concepcion,noise,adjudicated,"[adj: missionary retirement license]  | Retirement (w/ Viceroy's license) of Fernandino missionaries Miguel Pieras, Bartolomé [Gili], Diego Noboa ("
+v0363,1794-12-15,(unnamed vessel),policy-order,adjudicated,[adj: 1794 foreign-ship expulsion order]  | FOREIGN-SHIP EXPULSION ORDER (recd.): intimate any foreign ship to leave w/o excuse; no dealings/no supplie
+v0451,1796-01-07,aranzazu,fiscal-noise,low,departed | *index run* — *Aranzazú* departure; hemp-sowing difficulty; no mule-embargo; cabo appointment; Fort Guijarros (2 casitas
+v0470,1796-06-10,(unnamed vessel),license-denied,adjudicated-kept,"arrived | denies Capt. Broughton of the English frigate anchored in port permission to land, supplying only the aid of hospitality"
+v0488,1796-09-25,san carlos,review,adjudicated,[adj: víveres delivery; seized-hint noise] seized | acks (via apostadero Contador José García) the víveres the Bergantín *San Carlos* brought to the Baja
+v0493,1796-10-21,concepcion,report-news,adjudicated,[adj: Jamaica seizures news] seized | Spanish merchant ships seized in Jamaica by English; orders Francisco Montes (Comdte Marina SB) to re
+v0526,1797-04-01,(unnamed vessel),license-granted,ok, | habilitación; ⭐ arrival of the Comercio-Libre sloop & a merchant sloop; licencia to soldado José M.a Arce; ⭐ Sta Catarin
+v0571,1797-08-11,princesa,license-granted,ok, | *Nombramiento de Virey / Concesión eclesiástica / Provisiones a una fragata / Mermas de ciertos efectos* (4 ofs) — noted
+v0585,1797-10-03,san carlos,duties-paid,ok, | free the imprisoned Indians; report to P. Barcenilla (the troop's duty = order & respect for the Divine); Higuera's inva
+v0605,1797-12-04,princesa,noise,adjudicated,[adj: index run (recruiting)] seized | index: ⭐ orders the Sta Bárbara Com.te to go recruit youths for soldiers at Los Ángeles; ajuste of a 
+v0609,1798,concepcion,review,adjudicated,[adj: index run — check run for real seizure item] seized | *index run* — gentiles-attack rumor; soap; ⭐ 'mal trato de Indios Cristianos con Gentiles' + 20 bapti
+v0618,1798-03-17,san carlos,license-granted,ok," | The 12 crew of the *Concepción* & the lost paquebot *El Carlos* allowed to stay, with the Tte. de Navío's permission"
+v0623,1798-05-18,concepcion,review,adjudicated,"[adj: index run] seized | Grajera going blind ('por estar ciego'), the habilitación to pass to Manuel Rodríguez (w/ Lisfaur's i"
+v0639,1798-09-20,activo,license-granted,ok, | Board Fr. José Miguel from Mission SB on *Activo* (licensed to leave)
+v0645,1798-10,princesa,review,adjudicated,[adj: situado voyage; Nootka context] seized | Estevan Martínez commands Fragata *Princesa* from Guaymas with situados — the Nootka seizure commande
+v0648,1799,(unnamed vessel),review,adjudicated,[adj: bounded tail] seized | Bounded 1799 tail: ⭐ Pedro Amador's retirement request (SF company); ⭐ the SF fuerte de San Joaquín +
+v0654,1799,times,duties-paid,ok," | [HoC sweep] st. Sta Cruz, Peep, 13. Moraga must go on with his duties, for his chance of promotion depends on it. Better times coming if "
+v0655,1799-06-16,revolucion,seized,adjudicated-kept,seized|arrived | 3 frigates anchored at Loreto surgidero — the capital itself. Left behind captured balandra. Intel: ships with 22–24 can
+v0656,1799-06-27,(unnamed vessel),seized,adjudicated-kept,"seized | Ransom of balandra seized May 21: sugar, chocolate, 1 church bell. Losses ~$8,000. English held from 10th to 16th"
+v0657,1799-06-28,mercedes,seized,adjudicated-kept,seized|refused | Investigation into the 1799 capture of the Spanish sloop *Mercedes* by a British squadron in the Gulf of California (Ang
+v0658,1799-06-28,net-siut,seized,adjudicated-kept,seized|refused | Investigation into the 1799 capture of the Spanish sloop *Mercedes* by a British squadron in the Gulf of California (Ang
+v0659,1799-06-28,tester,seized,adjudicated-kept,seized|refused | Investigation into the 1799 capture of the Spanish sloop *Mercedes* by a British squadron in the Gulf of California (Ang
+v0660,1799-06-28,vinas,seized,adjudicated-kept,seized|refused | Investigation into the 1799 capture of the Spanish sloop *Mercedes* by a British squadron in the Gulf of California (Ang
+v0661,1799-07-03,activo,review,adjudicated,[adj: Activo arrival/Sonora unsafe] seized | Bergantín *Activo* arrives; Capt. Salvador Hidalgo suspends Sonora mission — unsafe. Spots frigate *R
+v0662,1799-07-03,revolucion,review,adjudicated,[adj: ditto] seized | Bergantín *Activo* arrives; Capt. Salvador Hidalgo suspends Sonora mission — unsafe. Spots frigate *R
+v0663,1799-07-06,mercedes,seized,adjudicated-kept,seized | THE CLOSING DOCUMENT ('Fin del tomo 17'): re the seizure (*apresamiento*) of the balandra under Bernardo Suárez and the 
+v0665,1799-08,(unnamed vessel),seized,adjudicated-kept,seized | English fleet of 4 frigates departs. 4 English apprehended at Cabo SL — commander ordered 3 hanged. Spanish brig Acapulc
+v0666,1799-08,concepcion,license-granted,ok," | Board on Fragata *Concepción*: Padres Fernandinos José de la Cruz Espi, Agustín Merino, and Benito Catalán (all licensed"
+v0668,1799-08-30,(unnamed vessel),seized,adjudicated-kept,"seized | *Prisioneros ingleses* — 4 English sailors captured at Cabo San Lucas (Edward Hawston[?], James Pelele[?], Thomas Millar"
+v0669,1799-08-30,betsey of london,seized,adjudicated-kept,"deserters | 4 English sailors of the BETSEY OF LONDON captured at Cabo San Lucas, Aug 1799 (crew ashore seized; the ship escaped)"
+v0693,1800-12-01,betsy,seized,adjudicated-kept,seized | The anglo-American brig *Betsy* at San Diego (1800): arrived seeking aid (given at fair price); also called at San Blas;
+v0698,1801,(unnamed vessel),noise,adjudicated,"[adj: Jesuit arrest, non-maritime]  | JESUIT ARREST ORDER — 'Muy reservado' — midnight arrest of all Jesuits returned from Italy; transport to Ve"
+v0730,1802-08-10,(unnamed vessel),policy-order,adjudicated,[adj: 1802 R.O. Mar del Sur] seized | R.O. of 10 Aug 1802 (Pedro Cevallos). Foreign vessels in the Mar del Sur that 'so color de la pesca d
+v0737,1803,alexander,seized,adjudicated-kept,"seized | ★ FRIGATE *ALEXANDER* AT SAN DIEGO — arrived night of Feb 26, 1803; from Boston Jul 19, 1802; 110 tons, 19 crew + Capt. "
+v0754,1803-08-12,(unnamed vessel),seized,adjudicated-kept,seized | narrative of battles with armed NW-Coast Indians — req. permission to repair his frigate; no water ('Indios tan bárbaros
+v0770,1804,(unnamed vessel),policy-order,adjudicated,[adj: detention order REVOKED 1804]  | ★★ FOREIGN SHIP DETENTION ORDER REVOKED — Viceroy's nota of Apr 24: the order to detain foreign ships enter
+v0775,1804,hazard,seized,adjudicated-kept,"seized|departed|arrived | the American frigate *Hazard* entered San Francisco 30 Jan 1804, badly damaged — 3 months out from the Sandwich Is"
+v0832,1806-02-08,(unnamed vessel),seized,adjudicated-kept,seized|arrived | Measures to cut off commerce with American ships. An American two-masted ship anchored near Mission San Luis [Obispo] on
+v0840,1806-05-04,peacock,seized,adjudicated-kept,"arrived|seized | Origin of the Peacock arrests + ship movements: 4 crewmen of the brig Peacock (Capt. Kimball), who came ashore at San Ju"
+v0845,1806-06-20,(unnamed vessel),seized,adjudicated-kept,"seized | Certifies who made the 1803 Punta de Guijarros contraband seizure: Maitorena + soldiers Juan Cazedo, José Valenzuela, Al"
+v0848,1806-06-21,alexander,seized,adjudicated-kept,seized | encloses two documents: one on the loss of 491 otter skins (pieles de nutria) confiscated from the American frigate *Ale
+v0850,1806-07-05,o'cain,seized,adjudicated-kept,"seized|refused|arrived | American whaler 'O'Cain' at San Diego. A frigate from Nantucket (18 guns, 35 crew, Capt. José O'Cain — recognized b"
+v0854,1806-07-25,peacock,seized,adjudicated-kept,seized | O'Cain/Peacock armed confrontation + threats to the presidio. The seizure of cabo Osuna + 2 soldiers at Todos Santos: 20
+v0860,1806-09-15,juno-rac,license-granted,ok, | acknowledges the Russian frigate *Juno* arrived at SF and the passports it sails under; forwards the dispatches handed o
+v0898,1808-10-26,(unnamed vessel),policy-order,adjudicated,[adj: 1808 anti-French order] seized | Hostile measures vs French ships & subjects: seize any French ship entering a Calif. port (Spain now 
+v0900,1808-12-07,(unnamed vessel),seized,adjudicated-kept,seized | Dictamen on the seizure of the American frigate *Cromo[?]* — repeats the Viceroy's 19 Feb order: if the *Cromo* reaches 
+v0901,1808-12-07,dromo,seized,adjudicated-kept,"seized | The American frigate 'Dromo' (Capt. Davis): outfitted in Boston for Pacific contraband, found at Guaymas selling goods, "
+v0929,1810-10-09,alexander,seized,adjudicated-kept,seized | Otter-fishing: the skins confiscated from the American frigate *Alexander* were rotten (dumped at sea); CA vecinos may c
+v0939,1811-07-12,suvorov,license-granted,ok," | Passport/proclamation of the ship *Suvorov* — addressed 'á nuestros buenos amigos y vecinos, los nobles y honrados Españ"
+v0953,1813,(unnamed vessel),seized,adjudicated-kept,"seized|deserters | Sbre 7 (pp.416-21, 10 doc): bando on the wholesale-commerce war contribution; the 3-day compliance-or-dismissal rule for"
+v0957,1813-06-08,mercury,seized,adjudicated-kept,seized | 'Captura de fragata *Mercurio*': Arrillaga's order to investigate Noé's prize — reconnoiter the captured Anglo-American 
+v0958,1813-06-19,flora,seized,adjudicated-kept,"seized | THE *MERCURIO*/EAYRS AFFAIR — crew depositions. By Arrillaga's order, José Argüello takes declarations from the Anglo-Am"
+v0959,1813-06-19,mercury,seized,adjudicated-kept,"seized | THE *MERCURIO*/EAYRS AFFAIR — crew depositions. By Arrillaga's order, José Argüello takes declarations from the Anglo-Am"
+v0964,1813-10-14,(unnamed vessel),seized,adjudicated-kept,seized | 'Sobre remisión de capitán de buque apresado' — de resultas de haberse hecho á la vela con su fragata el capitán Don Nic
+v0965,1814,american,review,adjudicated,[adj: HoC snippet ambiguous]  | [HoC sweep]  and rejoined her at San Francisco in February. Black had visited the Columbia River where he h
+v0972,1814-03-04,isaac todd,seized,adjudicated-kept,seized|deserters | (English) Reports desertion of 8 men from the Brit. ship *Isaac Todd*; requests their capture & delivery (with other Bri
+v0973,1814-04-24,flora,seized,adjudicated-kept,seized | Legal ruling on the *Mercurio* seizure: the *Flora* could not lawfully seize her as a corsair — exercising the *derecho 
+v0974,1814-04-24,mercury,seized,adjudicated-kept,seized | Legal ruling on the *Mercurio* seizure: the *Flora* could not lawfully seize her as a corsair — exercising the *derecho 
+v0976,1814-09-10,eagle,seized,adjudicated-kept,seized | Capture of the American brig *Pedler* by the Spanish-chartered frigate *Eagle* in the ensenada de San Luis Obispo (26 Au
+v0977,1814-09-10,maria,seized,adjudicated-kept,seized | Capture of the American brig *Pedler* by the Spanish-chartered frigate *Eagle* in the ensenada de San Luis Obispo (26 Au
+v0978,1814-09-10,pedler,seized,adjudicated-kept,seized | Capture of the American brig *Pedler* by the Spanish-chartered frigate *Eagle* in the ensenada de San Luis Obispo (26 Au
+v0979,1814-10-13,ilmena,seized,adjudicated-kept,"seized | 'Conducción de presos rusos': the Englishman Don Juan Eliot [John Elliot de Castro] and six more foreigners, captured ab"
+v0980,1814-10-30,mercury,seized,adjudicated-kept,"seized | Provisioning costs of the *Mercurio* prisoners: per the Consejo de Presidios order (18 Sep 1813), the Habilitación suppo"
+v0981,1814-10-30,tagle,seized,adjudicated-kept,"seized | Provisioning costs of the *Mercurio* prisoners: per the Consejo de Presidios order (18 Sep 1813), the Habilitación suppo"
+v0986,1815,columbia,seized,adjudicated-kept,deserters|seized|arrived | Dictamen prohibiting commerce with English ships re the English schooner *Columbia* at Monterey & the North West 
+v0994,1815,pedler,seized,adjudicated-kept,seized | Cluster: (May 8) query re the late Arrillaga & the six-presidio Habilitación accounts; (May 9) approved licensing the Am
+v0999,1815,tagle,seized,adjudicated-kept,seized | Cluster: (May 8) query re the late Arrillaga & the six-presidio Habilitación accounts; (May 9) approved licensing the Am
+v1000,1815-02-20,mercury,seized,adjudicated-kept,"seized | Legal dictamen on the *Mercurio*: re Eayrs (owner, seized in the SB Channel by Noé); provisioning for him + family + 4 s"
+v1002,1815-03-08,mercury,seized,adjudicated-kept,"seized | Per the reports, acted on provisioning Jorge Hayes [Eayrs] & holding the corvette *Mercurio* pending the Govt's ruling o"
+v1005,1815-07-15,atala,license-granted,ok, | Passport of the ship *Atala* (American) issued by the Collector of Customs at Boston; Savage's translation largely illeg
+v1007,1815-09-16,rurik,license-granted,ok," | Spanish passport/safe-conduct for the *Rurik*, issued by Don Carlos Gutiérrez de los Ríos, Conde de Fernán Núñez, duque "
+v1011,1815-10-05,ilmena,seized,adjudicated-kept,"seized | Remits 22 captured individuals + the 'Patrón Ferreof/Boris' [*Ilmena* crew], guarded by vecinos & soldiers (only one wit"
+v1014,1815-10-15,ilmena,seized,adjudicated-kept,"seized|refused | 'Respuestas de Boris' — the interrogation of the captured Russian otter-hunter. He is Boris Tarasov, sailor, Russian of "
+v1019,1815-11-06,ilmena,seized,adjudicated-kept,"seized|refused | THE ELLIOT DE CASTRO / *ILMENA* CAPTURE EXPEDIENTE. (Sep 19, San Luis) José Arce → Estudillo: the Russian brig *Ilmena* "
+v1025,1816,paz y religion,seized,adjudicated-kept,"seized|arrived|departed | [Mzo?] 6 (pp.453-60, 7 doc): parte de arribada de fragata Rusa 'Sowaroff' [Suvorov] á S.n Francisco; ⭐⭐ 'Haberse a"
+v1027,1816,suvorov,seized,adjudicated-kept,"seized|arrived|departed | [Mzo?] 6 (pp.453-60, 7 doc): parte de arribada de fragata Rusa 'Sowaroff' [Suvorov] á S.n Francisco; ⭐⭐ 'Haberse a"
+v1035,1816-01,(unnamed vessel),seized,adjudicated-kept,"seized|refused|arrived | English. Object of voyage & capture: sailed from New Archangel [Sitka], 'possession of Russia... Alex Baranoff Gov."
+v1036,1816-01-16,lydia,seized,adjudicated-kept,"seized | Arrival & detention of the Am. schooner *Lydia*, Capt. Henry Gyzelaar, from Sitka (45-day voyage); capt. came ashore 'mu"
+v1038,1816-01-22,albatross,seized,adjudicated-kept,seized | Long explanatory report acknowledging the 18th's order approving the *Lydia*'s capture. Confesses his own 'poquísima int
+v1039,1816-01-22,lydia,seized,adjudicated-kept,arrived|seized | Long explanatory report acknowledging the 18th's order approving the *Lydia*'s capture. Confesses his own 'poquísima int
+v1042,1816-02-07,rurik,seized,adjudicated-kept,seized | José de la Cruz → Gov. Solá: re the dispatch to the Viceroy of the Russian prisoners Juan (John) Elliot de Castro and Bo
+v1043,1816-02-19,lydia,arrested-detained,adjudicated-kept," | Went aboard the *Lydia* per orders, made inventory of ship & cargo, left a corporal + 4 soldiers after arresting Capt. G"
+v1052,1816-04-24,flora,seized,adjudicated-kept,seized | José de la Cruz → Gov. Alta Calif.: forwards the decree on the capture of the Anglo-American corvette 'Mercurio' by the 
+v1053,1816-04-24,mercury,seized,adjudicated-kept,seized | José de la Cruz → Gov. Alta Calif.: forwards the decree on the capture of the Anglo-American corvette 'Mercurio' by the 
+v1054,1816-04-25,(unnamed vessel),noise,adjudicated,[adj: royal order on mules/carts] seized | Royal order to prevent the extinction of transport mules & carts (*acémilas y carros*): seize only th
+v1055,1816-04-25,(unnamed vessel),seized,adjudicated-kept,"seized|deserters | José Ramón de Menchaca: relates how, sailing from Cádiz bound for Lima aboard the frigate 'Consecuencia,' the Buenos Air"
+v1062,1816-08,mercury,seized,adjudicated-kept,seized|departed | The Indian woman captured on the 'Mercurio' with Capt. [George] Ayres and their daughter: María Antonia de la Ascensión 
+v1072,1816-12-01,(unnamed vessel),seized,adjudicated-kept,seized | Sta Bárbara muster 1816 — embeds the Jan-1816 capture at the Refugio rancho: the comandante got a letter from Rancho del
+v1093,1817-04-22,(unnamed vessel),arrested-detained,adjudicated-kept,"deserters | Lt. Yakov Podushkin (RAC) → Gov. Solá (English translation): requests the arrest & return of a Kodiak Aleut sailor, Pete"
+v1114,1817-11-16,(unnamed vessel),seized,adjudicated-kept,"seized | Apodaca → Gov. Solá: the British frigate 'Buena Esperanza,' from Bengal with cargo for the Russian establishments (NW co"
+v1116,1817-12-08,(unnamed vessel),seized,adjudicated-kept,seized | Santiago Smith Wilcocks → Gov. Antonio Cordero: announces his arrival at Guaymas (29th) on the *balandra* 'Nuestra Señor
+v1117,1817-12-08,(unnamed vessel),seized,adjudicated-kept,seized | Santiago Smith Wilcocks → Gov. Cordero (2nd): Cmdt. Noriega won't let him leave for Tepic/Mexico without Cordero's licen
+v1118,1817-12-12,(unnamed vessel),seized,adjudicated-kept,seized | Santiago Smith Wilcocks → Gov. Solá: his schooner was seized & he is a prisoner at Guaymas; 'el malvado Ramírez' robbed 
+v1119,1817-12-29,caminante,review,adjudicated,[adj: treasury lament in Wilcocks cluster] seized | José Darío Argüello → Solá: the Guadalajara cajas barely suffice ('vamos pasando esta triste vida lle
+v1128,1818-01-07,cossack,seized,adjudicated-kept,"seized | Antonio Cordero → Gov. Solá: the brig 'Cosak' at Guaymas — tried to water, threatened with sinking for lacking a port-ca"
+v1139,1818-12-29,consecuencia,naval-affair,adjudicated,[adj: Bouchard depositions] seized | 'Declaraciones de insurgentes de la expedición de Bouchard' — depositions of the 4 captured/surrender
+v1144,1819-01-20,el aventurero,naval-affair,adjudicated,[adj: Bouchard response] seized | Conde del Venadito → Gov. Solá: emergency response to the Bouchard seizure of Monterey. Has learned —
+v1145,1819-01-20,san carlos,naval-affair,adjudicated,[adj: Bouchard response] seized | Conde del Venadito → Gov. Solá: emergency response to the Bouchard seizure of Monterey. Has learned —
+v1152,1819-06-06,(unnamed vessel),noise,adjudicated,[adj: captura de INDIOS — not maritime] seized | 'Captura de indios': wants a lookout on the Colorado-River route; the 4 prisoners taken by Sgt. Anast
+v1180,1820-01-20,(unnamed vessel),policy-order,adjudicated,[adj: 1820 timber-ship decree] seized | Anglo-American timber-ship order. Transcribes a Viceregal decree re an Anglo-American frigate (capt. 
+v1198,1820-12-31,(unnamed vessel),duties-paid,ok," | Customs duties paid by the Russian brig 'Buldacoff,' supercargo Carlos Khlebnikov, for grain & goods extracted: Monterey"
+v1200,1821,american,duties-paid,ok, | [HoC sweep] Supplies — Politic Gener- osity of Franciscans— Duties on Exports and Imports — A Controversy — Movements of Vessels — Americ
+v1207,1821,june,duties-paid,ok," | [HoC sweep]  no restrictions were thought of, and every vessel, foreign or Spanish, w^as welcomed for the duties paid.^^ In June the miss"
+v1225,1821-09-14,(unnamed vessel),seized,adjudicated-kept,"seized | Capture of two Americans from a smuggling schooner (CLOSED). Diligencias on an accusation against 'un tal Maliga[?],' by"
+v1230,1821-12-31,europa,duties-paid,ok," | Import/export duties paid by ships, 1821: Russian brig 'Cutusoff' [Kutúzov] $2323 + $1842; 'Inferior' (San Martín) $905;"
+v1231,1821-12-31,kutuzov,duties-paid,ok," | Import/export duties paid by ships, 1821: Russian brig 'Cutusoff' [Kutúzov] $2323 + $1842; 'Inferior' (San Martín) $905;"
+v1232,1821-12-31,reina de los angeles,duties-paid,ok," | Import/export duties paid by ships, 1821: Russian brig 'Cutusoff' [Kutúzov] $2323 + $1842; 'Inferior' (San Martín) $905;"
+v1237,1822-01-31,buldakov,duties-paid,ok,"arrived | Register of duties owed by ships anchored at SF, Sept 1820–Jan 1822 — incl. the Russian brig *Buldacoff* (5 Sep 1820, $2"
+v1238,1822-01-31,europa,duties-paid,ok,"arrived | Register of duties owed by ships anchored at SF, Sept 1820–Jan 1822 — incl. the Russian brig *Buldacoff* (5 Sep 1820, $2"
+v1239,1822-01-31,kutuzov,duties-paid,ok,"arrived | Register of duties owed by ships anchored at SF, Sept 1820–Jan 1822 — incl. the Russian brig *Buldacoff* (5 Sep 1820, $2"
+v1240,1822-01-31,senoriano,duties-paid,ok,"arrived | Register of duties owed by ships anchored at SF, Sept 1820–Jan 1822 — incl. the Russian brig *Buldacoff* (5 Sep 1820, $2"
+v1242,1822-05-04,la independencia,report-news,adjudicated,[adj: Cochrane squadron report] seized | relays Lt. José Manuel Ruiz (frontier cdr.)'s report of Lord Cochrane's insurgent squadron ravaging B
+v1245,1822-06-21,(unnamed vessel),duties-paid,ok, | Customs duties on foreign ships (English brig 'Snipe(?)'/'Pájaro'): tariff schedule per the plan formed in Mexico — brig
+v1261,1822-12-31,buldakov,duties-paid,ok," | Customs duties by foreign ships, 1822: Eng. 'Col. Young' $2968+$926; Russian 'Volga' $347; Eng. 'Snipe' $854; 'Lady Blac"
+v1262,1822-12-31,eagle,duties-paid,ok," | Customs duties by foreign ships, 1822: Eng. 'Col. Young' $2968+$926; Russian 'Volga' $347; Eng. 'Snipe' $854; 'Lady Blac"
+v1263,1822-12-31,john begg,duties-paid,ok," | Customs duties by foreign ships, 1822: Eng. 'Col. Young' $2968+$926; Russian 'Volga' $347; Eng. 'Snipe' $854; 'Lady Blac"
+v1264,1822-12-31,panther,duties-paid,ok," | Customs duties by foreign ships, 1822: Eng. 'Col. Young' $2968+$926; Russian 'Volga' $347; Eng. 'Snipe' $854; 'Lady Blac"
+v1265,1822-12-31,sachem,duties-paid,ok," | Customs duties by foreign ships, 1822: Eng. 'Col. Young' $2968+$926; Russian 'Volga' $347; Eng. 'Snipe' $854; 'Lady Blac"
+v1266,1822-12-31,snipe,duties-paid,ok," | Customs duties by foreign ships, 1822: Eng. 'Col. Young' $2968+$926; Russian 'Volga' $347; Eng. 'Snipe' $854; 'Lady Blac"
+v1267,1822-12-31,volga,duties-paid,ok," | Customs duties by foreign ships, 1822: Eng. 'Col. Young' $2968+$926; Russian 'Volga' $347; Eng. 'Snipe' $854; 'Lady Blac"
+v1271,1823,buldakov,deserters-affair,ok,"deserters|arrived | customs on the Russian brig *Buldakoff* — export duty $180.5 (6% on $3,013 effects) + import duty $625.5 (25% on $2,502 "
+v1282,1823-01-04,(unnamed vessel),duties-paid,ok, | 'Derechos': returns the duties account of an American brig (fwd by Solá) — amounts unverified + missing the 6% extractio
+v1285,1823-04-14,john begg,duties-paid,ok, | customs receipt — duties on the English brig *John Begg* (namesake of the McCulloch-Hartnell parent firm): introduction 
+v1286,1823-04-17,sachem,duties-paid,ok," | customs receipt — duties on the American frigate *Sachem*: introduction $124 + export $7 = $131 (less $6.4r, the 5% hono"
+v1293,1823-10-28,reina de los angeles,duties-paid,ok, | refund of an excess duty on the tallow/soap cargo of the ship *'Reyna de los Angeles'*
+v1294,1823-10-30,aguila,seized,adjudicated-kept,seized|arrived | Diligencias on the robbery by the crew of the American schooner *Águila* of the brig *Las dos hermanas* (formerly the *C
+v1295,1823-10-30,cossack,seized,adjudicated-kept,seized|arrived | Diligencias on the robbery by the crew of the American schooner *Águila* of the brig *Las dos hermanas* (formerly the *C
+v1296,1823-10-30,las dos hermanas,seized,adjudicated-kept,seized|arrived | Diligencias on the robbery by the crew of the American schooner *Águila* of the brig *Las dos hermanas* (formerly the *C
+v1336,1824-01-08,buldakov,duties-paid,ok, | 'Cobro de Dros. Nacionales': Lt. José Estrada commissioned to collect national duties (156 p.) from the Russian brig *Bu
+v1341,1824-07-16,mentor,duties-paid,ok," | customs duties on the American frigate *Mentor* — import 25% on $1,601 of goods; export 6% on $251 of otter pelts sold +"
+v1342,1824-08-08,oguahi,duties-paid,ok, | customs on the American brig *Oguahí*[?] — import $58.2 (25% on $234) + export $8.1 (3½%) + tonnage duty 166 tons @ 20 r
+v1358,1825,asia,naval-affair,adjudicated,[adj: Asia capitulation] seized|arrived | Copy re the Capitulation of the Navío *Asia* & Bergantín *Constante* (their garrisons capitul
+v1359,1825,constante,naval-affair,adjudicated,[adj: Constante capitulation] seized|arrived | Copy re the Capitulation of the Navío *Asia* & Bergantín *Constante* (their garrisons capitul
+v1362,1825,morelos,naval-affair,adjudicated,[adj: Asia munitions] seized|arrived | 'Armamento': requests munitions & powder from the surrendered *Asia* for the near-empty Monte
+v1363,1825,nieves,naval-affair,adjudicated,"[adj: re-copy] seized|arrived | ⚠️ Savage re-copies the 1825 Herrera/comisario, *Morelos*/*Nieves* cargo, officers'-junta, *A"
+v1369,1825,tartaro,duties-paid,ok, | receipt to William (Guillermo) Hartnell for $47 duties on the schooner *Tártaro*
+v1373,1825-02-14,baikal,duties-paid,adjudicated,[adj: SD customs] seized | SD customs: Juan Mancisidor paid $406 (effects on the frigate 'Sachem'); tonnage duty on the Russian 
+v1374,1825-02-14,sachem,duties-paid,adjudicated,[adj: SD customs] seized | SD customs: Juan Mancisidor paid $406 (effects on the frigate 'Sachem'); tonnage duty on the Russian 
+v1419,1826,(unnamed vessel),noise,adjudicated,"[adj: punitive expedition, non-maritime] seized | Punitive-expedition & incident report: a man's escopeta burst (skull fractured, brain matter exposed)"
+v1430,1826-01-12,kiakhta,duties-paid,ok, | Duties on the Russian merchant brig *Riascta*[?] = $22
+v1431,1826-01-20,washington,duties-paid,ok," | Duties on the American goleta *Washington* (Capt. Thompson, 52 tons, cargo of chile; 'según dice el Gral. M.G. Vallejo')"
+v1435,1826-05-17,joven tartaro,duties-paid,ok, | Duties on the English goleta *Joven Tártaro* = $563
+v1436,1826-05-18,(unnamed vessel),duties-paid,ok, | the ship-register duties at San Pedro fall to alférez José Joaquín Maitorena (⟨Fin del libro XVIII⟩ at foot of leaf)
+v1437,1826-05-26,sachem,duties-paid,ok, | Duties on the American frigate *Sachem* = $226
+v1444,1826-08-01,harbinger,duties-paid,ok," | SD treasury 'corte de caja' May–Jul 1826 — CARGO $8,099 (incl. brig *Harbinger* duties $450, mission loans San Luis Rey "
+v1447,1826-08-15,rover,duties-paid,ok," | expenses of the schooner *Rover*, property of Luis Antonio Argüello ($1,743 + 25%); the duties account held by comisario"
+v1448,1826-08-19,thomas nowlan,duties-paid,ok, | Import-duty calc. on Eng. frigate *Thomas Nowlan* (201 t): 25% derechos ($909) + 15% internación + 2½% avería + tonnage;
+v1453,1826-09-26,thomas nowlan,duties-paid,ok, | Duties paid by the English frigate *Thomas Nowlan* at SF: import 25% $507.6 + internación 15% $380.6 + avería 2½% $50.6 
+v1486,1827-03-05,heros,duties-paid,ok," | Duties on the French frigate *Héros* [Duhaut-Cilly] ($966 goods): import $241.4, internación $180, avería $24, 250 t ton"
+v1487,1827-04-18,harbinger,duties-paid,ok," | Duties on the American brig Harbinger ($960 goods): import 25% $240, internación $180, avería $24, tonnage $50 = $574; n"
+v1494,1827-07-09,courier,duties-paid,ok, | Duties on the American brig Courier ($407 goods): $186; net $180
+v1495,1827-07-15,thomas nowlan,duties-paid,ok," | Duties on the English frigate *Thomas Nowlan* ($1733 goods): import $433.2, internación $324.7, avería $43.2, 201½ t $50"
+v1496,1827-07-30,(unnamed vessel),duties-paid,ok,"arrived | Treasury statement of the Territory of Alta California, 1828. Income $24,503 — incl. commercial-ship duties (intervenció"
+v1501,1827-08-18,heros,duties-paid,ok, | Duties on the French frigate Héros (goods sold): net $242 (cf. Doc 256)
+v1512,1827-10-12,comete,duties-paid,ok, | French corvette *Comète* (from Mazatlán) — tonnage duty waived (already paid at Mazatlán); allowed to sell some goods to
+v1515,1827-11-07,golovnin,arrested-detained,adjudicated-kept, | the americano arrested at S.Gabriel to be conducted & freed; ⭐⭐ Nov 10 — pase á Santa Cruz for the Russian brigantine 'G
+v1520,1827-12-13,baikal,duties-paid,ok," | Tonnage + import duties paid by THREE Russian brigs — *Baikal* (203 t, $507.4), *Ofetcat*[?] (140 t, $350), *Golovin* (1"
+v1521,1827-12-31,baikal,duties-paid,ok, | Dec income/expense: duties from Russian brig *Baikal* ($459) & frig. *Franklin* ($166); mission supplies $275; postal/ti
+v1522,1827-12-31,franklin,duties-paid,ok, | Dec income/expense: duties from Russian brig *Baikal* ($459) & frig. *Franklin* ($166); mission supplies $275; postal/ti
+v1544,1828-05-10,franklin,license-granted,ok, | tobacco remisión; ⭐ Peyri sends the *peones* [Indian laborers] Echeandía requested (mission labor to the govt); a licenc
+v1545,1828-06-09,rover,duties-paid,ok," | customs duties on the American merchant schooner *Rover* — import 25% on $1,058 of goods sold to missions & individuals "
+v1547,1828-07,franklin,seized,adjudicated-kept,"seized | Order to capture the American frigate Franklin, accused of smuggling: she resisted and attempted to flee; all presidio c"
+v1551,1828-09-17,emilia,seized,adjudicated-kept,"seized | Deposition re the Spanish corsair *Griego* (bound out of order): the American James Smith, cook of the schooner *Emilia*"
+v1553,1828-10-14,(unnamed vessel),seized,adjudicated-kept,seized | 'Sobre entrega de mercancías detenidas': the 3 trunks of American Charles (Carlos) Laing detained ~6 months at the SD cu
+v1557,1828-11-15,lydia,noise,adjudicated,"[adj: hoja de servicios] seized | Hoja de servicios of José de la Guerra y Noriega: cadet 2y, alférez 5y, teniente 11y, capitán 11y; se"
+v1569,1829-01-07,maria ester,license-granted,ok, | passport (súbdito de S.M.B.) to embark from San Pedro on the *María Ester* (MS read 'María Petra')
+v1581,1829-02-28,washington,license-granted,ok," | Goleta *Washington* — grants Charles Laing license to leave via Mazatlán, on condition the diligencias concluding his ag"
+v1582,1829-03-04,(unnamed vessel),other-review,low, | Averiguación clearing José Joaquín Estudillo: American Charles (Carlos) Laing claimed goods missing from an embargoed *c
+v1585,1829-03-13,aguila,seized,adjudicated-kept,"seized | per order of the Min. de Guerra y Marina, all antecedentes he has on the goleta *Águila*, captured in 1822"
+v1587,1829-03-13,maria ester,license-granted,ok, | soldier Hernández licensed; may arrange his passage to Mazatlán with the owner of the bergantín *María Ester*
+v1591,1829-04-04,funchal,license-granted,ok," | Comercio — license (only this time) to carry effects on the English frigates 'Nolan' & 'Funchal' to SF/SB/S. Pedro/SD, t"
+v1595,1829-05-02,funchal,duties-paid,ok," | Contabilidad — queries the Jan accounts: the pretended entry of the bergantín 'Funchal' without its import duties, the V"
+v1598,1829-05-08,tomas nowlan,person-expulsion,adjudicated,"[adj: expelled Spaniard Cot]  | Españoles — detain the expelled supposed Spaniard Antº Cot, believed to have reached S. Pedro on the fragat"
+v1601,1829-05-11,brooklyn,duties-paid,ok," | Comercio — the 'Brooklyn' may sell 4,000$ at Monterey & 1,000$ at SF, having paid the duties at San Diego"
+v1603,1829-05-13,aguila,seized,adjudicated-kept,seized | asks testimonio on the toma (capture) of the 'Águila' in 1822
+v1604,1829-05-14,baikal,license-granted,ok," | Salt extraction: licensed the Russian ship *Baikal* (at the request of the Sitka govt) to take salt from Baja (paid 1,30"
+v1612,1829-07-04,brooklyn,duties-paid,ok," | (2 docs) may take pólvora, plomos y piedras de chispa from the 'Brooklyn' on account of the duties it owes; + approves t"
+v1615,1829-07-13,brookline,license-granted,ok, | (survey Find #13) Commerce license for the American frigate Brookline (supercargo William A. Gale): may trade aboard wit
+v1618,1829-08-05,funchal,person-expulsion,adjudicated,[adj: dañinos expelled]  | (4 docs) asks reports on some refugees; have some harmful individuals (dañinos) expelled from the Rancho de
+v1619,1829-08-12,sta barbara,license-granted,ok," | provisional license to the balandra Sta Bárbara (33¾ toneladas, maestro José Carrillo)"
+v1636,1829-11-14,funchal,report-news,adjudicated,[adj: Solís news via Funchal] seized | reports (via the brig '*Funchal*' from Mazatlán to the SB cdr.) that [José María] Solís — sentenced t
+v1637,1829-11-16,voluntario,duties-paid,ok, | (2 docs) cuentas; derechos de importación de la fragata 'Voluntario'
+v1640,1829-12-23,harbinger,license-granted,ok," | license to José Steel (sobrecargo of the American brig 'Plant') to trade on the coast, unmolested for having earlier car"
+v1641,1829-12-23,plant,license-granted,ok," | license to José Steel (sobrecargo of the American brig 'Plant') to trade on the coast, unmolested for having earlier car"
+v1642,1829-12-24,nowlan,license-granted,ok," | Comercio — license to the fragata 'Nowlan' to receive cargo at the rada de San Juan Capistrano (only this time, due to t"
+v1651,1830-01-04,plant,duties-paid,ok, | the product of the derechos of the American brig 'Plant' to be given to the habilitado encargado de rentas del Departame
+v1653,1830-02,(unnamed vessel),review,adjudicated,[adj: Solís revolt sumaria] seized|wrecked | The Solís-revolt sumaria (declarations & confessions). Echeandía forwards declarations by Jua
+v1710,1831-04-22,convoy,seized,adjudicated-kept,seized | On the *sumaria* of Barragán and the seizure (*comiso*) of the brig 'Convoy' (2 docs)
+v1711,1831-05-07,envoy,license-granted,ok, | grants permission to sell prohibited goods because the ship *Envoy* must be nationalized
+v1741,1831-11-08,margarita,person-expulsion,adjudicated,[adj: Padrés expelled]  | [José M.] Padrés transferred on the schooner 'Margarita' to San Blas (his expulsion)
+v1752,1832-09-24,(unnamed vessel),seized,adjudicated-kept,"seized|departed | Long account of his delayed voyage to Cal. as comandante gral./jefe político: embarked Acapulco 17 July, disembarked Cab"
+v1753,1832-12-05,(unnamed vessel),duties-paid,ok," | Customs (renta de aduanas): a Russian ship from Sitka imported goods worth $903 at Monterey; total duties $1,107 (5% ara"
+v1771,1833-02-16,(unnamed vessel),duties-paid,ok," | Urges the presidio habilitados (SD/SB/SF) not to permit loading/unloading without a duty certificate, 'ni mucho menos en"
+v1779,1833-05-13,(unnamed vessel),license-granted,ok, | foreign ship *Kendrick* (261 t) must obtain Monterey customs permission (sole legal port)
+v1780,1833-05-24,(unnamed vessel),duties-paid,ok, | Osio installed as receiver of ship duties at the San Pedro cove and the overland trade of New Mexico & Sonora residents 
+v1781,1833-05-30,fenix,duties-paid,ok," | SD liquor-duty arrears to be paid; a *memorial*; the Govr returns an expediente (the *Fénix* interrogatorio, cause unsta"
+v1789,1833-07-16,(unnamed vessel),license-granted,ok, | foreign-trade prohibition — concessions to a foreign barque improper; foreign ships must seek permission at the Monterey
+v1794,1833-10-02,loriot,arrested-detained,adjudicated-kept," | Arrest of the schooner *Loriot* (supercargo A. B. Thompson) at SF: the ship, cargo & supercargo arrested 26 Oct 1833 by "
+v1810,1834-06-30,(unnamed vessel),duties-paid,ok, | reports barrels of foreign aguardiente off the frigate *California* landed/sold without paying duties — investigate (pp.
+v1815,1834-10-04,peor es nada,seized,adjudicated-kept,"seized | the Monterey maritime customs holds under embargo 8 boxes = 1,150 marcos of silver seized from the brig *Peor es Nada*[?"
+v1835,1835-01-02,pacifico,seized,adjudicated-kept,"seized | The LA embargo of silver seized from Aguirre on the brig *Pacífico*; Antonio Mª Osio (LA Receptor, agent of another Agui"
+v1836,1835-01-12,goleta real pacifico,other-review,low, | 4 docs: (1) Monterey-customs order to return the embargoed brig *Goleta Real Pacífico* & cargo to merchant José Antº Agu
+v1837,1835-02-05,pacifico,other-review,low, | re notifications for the sentence on the embargo of the brig *Pacífico* & its cargo (per the Monterey administrator) (do
+v1841,1835-03-24,pacifico,seized,adjudicated-kept,seized | On a confiscation (comiso) case against the brig *Pacífico*
+v1851,1835-12-15,(unnamed vessel),duties-paid,ok, | Communications on the fraudulent unloading by launch — a brig (W. Leese) landing goods at Santa Clara without duties.
+v1860,1836-06-22,(unnamed vessel),license-granted,ok, | Stearns's deportation *pasaporte* — to present himself to the supreme government 'en el primer buque que se proporcione'
+v1862,1836-07-15,leonor,person-expulsion,adjudicated,"[adj: Célis 1836 expulsion]  | Orders the arrest of the Spaniard Eulogio Célis, put aboard the barque *Leonor* (the 1836 expulsion of Span"
+v1875,1839,ayacucho,duties-paid,ok," | bundle of the Monterey customs house's 1839 monthly reports (cortes de caja, manifiestos, duty collections incl. the sch"
+v1886,1839-04-09,(unnamed vessel),duties-paid,ok, | Collecting ship duties amid the cash shortage — duties taken in goods at inflated prices; merchants prefer a private *pa
+v1889,1839-05-20,brooklyn,license-granted,ok, | Will send review lists; the frigate *Brooklyn* was granted license to trade in the ports [4 docs]
+v1908,1840-04-07,(unnamed vessel),person-expulsion,adjudicated,[adj: Graham Affair foreigner arrests] seized | 'Conspiración de extranjeros' = the 1840 GRAHAM AFFAIR — the Governor's 8 Apr alarm that resident for
+v1922,1840-10-22,(unnamed vessel),seized,adjudicated-kept,"seized|arrived | the Abel Stearns contraband-seizure dossier: a buque anchored 11 Oct 1840, Stearns's goods seized as *contrabando*; the "
+v1924,1840-10-29,ninfa,license-granted,ok," | THE MOFRAS PASSPORT, verbatim: the President grants it to 'D. Eugenio DUFLOT DE MOFRAS, adicto á la legación de FRANCIA,"
+v1925,1840-11-23,nicolas,duties-paid,ok,"refused | Tonnage-duty dispute over the Russian 'Nicolás': the captain refuses, alleging the ship is on government business (Russi"
+v1927,1840-12-11,elena,duties-paid,ok," | Tonnage duty on the Russian frigate 'Elena': 309½ tons @ 12 r. = $464.4, less 25% = $348.4; less $96 the port captain ch"
+v1928,1840-12-12,(unnamed vessel),review,adjudicated,[adj: seizure DENIED claim] seized | 'Reclamos de Extranjeros' — asserts no property was seized (contra the US frigate commander's claim);
+v1931,1840-12-14,baikal,duties-paid,ok," | Tonnage duty on the Russian frigate 'Elena': 309½ tons @ 12 r. = $464.4, less 25% = $348.4; less $96 the port captain ch"
+v1932,1840-12-16,catalina,duties-paid,ok, | apply the duties of the barque 'Clarita' & part of the brig 'Catalina' to the Government's debt to Enrique (Henry) Virmo
+v1933,1840-12-16,clarita,duties-paid,ok, | apply the duties of the barque 'Clarita' & part of the brig 'Catalina' to the Government's debt to Enrique (Henry) Virmo
+v1957,1841-03-24,(unnamed vessel),license-granted,ok, | commission report — a cook tried to take hides to the Sandwich Islands without the consignee's license; suspects the shi
+v1966,1841-05-07,thomas perkins,license-granted,ok, | ~8 docs — Andrés Ybarra's provisional planting license at Los Encinitos; the feast-day liquor ban; ⭐ published the Govt 
+v1996,1842-03,(unnamed vessel),duties-paid,ok, | Duties collected on a ship
+v1997,1842-03,(unnamed vessel),duties-paid,adjudicated,"[adj: tonnage duty]  | [draft, treasury] Mar 4 tonnage duty from a ship; Apr 1 $12/mo to the Jailer (prisoners in public works); M"
+v2001,1842-10-26,(unnamed vessel),seized,adjudicated-kept,seized | «Captura de un buque americano»: aprueba con reservas la aprehensión del buque «Hill» intentada pr el Capⁿ Tito Rudolino
+v2031,1844-07-07,(unnamed vessel),license-granted,ok, | (2 docs) circular of bandos on auxiliary militias; + ⭐⭐ on the French frigate licensed to buy cattle at San Francisco — 
+v2117,1848-07-11,(unnamed vessel),noise,adjudicated,[adj: stolen cannon 1848] seized|refused | Proceedings about a cannon stolen at Sta Bárbara; inhabitants made to pay for it; the July-4-
+v2126,,(unnamed vessel),license-granted,ok," | No foreign ship to arrive without licence, much less enter the interior; alcabala +35%; aid to artisans; apprehend the *"
+v2135,1826-06-27,jackman,duties-paid,ok,"$448.3 duties | [C-A 40 Sta Bárbara customs ledger 1826, d68] frag. Amⁿ 'Jackman', 27 Jun 1826 — $448.3 (cf. d9: frigate Jackman + pailebot "
+v2136,1826-09-13,figaro,duties-paid,ok,"$533 duties | [C-A 40 Sta Bárbara customs ledger 1826, d68] frag. Amⁿ 'Fígaro', 13 Sep 1826 — $533"
+v2137,1826-12-09,mcculloch,duties-paid,ok,"$813.4 duties | [C-A 40 Sta Bárbara customs ledger 1826, d68] frag. Amⁿ 'McCulloch[?]', 9 Dec 1826 — $813.4 (Savage rendering uncertain)"
+v2138,1825-11-17,nilo,duties-paid,ok,"$122.4.2 duties (advance-collection convenio, re Luis Argüello; later a charge vs Comisario Herrera) | [C-A 40 d7] brig Amⁿ 'Nilo' permitted"
+v2139,1827-05-08,francesa,duties-paid,ok,"$400 duties | [C-A 40 Sta Bárbara customs ledger 1827, n81] 'Francesa', 8 May 1827 — $400 (2nd cuatrimestre)"
+v2140,1827-07-21,amiga,duties-paid,ok,"$232 duties | [C-A 40 Sta Bárbara customs ledger 1827, n81] berg. Amⁿ 'Amiga', 21 Jul 1827 — $232"
+v2141,1825-11-05,spy,duties-paid,ok,"25% duties less 12½% (w/ frigate Jackman) | [C-A 40 d9] pailebot 'Spy' (bought effects), supercargo Guillermo (William A.) Gale, at Sta Bárb"
+v2142,1826-10-22,thomas nowlan,duties-paid,ok,"$2199.4 duties | [C-A 40 Sta Bárbara customs ledger 1826, d68] frag. Amⁿ 'Thomas Nowlan', 22 Oct 1826 — $2199.4"
+v2143,1827-05-08,thomas nowlan,duties-paid,ok,"$951 (8 May) + $618 (24 Aug) duties | [C-A 40 Sta Bárbara customs ledger 1827, n81] 'Tomasa' [=Thomas Nowlan variant], 8 May & 24 Aug 1827 —"
+v2144,1827-05-09,carmen,duties-paid,ok,"$14 duties | [C-A 40 Sta Bárbara customs ledger 1827, n81] berg. Amⁿ 'Carmen', 9 May 1827 — $14"
+v2145,1827-05-24,harbinger,duties-paid,ok,"$341 (24 May) + $124 (28 Jun, San Pedro) + $783 (12 Jul, SB) duties | [C-A 40 Sta Bárbara customs ledger 1827, n81] Amⁿ 'Harbinger', multipl"
+v2146,1826-06-07,rover,duties-paid,ok,"paid import+tonnage+silver-extraction duties | [C-A 40 d38] goleta Amⁿ 'Rover', Capⁿ Juan (John R.) Cooper, arrived Monterey from CANTON; un"
