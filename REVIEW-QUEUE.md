@@ -49,3 +49,8 @@ The vessel that first entered Humboldt Bay (June 1806) was the **O'Cain** — Am
 - **11 non-ship records dropped** via NONSHIP_RECORDS (harvest.py): demonym 'Californio' (padrón — the real goleta at ca14-d16 kept), place 'Sto Domingo', 'Patentes Reales' (royal patents), persons 'Lázaro'/'Thomas Marshall'/'Juan José', and spurious 'Cleusa/Apolonia/Ester/Cora/Andes' from vaccination/fund/tax records.
 - Result: 479 → **424 ships**, 2,245 → **2,134 visits**; 0 US ships in 1794; guards green.
 - ⚠ STILL TO REVIEW (lower-confidence, left in as draft): single-record Mexican warship names (Matamoros), the Tarlar/Sartar garble family, Hawaiian-named brigs (Tic-me-mash, Karimoko, Oguahi — likely real), and the 63 quarantined garbles (many are real ships needing spelling repair + re-merge).
+
+## C-A 40 merge follow-ups (2026-07-18, from the A1 fold)
+- **courier flag conflict:** ships.csv has `flag_guess=russia`, but the C-A 40 1826 SB ledger reads "frag. **Amⁿ** 'Courier'" (and HoC's Courier is the Boston hide-drogher, Capt. Cunningham — cf. v1485). Almost certainly **usa**; rule + fix flag.
+- **thomas nowlan flag conflict:** ships.csv `flag_guess=britain` vs the C-A 40 ledger's "frag. **Amⁿ** 'Thomas Nowlan'". Sources disagree (movement reports call her Eng.); rule.
+- **courier 1827 ledger entries ≠ existing rows:** the C-A 40 1827 ledger (n81) has Courier duty entries 4 May SB ($312), 24 May San Pedro ($81), 21 Aug SB ($240) — neither v1485 (Jan, San Pedro) nor v1494 (9 Jul, SF) matches. Likely 1–3 **new** 1827 Courier visits; create rows or rule as passes of the same coasting voyage.
