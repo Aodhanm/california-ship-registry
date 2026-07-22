@@ -15,6 +15,7 @@ visits = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'visits.csv'))))
 ships = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'ships.csv'))))
 gaz = {r['anchorage']: (float(r['lat']), float(r['lon']))
        for r in csv.DictReader(open(os.path.join(ROOT, 'data', 'gazetteer.csv')))}
+charts = json.load(open(os.path.join(ROOT, 'data', 'charts.json')))
 
 for v in visits:
     v['n_records'] = int(v['n_records'])
@@ -65,6 +66,7 @@ page = """<!DOCTYPE html>
  <button data-pane="mappane">Map</button>
  <button data-pane="curve">Traffic curve</button>
  <button data-pane="copres">In port together</button>
+ <button data-pane="charts">Charts of the coast</button>
  <button data-pane="about">About &amp; method</button>
 </nav>
 <main>
@@ -101,6 +103,12 @@ page = """<!DOCTYPE html>
  <div class="count">Vessels documented at the same anchorage in the same year &mdash; where encounters live. Year-level precision at this draft stage; the review pass will tighten to same-week where dates allow.</div>
  <div id="cpOut"></div>
 </div>
+<div id="charts" class="pane">
+ <div class="count">Charts of the coast &mdash; the period cartography that recorded the same coast these ships worked. Where georeferenced, each becomes a basemap under the visit dots (Map tab &rarr; layer switch &rarr; opacity). Charts hotlinked from their repositories; all attribution retained.</div>
+ <div class="filters"><select id="chartEra"><option value="">all eras</option></select></div>
+ <div id="chartsOut"></div>
+ <p class="count" style="margin-top:12px">Sources: <a href="https://www.davidrumsey.com">David Rumsey Map Collection</a>, the Internet Archive, and the Bancroft Library. Georeferencing via the Rumsey Georeferencer and <a href="https://allmaps.org">Allmaps</a>. 1840s charts drift at large zoom &mdash; the visit coordinates (gazetteer) are authoritative; the chart is context.</p>
+</div>
 <div id="about" class="pane about">
  <h2>About</h2>
  <p>The first machine-readable registry of documented vessel visits to the Californias, 1769&ndash;1846.
@@ -116,7 +124,7 @@ page = """<!DOCTYPE html>
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-const V=__VISITS__;const S=__SHIPS__;const G=__GAZ__;
+const V=__VISITS__;const S=__SHIPS__;const G=__GAZ__;const CHARTS=__CHARTS__;
 const FLAGEMO={spain:'🇪🇸',usa:'🇺🇸',russia:'🇷🇺',britain:'🇬🇧',mexico:'🇲🇽',france:'🇫🇷',chile:'🇨🇱',peru:'🇵🇪',ecuador:'🇪🇨'};
 function femo(f){return FLAGEMO[f]?FLAGEMO[f]+' ':''}
 function opts(sel,vals){const s=document.getElementById(sel);[...new Set(vals)].filter(x=>x).sort().forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o)})}
@@ -205,7 +213,34 @@ document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()
  document.querySelectorAll('.pane').forEach(x=>x.classList.remove('on'));
  b.classList.add('on');document.getElementById(b.dataset.pane).classList.add('on');
  if(b.dataset.pane==='mappane'){if(!window._map)initMap();else setTimeout(()=>_map.invalidateSize(),50)}
+ if(b.dataset.pane==='charts'&&!window._chartsDone){renderCharts();window._chartsDone=1}
 }));
+// ── Charts of the coast catalog (from data/charts.json) ──
+function renderCharts(){
+ const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+ const sel=document.getElementById('chartEra');
+ const eras=[...new Set(CHARTS.map(c=>c.era))];
+ eras.forEach(e=>{const o=document.createElement('option');o.value=e;o.textContent=e;sel.appendChild(o)});
+ const draw=()=>{const f=sel.value;const out=document.getElementById('chartsOut');
+  const groups={};CHARTS.forEach(c=>{if(f&&c.era!==f)return;(groups[c.era]=groups[c.era]||[]).push(c)});
+  out.innerHTML=Object.keys(groups).map(era=>
+   '<h3 style="margin:16px 0 6px;border-bottom:1px solid #ccc;padding-bottom:3px">'+esc(era)+'</h3>'+
+   groups[era].map(c=>{
+    const live=c.tile_url?' <span style="color:#1e7e34">&#9679; georeferenced &mdash; available as a basemap</span>':' <span style="color:#999">&#9675; not yet georeferenced</span>';
+    const cite=[c.cartographer,('<i>'+esc(c.title)+'</i>'),(c.in?'in '+esc(c.in):''),c.date].filter(Boolean).join(', ');
+    return '<div style="margin:0 0 14px;padding:8px 10px;background:#f7f5f0;border:1px solid #e0dccf;border-radius:4px">'+
+     '<div style="font-weight:600">'+esc(c.short_title)+' <span style="font-weight:400;color:#666">&mdash; '+esc(c.origin)+', '+esc(c.coverage)+', serves '+esc(c.region_served||'')+'</span></div>'+
+     '<div style="font-size:.9em;color:#333;margin:4px 0">'+cite+'.'+live+'</div>'+
+     '<div style="font-size:.92em;line-height:1.4">'+esc(c.headnote)+'</div>'+
+     (c.look_for?'<div style="font-size:.86em;color:#555;margin-top:3px"><b>Look for:</b> '+esc(c.look_for)+'</div>':'')+
+     '<div style="font-size:.82em;margin-top:5px">'+
+       '<a href="'+esc(c.source_permalink)+'" target="_blank">source &rarr;</a> &middot; '+
+       '<span style="color:#888">Cite: '+esc(c.cartographer)+', <i>'+esc(c.short_title)+'</i>, '+esc(c.date)+'. '+esc(c.source_repository)+'.</span></div>'+
+    '</div>';
+   }).join('')).join('');
+ };
+ sel.addEventListener('input',draw);draw();
+}
 let _layer=null;
 function drawMarkers(){
  if(_layer)_layer.remove();
@@ -222,16 +257,13 @@ function drawMarkers(){
      [...new Set(vs.map(v=>v.ship_id))].slice(0,14).join(', '))
    .addTo(_layer)});
 }
-// ── Historical period basemaps (David Rumsey / Allmaps georeferenced) ──
-// TO ADD ONE: georeference the map (Rumsey Georeferencer -> "Get links" -> XYZ Link,
-// or Allmaps editor), then paste its XYZ tile URL into `url` below. Entries whose
-// url is still '' are silently skipped, so the map works before any are configured.
-const HIST=[
- {name:"Duflot de Mofras, Côte de l'Amérique (1844)",
-  url:"",  /* <- paste XYZ URL from davidrumsey.com/maps6332.html Georeferencer "Get links" */
-  attribution:"Duflot de Mofras 1844 &middot; David Rumsey Map Collection", maxZoom:9},
- /* add more: Sutil y Mexicana 1802 coastal charts, per-port insets, etc. */
-];
+// ── Historical period basemaps — derived from data/charts.json ──
+// A chart appears as a selectable basemap once its `tile_url` is set (georeference it
+// via the Rumsey Georeferencer "Get links -> XYZ" or Allmaps, then paste the XYZ URL
+// into that chart's tile_url in data/charts.json and rebuild). Empty tile_url = skipped.
+const HIST=CHARTS.filter(c=>c.tile_url).map(c=>({
+  name:c.short_title+" ("+c.date+")", url:c.tile_url,
+  attribution:c.short_title+" "+c.date+" &middot; "+c.source_repository, maxZoom:c.maxZoom||9}));
 function initMap(){
  window._map=L.map('map').setView([34.5,-119.5],5);
  const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OSM',maxZoom:18});
@@ -295,5 +327,6 @@ function initMap(){
 page = page.replace('__VISITS__', json.dumps(visits, ensure_ascii=False, separators=(',', ':')))
 page = page.replace('__SHIPS__', json.dumps(ships, ensure_ascii=False, separators=(',', ':')))
 page = page.replace('__GAZ__', json.dumps(gaz, ensure_ascii=False, separators=(',', ':')))
+page = page.replace('__CHARTS__', json.dumps(charts, ensure_ascii=False, separators=(',', ':')))
 open(os.path.join(ROOT, 'index.html'), 'w').write(page)
 print(f"index.html written ({len(page)//1024} KB, {len(visits)} visits, {len(ships)} ships)")
