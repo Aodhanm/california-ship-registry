@@ -228,7 +228,8 @@ function renderCharts(){
    groups[era].map(c=>{
     const live=c.tile_url?' <span style="color:#1e7e34">&#9679; georeferenced &mdash; available as a basemap</span>':' <span style="color:#999">&#9675; not yet georeferenced</span>';
     const cite=[c.cartographer,('<i>'+esc(c.title)+'</i>'),(c.in?'in '+esc(c.in):''),c.date].filter(Boolean).join(', ');
-    return '<div style="margin:0 0 14px;padding:8px 10px;background:#f7f5f0;border:1px solid #e0dccf;border-radius:4px">'+
+    return '<div style="margin:0 0 14px;padding:8px 10px;background:#f7f5f0;border:1px solid #e0dccf;border-radius:4px;overflow:hidden">'+
+     (c.thumbnail?'<a href="'+esc(c.source_permalink)+'" target="_blank"><img src="'+esc(c.thumbnail)+'" alt="'+esc(c.short_title)+'" title="'+esc(c.short_title)+' — view source" style="float:right;width:150px;height:auto;margin:2px 0 6px 12px;border:1px solid #bbb;background:#fff" loading="lazy"></a>':'')+
      '<div style="font-weight:600">'+esc(c.short_title)+' <span style="font-weight:400;color:#666">&mdash; '+esc(c.origin)+', '+esc(c.coverage)+', serves '+esc(c.region_served||'')+'</span></div>'+
      '<div style="font-size:.9em;color:#333;margin:4px 0">'+cite+'.'+live+'</div>'+
      '<div style="font-size:.92em;line-height:1.4">'+esc(c.headnote)+'</div>'+
