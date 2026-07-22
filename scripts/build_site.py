@@ -234,8 +234,9 @@ function renderCharts(){
      '<div style="font-size:.92em;line-height:1.4">'+esc(c.headnote)+'</div>'+
      (c.look_for?'<div style="font-size:.86em;color:#555;margin-top:3px"><b>Look for:</b> '+esc(c.look_for)+'</div>':'')+
      '<div style="font-size:.82em;margin-top:5px">'+
-       '<a href="'+esc(c.source_permalink)+'" target="_blank">source &rarr;</a> &middot; '+
-       '<span style="color:#888">Cite: '+esc(c.cartographer)+', <i>'+esc(c.short_title)+'</i>, '+esc(c.date)+'. '+esc(c.source_repository)+'.</span></div>'+
+       '<a href="'+esc(c.source_permalink)+'" target="_blank">source &rarr;</a>'+
+       (c.iiif_manifest?' &middot; <a href="'+esc(c.iiif_manifest)+'" target="_blank">IIIF</a> (georeference in <a href="https://editor.allmaps.org" target="_blank">Allmaps</a>)':'')+
+       ' &middot; <span style="color:#888">Cite: '+esc(c.cartographer)+', <i>'+esc(c.short_title)+'</i>, '+esc(c.date)+'. '+esc(c.source_repository)+'.</span></div>'+
     '</div>';
    }).join('')).join('');
  };

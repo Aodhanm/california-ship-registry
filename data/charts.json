@@ -12,13 +12,14 @@
   "era": "The World Arrives (1790–1821)",
   "region_served": "Alta California coast",
   "source_repository": "David Rumsey Map Collection / Internet Archive",
-  "source_permalink": "https://www.davidrumsey.com/luna/servlet/view/search?q=sutil+mexicana",
+  "source_permalink": "https://archive.org/details/dr_carta-esferica-de-los-reconocimientos-hechos-en-la-costa-no-de-america-en-00084042",
   "georef_status": "none",
   "tile_url": "",
   "license": "public domain; attribution to source repository",
   "headnote": "The coast as Spain itself charted it, from the 1792 survey of the schooners Sutil and Mexicana — the cartographic record of the very empire whose San Blas supply fleet is the opening act of this registry's traffic curve. Published in the 1802 official Relación, it is the Spanish-hand map contemporary with the founding decades, and the same source the companion Bodega study reads for the coast's legal geography.",
   "look_for": "the still-tentative rendering of the northern anchorages Spain claimed but rarely visited — Bodega and the coast above San Francisco.",
-  "verify": "confirm exact Rumsey ID or use the Internet Archive scan of the atlas"
+  "verify": "CONFIRMED — David Rumsey plate on Internet Archive, IIIF-enabled (georeference in Allmaps via the manifest)",
+  "iiif_manifest": "https://iiif.archive.org/iiif/dr_carta-esferica-de-los-reconocimientos-hechos-en-la-costa-no-de-america-en-00084042/manifest.json"
  },
  {
   "id": "vancouver-1798",
@@ -33,13 +34,13 @@
   "era": "The World Arrives (1790–1821)",
   "region_served": "Alta California coast",
   "source_repository": "David Rumsey Map Collection / Internet Archive",
-  "source_permalink": "https://www.davidrumsey.com/luna/servlet/view/search?q=vancouver+voyage+discovery",
+  "source_permalink": "https://archive.org/details/voyageofdiscover02vanc",
   "georef_status": "none",
   "tile_url": "",
   "license": "public domain; attribution to source repository",
   "headnote": "The outside power charting a coast Spain claimed — Vancouver's survey of 1792–94, made in the very Nootka-crisis decade this registry shows the door opening. His three California calls are themselves rows in the data; his chart is the map of that moment, drawn by the visitor rather than the sovereign.",
   "look_for": "the accuracy of the British survey against the Spanish Sutil chart of the same coast — the rival's map is often the better one.",
-  "verify": "confirm exact Rumsey ID for the California/New Albion sheet"
+  "verify": "CONFIRMED atlas (voyageofdiscover02vanc, vol.2 1798); locate the California/New Albion plate within, or the dr_ single-sheet"
  },
  {
   "id": "duflot-1844-coast",
@@ -60,7 +61,9 @@
   "license": "public domain; © David Rumsey Map Collection (attribution required)",
   "headnote": "The default basemap: the late-Mexican coast on one detailed sheet, from a French diplomatic-scientific survey on the eve of the American conquest. It covers every anchorage in the registry and is the natural ground for the hide-and-tallow decades — the licensed-door era when the traffic curve tips from seizure to customs. Companion to the vault's Duflot Bodega roadstead plan.",
   "look_for": "the named coastal establishments and soundings that show how thoroughly foreigners knew a coast Mexico could barely garrison.",
-  "verify": "CONFIRMED — David Rumsey maps6332"
+  "verify": "CONFIRMED — David Rumsey maps6332",
+  "iiif_manifest": "",
+  "source_alt": "https://archive.org/details/terrexploration01duflrich"
  },
  {
   "id": "ayala-1775-sf",
@@ -84,7 +87,7 @@
  },
  {
   "id": "beechey-1827-sf",
-  "title": "Chart of the Harbour of San Francisco",
+  "title": "Plan of the Harbour of San Francisco and its Vicinity",
   "short_title": "Beechey, HMS Blossom, SF Bay",
   "cartographer": "F. W. Beechey, HMS Blossom",
   "date": "1827",
@@ -95,13 +98,14 @@
   "era": "The Licensed Door (1822–1845)",
   "region_served": "San Francisco",
   "source_repository": "David Rumsey / Internet Archive",
-  "source_permalink": "https://www.davidrumsey.com/luna/servlet/view/search?q=beechey+san+francisco",
+  "source_permalink": "https://archive.org/details/dr_plan-of-the-harbour-of-san-francisco-and-its-vicinity-by-captn-f-w-beec-11955001",
   "georef_status": "none",
   "tile_url": "",
   "license": "public domain; attribution to source repository",
   "headnote": "The definitive chart of the bay, surveyed by Beechey's Blossom in the very decade San Francisco filled with the hide-trade fleet — the natural inset for the registry's 1820s–40s San Francisco visits. The Blossom's own 1826 call is a row in the data.",
   "look_for": "the anchorage grounds off Yerba Buena where the Boston droghers rode — the geography of the licensed-door trade.",
-  "verify": "confirm best repository permalink"
+  "verify": "CONFIRMED — David Rumsey plate on Internet Archive, IIIF-enabled",
+  "iiif_manifest": "https://iiif.archive.org/iiif/dr_plan-of-the-harbour-of-san-francisco-and-its-vicinity-by-captn-f-w-beec-11955001/manifest.json"
  },
  {
   "id": "wilkes-1841-sf",
@@ -115,13 +119,13 @@
   "era": "Conquest (1846–1848)",
   "region_served": "San Francisco",
   "source_repository": "David Rumsey / Internet Archive",
-  "source_permalink": "https://www.davidrumsey.com/luna/servlet/view/search?q=wilkes+san+francisco+1841",
+  "source_permalink": "https://archive.org/details/narrativeofunite01wilk_0",
   "georef_status": "none",
   "tile_url": "",
   "license": "public domain; attribution to source repository",
   "headnote": "The American survey of San Francisco Bay on the eve of conquest — the bay the U.S. Navy would take five years later, charted by the Wilkes expedition. The Act-V inset, where the flag begins to follow the trade the registry has tracked for seventy years.",
   "look_for": "the American naming and soundings that anticipate the harbour of the Gold Rush.",
-  "verify": "confirm best repository permalink"
+  "verify": "atlas narrativeofunite01wilk_0; locate the SF Bay chart plate (Ringgold survey) within"
  },
  {
   "id": "duflot-1844-bodega",
