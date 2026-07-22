@@ -222,9 +222,36 @@ function drawMarkers(){
      [...new Set(vs.map(v=>v.ship_id))].slice(0,14).join(', '))
    .addTo(_layer)});
 }
+// ── Historical period basemaps (David Rumsey / Allmaps georeferenced) ──
+// TO ADD ONE: georeference the map (Rumsey Georeferencer -> "Get links" -> XYZ Link,
+// or Allmaps editor), then paste its XYZ tile URL into `url` below. Entries whose
+// url is still '' are silently skipped, so the map works before any are configured.
+const HIST=[
+ {name:"Duflot de Mofras, Côte de l'Amérique (1844)",
+  url:"",  /* <- paste XYZ URL from davidrumsey.com/maps6332.html Georeferencer "Get links" */
+  attribution:"Duflot de Mofras 1844 &middot; David Rumsey Map Collection", maxZoom:9},
+ /* add more: Sutil y Mexicana 1802 coastal charts, per-port insets, etc. */
+];
 function initMap(){
  window._map=L.map('map').setView([34.5,-119.5],5);
- L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OSM'}).addTo(_map);
+ const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OSM',maxZoom:18});
+ const carto=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19});
+ osm.addTo(_map);
+ const bases={'OpenStreetMap':osm,'Light (Carto)':carto};
+ HIST.forEach(h=>{if(!h.url)return; bases[h.name]=L.tileLayer(h.url,{attribution:h.attribution,maxZoom:h.maxZoom||9});});
+ L.control.layers(bases,null,{position:'topright'}).addTo(_map);
+ // opacity slider — appears only when a historical base is selected
+ let histActive=null;
+ const op=L.control({position:'bottomright'});
+ op.onAdd=function(){const d=L.DomUtil.create('div');d.style.cssText='background:#fff;padding:5px 8px;border:1px solid #ccc;border-radius:4px;font-size:11px;display:none';
+  d.innerHTML='historical map opacity<br><input type="range" min="0" max="100" value="100" style="width:130px">';
+  L.DomEvent.disableClickPropagation(d);
+  d.querySelector('input').oninput=function(){if(histActive)histActive.setOpacity(this.value/100)};
+  this._d=d;return d};
+ op.addTo(_map);
+ _map.on('baselayerchange',e=>{const isH=HIST.some(h=>h.name===e.name&&h.url);
+  histActive=isH?e.layer:null; op._d.style.display=isH?'block':'none';
+  if(isH){op._d.querySelector('input').value=100;e.layer.setOpacity(1);}});
  document.getElementById('mapPurpose').addEventListener('input',drawMarkers);
  drawMarkers();
 }
