@@ -71,7 +71,7 @@ ALIAS = {
  'taaso': 'tasso', 'loussa': 'louisa', 'maraquita': 'mariquita',
  'fetvorite': 'favourite', 'guadidupc': 'guadalupe', 'elizabeih': 'elizabeth',
  'vafidalia': 'vandalia', 'plowhoij': 'plough boy', 'liclipse': 'eclipse',
- 'oajaca': 'oaxaca',
+ 'oajaca': 'oaxaca', 'o’ cain': 'o’cain', "o' cain": 'o’cain',
 }
 STOP_NAMES = {  # italic/quoted tokens that are NOT ships (false-positive guard)
  'california', 'californias', 'sobre', 'reglamento', 'diputación', 'diputacion',
