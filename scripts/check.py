@@ -20,6 +20,11 @@ DROPPED_SHIP_IDS = {
     # C-A / print-list phantoms (policy bundles, person-names, mis-parses)
     'congreso mejicano', 'don', 'adela', 'grafton', 'la paloma', 'spray',
     'hebe', 'tagle', 'caminante', 'rita', 'rosalia', 'neptuno', 'peruano',
+    # 2026-07-27 OCR garbles: merged into a real ship (must not re-mint as their own row)
+    'actwo', 'actwwo', 'chirtkov', 'iimen', 'taaso', 'loussa', 'maraquita',
+    'fetvorite', 'guadidupc', 'elizabeih', 'vafidalia', 'plowhoij', 'liclipse', 'oajaca',
+    # 2026-07-27 unrecoverable print-list garbles (no confident reading — asserted nothing)
+    'oivvi', 'panjir', 'xylon', 'suxden', 'suaanita', 'toidon', 'nadednik', 'apoho',
 }
 hard, warn = [], []
 rows = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'visits.csv'))))
