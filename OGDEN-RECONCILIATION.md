@@ -40,3 +40,29 @@ Merged into the real ship (Ogden OCR twins): `actwo`+`actwwo`→*Activo*, `chirt
 1. **Ingest Bancroft's full marine lists** (Hist. Cal. II–V) and cross-merge with Ogden by name+year → kills the silo, corroborates the 41 Ogden-only, and surfaces vessels Ogden lacks.
 2. **Resolve the 3 garble flags** against Ogden's clean catalog (esp. the *California* vessel).
 3. Promote matched Ogden vessels from `status=draft` → `reviewed`.
+
+---
+
+# Bancroft marine-list ingest + three-source merge (2026-07-27, same day)
+
+Acted on Finding 1. The full Bancroft Mexican-period marine list was already staged in `data/mexlist-stage.csv` — **198 vessels** (Hist. Cal. vols III/IV/V, spans 1825-30 / 1831-5 / 1841-5 / 1846-8). Cross-matched it (ALIAS-aware) against the live roster:
+
+| bucket | n | action |
+|---|---|---|
+| in **BOTH** Ogden & Bancroft-list | 17 | **corroborated** — added a Bancroft marine-list citation to each (kills the silo) |
+| already present as a live ship | 123 | already covered |
+| genuinely **new** real vessel, clean name | 8 | **added** |
+| **phantom-name but real vessel (has tonnage)** | 10 | **flagged, NOT minted** — need the Bancroft page |
+| OCR garble / thin | ~40 | left in stage; need the suspects-triage fixes applied |
+
+**Corroborated (now Ogden + Bancroft):** convoy, eagle, griffon, mercury, okhotsk, washington, waverly, diana, crusader, mariquita, plant, volunteer, columbia, eliza, admittance, fama, louisa.
+
+**Added as new Bancroft-marine-list vessels (with tonnage):** *Pilgrim* (155t — Dana's ship), *Wilmington* (364t), *Paragon* (309t), *Peruvian* (331t), *Affiance*, *Bowditch*, *Huntress*, *Corea*. Registry now **393 ships / 2,090 visits**.
+
+## Finding 5 — the marine list has REAL vessels sharing a dropped phantom's name
+Bancroft's *List of vessels* records vessels **with tonnage** named `Sitka` (russia 202t, Monterey), `Times` (britain 407t), `Friend` (usa 404t), `Fernando` (mexico 344t), `Trinidad` (mexico 170t), `California` (usa 379t; usa 422t), `Tartar` (usa 301t), `American` (88t), `Expadon` (france 397t). These are **not** the narrative-word phantoms we sank (the month, the demonym, the place) — they are real hulls. **But** the whole stage file is raw OCR, and these names are exactly where OCR error hides, so they are **flagged, not minted**: confirm each against the actual Hist. Cal. marine-list page, then add under a disambiguated id (e.g. `sitka-vessel`) — never the bare phantom id (those are HARD-guarded).
+
+## Still open
+- Apply the full `mexlist-suspects-triage.csv` garble fixes to the stage file, then re-run this match to trust the remaining ~40 stage vessels.
+- Verify + mint the 10 phantom-name real vessels from the Bancroft page.
+- **Coverage gap:** the staged list is Mexican-period only (1825-48). Bancroft's **Spanish-period** vessel list (Hist. Cal. I–II, pre-1825) is not ingested — the pre-1825 traffic rests on the C-A manuscripts alone.
