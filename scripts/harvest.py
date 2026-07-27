@@ -71,6 +71,10 @@ ALIAS = {
 STOP_NAMES = {  # italic/quoted tokens that are NOT ships (false-positive guard)
  'california', 'californias', 'sobre', 'reglamento', 'diputación', 'diputacion',
  'san blas', 'monterey', 'monterrey', 'la paz',
+ # 2026-07-27 sweep: never-a-ship tokens (place / month / demonym / person / body)
+ 'june', 'junio', 'american', 'americano', 'americana', 'sitka', 'trinidad',
+ 'san fernando', 'fernando', 'times', 'henry', 'edward', 'friend',
+ 'congreso mejicano', 'congreso', 'caminante', 'tagle', 'don', 'adela', 'grafton',
 }
 
 def norm(name):

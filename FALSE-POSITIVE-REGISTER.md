@@ -62,3 +62,13 @@ After ANY new records/volumes/books are ingested, re-run the pipeline, then:
 3. Check any new multi-decade or multi-flag cluster (Class 2).
 4. Spot-check flags on core-fleet ships (Class 6).
 5. Everything uncertain → REVIEW-QUEUE.md, `status=draft`, never a confident row.
+
+---
+
+## Sweep log — 2026-07-27 (the "not a ship at all" pass)
+Aodhan flagged that the live list still showed obvious non-ships (e.g. *California*). Re-read every zero-maritime-context cluster against the Bancroft text; sank **24 phantoms / 114 visits** (430→406 ships, 2187→2073 visits). All are now HARD-guarded by `DROPPED_SHIP_IDS` in `check.py` and blocked at harvest by `STOP_NAMES`.
+
+- **HoC-sweep homonyms (11):** `california` (the province — "Who First Saw Alta California?"), `june` (58 visits — the month), `fernando` (the College/Mission San Fernando & King Ferdinand III), `american` (demonym — "an American ship"), `sitka` (the Russian port), `trinidad` (Trinidad Bay), `times` ("Early Times", a book title), `henry`/`edward` (bibliography names — Peirce, Hale), `friend` (the word), `tartar` (mis-parse; the real *Young/Joven Tártaro* is kept separately).
+- **C-A / print-list phantoms (13):** `congreso mejicano` (the Mexican Congress), `don` (title fragment), `adela` (an Indian-raid guard record), `grafton` (three deserters arriving overland), `la paloma` (the Martínez prosecution file), `spray` (a company account), `hebe` (a wounding *sumaria*), `tagle` (a person — the *Mercurio* prisoners), `caminante` (a treasury letter), `rita` (a church-state treatise), `rosalia` + `neptuno` (both pulled from one Apodaca free-trade *decree* bundle — Class 1), `peruano` (French-nationals property, 1849).
+- **Saved by reading (kept):** `carmen` (real bergantín, C-A 40 ledger) and `clarion` (Gyzelaar's ship — it carried the 1818 Bouchard warning to Santa Bárbara).
+- **Still open (separate task):** OCR-garble twins in the Ogden/Bancroft print lists (`actwwo`→Activo, `liclipse`→Eclipse, `caauifrornia`/`califorma`, `iimen`→Ilmen, `fetvorite`→Favorite, `oajaca`→Oaxaca, etc.) — Class 5, recoverable to real ships; needs a merge pass, not deletion. Two Class-7 reports to adjudicate: `la independencia` (Cochrane's squadron off Baja) and `el aventurero` (the viceroy's Bouchard dispatch).

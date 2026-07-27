@@ -10,12 +10,25 @@ FLAGS = {'', 'spain', 'usa', 'russia', 'britain', 'mexico', 'france', 'hawaii', 
 VTYPES = {'port-call', 'port-call?', 'offshore-presence', 'resident', 'sighting',
           'reported?', 'mention', 'unlocated'}
 STATUS = {'draft', 'reviewed', 'verified'}
+# Sunk phantoms — non-ships adjudicated out (2026-07-27, see FALSE-POSITIVE-REGISTER.md).
+# A HARD guard so a re-harvest or stray row can never re-mint them. Read the Bancroft
+# text: each of these is a place / month / demonym / person / policy, not a hull.
+DROPPED_SHIP_IDS = {
+    # HoC narrative-sweep homonyms
+    'california', 'june', 'fernando', 'american', 'sitka', 'trinidad',
+    'times', 'henry', 'friend', 'edward', 'tartar',
+    # C-A / print-list phantoms (policy bundles, person-names, mis-parses)
+    'congreso mejicano', 'don', 'adela', 'grafton', 'la paloma', 'spray',
+    'hebe', 'tagle', 'caminante', 'rita', 'rosalia', 'neptuno', 'peruano',
+}
 hard, warn = [], []
 rows = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'visits.csv'))))
 seen_ids = set()
 spans = {}
 for r in rows:
     vid = r['visit_id']
+    if r['ship_id'] in DROPPED_SHIP_IDS:
+        hard.append(f"{vid}: sunk-phantom ship_id {r['ship_id']!r} — a non-ship; must not be re-minted")
     if vid in seen_ids: hard.append(f"duplicate visit_id {vid}")
     seen_ids.add(vid)
     if r['flag'] not in FLAGS: hard.append(f"{vid}: bad flag {r['flag']!r}")
