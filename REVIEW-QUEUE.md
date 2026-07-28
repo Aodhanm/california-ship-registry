@@ -87,3 +87,11 @@ Roster-wide cross-check vs the local Bancroft 7-vol text + C-A citations: 395/39
 - ✅ **enrique** — dropped 2 non-ship visits (1797 weaving/cloth record; 1840 "the foreigner Enrique (Henry)" = a person in the Graham Affair, Bancroft vol IV confirms). Cluster now = the real 1800 courier ship only.
 - ✅ **eagle** — split off `eagle-frigate` (the 1814 Spanish-chartered frigate that seized the *Pedler* at S.L. Obispo, a distinct hull); the 1807 New-York report stays typed `mention`; 1821/1822/1825 stay as the American trader *Eagle*.
 - ⚠ **washington** — NOT split (deliberately): two hulls are implied — a **140t schooner** (Robt Elwell master, 1825, from the Sandwich Islands) and a **52t goleta** (Capt. Thompson, 1826, chile cargo, per Vallejo) — but the other 14 visits (1824–29, incl. the Richardson/Charles Laing goleta) can't be confidently assigned between them just one year apart; the 52-vs-140t gap could be a recording error. Left as one cluster pending a source that resolves the two. Do not guess-assign.
+
+## Draft-queue resolution (2026-07-27) — 27 → 7
+Worked the whole draft queue against the local Bancroft text + C-A excerpts:
+- **Merged into a real ship:** cadiac→*kodiak* (excerpt glosses "Cadiac (Kodiak)"), la elisa→*eliza*, tic-me-mash→*tamaahmaah* (Kamehameha), javier sartar→*predpriatie* (record is about the Predpriatie).
+- **Renamed to a real ship:** diga→**cruiser** (excerpt: "la Fragata de guerra Rusa nombrada *Cruiser*").
+- **Promoted (excerpt names the vessel):** el pelao (balandra, 1781), el rey (mail-frigate, 1781), refugio (Am. brig, Capt. Frome Thompson, 1833), thankful (bergantín, 1829), ruperto (brig, S. Pedro), oguahi (Am. brig 166t = O'ahu), mercedes (Spanish sloop captured 1799 — flag fixed spain).
+- **Dropped as mis-parses/non-ships:** net-siut, tester, vinas (all garbled from the *single* 1799 Mercedes-capture record), san francisco + santa barbara (the places, from church/muster/Channel records), bruja + reisos + ynez (fragments from multi-ship registers naming Margarita/Peacock/Convoy). All HARD-guarded.
+- **Still draft (7):** dhualle, william inttle (Ogden garbles — need her book); washington (140t vs 52t two-hull split); iron tarlar, isaac tarlar (1824 garbled frigate/schr — Isaac Todd? Young Tartar?); francesa (demonym vs name); mcculloch (the merchant vs a ship).

@@ -25,6 +25,8 @@ DROPPED_SHIP_IDS = {
     'fetvorite', 'guadidupc', 'elizabeih', 'vafidalia', 'plowhoij', 'liclipse', 'oajaca',
     # 2026-07-27 unrecoverable print-list garbles (no confident reading — asserted nothing)
     'oivvi', 'panjir', 'xylon', 'suxden', 'suaanita', 'toidon', 'nadednik', 'apoho',
+    # 2026-07-27 queue-resolution drops (mis-parses / place-names)
+    'net-siut','tester','vinas','san francisco','santa barbara','bruja','reisos','ynez','cadiac','la elisa','tic-me-mash','javier sartar','diga',
 }
 hard, warn = [], []
 rows = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'visits.csv'))))

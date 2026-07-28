@@ -44,11 +44,9 @@ bremen,Bremen (1),,1843,1843,1,reviewed
 brillante,Brillante (1),,1846,1846,1,reviewed
 brookline,Brookline (3),usa,1829,1830,3,reviewed
 brooklyn,Brooklyn (9),usa,1829,1839,9,reviewed
-bruja,Bruja (1),russia,1834,1834,1,draft
 buldakov,Buldacoff (7),russia,1822,1824,7,reviewed
 butterworth,Butterworth (2),britain,1793,1793,2,reviewed
 california-sanblas,"California [Mex., San Blas 1823-31] (7)",mexico,1823,1823,7,reviewed
-cadiac,Cadiac (1),,1827,1827,1,draft
 caledonia,Caledonia (1),,1833,1833,1,reviewed
 califa,Califa (1),usa,1833,1833,1,reviewed
 california-1845,California [1845-46] (5),,1845,1846,5,reviewed
@@ -95,7 +93,7 @@ danube,Danube (3),usa,1829,1830,3,reviewed
 descubierta-rus,La Descubierta (2),russia,1819,1821,2,reviewed
 dhualle,Dhualle (2),,1829,1829,2,draft
 diana,Diana (2),,1829,1836,2,reviewed
-diga,Diga (1),russia,1823,1823,1,draft
+cruiser,"Cruiser [Russ. navy frigate, 1823] (1)",russia,1823,1823,1,reviewed
 discovery,Discovery (7),britain,1792,1794,7,reviewed
 don quijote,Don Quijote (3),spain,1834,1845,3,reviewed
 don quixote,Don Quixote (11),,1834,1836,11,reviewed
@@ -104,11 +102,11 @@ dromo,Dromo (1),usa,1808,1808,1,reviewed
 eagle,Eagle (11),usa,1807,1825,11,reviewed
 el alcion,El Alción (2),spain,1820,1822,2,reviewed
 el aventurero,El Aventurero (1),spain,1819,1819,1,reviewed
-el pelao,El Pelao (1),,1781,1781,1,draft
-el rey,El Rey (1),,1781,1781,1,draft
+el pelao,El Pelao (1),,1781,1781,1,reviewed
+el rey,El Rey (1),,1781,1781,1,reviewed
 el senoriano,El Señoriano (2),,1820,1821,2,reviewed
 elena,Elena (2),russia,1838,1840,2,reviewed
-eliza,Eliza (5),usa,1798,1826,5,reviewed
+eliza,Eliza (5),usa,1798,1841,7,reviewed
 elizabeth,Elizabeth (2); var: Elizabeih,usa,1846,1847,2,reviewed
 emilia,Emilia (1),usa,1828,1828,1,reviewed
 emily marshall,Emily Marshall (2),britain,1830,1830,2,reviewed
@@ -166,7 +164,6 @@ isabel,Isabel (5),usa,1826,1841,5,reviewed
 isabella,Isabella (1),usa,1810,1810,1,reviewed
 jackal,Jackal (2),,1793,1793,2,reviewed
 janus,Janus (1),usa,1846,1846,1,reviewed
-javier sartar,Javier Sartar (1),britain,1824,1824,1,draft
 jeanette,Jeanette (1),usa,1846,1846,1,reviewed
 john begg,John Begg (2),russia,1822,1823,2,reviewed
 jorge henriquez,Jorge Henríquez (1),,1843,1843,1,reviewed
@@ -185,12 +182,11 @@ kekauonohi,Kekauonohi (1),,1847,1847,1,reviewed
 kiakhta,Riascta (2),russia,1826,1829,2,reviewed
 kitty,Kitty (1),,1833,1833,1,reviewed
 kniaz,Kníaz (1),russia,1824,1824,1,reviewed
-kodiak,Kodiak (3),russia,1808,1809,3,reviewed
+kodiak,Kodiak (3),russia,1808,1827,4,reviewed
 kreiser,Kreiser (3),russia,1823,1824,3,reviewed
 kutusov,Kutusov (4),,1817,1818,4,reviewed
 kutuzov,Kutusoff (4),russia,1817,1822,4,reviewed
 la catalina,LA CATALINA (1),usa,1803,1803,1,reviewed
-la elisa,La Elisa (1),usa,1801,1801,1,draft
 la fama,La Fama (1),,1797,1797,1,reviewed
 la hermosa mexicana,La Hermosa Mexicana (1),mexico,1817,1817,1,reviewed
 la independencia,La Independencia (1),spain,1822,1822,1,reviewed
@@ -221,7 +217,7 @@ massachusetts,Massachusetts (1),usa,1827,1827,1,reviewed
 matador,Matador (1),mexico,1835,1835,1,reviewed
 matamoros,Matamoros (1),spain,1827,1827,1,reviewed
 mentor,Mentor (2),usa,1823,1824,2,reviewed
-mercedes,Mercedes (4),usa,1797,1801,4,draft
+mercedes,Mercedes (4),spain,1797,1801,4,reviewed
 mercury,Mercury (25),usa,1790,1826,25,reviewed
 mermaid,Mermaid (1),,1846,1846,1,reviewed
 merope,Merope (1),usa,1825,1825,1,reviewed
@@ -238,7 +234,6 @@ morse,Morse (1),,1839,1839,1,reviewed
 moscow,Moscow (2),usa,1846,1846,2,reviewed
 n.s. de la merced,N.S. de la Merced (1),,1797,1797,1,reviewed
 natalia,Natalia (8),russia,1833,1835,8,reviewed
-net-siut,Net-siut (1),usa,1799,1799,1,draft
 newcastle,Newcastle (1),usa,1832,1832,1,reviewed
 newton,Newton (1),,1844,1844,1,reviewed
 nicolas,Nicolás (2),russia,1840,1840,2,reviewed
@@ -256,7 +251,7 @@ nueva reyna de los angeles,Nueva Reyna de los Ángeles (2),spain,1819,1819,2,rev
 nye,Nye (1),,1841,1841,1,reviewed
 o'cain,O'Cain (6),usa,1804,1806,6,reviewed
 oaxaca,Oaxaca (1),mexico,1841,1841,1,reviewed
-oguahi,Oguahí (1),usa,1824,1824,1,draft
+oguahi,Oguahí (1),usa,1824,1824,1,reviewed
 okhotsk,Okhotsk (1),,1818,1818,1,reviewed
 olive branch,Olive Branch (2),,1826,1826,2,reviewed
 ontario,Ontario (1),usa,1822,1822,1,reviewed
@@ -283,7 +278,7 @@ plant,Plant (4),usa,1829,1832,4,reviewed
 plough boy,Plough Boy (2); var: Plowhoij,usa,1825,1825,2,reviewed
 pocahontas,Pocahontas (4),russia,1831,1832,4,reviewed
 portsmouth,Portsmouth (1),,1847,1847,1,reviewed
-predpriatie,Predpriatie (2),russia,1824,1824,2,reviewed
+predpriatie,Predpriatie (2),russia,1824,1824,3,reviewed
 primavera,Primavera (1),,1845,1845,1,reviewed
 prince lee boo,Prince Lee Boo (3),,1793,1793,3,reviewed
 princesa,Princesa (70),spain,1779,1810,70,reviewed
@@ -293,9 +288,8 @@ providence,Providence (2),britain,1796,1796,2,reviewed
 rama de oliva,Rama de Oliva (1),,1826,1826,1,reviewed
 rambler,Rambler (1),usa,1829,1829,1,reviewed
 rasselas,Rasselas (3),,1837,1837,3,reviewed
-refugio,Refugio (1),usa,1833,1833,1,draft
+refugio,Refugio (1),usa,1833,1833,1,reviewed
 reina de los angeles,Reina de los Ángeles (11),spain,1787,1823,11,reviewed
-reisos,Reisos. (1),usa,1806,1806,1,draft
 resolution,Resolución (5),britain,1795,1796,5,reviewed
 revolucion,Revolución (2),britain,1799,1799,2,reviewed
 reyna,Reyna (3),spain,1819,1822,3,reviewed
@@ -303,7 +297,7 @@ roman,Roman (1),usa,1846,1846,1,reviewed
 rosalind,Rosalind (2),usa,1841,1842,2,reviewed
 rover,Rover (17),usa,1823,1829,17,reviewed
 royal george,Royal George (1),britain,1824,1824,1,reviewed
-ruperto,Ruperto (1),,,,1,draft
+ruperto,Ruperto (1),,,,1,reviewed
 rurik,Rurik (9),russia,1815,1824,9,reviewed
 sabine,Sabine (1),usa,1848,1848,1,reviewed
 sachem,Sachem (8),usa,1822,1826,8,reviewed
@@ -311,14 +305,12 @@ sacramento,Sacramento (2),,1841,1844,2,reviewed
 sagadahoc,Sagadahoc (1),usa,1846,1846,1,reviewed
 san antonio,San Antonio (4),spain,1772,1839,4,reviewed
 san carlos,San Carlos (60),spain,1769,1822,60,reviewed
-san francisco,San Francisco (3),spain,1797,1827,3,draft
 san francisco de paula,San Francisco de Paula (1),,1786,1786,1,reviewed
 san francisco javier,San Francisco Javier (2),spain,1820,1821,2,reviewed
 san javier,San Javier (1),spain,1820,1820,1,reviewed
 san joaquin,San Joaquín (2),,1803,1805,2,reviewed
 san jose,San José (5),spain,1779,1795,5,reviewed
 san jose de filipinas,San José de Filipinas (1),spain,1793,1793,1,reviewed
-santa barbara,Santa Bárbara (4),usa,1777,1833,4,draft
 santa elena,Santa Elena (1),russia,1825,1825,1,reviewed
 santa gertrudis,Santa Gertrudis (7),spain,1785,1849,7,reviewed
 santa maria,Santa María (1),,1835,1835,1,reviewed
@@ -339,15 +331,13 @@ stonington,Stonington (1),usa,1846,1846,1,reviewed
 sultan,Sultan (1),russia,1816,1816,1,reviewed
 sutil,Sutil (9),spain,1785,1825,9,reviewed
 suvorov,Suvorov (5),russia,1811,1816,5,reviewed
-tamaahmaah,Tamaahmaah (3),,1825,1829,3,reviewed
+tamaahmaah,Tamaahmaah (3),,1825,1829,4,reviewed
 tamana,Tamana (3),,1806,1807,3,reviewed
 tartaro,Tártaro (3),usa,1825,1825,3,reviewed
 tasso,Tasso (5); var: Taaso,usa,1840,1846,5,reviewed
-tester,Tester (1),usa,1799,1799,1,draft
-thankful,Thankful (1),,1829,1829,1,draft
+thankful,Thankful (1),,1829,1829,1,reviewed
 thomas nowlan,Thomas Nowlan (9),britain,1825,1830,9,reviewed
 thomas perkins,Thomas Perkins (4),usa,1840,1841,4,reviewed
-tic-me-mash,Tic-me-mash (1),usa,1825,1825,1,draft
 timorelan,Timorelan (1),,1825,1825,1,reviewed
 tomas nowlan,Tomás Nowlan (1),,1829,1829,1,reviewed
 tomasa,Tomasa (1),britain,1825,1825,1,reviewed
@@ -365,7 +355,6 @@ venus,Vénus (2),britain,1795,1795,2,reviewed
 verale,Verale (1),usa,1828,1828,1,reviewed
 vesper,Vesper (1),usa,1847,1847,1,reviewed
 victoria,Victoria (1),,1832,1832,1,reviewed
-vinas,Viñas (1),usa,1799,1799,1,draft
 vitor,Vitor (1),spain,1830,1830,1,reviewed
 volga,Volga (2),russia,1822,1822,2,reviewed
 voluntario,Voluntario (1),,1829,1829,1,reviewed
@@ -377,7 +366,6 @@ washington,Washington (15),usa,1824,1829,15,draft
 waverly,Waverly (13),,1826,1836,13,reviewed
 william inttle,William Inttle (2),,1831,1831,2,draft
 william lee,William Lee (1),russia,1834,1834,1,reviewed
-ynez,Ynez (1),,1831,1831,1,draft
 jackman,Jackman (1),usa,1826,1826,1,reviewed
 figaro,Fígaro (1),usa,1826,1826,1,reviewed
 mcculloch,McCulloch[?] (1),usa,1826,1826,1,draft
