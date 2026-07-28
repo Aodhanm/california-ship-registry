@@ -82,3 +82,8 @@ Roster-wide cross-check vs the local Bancroft 7-vol text + C-A citations: 395/39
 - **`dhualle`** (2 visits, 1829, Monterey/Sta B.) — unidentified. Not the Danube (Robbins, wrecked 1830) on spelling; possibly a French visitor. Keep draft, do not assert a name.
 - **`william inttle`** (2 visits, 1831, Monterey/Sta B.) — likely "William Little" but no Bancroft/C-A confirmation. Keep draft.
 - Resolved this pass: `caauifrornia`→`california-sanblas` (Mex. San Blas vessel 1823-31), `califorma`→`california-1845` — both real per Ogden.
+
+## Identity-split pass (2026-07-27)
+- ✅ **enrique** — dropped 2 non-ship visits (1797 weaving/cloth record; 1840 "the foreigner Enrique (Henry)" = a person in the Graham Affair, Bancroft vol IV confirms). Cluster now = the real 1800 courier ship only.
+- ✅ **eagle** — split off `eagle-frigate` (the 1814 Spanish-chartered frigate that seized the *Pedler* at S.L. Obispo, a distinct hull); the 1807 New-York report stays typed `mention`; 1821/1822/1825 stay as the American trader *Eagle*.
+- ⚠ **washington** — NOT split (deliberately): two hulls are implied — a **140t schooner** (Robt Elwell master, 1825, from the Sandwich Islands) and a **52t goleta** (Capt. Thompson, 1826, chile cargo, per Vallejo) — but the other 14 visits (1824–29, incl. the Richardson/Charles Laing goleta) can't be confidently assigned between them just one year apart; the 52-vs-140t gap could be a recording error. Left as one cluster pending a source that resolves the two. Do not guess-assign.

@@ -101,7 +101,7 @@ don quijote,Don Quijote (3),spain,1834,1845,3,draft
 don quixote,Don Quixote (11),,1834,1836,11,draft
 dos hermanos,Dos Hermanos (1),usa,1829,1829,1,draft
 dromo,Dromo (1),usa,1808,1808,1,draft
-eagle,Eagle (11),usa,1807,1822,11,draft
+eagle,Eagle (11),usa,1807,1825,11,draft
 el alcion,El Alción (2),spain,1820,1822,2,draft
 el aventurero,El Aventurero (1),spain,1819,1819,1,draft
 el pelao,El Pelao (1),,1781,1781,1,draft
@@ -112,7 +112,7 @@ eliza,Eliza (5),usa,1798,1826,5,draft
 elizabeth,Elizabeth (2); var: Elizabeih,usa,1846,1847,2,draft
 emilia,Emilia (1),usa,1828,1828,1,draft
 emily marshall,Emily Marshall (2),britain,1830,1830,2,draft
-enrique,Enrique (3),,1797,1840,3,draft
+enrique,Enrique (1),,1800,1800,1,draft
 enriqueta,Enriqueta (2),,1830,1830,2,draft
 enterprise,Enterprise (5),russia,1801,1824,5,draft
 envoy,Envoy (1),,1831,1831,1,draft
@@ -397,3 +397,4 @@ fernando-brig,Fernando [Mex. brig] (1),mexico,1842,1842,1,draft
 trinidad-brig,"Trinidad [Mex. brig, 170t] (1)",mexico,1842,1842,1,draft
 california-boston-ship,"California [Amer. ship, Boston hide trade] (1)",usa,1831,1843,1,draft
 california-mex-schr,"California [Mex. schr, 83t, ex-Clarion] (1)",mexico,1837,1842,1,draft
+eagle-frigate,"Eagle [Sp.-chartered frigate, 1814] (1)",spain,1814,1814,1,draft
