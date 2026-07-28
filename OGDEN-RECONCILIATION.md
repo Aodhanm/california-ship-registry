@@ -66,3 +66,24 @@ Bancroft's *List of vessels* records vessels **with tonnage** named `Sitka` (rus
 - Apply the full `mexlist-suspects-triage.csv` garble fixes to the stage file, then re-run this match to trust the remaining ~40 stage vessels.
 - Verify + mint the 10 phantom-name real vessels from the Bancroft page.
 - **Coverage gap:** the staged list is Mexican-period only (1825-48). Bancroft's **Spanish-period** vessel list (Hist. Cal. I–II, pre-1825) is not ingested — the pre-1825 traffic rests on the C-A manuscripts alone.
+
+---
+
+# Bancroft-page verification of the phantom-tonnage vessels (2026-07-27)
+
+Verified the 10 "phantom-name but has-tonnage" flags against Bancroft's actual *List of vessels* on Wikisource (hand-corrected transcription of Hist. Cal. vol III, ch.6, djvu p.146). **The pattern is confirmed: these are mostly mis-parses — the OCR grabbed a place/origin or an adjacent word and kept a neighbouring vessel's tonnage.**
+
+| stage entry | verdict (verbatim Bancroft) |
+|---|---|
+| `Sitka` russia 202t | **mis-parse → the *Baikal*** — "*Baikal,* Russ. brig, 202 tons; up and down the coast from Ross to S. Diego each year 1826–30" (Sitka = her origin port). Already in registry. |
+| `Tartar` usa 301t | **→ *Young Tartar*** — "*Young Tartar* (or *Jóven Tartar*), Engl. schr, 95 tons; John Brown master, 1826-7." Name resolves to a ship we already hold; the 301t is spurious. |
+| `American` 88t | **not a vessel** — does not appear as a vessel name in the list (the demonym, as suspected). |
+| `California` 379t / 422t | **not a vessel name** in the 1825-30 detailed list (mis-parse). 1841-5 entries unverified (tooling); left flagged. |
+| `Times` britain 407t | **REAL — minted** as `times-whaler`: "*Times,* Engl. whaler, 407 tons; Wm Ross, master; at Sta B. Oct. 1828." Disambiguated id (never the dropped word `times`). |
+| `Friend` 404t | not in the 1825-30 list; 1831-40 unverified; left flagged. |
+| `Fernando`/`Trinidad`/`Expadon` (1841-5, Mexican/French, w/ tonnage) | **unverified** — vol IV chapter structure + repeated connection drops blocked the read. Left flagged; could be real Mexican/French vessels or mis-parses. |
+
+**Net:** of the 10 flags, 2 are confirmed mis-parses of ships we already hold (Baikal, Young Tartar), 2 confirmed non-vessels (American, California-1825/30), **1 confirmed real and minted (Times)**, and 5 remain flagged pending a vol-IV read. **The discipline of flag-not-mint was correct** — blindly minting these would have re-created phantoms.
+
+## Task-3 note (Spanish-period ingest) — deferred
+Attempted to ingest Bancroft's Spanish-period (pre-1825) vessel lists (Hist. Cal. I–II). The exhaustive Wikisource transcription stalled repeatedly (slow raw-page fetches hitting watchdog timeouts + mid-response connection drops). Not completed this session. **Mitigating fact:** the Spanish period is already the registry's best-covered era via the C-A manuscripts (e.g. *Princesa* 70 visits, plus Concepción, Activo, San Carlos, Favorita, Aránzazu…), so a Bancroft Spanish-period pass would mainly *corroborate* existing ships (as the Mexican-period pass did) rather than add many new vessels. Left as a future task.
