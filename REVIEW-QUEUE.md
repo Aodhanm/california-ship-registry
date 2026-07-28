@@ -95,3 +95,6 @@ Worked the whole draft queue against the local Bancroft text + C-A excerpts:
 - **Promoted (excerpt names the vessel):** el pelao (balandra, 1781), el rey (mail-frigate, 1781), refugio (Am. brig, Capt. Frome Thompson, 1833), thankful (bergantín, 1829), ruperto (brig, S. Pedro), oguahi (Am. brig 166t = O'ahu), mercedes (Spanish sloop captured 1799 — flag fixed spain).
 - **Dropped as mis-parses/non-ships:** net-siut, tester, vinas (all garbled from the *single* 1799 Mercedes-capture record), san francisco + santa barbara (the places, from church/muster/Channel records), bruja + reisos + ynez (fragments from multi-ship registers naming Margarita/Peacock/Convoy). All HARD-guarded.
 - **Still draft (7):** dhualle, william inttle (Ogden garbles — need her book); washington (140t vs 52t two-hull split); iron tarlar, isaac tarlar (1824 garbled frigate/schr — Isaac Todd? Young Tartar?); francesa (demonym vs name); mcculloch (the merchant vs a ship).
+
+## Identity note (2026-07-27, from the FIRSTS leaf-pass)
+- **morelos** — conflates TWO hulls: the 1825 Mexican war-**brig** *Morelos* (bergantín/transport from San Blas, convicts + supplies 1825–30) and the 1834 war-**corvette** *Morelos* (corbeta, cmdr Lucas Frey). Split by year/type when convenient (Class 2). The 1825 brig is the leaf-verified first Mexican-flag national vessel.
