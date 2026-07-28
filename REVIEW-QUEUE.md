@@ -107,3 +107,10 @@ Ingested Ogden's authoritative vessel appendix ("Identified Vessels Engaged in t
 - **`iron tarlar`/`isaac tarlar` (1824)** — NOT in Ogden's otter appendix (they're C-A customs-record names); still need the C-A leaf or another source.
 - Confirmed real (vindicating earlier merges): Actwo=*Activo* (Capt. Baridon, San Blas), Liclipse=*Eclipse* (343t, Capt. Joseph O'Cain), Plant (208t brig, Capt. Rutter, Bryant & Sturgis), Karimoku (formerly the *Becket*).
 - **Follow-on:** the full appendix (~170 vessel-trips) is extracted to the vault (`raw/papers/ogden-appendix-identified-vessels-1941.txt`) — enrich matched registry vessels with Ogden's tonnage/captain/owner/otter-skin facts (facts, not prose — Ogden is still in copyright until ~2037, so no text in the public repo).
+
+## Draft queue CLEARED — 2026-07-28 (100% reviewed)
+Last drafts adjudicated at the C-A leaf:
+- **`iron tarlar` + `isaac tarlar`** → merged. Leaf C-A 56 n247/n231: one real 1824 English merchant frigate at SF, Savage rendering it "Iven/Ivon Tarlar" (and "Tomas Farlan", Capt. Wm Chick, from Lima) — genuine vessel, name unrecoverable in Savage's own hand. Reviewed.
+- **`mcculloch`** → real. Leaf C-A 40 n65: listed among vessels trafficking at Sta Bárbara (Washington, Spry, Jackman, Elisa, Thomas Newton, Rover, Courier, Olive Branch, McCulloch/McEither $813, Dec 1826). Reviewed.
+- **`francesa`** → real. Leaf C-A 40 n81: a vessel entry in the 1827 customs ledger ("Mayo 8, 'Francesa', $400"), alongside Courier/Tomasa/Harbinger — a French vessel, not a stray demonym. Reviewed.
+**Registry: 391 ships, ALL reviewed.**
