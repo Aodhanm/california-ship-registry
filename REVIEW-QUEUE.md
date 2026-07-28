@@ -98,3 +98,12 @@ Worked the whole draft queue against the local Bancroft text + C-A excerpts:
 
 ## Identity note (2026-07-27, from the FIRSTS leaf-pass)
 - **morelos** — conflates TWO hulls: the 1825 Mexican war-**brig** *Morelos* (bergantín/transport from San Blas, convicts + supplies 1825–30) and the 1834 war-**corvette** *Morelos* (corbeta, cmdr Lucas Frey). Split by year/type when convenient (Class 2). The 1825 brig is the leaf-verified first Mexican-flag national vessel.
+
+## Resolved from Ogden's BOOK (appendix, printed pp.155–184) — 2026-07-28
+Ingested Ogden's authoritative vessel appendix ("Identified Vessels Engaged in the California Sea Otter Trade, 1786–1848"), read from the page images (the vault PDF), NOT the garbled OCR itineraries used earlier:
+- **`william inttle` → `william little`** — Ogden p.176: *"William Little, 1831 — Sloop, 36 tons, 7 crew; captain, Henry Carter; owner, Henry Carter, Honolulu; otter skins, 478."* Real; renamed + reviewed.
+- **`dhualle`** — Ogden p.175 prints the name as *"Dhualle"* (so the registry spelling is correct, not a garble): *"Brig, 182 tons; captain, William Warden; owner, at Hawaiian Islands; otter skins, 40 at Monterey"* (1829). Real; reviewed.
+- ⭐ **`washington` split RESOLVED** (do next): Ogden shows two hulls — (a) the **Marshall & Wildes schooner, 45–52 tons** (Capts. ——Little then Alpheus Basil Thompson; trips 1824, 1826, 1828–29, 1829) and (b) the separate **140-ton schooner** (Robt Elwell, from the Sandwich Islands, 1825). Assign the 16 washington visits accordingly.
+- **`iron tarlar`/`isaac tarlar` (1824)** — NOT in Ogden's otter appendix (they're C-A customs-record names); still need the C-A leaf or another source.
+- Confirmed real (vindicating earlier merges): Actwo=*Activo* (Capt. Baridon, San Blas), Liclipse=*Eclipse* (343t, Capt. Joseph O'Cain), Plant (208t brig, Capt. Rutter, Bryant & Sturgis), Karimoku (formerly the *Becket*).
+- **Follow-on:** the full appendix (~170 vessel-trips) is extracted to the vault (`raw/papers/ogden-appendix-identified-vessels-1941.txt`) — enrich matched registry vessels with Ogden's tonnage/captain/owner/otter-skin facts (facts, not prose — Ogden is still in copyright until ~2037, so no text in the public repo).
