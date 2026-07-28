@@ -87,3 +87,28 @@ Verified the 10 "phantom-name but has-tonnage" flags against Bancroft's actual *
 
 ## Task-3 note (Spanish-period ingest) — deferred
 Attempted to ingest Bancroft's Spanish-period (pre-1825) vessel lists (Hist. Cal. I–II). **Blocked at source: only vol III (and VI) of the *History of California* are transcribed on Wikisource — vols I and II are not there.** The only remaining path is Internet-Archive raw-OCR of the djvu, which stalled repeatedly (watchdog timeouts + mid-response connection drops). Not completed this session. **Mitigating fact:** the Spanish period is already the registry's best-covered era via the C-A manuscripts (e.g. *Princesa* 70 visits, plus Concepción, Activo, San Carlos, Favorita, Aránzazu…), so a Bancroft Spanish-period pass would mainly *corroborate* existing ships (as the Mexican-period pass did) rather than add many new vessels. Left as a future task.
+
+---
+
+# RESOLVED via the vault (2026-07-27, evening): all 7 Bancroft volumes are local
+
+Aodhan had the full *History of California* (all 7 vols, plain text) in the vault at `~/vault/raw/papers/bancroft-history-california/vol{1-7}-*.txt`. This unblocked both stuck tasks — no Wikisource/IA needed.
+
+## Task 2 — phantom-tonnage flags, FINAL (verified against the vault text)
+| flag | verdict |
+|---|---|
+| `Times` britain 407t | **REAL — minted** `times-whaler`. (vol III: "Times, Engl. whaler, 407 tons; Wm Ross, master; at Sta B. Oct. 1828.") |
+| `Fernando` mex 344t | **REAL — minted** `fernando-brig`. (vol IV: "Fernando, Mex. brig. At S. Pedro in June 1842.") |
+| `Trinidad` mex 170t | **REAL — minted** `trinidad-brig`. (vol IV: "Trinidad, Mex. brig, 170 tons, 14 men; R. Menchaca, master; C. Lataillade, owner… detained by Com. Jones at Mont. in Oct." 1842.) |
+| `California` usa 379t/422t | **REAL — minted** `california-boston-ship`. The Boston hide ship (Bryant & Sturgis; 379t in vol III 1831-40, 422t / Jas P. Arther master, arr. Mont. from Boston Feb. 1842 in vol IV). |
+| `California` mex (small) | **REAL — minted** `california-mex-schr`: "California, Mex. schr, 83 tons; formerly the Clarion and Kanin… sold to Gov. Alvarado" 1837. |
+| `Sitka` russia 202t | mis-parse → the **Baikal** (already held). |
+| `Tartar` usa 301t | → **Young Tartar** (already held). |
+| `American` 88t | **not a vessel** (absent from vol III list). |
+| `Friend` usa 404t | **not a vessel** (absent from vol III list). |
+| `Expadon` fr 397t | **not a vessel** — the text has only "Exploring Expedition" (Wilkes); no such hull. |
+
+So **5 of the 10 flags were real vessels (now minted with disambiguated ids), 5 were mis-parses/non-vessels.** Bare ids (`california`, `fernando`, `trinidad`, `times`) remain HARD-guarded; the real vessels live under `*-brig` / `*-ship` / `*-schr` ids.
+
+## Task 3 — Spanish-period ingest: no list exists to ingest
+Checked vols I (1542-1800) and II (1801-1824) in the vault: **Bancroft has NO tabulated "List of vessels" for the Spanish period** — zero tonnage-table entries in either volume. He narrates the San Blas supply ships in prose ("the Activo, under Alférez Manuel de Murga, arrived at San Francisco July 23… and the Princesa…"), citing `Prov. St. Pap.` — i.e. the **same C-A manuscripts the registry is already built from.** The consolidated marine list is a Mexican-period (vol III+) feature only. Conclusion: there is nothing to "ingest"; the Spanish era is already covered from the primary source, and a Bancroft pass would only *corroborate* existing ships against a secondary narrative of the same records. **Task closed as a no-op with reason, not deferred.**
