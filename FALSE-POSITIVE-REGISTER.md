@@ -80,3 +80,10 @@ Followed the phantom pass by merging garbled print-list/Ogden names into their r
 - **Dropped as unrecoverable (8):** `oivvi`, `panjir`, `xylon`, `suxden`, `suaanita`, `toidon`, `nadednik`, `apoho` — 1-visit Bancroft-list entries whose OCR left no confident reading; asserting a name would be worse than the refusal.
 - All encoded in harvest `ALIAS` (merges/renames) and the `check.py` HARD guard (merged + dropped ids can't re-mint).
 - **Still open (flagged, untouched):** `caauifrornia`/`califorma` — garbles of "California": confirm whether Ogden's itinerary actually lists a real *California* vessel before restoring (else these are place-phantoms like the sunk `california`). `timorelan`, `baihtl` (=*Baikal*?), `william inttle` (=*William Little*?), `dhualle` — need one source-read each.
+
+## Corroboration audit — 2026-07-27 (roster vs. the full Bancroft text)
+New capability: all 7 vols of Bancroft's *History of California* are now local plain text (`~/vault/raw/papers/bancroft-history-california/`). Ran a whole-roster reality check: for each of the 398 ships, is its name attested in **any** reliable source — a C-A manuscript citation, a Bancroft marine-list citation, Bancroft's narrative text, or Ogden's itineraries?
+
+**Result: 396/398 corroborated.** Only 2 unresolved, both OCR-mangled Ogden entries (`dhualle` 1829, `william inttle` 1831) that name *some* real hull we can't identify without Ogden's clean catalog — left `draft`, flagged in REVIEW-QUEUE, not asserted. 2 California garbles were identified and cleaned (`caauifrornia`→`california-sanblas`, `califorma`→`california-1845`).
+
+**This is now a re-runnable guard.** After any new ingest, re-run the cross-check (roster name → grep the 7 Bancroft vols + check for a C-A/Ogden citation). Any ship attested by *nothing* is a phantom suspect. Note: Ogden-only ships are legitimately real (Ogden is the authority on the fur-trade traffic Bancroft under-records) — corroboration = C-A OR Bancroft OR Ogden, not Bancroft alone.

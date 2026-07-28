@@ -76,3 +76,9 @@ Phase 0 harvested the calendar at ~13k records; it now holds **19,755 / 60 volum
 
 ## v0.5 calendar2 — PARTIAL FOLD (2026-07-18 late)
 Per the merge rule ("attach folds sooner; existing-ship lower-risk"): **18 attaches applied** + **39 existing-ship visits merged (v2149–v2187)** → registry **2,187 visits / 430 ships**, guards HARD 0. Still gated: **21 held rows** in `ca-calendar2-new.csv` (the 9 would-be new ships + suspect-note rows — Aodhan rules) and **22 ambiguous attaches** left in `ca-calendar2-attach.csv` (multi-match ship+year — need per-row disambiguation, e.g. concepcion-1797 ×19).
+
+## Unresolved OCR garbles from Ogden (2026-07-27 corroboration audit)
+Roster-wide cross-check vs the local Bancroft 7-vol text + C-A citations: 395/398 ships corroborated by a reliable source. The only unresolved names — Ogden entries too OCR-mangled to identify a real vessel (Ogden lists *some* hull there; need her clean catalog):
+- **`dhualle`** (2 visits, 1829, Monterey/Sta B.) — unidentified. Not the Danube (Robbins, wrecked 1830) on spelling; possibly a French visitor. Keep draft, do not assert a name.
+- **`william inttle`** (2 visits, 1831, Monterey/Sta B.) — likely "William Little" but no Bancroft/C-A confirmation. Keep draft.
+- Resolved this pass: `caauifrornia`→`california-sanblas` (Mex. San Blas vessel 1823-31), `califorma`→`california-1845` — both real per Ogden.
