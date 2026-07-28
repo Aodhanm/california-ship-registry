@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this registry, please cite it as below. Always verify any visit against the linked manuscript scan before citing the document itself; rows are status=draft until reviewed, and reviewed until leaf-verified."
+title: "California Ship Registry, 1769–1846: A Documentary Register of Vessel Visits to the Californias"
+type: dataset
+authors:
+  - family-names: Coyne
+    given-names: Aodhan
+    orcid: "https://orcid.org/0009-0002-8630-3768"
+repository-code: "https://github.com/Aodhanm/california-ship-registry"
+url: "https://ships.archivesofcalifornia.com/"
+abstract: >-
+  The first machine-readable registry of documented vessel visits to the
+  Californias, from the founding of Alta California (1769) to the eve of the
+  gold rush. The unit of record is the visit — one vessel, one anchorage,
+  one time — each row carrying its evidence as manuscript-leaf citations with
+  deep links to the corresponding page scans. Seeded from the Archives of
+  California calendar of the Savage transcripts (BANC MSS C-A) and corroborated
+  against H. H. Bancroft's History of California and Adele Ogden's trading-vessel
+  itineraries. The dataset publishes its refusals: a taxonomy of seven false-ship
+  classes (policy phantoms, era-conflations, person- and place-names, OCR
+  garbles, mis-flaggings, retrospective mentions) documents how a non-ship gets
+  minted from manuscript calendars and OCR'd print, with the guards that catch
+  each. Every ship traces to a reliable source; entries are graded draft →
+  reviewed → verified.
+keywords:
+  - California history
+  - maritime history
+  - Alta California
+  - Spanish borderlands
+  - Mexican California
+  - maritime fur trade
+  - hide and tallow trade
+  - Pacific shipping
+  - digital humanities
+  - record linkage
+license: CC-BY-4.0

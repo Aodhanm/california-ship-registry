@@ -1,0 +1,39 @@
+{
+  "title": "California Ship Registry, 1769–1846: A Documentary Register of Vessel Visits to the Californias",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Coyne, Aodhan",
+      "orcid": "0009-0002-8630-3768"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://ships.archivesofcalifornia.com/",
+      "relation": "isSupplementedBy",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.21327098",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ],
+  "keywords": [
+    "California history",
+    "maritime history",
+    "Alta California",
+    "Spanish borderlands",
+    "Mexican California",
+    "maritime fur trade",
+    "hide and tallow trade",
+    "Pacific shipping",
+    "digital humanities",
+    "record linkage"
+  ],
+  "description": "The first machine-readable registry of documented vessel visits to the Californias, 1769–1846. The unit of record is the visit (one vessel, one anchorage, one time), each row carrying manuscript-leaf citations with deep links to page scans. Seeded from the Archives of California calendar of the Savage transcripts (BANC MSS C-A) and corroborated against Bancroft's History of California and Adele Ogden's trading-vessel itineraries. Publishes its refusals: a seven-class false-ship taxonomy with the guards that catch each. Entries graded draft → reviewed → verified."
+}

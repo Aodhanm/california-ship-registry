@@ -1,0 +1,45 @@
+California Ship Registry, 1769–1846
+Copyright (c) 2026 Aodhan Coyne
+
+This repository is dual-licensed:
+
+────────────────────────────────────────────────────────────────────
+DATA and DOCUMENTATION  (data/*.csv, *.md, and the generated site)
+────────────────────────────────────────────────────────────────────
+Licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0). You are free to share and adapt the material for any purpose,
+including commercially, provided you give appropriate credit, link to the
+license, and indicate if changes were made.
+
+  Human-readable deed:  https://creativecommons.org/licenses/by/4.0/
+  Full legal code:      https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested citation: see CITATION.cff.
+
+Note on sources: the underlying manuscripts (Archives of California, BANC
+MSS C-A, Bancroft Library, UC Berkeley) are in the public domain as
+government records; this license covers the registry's structured data,
+adjudication, and documentation, not the manuscripts themselves.
+
+────────────────────────────────────────────────────────────────────
+CODE  (scripts/*.py)
+────────────────────────────────────────────────────────────────────
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

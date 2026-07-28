@@ -7,8 +7,8 @@
 - **Unit of record:** the *visit* — one vessel, one anchorage, one time — each row carrying its evidence (manuscript-leaf citations with scan links).
 - **Open `index.html` locally** to use the tool (visits table · ship index · map · traffic curve). Regenerate after data edits: `python3 scripts/build_site.py`.
 - **Data:** `data/visits.csv` · `data/ships.csv` · `data/gazetteer.csv`. Vocabularies + field definitions: `CODEBOOK.md` (normative, versioned).
-- **v0.1 provenance:** seeded from the calendar alone (scripts/harvest.py + merge.py); every row `status=draft`. Pending source families: Bancroft HoC narrative → Ogden 1941 + Archer 1973 → the Russian record → Howay/Cook. Completeness claimed for Alta California only.
-- Public as a working draft since v0.1.6 (banner marks status); essays + core sources land by v1.0. DOI on publication.
+- **Provenance:** seeded from the calendar (scripts/harvest.py + merge.py), then corroborated (2026-07) against Bancroft's *History of California* (all 7 vols) and Adele Ogden's trading-vessel itineraries. A roster-wide audit checked every ship against a reliable source. **387 ships / 2,104 visits; 380 (98%) `reviewed`** — the 7 still `draft` are named in `REVIEW-QUEUE.md`. Remaining source families: the Russian record (Khlebnikov, Tikhmenev) → Howay/Cook. Completeness claimed for Alta California only.
+- **DOI-ready:** `CITATION.cff` + `.zenodo.json` are staged; see `RELEASE-CHECKLIST.md` for the one-time Zenodo↔GitHub step. Essays + a data paper land by v1.0.
 
 Author: Aodhan (ORCID 0009-0002-8630-3768). Built with Claude-assisted extraction; method statement in the site's About pane.
 
