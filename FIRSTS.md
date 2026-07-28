@@ -7,7 +7,7 @@
 | **First documented U.S. vessel in Alta California** | ***Otter*** (Capt. Ebenezer Dorr), **Monterey, 29 Oct 1796** | ✅ **verified** (curated; HoC I + C-A 24 leaf-verified) |
 | First French expedition | Lapérouse's *Boussole* & *Astrolabe*, Monterey, Sept 1786 | ✅ solid (curated; C-A 15 livestock account) |
 | First British naval visit | Vancouver's *Discovery* & *Chatham*, SF/Monterey, Nov 1792 | ✅ solid |
-| First Russian **ship** at a CA port | *Juno* (Rezanov), San Francisco, Apr 1806 | likely — confirm no earlier Russian hull (the 1786 "russia" row is a report, not a visit) |
+| First Russian **ship** at a CA port | *Juno* (Rezanov), San Francisco, **8 Apr 1806** | ✅ confirmed — no earlier Russian hull in the roster (the sole 1786 "russia" row is an unnamed report, `unlocated`, not a visit); Bancroft corroborates (Langsdorff "from the Juno," May 1806, HoC II p.7389 of local text). Leaf-verify vs C-A scan still pending for the ⭐verified tier. |
 | First Russian **warship** | *Apollon* wintering at SF, 1822–23 ("*Apolo*", C-A 57 d2) | candidate |
 | First whaler (any CA coast) | English whaler *Resolución* (Capt. Locke), Ensenada de Todos Santos, Dec 1795 (v0434, ca7-d500) | ✅ audit-verified — but **Baja** anchorage; first *Alta* whaler still open |
 | First Mexican-flag vessel | — | ⚠ naive winner (*la hermosa mexicana*, 1817) is pre-independence and probably a person-name FP → routed to REVIEW-QUEUE |
