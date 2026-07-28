@@ -7,8 +7,8 @@
 | **First documented U.S. vessel in Alta California** | ***Otter*** (Capt. Ebenezer Dorr), **Monterey, 29 Oct 1796** | ✅ **verified** (curated; HoC I + C-A 24 leaf-verified) |
 | First French expedition | Lapérouse's *Boussole* & *Astrolabe*, Monterey, Sept 1786 | ✅ solid (curated; C-A 15 livestock account) |
 | First British naval visit | Vancouver's *Discovery* & *Chatham*, SF/Monterey, Nov 1792 | ✅ solid |
-| First Russian **ship** at a CA port | *Juno* (Rezanov), San Francisco, **8 Apr 1806** | ✅ confirmed — no earlier Russian hull in the roster (the sole 1786 "russia" row is an unnamed report, `unlocated`, not a visit); Bancroft corroborates (Langsdorff "from the Juno," May 1806, HoC II p.7389 of local text). Leaf-verify vs C-A scan still pending for the ⭐verified tier. |
-| First Russian **warship** | *Apollon* wintering at SF, 1822–23 ("*Apolo*", C-A 57 d2) | candidate |
+| First Russian **ship** at a CA port | *Juno* (Rezanov), San Francisco, **8 Apr 1806** | ✅ **leaf-verified** (C-A 12 d100, leaf n107): the crew roster with the archivist's note *"se trata de la fragata rusa 'Juno' que llegó á S.F. en 8 de Abril"* — Rezanov, Capt. Khvostov, Lt. Davydov, Dr. Langsdorff, pilots Illyin & Andreev, 43 crew/49 total. No earlier Russian hull in the roster (the 1786 "russia" row is an unnamed report). |
+| First Russian **warship** | ***Apolo*** (Russian war-frigate), **San Francisco, 26 Nov 1822** | ✅ **leaf-verified** (C-A 56 d198, leaf n191): Habilitado Martínez to Gov. Solá — *"la fragata de guerra rusa 'Apolo' del porte de 32 cañones de á 8 y 120 hombres de tripulación, su capitán Kroutchcoff, procedente de San Petersburgo con 14 meses de navegación."* |
 | First whaler (any CA coast) | English whaler *Resolución* (Capt. Locke), Ensenada de Todos Santos, Dec 1795 (v0434, ca7-d500) | ✅ audit-verified — but **Baja** anchorage; first *Alta* whaler still open |
 | First Mexican-flag vessel | — | ⚠ naive winner (*la hermosa mexicana*, 1817) is pre-independence and probably a person-name FP → routed to REVIEW-QUEUE |
 
