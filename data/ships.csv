@@ -26,7 +26,7 @@ asia,Asia (10),spain,1825,1829,10,reviewed
 aspiroz,Aspiroz (1),britain,1821,1821,1,reviewed
 astrolabe,Astrolabe (1),france,1786,1786,1,reviewed
 atala,Atala (2),usa,1815,1816,2,reviewed
-avon,Avon (6),,1817,1835,6,reviewed
+avon,Avon [renamed Trinidad] (6),,1817,1835,6,reviewed
 ayacucho,Ayacucho (10),spain,1830,1839,10,reviewed
 baihtl,Baihtl (1),russia,1845,1845,1,reviewed
 baikal,Baikal (13),russia,1825,1840,13,reviewed
@@ -230,7 +230,7 @@ moor,Moor (1),,1825,1825,1,reviewed
 morelos,Morelos (19),russia,1825,1834,19,reviewed
 morgan,Morgan (1),usa,1843,1843,1,reviewed
 morison,Morison (1),,1840,1840,1,reviewed
-morse,Morse (1),,1839,1839,1,reviewed
+morse,Morse [renamed Nymph] (1),,1839,1839,1,reviewed
 moscow,Moscow (2),usa,1846,1846,2,reviewed
 n.s. de la merced,N.S. de la Merced (1),,1797,1797,1,reviewed
 natalia,Natalia (8),russia,1833,1835,8,reviewed
@@ -250,7 +250,7 @@ nuestra senora del rosario,Nuestra Señora del Rosario (1),spain,1783,1783,1,rev
 nueva reyna de los angeles,Nueva Reyna de los Ángeles (2),spain,1819,1819,2,reviewed
 nye,Nye (1),,1841,1841,1,reviewed
 o'cain,O'Cain (6),usa,1804,1806,6,reviewed
-oaxaca,Oaxaca (1),mexico,1841,1841,1,reviewed
+oaxaca,Oaxaca [formerly Bolivar Liberator] (1),mexico,1841,1841,1,reviewed
 oguahi,Oguahí (1),usa,1824,1824,1,reviewed
 okhotsk,Okhotsk (1),,1818,1818,1,reviewed
 olive branch,Olive Branch (2),,1826,1826,2,reviewed
@@ -332,7 +332,7 @@ sultan,Sultan (1),russia,1816,1816,1,reviewed
 sutil,Sutil (9),spain,1785,1825,9,reviewed
 suvorov,Suvorov (5),russia,1811,1816,5,reviewed
 tamaahmaah,Tamaahmaah (3),,1825,1829,4,reviewed
-tamana,Tamana (3),,1806,1807,3,reviewed
+tamana,Tamana [renamed Nicholai] (3),,1806,1807,3,reviewed
 tartaro,Tártaro (3),usa,1825,1825,3,reviewed
 tasso,Tasso (5); var: Taaso,usa,1840,1846,5,reviewed
 thankful,Thankful (1),,1829,1829,1,reviewed
@@ -362,7 +362,7 @@ volunteer,Volunteer (12),usa,1829,1833,12,reviewed
 vulture,Buitre (4),britain,1828,1828,4,reviewed
 wa'oe,Wa'oe (1),,1848,1848,1,reviewed
 warren,Warren (2),usa,1826,1845,2,reviewed
-washington,Washington (15),usa,1824,1829,15,draft
+washington,"Washington [schr, 45-52t; Marshall & Wildes; Capts. Little then A.B. Thompson] (14)",usa,1824,1829,14,reviewed
 waverly,Waverly (13),,1826,1836,13,reviewed
 william little,"William Little [sloop, 36t; Capt. Henry Carter, Honolulu] (2)",usa,1831,1831,2,reviewed
 william lee,William Lee (1),russia,1834,1834,1,reviewed
@@ -386,3 +386,8 @@ trinidad-brig,"Trinidad [Mex. brig, 170t] (1)",mexico,1842,1842,1,reviewed
 california-boston-ship,"California [Amer. ship, Boston hide trade] (1)",usa,1831,1843,1,reviewed
 california-mex-schr,"California [Mex. schr, 83t, ex-Clarion] (1)",mexico,1837,1842,1,reviewed
 eagle-frigate,"Eagle [Sp.-chartered frigate, 1814] (1)",spain,1814,1814,1,reviewed
+washington-140t,"Washington [schr, 140t; Robt Elwell, from the Sandwich Islands] (2)",usa,1825,1825,2,reviewed
+garland,"Garland [brig, 6 guns; Capt. Bazilla Worth; Boston] (1)",usa,1798,1798,1,reviewed
+jenny,"Jenny [ship, 78t; Capt. John Wm Adamson; Sidenham Teast, Bristol] (1)",britain,1794,1794,1,reviewed
+derby,"Derby [ship, 300t, 50 Kodiak hunters; Capt. Benjamin Swift; Perkins, Boston] (1)",usa,1807,1807,1,reviewed
+lama,"Lama [brig, 145t, 6 guns; Capt. John Bancroft; Eliab Grimes, Honolulu] (1)",usa,1837,1837,1,reviewed
