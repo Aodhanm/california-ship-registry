@@ -1,0 +1,9 @@
+visit_id,ship_id,ca_ref,leaf,date,verdict,note
+v0213,discovery,C-A 54 d1077,n115,1792,confirmed,first British visit — Llegada de Vancouver dispatch
+v0837,juno-rac,C-A 12 d100,n107,1806-04-08,confirmed,first Russian ship — crew roster + archivist note
+v1253,ontario,C-A 56 d195,n189,1822-10-13,corrected,first Alta whaler — fragata ballenera Ontario
+v1256,apollon,C-A 56 d198,n191,1822-11-26,confirmed,"first Russian warship — Martínez to Solá, 32 guns"
+v1392,morelos,C-A 18 d123,n155,1825-07-28,confirmed,"first Mexican-flag — convict transport, brig Morelos"
+v0103,favorita,C-A 22 d247,n179,1784-08-04,confirmed,Llegada de la Favorita a Sta Barbara con viveres
+v0068,santiago,C-A 22 d152,n133,1779-07-18,confirmed,Llegada del Santiago con viveres
+v1819,morelos-corvette,C-A 20 d220,n145,1834-11-13,confirmed,corbeta Nacional Morelos crew muster -- confirms brig/corvette split
