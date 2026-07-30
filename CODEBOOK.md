@@ -21,6 +21,7 @@ A **visit**: one vessel at one anchorage (or in one documented offshore event) a
 | outcome | arrived · departed · seized · wrecked · refused · deserters · traded |
 | visit_type | port-call / offshore-presence / resident / sighting / unlocated (draft) |
 | n_records | number of C-A records merged into this row |
+| excerpt | a ~120-char snippet of the record summary; on multi-record leaves it may not contain the named vessel — the authoritative evidence is the cited record + scan (see EXCERPT-AUDIT.md, 266/337 links machine-validated) |
 | citations | JSON array; types: ca-record (C-A volume+doc+scan+IA url) · hoc (Bancroft vol:page) · ogden (page) · russian · other |
 | sources_disagree | stated conflicts between sources (dates, names, facts) — disagreement is data |
 | status | draft (machine-seeded, unreviewed) → reviewed → verified (checked at the source page/leaf) |
