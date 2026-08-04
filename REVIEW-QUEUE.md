@@ -114,3 +114,10 @@ Last drafts adjudicated at the C-A leaf:
 - **`mcculloch`** → real. Leaf C-A 40 n65: listed among vessels trafficking at Sta Bárbara (Washington, Spry, Jackman, Elisa, Thomas Newton, Rover, Courier, Olive Branch, McCulloch/McEither $813, Dec 1826). Reviewed.
 - **`francesa`** → real. Leaf C-A 40 n81: a vessel entry in the 1827 customs ledger ("Mayo 8, 'Francesa', $400"), alongside Courier/Tomasa/Harbinger — a French vessel, not a stray demonym. Reviewed.
 **Registry: 391 ships, ALL reviewed.**
+
+## 2026-08-04 flag-floor purge — items needing a ruling
+*(The purge itself is applied and logged in FALSE-POSITIVE-REGISTER.md; these are its residue.)*
+- **v0878** — a 1807 R.O. about the U.S. ship ***Eagle*** sits attached to ship `betsy`; check whether the record mentions the *Betsy* at all or belongs on `eagle` (cf. the existing eagle-conflation item above).
+- **Cleared russia flags worth one look each** (nationality word absent from the record, flag blanked): **v0964** (1813 "remisión de capitán de buque apresado" — likely the *Mercury*/Eayrs affair → would be *usa*), **v1037** (1816 English-language letter on anchoring at Refugio — Il'men/Lydia orbit?), **v1890** (1839 no-commerce order re a ship).
+- **13 rows cite C-A records with no local catalog file** (couldn't full-abstract-check): v0076 v0389 v0456 v0795 v0803 v0884 v0886 v0923 v0928 v0975 v1001 v1016 v0369 — spot-check on the next pass.
+- **v2124** — "bounded" multi-doc row whose single doc anchor (ca20 d224) doesn't match its summary; re-anchor or split.
