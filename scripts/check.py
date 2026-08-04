@@ -27,7 +27,36 @@ DROPPED_SHIP_IDS = {
     'oivvi', 'panjir', 'xylon', 'suxden', 'suaanita', 'toidon', 'nadednik', 'apoho',
     # 2026-07-27 queue-resolution drops (mis-parses / place-names)
     'net-siut','tester','vinas','san francisco','santa barbara','bruja','reisos','ynez','cadiac','la elisa','tic-me-mash','javier sartar','diga',
+    # 2026-08-04 phantom purge: the 1767 Cadiz Juno (never in CA; distinct from the 1806 Russian Juno)
+    'juno-1767',
 }
+# 2026-08-04: C-A records adjudicated as NON-ship documents (policy/person/no-hull; see
+# FALSE-POSITIVE-REGISTER.md). A re-harvest must not re-mint visits from them.
+DROPPED_CA_RECORDS = {
+    ('1','2'), ('4','141'), ('4','187'), ('6','87'), ('13','103'), ('14','191'),
+    ('15','173'), ('16','34'), ('16','467'), ('17','334'), ('18','22'), ('18','32'),
+    ('18','388'), ('20','254'), ('22','2044'), ('46','107'), ('48','82'),
+    ('55','208'), ('63','433'),
+}
+# First documented arrival per flag, leaf-verified (FIRSTS.md). A flagged visit dated
+# provably BEFORE its nation's first hull in California is a phantom or a mis-flag.
+# Precision-aware: a bare '1796' does not violate the '1796-10-29' floor; '1796-05' does.
+FLAG_FLOORS = {
+    'spain':   '1769',        # San Carlos / San Antonio, San Diego 1769 (registry scope opens)
+    'france':  '1786-09',     # Laperouse's Boussole & Astrolabe, Monterey, Sept 1786
+    'britain': '1792-11-13',  # Vancouver's Discovery, San Francisco (C-A 54 d1077 leaf-verified)
+    'usa':     '1796-10-29',  # Otter (Dorr), Monterey (HoC I + C-A 24 leaf-verified)
+    'russia':  '1806-04-08',  # Juno (Rezanov), San Francisco (C-A 12 d100 leaf-verified)
+    'mexico':  '1822',        # adhesion year; first flag-confirmed hull = Morelos 1825
+}
+def _before_floor(date, floor):
+    """True only if `date` is provably earlier than `floor` at its own precision."""
+    if not date: return False
+    dp, fp = date.split('-'), floor.split('-')
+    for a, b in zip(dp, fp):
+        if a < b: return True
+        if a > b: return False
+    return False  # equal at the row's precision -> not provably before
 hard, warn = [], []
 rows = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'visits.csv'))))
 seen_ids = set()
@@ -41,9 +70,18 @@ for r in rows:
     if r['flag'] not in FLAGS: hard.append(f"{vid}: bad flag {r['flag']!r}")
     if r['visit_type'] not in VTYPES: hard.append(f"{vid}: bad visit_type {r['visit_type']!r}")
     if r['status'] not in STATUS: hard.append(f"{vid}: bad status {r['status']!r}")
+    # sightings/mentions/reports may legitimately precede a first PORT entry (e.g. the
+    # Otter sighted offshore May 1796); port-level visit types may not.
+    if (r['flag'] in FLAG_FLOORS and r['visit_type'] not in ('sighting', 'reported?', 'mention')
+            and _before_floor(r['date_from'], FLAG_FLOORS[r['flag']])):
+        hard.append(f"{vid}: flag {r['flag']!r} dated {r['date_from']} — before that nation's first "
+                    f"documented hull in California ({FLAG_FLOORS[r['flag']]}); phantom or mis-flag")
     try:
         c = json.loads(r['citations'])
         if not c: hard.append(f"{vid}: no citations")
+        for cit in c:
+            if cit.get('type') == 'ca-record' and (str(cit.get('ca')), str(cit.get('doc'))) in DROPPED_CA_RECORDS:
+                hard.append(f"{vid}: cites C-A {cit['ca']} d{cit['doc']} — adjudicated a non-ship record; must not be re-minted")
     except Exception:
         hard.append(f"{vid}: unparseable citations")
     for d in (r['date_from'], r['date_to']):

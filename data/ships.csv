@@ -2,6 +2,7 @@ ship_id,name_variants,flag_guess,first_seen,last_seen,n_visits,status
 activa,Activa (1),spain,1792,1792,1,reviewed
 activo,Activo (32); var: Actwo; Actwwo,spain,1793,1807,32,reviewed
 admittance,"Admittance [Ogden: ship, 420t, Capt. Peter Peterson] (6)",,1843,1843,6,reviewed
+affiance,Affiance (1),usa,1825,1825,1,reviewed
 aguila,Águila (8),usa,1822,1829,8,reviewed
 alabama,Alabama (1),usa,1829,1829,1,reviewed
 albatross,"Albatross [Ogden: ship, 165t, Capt. Nathan Winship] (9)",usa,1810,1826,9,reviewed
@@ -10,6 +11,7 @@ alert,Alerta (4),usa,1837,1842,4,reviewed
 alexander,Alexander (12),usa,1803,1810,12,reviewed
 amethyst,"Amethyst [Ogden: ship, 270t, Capt. Thomas Meek] (1)",,1812,1812,1,reviewed
 amies,Amies (1),usa,1827,1827,1,reviewed
+amiga,Amiga (1),usa,1827,1827,1,reviewed
 anais,Anais (1),,1847,1847,1,reviewed
 angola,Angola (1),usa,1846,1846,1,reviewed
 anita,Anita (1),usa,1847,1847,1,reviewed
@@ -39,6 +41,7 @@ bolivar,Bolivar (2),usa,1832,1841,2,reviewed
 bordeaux packet,"Bordeaux Packet [Ogden: brig, 180t, Capt. Andrew Blanchard] (3)",,1817,1817,3,reviewed
 bordelais,Bordelais (4),france,1815,1818,4,reviewed
 boussole,Boussole (1),france,1786,1786,1,reviewed
+bowditch,Bowditch (1),usa,1846,1846,1,reviewed
 boxana,Boxana (1),usa,1832,1832,1,reviewed
 bremen,Bremen (1),,1843,1843,1,reviewed
 brillante,Brillante (1),,1846,1846,1,reviewed
@@ -46,10 +49,12 @@ brookline,"Brookline [Ogden: ship, 417t, Capt. James O. Locke] (3)",usa,1829,183
 brooklyn,Brooklyn (9),usa,1829,1839,9,reviewed
 buldakov,"Buldacoff [Ogden: brig, Capt. Cristof Vickilman] (7)",russia,1822,1824,7,reviewed
 butterworth,"Butterworth [Ogden: ship, 392t, Capt. William Brown] (2)",britain,1793,1793,2,reviewed
-california-sanblas,"California [Mex., San Blas 1823-31] (7)",mexico,1823,1823,7,reviewed
 caledonia,Caledonia (1),,1833,1833,1,reviewed
 califa,Califa (1),usa,1833,1833,1,reviewed
 california-1845,California [1845-46] (5),,1845,1846,5,reviewed
+california-boston-ship,"California [Amer. ship, Boston hide trade] (1)",usa,1831,1843,1,reviewed
+california-mex-schr,"California [Mex. schr, 83t, ex-Clarion] (1)",mexico,1837,1842,1,reviewed
+california-sanblas,"California [Mex., San Blas 1823-31] (7)",mexico,1823,1823,7,reviewed
 californio,Californio (2),britain,1785,1800,2,reviewed
 cariotide,Cariótide (1),britain,1841,1841,1,reviewed
 carmen,Carmen (2),,1809,1827,2,reviewed
@@ -78,28 +83,32 @@ constante,Constante (7),,1825,1842,7,reviewed
 constantine,Constantine (2),russia,1841,1846,2,reviewed
 convoy,"Convoy [Ogden: brig, 135t, Capt. William H. McNeil] (6)",russia,1831,1833,6,reviewed
 copia,Copia (1),usa,1847,1847,1,reviewed
+corea,Corea (1),usa,1846,1846,1,reviewed
 corsair,Corsair (1),usa,1841,1841,1,reviewed
 corsario,Corsario (1),russia,1839,1839,1,reviewed
 cossack,"Cosak [Ogden: brig, Capt. J. Brown] (10)",usa,1815,1823,10,reviewed
 courier,Courier (3),russia,1826,1827,3,reviewed
 covington,Covington (1),usa,1846,1846,1,reviewed
 cowlitz,Cowlitz (1),usa,1841,1841,1,reviewed
+cruiser,"Cruiser [Russ. navy frigate, 1823] (1)",russia,1823,1823,1,reviewed
 crusader,"Crusader [Ogden: brig, 110t, Capt. Benjamin Pickens] (1)",,1832,1832,1,reviewed
 curacoa,Curacoa (1),britain,1841,1841,1,reviewed
 cyrus,Cyrus (1),usa,1830,1830,1,reviewed
 daedalus,Daedalus (1),britain,1792,1792,1,reviewed
 dale,Dale (1),,1842,1842,1,reviewed
 danube,Danube (3),usa,1829,1830,3,reviewed
+derby,"Derby [ship, 300t, 50 Kodiak hunters; Capt. Benjamin Swift; Perkins, Boston] (1)",usa,1807,1807,1,reviewed
 descubierta-rus,La Descubierta (2),russia,1819,1821,2,reviewed
 dhualle,"Dhualle [brig, 182t; Capt. William Warden, Hawaiian] (2)",usa,1829,1829,2,reviewed
 diana,"Diana [Ogden: brig, 199t, Capt. William C. Little] (2)",,1829,1836,2,reviewed
-cruiser,"Cruiser [Russ. navy frigate, 1823] (1)",russia,1823,1823,1,reviewed
 discovery,Discovery (7),britain,1792,1794,7,reviewed
 don quijote,Don Quijote (3),spain,1834,1845,3,reviewed
 don quixote,"Don Quixote [Ogden: bark, 260t, Capt. John Meck] (11)",,1834,1836,11,reviewed
 dos hermanos,Dos Hermanos (1),usa,1829,1829,1,reviewed
 dromo,"Dromo [Ogden: ship, 600t, Capt. Woodward] (1)",usa,1808,1808,1,reviewed
 eagle,"Eagle [Ogden: schooner, Capt. William Heath Davis] (11)",usa,1807,1825,11,reviewed
+eagle-frigate,"Eagle [Sp.-chartered frigate, 1814] (1)",spain,1814,1814,1,reviewed
+eclipse,"Eclipse [Ogden: ship, 343t, Capt. Joseph O’Cain] (3)",,1806,1806,3,reviewed
 el alcion,El Alción (2),spain,1820,1822,2,reviewed
 el aventurero,El Aventurero (1),spain,1819,1819,1,reviewed
 el pelao,El Pelao (1),,1781,1781,1,reviewed
@@ -120,7 +129,8 @@ euphemia,Euphemia (1),,1846,1846,1,reviewed
 euphrates,Euphrates (1),usa,1847,1847,1,reviewed
 europa,Europa (3),russia,1820,1822,3,reviewed
 factor,Factor (1),usa,1825,1825,1,reviewed
-fama,"Fama [Ogden: ship, 397t, Capt. Cornelius Hoyer] (6)",,1785,1842,6,reviewed
+fama,"Fama [Ogden: ship, 397t, Capt. Cornelius Hoyer] (6)",,1841,1846,6,reviewed
+fama-1785,"Fama (1785, Spanish -- split from the American Fama of 1841-46) (1)",spain,1785,1785,1,reviewed
 fame,Fame (1),,1843,1843,1,reviewed
 fanny,Fanny (2),france,1831,1843,2,reviewed
 fariseo,Fariseo (1),mexico,1845,1845,1,reviewed
@@ -128,14 +138,18 @@ favorita,Favorita (10),spain,1779,1793,10,reviewed
 favourite,Favourite (2); var: Fetvorite,usa,1827,1827,2,reviewed
 fenix,Fénix (2),britain,1795,1833,2,reviewed
 ferdinand,Ferdinand (1),,1846,1846,1,reviewed
+fernando-brig,Fernando [Mex. brig] (1),mexico,1842,1842,1,reviewed
+figaro,Fígaro (1),usa,1826,1826,1,reviewed
 flecha,Flecha (1),,1848,1848,1,reviewed
 flora,Flora (5),spain,1813,1816,5,reviewed
 forester,"Forester [Ogden: brig, Capt. John Jennings to Hawaiian Islands] (6)",,1814,1814,6,reviewed
 fortuna,Fortuna (2),,1825,1825,2,reviewed
+francesa,"'Francesa' [French vessel in the Sta Bárbara customs ledger, May 1827, $400 duties] (1)",france,1827,1827,1,reviewed
 francia,Francia (1),france,1817,1817,1,reviewed
 franklin,Franklin (16),usa,1826,1830,16,reviewed
 funchal,Funchal (4),britain,1829,1829,4,reviewed
 gange,Gange (1),,1835,1835,1,reviewed
+garland,"Garland [brig, 6 guns; Capt. Bazilla Worth; Boston] (1)",usa,1798,1798,1,reviewed
 gen. bravo,Gen. Bravo (3),,1826,1826,3,reviewed
 genovesa flora,Genovesa Flora (1),,1834,1834,1,reviewed
 globe,Globe (1),,1831,1831,1,reviewed
@@ -154,6 +168,7 @@ heroine,Heroine (1),france,1842,1842,1,reviewed
 heros,"Héros [Ogden: ship, 370t, Capt. Auguste Bernard du Hautcilly] (3)",france,1827,1828,3,reviewed
 honolulu,Honolulu (1),usa,1847,1847,1,reviewed
 hopewell,Hopewell (1),usa,1845,1845,1,reviewed
+huntress,Huntress (1),usa,1846,1846,1,reviewed
 ilmen,Ilmen (7); var: Iimen,,1815,1820,7,reviewed
 ilmena,Ilmena (6),russia,1814,1820,6,reviewed
 iris,Iris (1),usa,1846,1846,1,reviewed
@@ -162,15 +177,16 @@ isaac todd,Isaac Todd (1),britain,1814,1814,1,reviewed
 isabel,Isabel (5),usa,1826,1841,5,reviewed
 isabella,"Isabella [Ogden: ship, 209t, Capt. William Heath Davis] (1)",usa,1810,1810,1,reviewed
 jackal,"Jackal [Ogden: schooner, Capt. Alexander Stewart] (2)",,1793,1793,2,reviewed
+jackman,Jackman (1),usa,1826,1826,1,reviewed
 janus,Janus (1),usa,1846,1846,1,reviewed
 jeanette,Jeanette (1),usa,1846,1846,1,reviewed
+jenny,"Jenny [ship, 78t; Capt. John Wm Adamson; Sidenham Teast, Bristol] (1)",britain,1794,1794,1,reviewed
 john begg,John Begg (2),russia,1822,1823,2,reviewed
 jorge henriquez,Jorge Henríquez (1),,1843,1843,1,reviewed
 joseph peabody,"Joseph Peabody [Ogden: brig, 225t, Capt. Moore] (1)",,1836,1836,1,reviewed
 josephine,Josephine (1),,1832,1832,1,reviewed
 joven tartaro,Joven Tártaro (3),britain,1824,1826,3,reviewed
 juanita,Juanita (1),mexico,1846,1846,1,reviewed
-juno-1767,Juno (1),spain,1767,1767,1,reviewed
 juno-rac,Juno (4),russia,1806,1806,4,reviewed
 kamchatka,Kamchatka (1),russia,1818,1818,1,reviewed
 kamehameha,"Kamehameha [Ogden: brig, Capt. William French] (1)",,1827,1827,1,reviewed
@@ -187,16 +203,16 @@ kutusov,Kutusov (4),,1817,1818,4,reviewed
 kutuzov,Kutusoff (4),russia,1817,1822,4,reviewed
 la catalina,LA CATALINA (1),usa,1803,1803,1,reviewed
 la fama,La Fama (1),,1797,1797,1,reviewed
-la hermosa mexicana,La Hermosa Mexicana (1),mexico,1817,1817,1,reviewed
+la hermosa mexicana,La Hermosa Mexicana (1),spain,1817,1817,1,reviewed
 la independencia,La Independencia (1),spain,1822,1822,1,reviewed
 lagoda,Lagoda (1),usa,1833,1833,1,reviewed
+lama,"Lama [brig, 145t, 6 guns; Capt. John Bancroft; Eliab Grimes, Honolulu] (1)",usa,1837,1837,1,reviewed
 las dos hermanas,Las dos hermanas (1),usa,1823,1823,1,reviewed
 legaspi,Legaspi (1),spain,1833,1833,1,reviewed
 lelia byrd,"Lelia Bird [Ogden: brig, 175t, Capt. William Shaler] (4)",usa,1803,1805,4,reviewed
 leon,Leon (1),,1835,1835,1,reviewed
 leonidas,Leonidas (3),spain,1836,1841,3,reviewed
 leonor,Leonor (6),spain,1828,1836,6,reviewed
-eclipse,"Eclipse [Ogden: ship, 343t, Capt. Joseph O’Cain] (3)",,1806,1806,3,reviewed
 lidia,Lidia (4),usa,1816,1826,4,reviewed
 loo choo,"Loo Choo [Ogden: ship, 639t, Capt. James B. Hatch] (41)",,1796,1847,41,reviewed
 loretana,Loretana (8),spain,1786,1797,8,reviewed
@@ -215,9 +231,10 @@ maryland,"Maryland [Ogden: ship, Capt. Jonathan Perry] (7)",,1842,1842,7,reviewe
 massachusetts,Massachusetts (1),usa,1827,1827,1,reviewed
 matador,Matador (1),mexico,1835,1835,1,reviewed
 matamoros,Matamoros (1),spain,1827,1827,1,reviewed
+mcculloch,"'McCulloch/McEither' [Savage's rendering; Am. trading vessel in the Sta Bárbara customs ledger, Dec 1826, $813] (1)",usa,1826,1826,1,reviewed
 mentor,"Mentor [Ogden: ship, Capt. George Newell] (2)",usa,1823,1824,2,reviewed
 mercedes,Mercedes (4),spain,1797,1801,4,reviewed
-mercury,"Mercury [Ogden: ship, 145t, Capt. William Heath Davis] (25)",usa,1790,1826,25,reviewed
+mercury,"Mercury [Ogden: ship, 145t, Capt. William Heath Davis] (25)",usa,1806,1826,25,reviewed
 mermaid,Mermaid (1),,1846,1846,1,reviewed
 merope,Merope (1),usa,1825,1825,1,reviewed
 mexicana,Mexicana (10),spain,1791,1831,10,reviewed
@@ -227,6 +244,7 @@ monmouth,Monmouth (1),,1844,1844,1,reviewed
 monsoon,"Monsoon [Ogden: ship, 327t, Capt. George W. Vincent] (5)",,1839,1839,5,reviewed
 moor,Moor (1),,1825,1825,1,reviewed
 morelos,"Morelos [war-brig; convict/supply transport from San Blas, 1825-33] (16)",russia,1825,1833,16,reviewed
+morelos-corvette,Morelos [war-corvette; cmdr Lucas Fry; 1834] (3),mexico,1834,1834,3,reviewed
 morgan,Morgan (1),usa,1843,1843,1,reviewed
 morison,Morison (1),,1840,1840,1,reviewed
 morse,Morse [renamed Nymph] (1),,1839,1839,1,reviewed
@@ -238,6 +256,7 @@ newton,Newton (1),,1844,1844,1,reviewed
 nicolas,Nicolás (2),russia,1840,1840,2,reviewed
 nieves,Nieves (4),spain,1825,1827,4,reviewed
 nile,"Nile [Ogden: brig, Capt. Robert Bennet Forbes] (2)",usa,1825,1827,2,reviewed
+nilo,Nilo (2),usa,1825,1826,2,reviewed
 ninfa,Ninfa (4),france,1826,1841,4,reviewed
 nowlan,Nowlan (2),,1829,1829,2,reviewed
 ntra sra del rosario,Ntra Sra del Rosario (1),spain,1782,1782,1,reviewed
@@ -264,15 +283,18 @@ paladian,Paladian (1),usa,1846,1846,1,reviewed
 pandora,Pandora (1),britain,1846,1846,1,reviewed
 panther,Panther (2),russia,1822,1822,2,reviewed
 parachute,Parachute (1),usa,1846,1846,1,reviewed
+paragon,Paragon (1),usa,1825,1825,1,reviewed
 paraiso,Paraíso (1),,1827,1827,1,reviewed
 patriot,Patriot (1),,1846,1846,1,reviewed
 paz y religion,Paz y Religión (4),spain,1815,1817,4,reviewed
 peacock,"Peacock [Ogden: brig, 108t, Capt. Oliver Kimball] (9)",usa,1806,1807,9,reviewed
 pedler,"Pedler [Ogden: brig, 225t, Capt. Samuel H. Northrop] (2)",russia,1814,1815,2,reviewed
 peor es nada,El Peor es Nada (2),,1830,1834,2,reviewed
+peruvian,Peruvian (1),usa,1825,1825,1,reviewed
 phantom,Phantom (1),usa,1822,1822,1,reviewed
 phoenix,"Phoenix [Ogden: bark, Capt. Hugh Moore] (1)",,1795,1795,1,reviewed
 pilar,Pilar (7),spain,1775,1781,7,reviewed
+pilgrim,Pilgrim (1),usa,1831,1831,1,reviewed
 plant,"Plant [Ogden: brig, 208t, Capt. Rutter] (4)",usa,1829,1832,4,reviewed
 plough boy,Plough Boy (2); var: Plowhoij,usa,1825,1825,2,reviewed
 pocahontas,Pocahontas (4),russia,1831,1832,4,reviewed
@@ -281,7 +303,7 @@ predpriatie,Predpriatie (2),russia,1824,1824,3,reviewed
 primavera,Primavera (1),,1845,1845,1,reviewed
 prince lee boo,"Prince Lee Boo [Ogden: sloop, 40t, Capt. Sharp] (3)",,1793,1793,3,reviewed
 princesa,"Princesa [Ogden: frigate, 189t, Capt. Juan José Martinez] (70)",spain,1779,1810,70,reviewed
-princesa real,Princesa Real (2),britain,1790,1791,2,reviewed
+princesa real,Princesa Real (2),spain,1790,1791,2,reviewed
 principe,Príncipe (9),spain,1769,1778,9,reviewed
 providence,Providence (2),britain,1796,1796,2,reviewed
 rama de oliva,Rama de Oliva (1),,1826,1826,1,reviewed
@@ -314,7 +336,7 @@ santa elena,Santa Elena (1),russia,1825,1825,1,reviewed
 santa gertrudis,Santa Gertrudis (7),spain,1785,1849,7,reviewed
 santa maria,Santa María (1),,1835,1835,1,reviewed
 santa rosa,Santa Rosa (2),russia,1823,1831,2,reviewed
-santiago,Santiago (13),spain,1775,1794,13,reviewed
+santiago,Santiago (13),spain,1775,1794,12,reviewed
 sapphire,Sapphire (1),,1841,1841,1,reviewed
 saturnina,Saturnina (20),spain,1791,1803,20,reviewed
 senoriano,Señoriano (2),spain,1821,1822,2,reviewed
@@ -337,12 +359,14 @@ tasso,Tasso (5); var: Taaso,usa,1840,1846,5,reviewed
 thankful,Thankful (1),,1829,1829,1,reviewed
 thomas nowlan,Thomas Nowlan (9),britain,1825,1830,9,reviewed
 thomas perkins,Thomas Perkins (4),usa,1840,1841,4,reviewed
+times-whaler,"Times (1) [Engl. whaler, 407t]",britain,1828,1828,1,reviewed
 timorelan,Timorelan (1),,1825,1825,1,reviewed
 tomas nowlan,Tomás Nowlan (1),,1829,1829,1,reviewed
 tomasa,Tomasa (1),britain,1825,1825,1,reviewed
 tomasa ann,Tomasa Ann (2),russia,1824,1824,2,reviewed
 traveller,"Traveller [Ogden: schooner, 89t, Capt. James Smith Wilcocks] (7)",,1816,1816,7,reviewed
 triad,Triad (1),,1846,1846,1,reviewed
+trinidad-brig,"Trinidad [Mex. brig, 170t] (1)",mexico,1842,1842,1,reviewed
 triton,Triton (2),france,1825,1826,2,reviewed
 tuscany,Tuscany (1),,1842,1842,1,reviewed
 union,Union (1),usa,1804,1804,1,reviewed
@@ -362,32 +386,8 @@ vulture,Buitre (4),britain,1828,1828,4,reviewed
 wa'oe,Wa'oe (1),,1848,1848,1,reviewed
 warren,Warren (2),usa,1826,1845,2,reviewed
 washington,"Washington [schr, 45-52t; Marshall & Wildes; Capts. Little then A.B. Thompson] (14)",usa,1824,1829,14,reviewed
-waverly,"Waverly [Ogden: brig, 142t, Capt. William Goodwin Dana] (13)",,1826,1836,13,reviewed
-william little,"William Little [sloop, 36t; Capt. Henry Carter, Honolulu] (2)",usa,1831,1831,2,reviewed
-william lee,William Lee (1),russia,1834,1834,1,reviewed
-jackman,Jackman (1),usa,1826,1826,1,reviewed
-figaro,Fígaro (1),usa,1826,1826,1,reviewed
-mcculloch,"'McCulloch/McEither' [Savage's rendering; Am. trading vessel in the Sta Bárbara customs ledger, Dec 1826, $813] (1)",usa,1826,1826,1,reviewed
-nilo,Nilo (2),usa,1825,1826,2,reviewed
-francesa,"'Francesa' [French vessel in the Sta Bárbara customs ledger, May 1827, $400 duties] (1)",france,1827,1827,1,reviewed
-amiga,Amiga (1),usa,1827,1827,1,reviewed
-affiance,Affiance (1),usa,1825,1825,1,reviewed
-bowditch,Bowditch (1),usa,1846,1846,1,reviewed
-huntress,Huntress (1),usa,1846,1846,1,reviewed
-corea,Corea (1),usa,1846,1846,1,reviewed
-pilgrim,Pilgrim (1),usa,1831,1831,1,reviewed
-wilmington,Wilmington (1),usa,1825,1825,1,reviewed
-paragon,Paragon (1),usa,1825,1825,1,reviewed
-peruvian,Peruvian (1),usa,1825,1825,1,reviewed
-times-whaler,"Times (1) [Engl. whaler, 407t]",britain,1828,1828,1,reviewed
-fernando-brig,Fernando [Mex. brig] (1),mexico,1842,1842,1,reviewed
-trinidad-brig,"Trinidad [Mex. brig, 170t] (1)",mexico,1842,1842,1,reviewed
-california-boston-ship,"California [Amer. ship, Boston hide trade] (1)",usa,1831,1843,1,reviewed
-california-mex-schr,"California [Mex. schr, 83t, ex-Clarion] (1)",mexico,1837,1842,1,reviewed
-eagle-frigate,"Eagle [Sp.-chartered frigate, 1814] (1)",spain,1814,1814,1,reviewed
 washington-140t,"Washington [schr, 140t; Robt Elwell, from the Sandwich Islands] (2)",usa,1825,1825,2,reviewed
-garland,"Garland [brig, 6 guns; Capt. Bazilla Worth; Boston] (1)",usa,1798,1798,1,reviewed
-jenny,"Jenny [ship, 78t; Capt. John Wm Adamson; Sidenham Teast, Bristol] (1)",britain,1794,1794,1,reviewed
-derby,"Derby [ship, 300t, 50 Kodiak hunters; Capt. Benjamin Swift; Perkins, Boston] (1)",usa,1807,1807,1,reviewed
-lama,"Lama [brig, 145t, 6 guns; Capt. John Bancroft; Eliab Grimes, Honolulu] (1)",usa,1837,1837,1,reviewed
-morelos-corvette,Morelos [war-corvette; cmdr Lucas Fry; 1834] (3),mexico,1834,1834,3,reviewed
+waverly,"Waverly [Ogden: brig, 142t, Capt. William Goodwin Dana] (13)",,1826,1836,13,reviewed
+william lee,William Lee (1),russia,1834,1834,1,reviewed
+william little,"William Little [sloop, 36t; Capt. Henry Carter, Honolulu] (2)",usa,1831,1831,2,reviewed
+wilmington,Wilmington (1),usa,1825,1825,1,reviewed
