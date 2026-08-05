@@ -3,7 +3,7 @@
 1. schema/vocab vs the codebook  2. every row >=1 parseable citation
 3. date sanity  4. dedup (same ship+anchorage+overlapping span w/o note) -> warn
 """
-import csv, json, sys, os
+import csv, json, re, sys, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FLAGS = {'', 'spain', 'usa', 'russia', 'britain', 'mexico', 'france', 'hawaii', 'chile', 'peru', 'ecuador'}
@@ -82,6 +82,19 @@ for r in rows:
         for cit in c:
             if cit.get('type') == 'ca-record' and (str(cit.get('ca')), str(cit.get('doc'))) in DROPPED_CA_RECORDS:
                 hard.append(f"{vid}: cites C-A {cit['ca']} d{cit['doc']} — adjudicated a non-ship record; must not be re-minted")
+            # 2026-08-04 Loo Choo lesson: the Ogden harvest attached swallowed entries' schedule
+            # lines to the wrong vessel. An Ogden citation's own entry label ("s.v. 'Name, YEARS'")
+            # must contain the visit's year (+/-1 for season overlap).
+            if cit.get('type') == 'ogden' and r['date_from'][:4].isdigit():
+                m = re.search(r"s\.v\. '[^']+?,\s*([0-9][0-9\-, ]*)'", cit.get('ref', ''))
+                if m:
+                    yrs = set()
+                    for a, b in re.findall(r'(\d{4})(?:-(\d{2,4}))?', m.group(1)):
+                        a = int(a); b = int(b) if len(b) == 4 else (int(str(a)[:2] + b) if b else a)
+                        yrs.update(range(a, b + 1))
+                    vy = int(r['date_from'][:4])
+                    if yrs and not (min(yrs) - 1 <= vy <= max(yrs) + 1):
+                        hard.append(f"{vid}: dated {vy} but its Ogden entry covers {sorted(yrs)} — mis-attached schedule line")
     except Exception:
         hard.append(f"{vid}: unparseable citations")
     for d in (r['date_from'], r['date_to']):
