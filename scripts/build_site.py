@@ -36,6 +36,8 @@ page = """<!DOCTYPE html>
  nav{background:#2d4a73;padding:0 22px}
  nav button{background:none;border:none;color:#dce6f2;padding:10px 14px;cursor:pointer;font-size:.95em;font-family:inherit}
  nav button.on{background:#f7f4ee;color:#1f3a5f;border-radius:4px 4px 0 0}
+ nav a.navlink{color:#f4e2b8;padding:10px 14px;font-size:.95em;text-decoration:none;display:inline-block;font-weight:600}
+ nav a.navlink:hover{color:#fff;text-decoration:underline}
  main{padding:16px 22px;max-width:1200px;margin:0 auto}
  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
  .filters input,.filters select{font-family:inherit;font-size:.9em;padding:5px 7px;border:1px solid #bbb;border-radius:4px;background:#fff}
@@ -68,6 +70,7 @@ page = """<!DOCTYPE html>
  <button data-pane="copres">In port together</button>
  <button data-pane="charts">Charts of the coast</button>
  <button data-pane="about">About &amp; method</button>
+ <a class="navlink" href="key-voyages.html" title="A curated, illustrated timeline of the most important voyages to California">&#9733; Key voyages</a>
 </nav>
 <main>
 <div id="visits" class="pane on">
