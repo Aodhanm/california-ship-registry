@@ -128,7 +128,7 @@ page = """<!DOCTYPE html>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const V=__VISITS__;const S=__SHIPS__;const G=__GAZ__;const CHARTS=__CHARTS__;
-const FLAGEMO={spain:'🇪🇸',usa:'🇺🇸',russia:'🇷🇺',britain:'🇬🇧',mexico:'🇲🇽',france:'🇫🇷',chile:'🇨🇱',peru:'🇵🇪',ecuador:'🇪🇨'};
+const FLAGEMO={spain:'🇪🇸',usa:'🇺🇸',russia:'🇷🇺',britain:'🇬🇧',mexico:'🇲🇽',france:'🇫🇷',chile:'🇨🇱',peru:'🇵🇪',ecuador:'🇪🇨',argentina:'🇦🇷'};
 function femo(f){return FLAGEMO[f]?FLAGEMO[f]+' ':''}
 function opts(sel,vals){const s=document.getElementById(sel);[...new Set(vals)].filter(x=>x).sort().forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o)})}
 opts('fFlag',V.map(v=>v.flag));opts('fAnch',V.map(v=>v.anchorage));

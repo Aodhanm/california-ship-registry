@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%232C6E62' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='16' cy='6' r='2.6'/%3E%3Cline x1='16' y1='9' x2='16' y2='27'/%3E%3Cline x1='10' y1='13' x2='22' y2='13'/%3E%3Cpath d='M6 19 a10 10 0 0 0 20 0'/%3E%3Cline x1='6' y1='19' x2='3.5' y2='16.5'/%3E%3Cline x1='6' y1='19' x2='8.5' y2='16.5'/%3E%3Cline x1='26' y1='19' x2='23.5' y2='16.5'/%3E%3Cline x1='26' y1='19' x2='28.5' y2='16.5'/%3E%3C/g%3E%3C/svg%3E">
-<title>Maritime Explorers of California, 1769–1800</title>
+<title>Maritime Explorers of California, 1769–1841</title>
 <style>
   :root {
     /* aged sea-chart palette — parchment ground, ink navy, verdigris patina accent */
@@ -28,6 +28,8 @@
     --f-france:   #34557E;
     --f-britain:  #A23B2E;
     --f-usa:      #45507A;
+    --f-russia:   #6E5A9E;
+    --f-argentina:#2F86A0;
 
     --shadow: 0 1px 2px rgba(28,42,56,.08), 0 8px 24px rgba(28,42,56,.06);
     --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "URW Palladio L", Georgia, serif;
@@ -54,6 +56,8 @@
       --f-france:   #7BA0CC;
       --f-britain:  #D9705F;
       --f-usa:      #9AA3D0;
+      --f-russia:   #AD9BDD;
+      --f-argentina:#79C0D8;
       --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
     }
   }
@@ -61,14 +65,14 @@
     --paper:#ECE4D2; --paper-2:#E3D9C3; --card:#F5EFE0; --ink:#1C2A38; --ink-soft:#3E4C58;
     --ink-faint:#6B7079; --rule:#C9BCA0; --rule-soft:#D8CDB4; --accent:#2C6E62; --accent-deep:#1F5148;
     --gold:#9A7A2E; --ok:#2C6E62; --partial:#B0812B; --missing:#A23B2E;
-    --f-spain:#A6842E; --f-france:#34557E; --f-britain:#A23B2E; --f-usa:#45507A;
+    --f-spain:#A6842E; --f-france:#34557E; --f-britain:#A23B2E; --f-usa:#45507A; --f-russia:#6E5A9E; --f-argentina:#2F86A0;
     --shadow:0 1px 2px rgba(28,42,56,.08),0 8px 24px rgba(28,42,56,.06);
   }
   :root[data-theme="dark"] {
     --paper:#141C24; --paper-2:#101820; --card:#1B2530; --ink:#ECE3D0; --ink-soft:#C3BCA9;
     --ink-faint:#8A8B84; --rule:#2C3A47; --rule-soft:#232F3A; --accent:#6FB9AA; --accent-deep:#8FCFC1;
     --gold:#CBA64E; --ok:#6FB9AA; --partial:#D3A44A; --missing:#D9705F;
-    --f-spain:#CBA64E; --f-france:#7BA0CC; --f-britain:#D9705F; --f-usa:#9AA3D0;
+    --f-spain:#CBA64E; --f-france:#7BA0CC; --f-britain:#D9705F; --f-usa:#9AA3D0; --f-russia:#AD9BDD; --f-argentina:#79C0D8;
     --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
   }
 
@@ -157,6 +161,8 @@
   .node.foreign { border-color: var(--f-britain); }
   .node.foreign.fr { border-color: var(--f-france); }
   .node.foreign.us { border-color: var(--f-usa); }
+  .node.foreign.ru { border-color: var(--f-russia); }
+  .node.foreign.ar { border-color: var(--f-argentina); }
 
   .card {
     background: var(--card); border: 1px solid var(--rule); border-radius: 4px;
@@ -173,6 +179,7 @@
   }
   .flagchip.spain { color: var(--f-spain); } .flagchip.france { color: var(--f-france); }
   .flagchip.britain { color: var(--f-britain); } .flagchip.usa { color: var(--f-usa); }
+  .flagchip.russia { color: var(--f-russia); } .flagchip.argentina { color: var(--f-argentina); }
 
   .meta { display: flex; flex-wrap: wrap; gap: 4px 22px; margin: 10px 0 0; }
   .meta div { font-size: 13px; color: var(--ink-soft); }
@@ -211,17 +218,17 @@
 
 <div class="wrap">
   <a href="./" style="display:inline-flex;align-items:center;gap:7px;margin-bottom:22px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);text-decoration:none">&larr; California Ship Registry</a>
-  <p class="eyebrow">The Californias &middot; 1769–1800 &middot; ships & commanders</p>
+  <p class="eyebrow">The Californias &middot; 1769–1841 &middot; ships & commanders</p>
   <h1>By <span class="sea">Sea</span> to California</h1>
-  <p class="dek">Every maritime expedition that reached Baja or Alta California in the eighteenth century — the Spanish naval reconnaissances, the San&nbsp;Blas supply frigates, and the foreign visitors who broke the monopoly. Cross-checked against the vault ship registry, verified against the primary editions, and written back into it — expedition by expedition, with primary-source citations.</p>
+  <p class="dek">The maritime expeditions that shaped California across the age of sail — the Spanish naval reconnaissances of the Bucareli era, the foreign visitors who broke the monopoly, the Russian approach, the one privateer raid, and the surveys on the eve of American conquest. Cross-checked against the vault ship registry, verified against the primary editions, and written back into it — voyage by voyage, with primary-source citations.</p>
   <hr class="masthead-rule" />
 
   <div class="stats">
-    <div class="stat"><b>15</b><span>Expeditions charted</span></div>
-    <div class="stat"><b>4</b><span>Flags</span></div>
-    <div class="stat"><b>+18</b><span>Rows written to registry</span></div>
-    <div class="stat"><b>5</b><span>Gaps now resolved</span></div>
-    <div class="stat"><b>31&nbsp;yrs</b><span>1769 → 1800</span></div>
+    <div class="stat"><b>23</b><span>Voyages charted</span></div>
+    <div class="stat"><b>6</b><span>Flags</span></div>
+    <div class="stat"><b>+27</b><span>Rows written to registry</span></div>
+    <div class="stat"><b>6</b><span>Gaps now resolved</span></div>
+    <div class="stat"><b>72&nbsp;yrs</b><span>1769 → 1841</span></div>
   </div>
 
   <div class="callout" style="border-left-color:var(--ok);">
@@ -243,6 +250,8 @@
       <span class="chip"><span class="dot" style="background:var(--f-france)"></span>France</span>
       <span class="chip"><span class="dot" style="background:var(--f-britain)"></span>Britain</span>
       <span class="chip"><span class="dot" style="background:var(--f-usa)"></span>U.S.</span>
+      <span class="chip"><span class="dot" style="background:var(--f-russia)"></span>Russia</span>
+      <span class="chip"><span class="dot" style="background:var(--f-argentina)"></span>Río de la Plata</span>
     </div>
     <div class="grp"><span class="lbl">Registry</span>
       <span class="cov ok"><span class="mk">●</span>in registry</span>
@@ -593,10 +602,190 @@
       </div>
     </div>
 
+    <div class="band"><span>The fur rush &amp; the Russian approach (1806–1818)</span><hr /></div>
+
+    <!-- 1806 Rezanov / Juno -->
+    <div class="entry">
+      <div class="year">1806</div>
+      <div class="node foreign ru"></div>
+      <div class="card">
+        <div class="top">
+          <h3>Nikolai Rezanov — the Juno <span class="commander">· capt. Khvostov</span></h3>
+          <span class="flagchip russia">Russia</span>
+        </div>
+        <div class="meta">
+          <div><span class="k">Ship</span><span class="v"><em>Juno</em> — ex-American, bought at Sitka</span></div>
+          <div><span class="k">Reached</span><span class="v">San Francisco, ~April – 21 May 1806</span></div>
+          <div><span class="k">Aboard</span><span class="v">Rezanov (RAC director); naturalist Langsdorff</span></div>
+        </div>
+        <p class="did">A relief voyage to save the starving Russian-American Company colony at Sitka. Rezanov ran the <em>Juno</em> past the presidio guns and spent six weeks trading its cargo for grain with comandante Argüello and Gov. Arrillaga — a deal greased by his betrothal to the young Concepción Argüello. He sailed with a full hold, then died crossing Siberia in 1807; the romance became legend. <span class="flag-note">Dates calendar-dependent (Old Style vs New): arrival ~5 Apr (Spanish) / 8 Apr NS.</span></p>
+        <div class="footrow">
+          <span class="badge ok"><span class="mk">●</span> In registry</span>
+          <span class="cite">Langsdorff, <em>Voyages and Travels</em> (1813–14), vol. II; Pierce ed., <em>Rezanov Reconnoiters California, 1806</em>; AVPRI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1808 Kuskov / Kodiak -->
+    <div class="entry">
+      <div class="year">1808<small>–09</small></div>
+      <div class="node foreign ru"></div>
+      <div class="card">
+        <div class="top">
+          <h3>Ivan Kuskov — the Kodiak <span class="commander">· the Fort Ross prelude</span></h3>
+          <span class="flagchip russia">Russia</span>
+        </div>
+        <div class="meta">
+          <div><span class="k">Ship</span><span class="v"><em>Kodiak</em> — RAC (capt. Petrov)</span></div>
+          <div><span class="k">Reached</span><span class="v">Bodega Bay, 28 Dec 1808 – 18 Aug 1809</span></div>
+          <div><span class="k">Party</span><span class="v">130 hunters; 2,350 otter taken</span></div>
+        </div>
+        <p class="did">Kuskov wintered the RAC hunting brig at Bodega — the reconnaissance that chose the ground for the Russian colony. The Spanish knew only of "a Russian frigate anchored at Bodega" (from deserters). Three years later this became Fort Ross, the Russian foothold that reshaped the north coast. Identified only by joining the Spanish and Russian archives.</p>
+        <div class="footrow">
+          <span class="badge ok"><span class="mk">●</span> In registry</span>
+          <span class="cite">Ogden 1941; Bolkhovitinov / Gibson–Istomin; C-A 12 d324 (the Spanish intelligence)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1816 Kotzebue / Rurik -->
+    <div class="entry">
+      <div class="year">1816</div>
+      <div class="node foreign ru"></div>
+      <div class="card">
+        <div class="top">
+          <h3>Otto von Kotzebue — the Rurik</h3>
+          <span class="flagchip russia">Russia</span>
+        </div>
+        <div class="meta">
+          <div><span class="k">Ship</span><span class="v"><em>Rurik</em> — brig (Rumyantsev expedition)</span></div>
+          <div><span class="k">Reached</span><span class="v">San Francisco, 2 Oct – 1 Nov 1816</span></div>
+          <div><span class="k">Aboard</span><span class="v">Chamisso, Eschscholtz, artist Choris</span></div>
+        </div>
+        <p class="did">A Russian scientific circumnavigation. Its naturalists made the first systematic survey of San Francisco Bay's flora and fauna — Chamisso would name the California poppy for Eschscholtz — while Choris drew the earliest images of the presidio, missions, and Ohlone people. The party also exchanged word with the RAC at Fort Ross.</p>
+        <div class="footrow">
+          <span class="badge ok"><span class="mk">●</span> In registry</span>
+          <span class="cite">Kotzebue, <em>A Voyage of Discovery</em> (Longman, 1821), vol. I; Choris, <em>Voyage pittoresque</em> (1820–22)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1818 Bouchard -->
+    <div class="entry">
+      <div class="year">1818<small>Nov</small></div>
+      <div class="node foreign ar"></div>
+      <div class="card">
+        <div class="top">
+          <h3>Hipólito Bouchard — the privateer raid</h3>
+          <span class="flagchip argentina">Río de la Plata</span>
+        </div>
+        <div class="meta">
+          <div><span class="k">Ships</span><span class="v"><em>La Argentina</em> (38–44 guns) · <em>Santa Rosa</em></span></div>
+          <div><span class="k">Struck</span><span class="v">Monterey · Refugio · Santa Barbara · San Juan Capistrano</span></div>
+          <div><span class="k">Aboard</span><span class="v">2nd of the <em>Santa Rosa</em> = Peter Corney</span></div>
+        </div>
+        <p class="did">The only foreign armed attack on Spanish California. Bouchard's ~600-man insurgent force overwhelmed Monterey's ~40 defenders on 22 Nov, occupied the capital for five days, and burned the presidio and fort; he then raided down the coast before leaving. Militarily marginal — Gov. Solá rebuilt Monterey by spring — but the province's baptism of fire, under the flag of the United Provinces of the Río de la Plata. <span class="flag-note">A privateer with letters of marque, not a pirate; several departure dates are genuinely in conflict.</span></p>
+        <div class="footrow">
+          <span class="badge ok"><span class="mk">●</span> Now added to registry</span>
+          <span class="cite">Corney, <em>Voyages in the Northern Pacific</em> (1896); Bancroft II; Uhrowczik, <em>The Burning of Monterey</em> (2001)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1818 Golovnin / Kamchatka -->
+    <div class="entry">
+      <div class="year">1818<small>Sep</small></div>
+      <div class="node foreign ru"></div>
+      <div class="card">
+        <div class="top">
+          <h3>Vasily Golovnin — the Kamchatka</h3>
+          <span class="flagchip russia">Russia</span>
+        </div>
+        <div class="meta">
+          <div><span class="k">Ship</span><span class="v"><em>Kamchatka</em> — Russian navy sloop-of-war</span></div>
+          <div><span class="k">Reached</span><span class="v">Monterey &amp; Bodega, September 1818</span></div>
+          <div><span class="k">Aboard</span><span class="v">artist Mikhail Tikhanov</span></div>
+        </div>
+        <p class="did">A Russian naval inspection voyage. Golovnin met RAC director Hagemeister at Monterey (Aleut hunters took otter "under the very noses of the Spaniards") and visited Bodega and Fort Ross. His narrative later advanced the Russian claim that there was no Spanish population north of San Francisco — a territorial argument, not a census. <span class="flag-note">Date corrected: at Monterey in September; the 5 Oct 1818 in the registry was Solá's report date, not the port-call.</span></p>
+        <div class="footrow">
+          <span class="badge ok"><span class="mk">●</span> In registry — date corrected</span>
+          <span class="cite">Golovnin, <em>Around the World on the Kamchatka</em>, trans. Wiswell (1979); AGI Californias leg. 8</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="band"><span>Survey &amp; the eve of conquest (1826–1841)</span><hr /></div>
+
+    <!-- 1826 Beechey / Blossom -->
+    <div class="entry">
+      <div class="year">1826<small>–27</small></div>
+      <div class="node foreign"></div>
+      <div class="card">
+        <div class="top">
+          <h3>F. W. Beechey — HMS Blossom</h3>
+          <span class="flagchip britain">Britain</span>
+        </div>
+        <div class="meta">
+          <div><span class="k">Ship</span><span class="v">HMS <em>Blossom</em> — survey sloop, 16 guns</span></div>
+          <div><span class="k">Reached</span><span class="v">San Francisco 6 Nov 1826; Monterey again 29 Oct 1827</span></div>
+          <div><span class="k">Aboard</span><span class="v">naturalist Collie; Lt. Edward Belcher</span></div>
+        </div>
+        <p class="did">An Arctic-support voyage (to rendezvous with Franklin and Parry) that wintered twice in California. Beechey ran a careful hydrographic survey of San Francisco Bay and produced the most evenly accurate published observations of Mexican California to that date — and is nearly the sole source for Echeandía's partial-emancipation experiment.</p>
+        <div class="footrow">
+          <span class="badge ok"><span class="mk">●</span> Now added to registry</span>
+          <span class="cite">Beechey, <em>Narrative of a Voyage to the Pacific and Beering's Strait</em> (Colburn &amp; Bentley, 1831), vol. II</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1827 Duhaut-Cilly / Héros -->
+    <div class="entry">
+      <div class="year">1827<small>–28</small></div>
+      <div class="node foreign fr"></div>
+      <div class="card">
+        <div class="top">
+          <h3>Auguste Duhaut-Cilly — le Héros</h3>
+          <span class="flagchip france">France</span>
+        </div>
+        <div class="meta">
+          <div><span class="k">Ship</span><span class="v"><em>Le Héros</em> — French trader, 362 t</span></div>
+          <div><span class="k">Reached</span><span class="v">SF, Monterey, Sta Barbara, San Diego, Ross — Jan 1827 – Aug 1828</span></div>
+          <div><span class="k">Aboard</span><span class="v">naturalist Paolo Emilio Botta</span></div>
+        </div>
+        <p class="did">A hide-and-tallow trading voyage that became the most geographically complete foreign eyewitness account of Mexican California — "no other navigator had visited so many of the Californian establishments" (Bancroft). The trade largely failed, but the resulting narrative, with Botta's ethnography and four lithographed views (incl. the Russian post at Bodega), is a first-rank source on pastoral society.</p>
+        <div class="footrow">
+          <span class="badge ok"><span class="mk">●</span> In registry</span>
+          <span class="cite">Duhaut-Cilly, <em>Voyage autour du monde</em> (1834–35); trans. Frugé &amp; Harlow, <em>A Voyage to California</em> (UC Press, 1999)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1841 Wilkes / Vincennes -->
+    <div class="entry">
+      <div class="year">1841</div>
+      <div class="node foreign us"></div>
+      <div class="card">
+        <div class="top">
+          <h3>Charles Wilkes — the U.S. Exploring Expedition</h3>
+          <span class="flagchip usa">U.S.</span>
+        </div>
+        <div class="meta">
+          <div><span class="k">Ships</span><span class="v">USS <em>Vincennes</em> · <em>Porpoise</em> · <em>Flying Fish</em> · <em>Oregon</em></span></div>
+          <div><span class="k">Reached</span><span class="v">San Francisco Bay, 14 Aug – 1 Nov 1841</span></div>
+          <div><span class="k">Parties</span><span class="v">Ringgold up the Sacramento; Emmons overland from Oregon</span></div>
+        </div>
+        <p class="did">A politically pointed reconnaissance on the eve of American conquest. Wilkes's men charted San Francisco Bay, ran the boats up the Sacramento to ~39°N, and brought a party overland from Oregon. Wilkes openly discussed U.S. acquisition of the bay and keeping Britain out; his published assessment of California's weakness and value became an influential American document of 1841–46.</p>
+        <div class="footrow">
+          <span class="badge ok"><span class="mk">●</span> Now added to registry</span>
+          <span class="cite">Wilkes, <em>Narrative of the U.S. Exploring Expedition</em> (1844/1845), vol. V; Bancroft IV</span>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /timeline -->
 
   <footer>
-    <p><b>Scope.</b> Maritime only — ship-borne commanders and voyagers who reached California waters or ports, c. 1769–1800. Land expeditions (Portolá overland, Anza, Fages, Font, Garcés) are deliberately excluded. Behind these fifteen expeditions runs a supporting cast of San Blas supply vessels — the <em>Concepción</em>, <em>Aránzazu</em>, <em>Saturnina</em>, <em>Santiago</em>, <em>Princesa</em>, and <em>Favorita</em> — that called repeatedly, plus Matute's short-lived 1793 attempt to plant a post at Bodega Bay.</p>
+    <p><b>Scope.</b> Maritime only — ship-borne commanders and voyagers who reached California waters or ports, c. 1769–1841. This is a curated selection of the <em>most consequential</em> voyages, not a full census: behind them lie hundreds of supply, fur-trade, and hide-and-tallow calls (the full ship registry holds ~2,000). Land expeditions (Portolá overland, Anza, Fages, Font, Garcés) are deliberately excluded, as are the routine San Blas supply runs. The 19th-century selection favors the marquee scientific, naval, diplomatic, and raiding visits — the fur rush and the routine coasting trade are represented in the main registry table, not here.</p>
     <p><b>Sources &amp; verification.</b> A four-part verification pass checked every voyage against Bancroft's <em>History of California</em> vol. I, the vault source files, and the standard primary editions (Beals, Galvin, Cutter's <em>Malaspina in California</em>, the Hakluyt editions of Vancouver, La Pérouse, and Malaspina, the <em>Sutil y Mexicana</em> Relación, Wagner's cartography). The 15 expeditions and the corrections/resolutions above were then written into the registry's hand-curated layer (<span style="font-family:var(--mono);font-size:11px">curated-visits.csv</span>: +16 visit rows, 4 rows corrected) with the two missing Malaspina corvettes added to <span style="font-family:var(--mono);font-size:11px">ships.csv</span>. A handful of items remain flagged for a final page-level check: Malaspina's arrival day (11 vs 13 Sept), the corvette tonnages, and whether Zayas charted Trinidad from the <em>Mexicana</em> or a ship's boat (needs Wagner 1937 read directly). <b>Verified draft — primary-cited, pending the last page-level confirmations.</b></p>
   </footer>
 </div>
