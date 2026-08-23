@@ -16,7 +16,9 @@
     .catch(function (e) { document.getElementById('chart').outerHTML = '<p>Could not load the series: ' + esc(e.message) + '</p>'; });
 
   function draw(D) {
-    var order = D.order, lab = D.labels, years = D.years;
+    window.__D = D;
+    var lab = D.labels, years = D.years;
+    var order = D.order.filter(function (k) { return k !== 'other'; });
     var W = 900, H = 520, ML = 52, MR = 152, MT = 64, MB = 116;
     var pw = W - ML - MR, ph = H - MT - MB;
     var STRIP_TOP = MT + ph + 52, STRIP_H = 26;
@@ -53,6 +55,29 @@
       var a = el('text', { x: x(ev[0]) - 5, y: MT + ev[2], class: 'g-axis-text', 'text-anchor': 'end' });
       a.setAttribute('fill', 'var(--text-muted)'); a.setAttribute('font-size', '10');
       a.textContent = ev[1] + ' \u2192'; svg.appendChild(a);
+    });
+
+    // Named arrivals that are too few to be a trend. Three events, not a trickle:
+    // a rolling share of nine records would have drawn La Pérouse and Bouchard as noise.
+    (D.events || []).forEach(function (ev, i) {
+      var ex = x(ev.year), top = MT + ph;
+      svg.appendChild(el('line', { x1: ex, x2: ex, y1: top, y2: top - 26 - (i % 2) * 16,
+        stroke: 'var(--text-muted)', 'stroke-width': 1, opacity: .5, 'stroke-dasharray': '2 2' }));
+      svg.appendChild(el('circle', { cx: ex, cy: top, r: 3.5, fill: 'var(--text-secondary)',
+        stroke: 'var(--surface-1)', 'stroke-width': 2 }));
+      var ty = top - 30 - (i % 2) * 16;
+      var a = el('text', { x: ex, y: ty, class: 'g-axis-text', 'text-anchor': ev.year > 1810 ? 'end' : 'middle' });
+      a.setAttribute('font-size', '10'); a.setAttribute('fill', 'var(--text-secondary)');
+      a.setAttribute('font-weight', '700'); a.textContent = ev.label + ' ' + ev.year;
+      svg.appendChild(a);
+    });
+
+    // first recorded arrival of each flag, ticked on the axis
+    order.forEach(function (k) {
+      var fy = D.first_arrival[k];
+      if (!fy || k === 'spain') return;
+      svg.appendChild(el('line', { x1: x(fy), x2: x(fy), y1: MT + ph, y2: MT + ph + 6,
+        stroke: SLOT[k], 'stroke-width': 2 }));
     });
 
     // annual scatter first, so the smoothed line sits on top of its own evidence
@@ -131,9 +156,13 @@
   }
 
   function legend(order, lab) {
-    document.getElementById('legend').innerHTML = order.map(function (k) {
-      return '<span><i style="background:' + SLOT[k] + '"></i>' + esc(lab[k]) + '</span>';
-    }).join('') + '<span style="opacity:.7"><i style="background:var(--text-muted);height:6px;width:6px;border-radius:50%"></i>a single year</span>';
+    document.getElementById('legend').innerHTML = order.filter(function (k) { return k !== 'other'; })
+      .map(function (k) {
+        return '<span><i style="background:' + SLOT[k] + '"></i>' + esc(lab[k]) +
+               '<span style="opacity:.6;font-size:.9em">&nbsp;from ' + (window.__D.first_arrival[k] || '') + '</span></span>';
+      }).join('') +
+      '<span style="opacity:.75"><i style="background:var(--text-muted);height:7px;width:7px;border-radius:50%"></i>a single year</span>' +
+      '<span style="opacity:.75"><i style="background:var(--text-secondary);height:7px;width:2px;border-radius:0"></i>a named arrival</span>';
   }
 
   function hover(svg, D, years, x, y, ML, MT, pw, ph) {
@@ -147,7 +176,8 @@
       var yr = years.reduce(function (a, b) { return Math.abs(x(b) - sx) < Math.abs(x(a) - sx) ? b : a; }, years[0]);
       cross.setAttribute('x1', x(yr)); cross.setAttribute('x2', x(yr)); cross.setAttribute('opacity', .35);
       var n = D.n_by_year[String(yr)] || 0;
-      var rows = D.order.map(function (k) {
+      var ev = (D.events || []).filter(function (e) { return e.year === yr; })[0];
+      var rows = D.order.filter(function (k) { return k !== 'other'; }).map(function (k) {
         var sm = D.series[k].filter(function (p) { return p.year === yr; })[0];
         var an = D.annual[k].filter(function (p) { return p.year === yr; })[0];
         return '<tr><td><i style="background:' + SLOT[k] + '"></i>' + esc(D.labels[k]) + '</td><td>' +
@@ -155,6 +185,9 @@
                '<span class="muted"> (' + (an && an.n ? an.share + '% of ' + an.n : 'no records') + ')</span></td></tr>';
       }).join('');
       tip.innerHTML = '<b>' + yr + '</b><table>' + rows + '</table>' +
+        (ev ? '<div style="margin-top:6px;padding-top:5px;border-top:1px solid var(--grid)"><b>' +
+              esc(ev.label) + '</b> \u00b7 ' + esc(ev.vessels) + '<br><span class="muted">' +
+              esc(ev.date) + ', ' + esc(ev.place) + '. ' + esc(ev.note) + '</span></div>' : '') +
         '<div class="muted" style="margin-top:5px">5-year mean, with that single year in brackets<br>n = ' + n + ' in ' + yr + '</div>';
       tip.style.opacity = 1;
       tip.style.left = Math.min(evt.pageX + 16, window.scrollX + document.documentElement.clientWidth - tip.offsetWidth - 10) + 'px';
@@ -165,11 +198,12 @@
   }
 
   function table(D) {
-    var h = '<table><thead><tr><th>Year</th>' + D.order.map(function (k) { return '<th>' + esc(D.labels[k]) + '</th>'; }).join('') + '<th>n</th></tr></thead><tbody>';
+    var ORD = D.order.filter(function (k) { return k !== 'other'; });
+    var h = '<table><thead><tr><th>Year</th>' + ORD.map(function (k) { return '<th>' + esc(D.labels[k]) + '</th>'; }).join('') + '<th>n</th></tr></thead><tbody>';
     D.years.forEach(function (yr) {
       var n = D.n_by_year[String(yr)] || 0;
       h += '<tr><td>' + yr + '</td>';
-      D.order.forEach(function (k) {
+      ORD.forEach(function (k) {
         var sm = D.series[k].filter(function (p) { return p.year === yr; })[0];
         var an = D.annual[k].filter(function (p) { return p.year === yr; })[0];
         h += '<td>' + (sm && sm.share != null ? sm.share + '%' : '<span class="muted">—</span>') +

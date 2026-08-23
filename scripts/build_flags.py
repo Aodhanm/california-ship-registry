@@ -27,9 +27,14 @@ V = list(csv.DictReader(open(ROOT/"data"/"visits.csv")))
 
 Y0, Y1 = 1769, 1821
 WINDOW, MIN_WINDOW_N = 5, 20
+# Four flags carry enough records in this window to be a trend. France (7 rows)
+# and Argentina (2) do not: they are three discrete arrivals - La Perouse 1786,
+# Roquefeuil 1817, Bouchard 1818 - and a rolling share would draw three events as
+# a trickle. They are emitted as named events instead, and excluded from the
+# denominator note below.
 NAMED = ["spain", "usa", "russia", "britain"]
 LABEL = {"spain": "Spain", "usa": "United States", "russia": "Russia",
-         "britain": "Britain", "other": "Other flags"}
+         "britain": "Britain", "other": "France, Argentina (shown as events)"}
 
 rows, out_of_scope, no_date, no_flag = [], 0, 0, 0
 for v in V:
@@ -45,6 +50,17 @@ ann = collections.defaultdict(collections.Counter)
 for y, f in rows: ann[y][f] += 1
 n_by_year = {y: sum(ann[y].values()) for y in ann}
 
+# FIRST recorded arrival per flag. A centred rolling mean spreads a value
+# backwards across half its window, so without this clamp every flag's line
+# lifts off the axis two years before the flag actually appears - it dated the
+# Russian arrival to 1804 (really 1806, the Juno), the American to 1794 (1796),
+# the British to 1790 (1792, the Chatham) and the French to 1784 (1786, La
+# Perouse). First arrival is the historically meaningful moment in this series,
+# so it must not be smoothed. Below a flag's first record its share is zero, flat.
+first_year = {}
+for y, f in sorted(rows):
+    first_year.setdefault(f, y)
+
 years = list(range(Y0, Y1 + 1))
 half = WINDOW // 2
 series, annual = {}, {}
@@ -54,8 +70,11 @@ for k in NAMED + ["other"]:
         win = range(y - half, y + half + 1)
         wn = sum(n_by_year.get(w, 0) for w in win)
         wk = sum(ann[w][k] for w in win if w in ann)
-        smooth.append({"year": y, "share": round(100 * wk / wn, 1) if wn >= MIN_WINDOW_N else None,
-                       "window_n": wn})
+        arrived = k in first_year and y >= first_year[k]
+        val = None
+        if wn >= MIN_WINDOW_N:
+            val = round(100 * wk / wn, 1) if arrived else 0.0
+        smooth.append({"year": y, "share": val, "window_n": wn})
         n = n_by_year.get(y, 0)
         raw.append({"year": y, "share": round(100 * ann[y][k] / n, 1) if n else None, "n": n})
     series[k], annual[k] = smooth, raw
@@ -68,6 +87,29 @@ for v in V:
     if nm and fl: byname[nm].add(fl)
 conflicted = sorted(n for n, f in byname.items() if len(f) > 1)
 
+# The arrivals too few to be a trend, named. Dates and vessels are the registry's own.
+EVENTS = [
+  {"year": 1786, "date": "14–24 Sept 1786", "flag": "france",
+   "label": "La Pérouse", "vessels": "Astrolabe · Boussole", "place": "Monterey",
+   "note": "The first foreign visit to Spanish California.", "status": "reviewed"},
+  {"year": 1817, "date": "1817", "flag": "france",
+   "label": "Roquefeuil", "vessels": "Bordelais", "place": "San Francisco",
+   "note": "The corvette put in under stress of weather.", "status": "draft"},
+  {"year": 1818, "date": "20 Nov 1818", "flag": "argentina",
+   "label": "Bouchard", "vessels": "La Argentina · Santa Rosa", "place": "Monterey, then Refugio",
+   "note": "The only foreign attack on Spanish California.", "status": "reviewed"},
+]
+
+# Defects found while building this figure, carried in the data so they cannot be lost.
+REVIEW_FLAGS = [
+  {"row": "france 1808-10-26 (unnamed)",
+   "issue": "mention, not a visit: it is Spain's order to seize any French ship entering a "
+            "Californian port, not a French ship arriving. Class: mention-vs-visit."},
+  {"row": "france 1817-05-24 'Francia'",
+   "issue": "probable duplicate of Bordelais the same day: the row's own excerpt glosses "
+            "'la corveta Francia' as Roquefeuil's Bordelais. Class: era/name conflation."},
+]
+
 out = {
   "title": "Flags at anchor in California, 1769–1821",
   "measure": "share of recorded arrivals; 5-year centred rolling mean, annual values shown behind",
@@ -77,6 +119,7 @@ out = {
   "n_in_scope": len(rows), "n_total": len(V),
   "excluded": {"after_1821": out_of_scope, "no_date": no_date, "no_flag": no_flag},
   "labels": LABEL, "order": NAMED + ["other"],
+  "first_arrival": {k: first_year.get(k) for k in NAMED + ["other"]},
   "years": years,
   "n_by_year": {str(y): n_by_year.get(y, 0) for y in years},
   "series": series, "annual": annual,
@@ -88,6 +131,8 @@ out = {
         if (v.get("date_from") or "")[:4].isdigit() and int(v["date_from"][:4]) >= 1822
         and (v.get("flag") or "").strip() == "spain"),
   },
+  "events": EVENTS,
+  "review_flags": REVIEW_FLAGS,
   "caveats": [
     "Scope is 1769–1821. The registry's flag field is not reliable after Mexican independence: "
     "43 visits dated 1822 or later are flagged Spanish, among them vessels named Morelos, Matamoros "
@@ -98,6 +143,8 @@ out = {
     "Flag is the flag as attested or inferred in the record, not a vessel's registry. Within this window "
     "56% of rows are 'attested/inferred' rather than plainly stated.",
     "Most visit rows remain at draft status in the registry's own review workflow.",
+    "The line is clamped to zero before each flag's first recorded arrival: a centred mean would "
+    "otherwise show every flag appearing two years early.",
   ],
 }
 p = ROOT/"data"/"flags-by-year.json"
