@@ -1,0 +1,60 @@
+visit_id,ship_id,name_as_written,date_from,current_flag,proposed_flag,confidence,matched_by,bancroft_master,bancroft_tons,bancroft_years,evidence
+v1242,la independencia,La Independencia,1822-05-04,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1243,el alcion,El Alción,1822-05-05,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1249,san carlos,San Carlos,1822-07-20,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1252,san carlos,San Carlos,1822-08-08,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1262,eagle,Eagle,1822-12-31,russia,usa,medium,ship_id,Moraviof,,1825,Bancroft HoC vol III lists it as usa.
+v1268,ann,Ann,1823,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1269,ann,Ann,1823,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1270,ann,Ann,1823,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1363,nieves,Nieves,1825,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1376,(unnamed vessel),,1825-03-01,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1387,sutil,Sutil,1825-05-20,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1389,asia,Asia,1825-06-24,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1393,asia,Asia,1825-08-04,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1397,morelos,Morelos,1825-09-13,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1449,eliza,Eliza,1826-08-31,usa,france,medium,ship_id,,,1841;1845,Bancroft HoC vol IV lists it as france.
+v1465,courier,Courier,1826-11-30,russia,usa,medium,ship_id,,293,1825;1828,Bancroft HoC vol III lists it as usa.
+v1496,(unnamed vessel),,1827-07-30,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1503,matamoros,Matamoros,1827-08-31,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1504,sirena,Sirena,1827-08-31,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1565,volunteer,Volunteer,1829,russia,usa,medium,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists it as usa.
+v1566,volunteer,Volunteer,1829,russia,usa,medium,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists it as usa.
+v1569,maria ester,María Ester,1829-01-07,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1621,(unnamed vessel),,1829-08-17,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1679,ayacucho,Ayacucho,1830-08-03,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1680,brookline,Brookline,1830-08-03,spain,usa,high,fuzzy:brooklyn,,450,1846;1847,Bancroft HoC vol V lists this vessel as usa.
+v1681,leonor,Leonor,1830-08-03,spain,mexico,high,fuzzy:lfonor,Henry  D.  Fitch,207,1831;1833;1834;1835,Bancroft HoC vol III lists this vessel as mexico.
+v1682,vitor,Vitor,1830-08-03,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1683,volunteer,Volunteer,1830-08-03,spain,usa,high,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists this vessel as usa.
+v1691,(unnamed vessel),,1830-11-03,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v2223,natalia,Natalia,1831,mexico,chile,medium,ship_id,,,1846;1847;1848,Bancroft HoC vol V lists it as chile.
+v1709,mexicana,Mexicana,1831-04-13,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1725,catalina,Catalina,1831-09-11,spain,mexico,high,ship_id,C.  Cristcn,,1830,Bancroft HoC vol III lists this vessel as mexico.
+v1729,pocahontas,Pocahontas,1831-09-11,russia,usa,medium,fuzzy:pocahontaa,John  Bradshaw,302,1825;1828;1830,Bancroft HoC vol III lists it as usa.
+v1730,volunteer,Volunteer,1831-09-11,russia,usa,medium,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists it as usa.
+v1741,margarita,Margarita,1831-11-08,spain,mexico,high,ship_id,,,1831;1834;1835,Bancroft HoC vol III lists this vessel as mexico.
+v1752,(unnamed vessel),,1832-09-24,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1765,volunteer,Volunteer,1833,russia,usa,medium,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists it as usa.
+v1766,volunteer,Volunteer,1833,russia,usa,medium,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists it as usa.
+v1767,volunteer,Volunteer,1833,russia,usa,medium,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists it as usa.
+v1768,volunteer,Volunteer,1833,russia,usa,medium,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists it as usa.
+v1774,catalina,Catalina,1833-04-03,spain,mexico,high,ship_id,C.  Cristcn,,1830,Bancroft HoC vol III lists this vessel as mexico.
+v1777,catalina,Catalina,1833-05-01,spain,mexico,high,ship_id,C.  Cristcn,,1830,Bancroft HoC vol III lists this vessel as mexico.
+v1783,catalina,Catalina,1833-05-31,spain,mexico,high,ship_id,C.  Cristcn,,1830,Bancroft HoC vol III lists this vessel as mexico.
+v1786,catalina,Catalina,1833-06-03,spain,mexico,high,ship_id,C.  Cristcn,,1830,Bancroft HoC vol III lists this vessel as mexico.
+v1793,volunteer,Volunteer,1833-09-17,russia,usa,medium,ship_id,Jos  O.  Carter,150,1829;1833,Bancroft HoC vol III lists it as usa.
+v1796,legaspi,Legaspi,1833-10-11,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1797,mariquita,Mariquita,1833-10-21,spain,mexico,high,ship_id,Tim.  W.  Biddell,359,1833;1834;1835,Bancroft HoC vol III lists this vessel as mexico.
+v1824,margarita,Margarita,1834-12-31,russia,mexico,medium,ship_id,,,1831;1834;1835,Bancroft HoC vol III lists it as mexico.
+v1827,natalia,Natalia,1834-12-31,russia,chile,medium,ship_id,,,1846;1847;1848,Bancroft HoC vol V lists it as chile.
+v2241,california-mex-schr,California,1837,mexico,usa,medium,fuzzy:california,,,1847;1848,Bancroft HoC vol V lists it as usa.
+v1885,san antonio,San Antonio,1839-02-14,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1910,(unnamed vessel),,1840-04-22,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1915,clarita,Clarita,1840-07-14,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v1921,leonidas,Leonidas,1840-10-12,spain,mexico,high,fuzzy:leanidas,Malarin,,1833,Bancroft HoC vol III lists this vessel as mexico.
+v1926,catalina,CATALINA,1840-11-30,spain,mexico,high,ship_id,C.  Cristcn,,1830,Bancroft HoC vol III lists this vessel as mexico.
+v1932,catalina,Catalina,1840-12-16,spain,mexico,high,ship_id,C.  Cristcn,,1830,Bancroft HoC vol III lists this vessel as mexico.
+v2004,catalina,Catalina,1842-11-04,spain,mexico,high,ship_id,C.  Cristcn,,1830,Bancroft HoC vol III lists this vessel as mexico.
+v2048,don quijote,Don Quijote,1845-05-16,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
+v2120,santa gertrudis,Sta Gertrudis,1849,spain,REVIEW,medium,none,,,,Spain had no California trade after 1821 and Bancroft lists no Spanish-flagged vessel in HoC III-V; flag needs re-determination.
