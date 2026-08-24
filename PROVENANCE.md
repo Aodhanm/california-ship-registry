@@ -20,7 +20,7 @@ not that a script re-emits the table.
 
 ## Build lineage
 
-1. **Phase 0 — seed.** `scripts/harvest.py` swept the *Archives of California*
+1. **Phase 0, seed.** `scripts/harvest.py` swept the *Archives of California*
    calendar (BANC MSS C-A) for vessel vocabulary; `scripts/merge.py` collapsed the
    draft rows into visit-level rows, a ships table, and the anchorage gazetteer
    (~1,294 draft visits). This is the ONLY step `merge.py` performs, and it reads
@@ -35,7 +35,7 @@ not that a script re-emits the table.
    calendar re-harvest at 19,755 records; and hand-curated exploration/Vallejo rows.
    Manuscript-derived names are leaf-verified before minting (the C-A 40 lesson).
 
-3. **Phantom purges — the seven false-ship classes.** Policy phantoms,
+3. **Phantom purges, the seven false-ship classes.** Policy phantoms,
    era-conflations, person-as-ship, place-as-ship, OCR garbles, mis-flaggings, and
    retrospective mentions are detected and removed, each with its test and guard
    (`PHANTOM-SHIPS.md`, `FALSE-POSITIVE-REGISTER.md`). Sunk phantoms and non-ship
@@ -50,6 +50,18 @@ Individual curation passes are kept as dated, auditable scripts, e.g.
 `scripts/apply_flag_fixes_2026-08-24.py` (the post-1821 flag-artifact correction),
 so every batch change is a readable record of what changed and why.
 
+## Updating the published page
+
+`index.html` is a hand-maintained single-file viewer (its source apparatus, figures,
+and styling were tuned by hand). After a data change, refresh it with
+**`python3 scripts/update_data.py`**, which runs `check.py`, then splices only the
+embedded `visits`/`ships` arrays into the page between fixed markers and leaves every
+byte of hand-written HTML untouched (it is idempotent: re-running on unchanged data
+produces a byte-identical file). The older full generator `scripts/build_site.py` is
+**quarantined** because its template has diverged from the hand-maintained page and
+regenerating would regress the prose; do not run it until it is reconciled (tracked in
+`REVIEW-QUEUE.md`).
+
 ## The reproducible guarantee: `check.py`
 
 `python3 scripts/check.py` is the reproducible contract. It re-derives and enforces,
@@ -58,8 +70,8 @@ on every build, that the published table satisfies its invariants:
 - schema/vocabulary conformance (flags, visit types, statuses);
 - every row carries at least one parseable citation;
 - date sanity and `date_from <= date_to`;
-- **flag floors** — no flag predates its nation's first documented California hull;
-- **the post-1821 Spain ceiling** — no port-level `spain` flag after independence,
+- **flag floors**, no flag predates its nation's first documented California hull;
+- **the post-1821 Spain ceiling**, no port-level `spain` flag after independence,
   bar an explicit allowlist for the genuine last Spanish-naval visit (the *Asia*);
 - sunk phantoms and adjudicated non-ship records can never reappear;
 - the Ogden schedule-attachment year-consistency guard (the *Loo Choo* lesson).

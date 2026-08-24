@@ -10,7 +10,7 @@ FLAGS = {'', 'spain', 'usa', 'russia', 'britain', 'mexico', 'france', 'hawaii', 
 VTYPES = {'port-call', 'port-call?', 'offshore-presence', 'resident', 'sighting',
           'reported?', 'mention', 'unlocated'}
 STATUS = {'draft', 'reviewed', 'verified'}
-# Sunk phantoms — non-ships adjudicated out (2026-07-27, see FALSE-POSITIVE-REGISTER.md).
+# Sunk phantoms, non-ships adjudicated out (2026-07-27, see FALSE-POSITIVE-REGISTER.md).
 # A HARD guard so a re-harvest or stray row can never re-mint them. Read the Bancroft
 # text: each of these is a place / month / demonym / person / policy, not a hull.
 DROPPED_SHIP_IDS = {
@@ -23,7 +23,7 @@ DROPPED_SHIP_IDS = {
     # 2026-07-27 OCR garbles: merged into a real ship (must not re-mint as their own row)
     'actwo', 'actwwo', 'chirtkov', 'iimen', 'taaso', 'loussa', 'maraquita',
     'fetvorite', 'guadidupc', 'elizabeih', 'vafidalia', 'plowhoij', 'liclipse', 'oajaca',
-    # 2026-07-27 unrecoverable print-list garbles (no confident reading — asserted nothing)
+    # 2026-07-27 unrecoverable print-list garbles (no confident reading, asserted nothing)
     'oivvi', 'panjir', 'xylon', 'suxden', 'suaanita', 'toidon', 'nadednik', 'apoho',
     # 2026-07-27 queue-resolution drops (mis-parses / place-names)
     'net-siut','tester','vinas','san francisco','santa barbara','bruja','reisos','ynez','cadiac','la elisa','tic-me-mash','javier sartar','diga',
@@ -70,7 +70,7 @@ spans = {}
 for r in rows:
     vid = r['visit_id']
     if r['ship_id'] in DROPPED_SHIP_IDS:
-        hard.append(f"{vid}: sunk-phantom ship_id {r['ship_id']!r} — a non-ship; must not be re-minted")
+        hard.append(f"{vid}: sunk-phantom ship_id {r['ship_id']!r}, a non-ship; must not be re-minted")
     if vid in seen_ids: hard.append(f"duplicate visit_id {vid}")
     seen_ids.add(vid)
     if r['flag'] not in FLAGS: hard.append(f"{vid}: bad flag {r['flag']!r}")
@@ -80,19 +80,19 @@ for r in rows:
     # Otter sighted offshore May 1796); port-level visit types may not.
     if (r['flag'] in FLAG_FLOORS and r['visit_type'] not in ('sighting', 'reported?', 'mention')
             and _before_floor(r['date_from'], FLAG_FLOORS[r['flag']])):
-        hard.append(f"{vid}: flag {r['flag']!r} dated {r['date_from']} — before that nation's first "
+        hard.append(f"{vid}: flag {r['flag']!r} dated {r['date_from']}, before that nation's first "
                     f"documented hull in California ({FLAG_FLOORS[r['flag']]}); phantom or mis-flag")
     if (r['flag'] == 'spain' and r['visit_type'] not in ('sighting', 'reported?', 'mention')
             and r['date_from'][:4].isdigit() and int(r['date_from'][:4]) >= 1822
             and vid not in SPAIN_POST1821_OK):
-        hard.append(f"{vid}: spain flag dated {r['date_from']} (post-1821) — Spain had no California "
+        hard.append(f"{vid}: spain flag dated {r['date_from']} (post-1821), Spain had no California "
                     f"trade after independence; harvest artifact, or add to SPAIN_POST1821_OK if genuine")
     try:
         c = json.loads(r['citations'])
         if not c: hard.append(f"{vid}: no citations")
         for cit in c:
             if cit.get('type') == 'ca-record' and (str(cit.get('ca')), str(cit.get('doc'))) in DROPPED_CA_RECORDS:
-                hard.append(f"{vid}: cites C-A {cit['ca']} d{cit['doc']} — adjudicated a non-ship record; must not be re-minted")
+                hard.append(f"{vid}: cites C-A {cit['ca']} d{cit['doc']}, adjudicated a non-ship record; must not be re-minted")
             # 2026-08-04 Loo Choo lesson: the Ogden harvest attached swallowed entries' schedule
             # lines to the wrong vessel. An Ogden citation's own entry label ("s.v. 'Name, YEARS'")
             # must contain the visit's year (+/-1 for season overlap).
@@ -105,7 +105,7 @@ for r in rows:
                         yrs.update(range(a, b + 1))
                     vy = int(r['date_from'][:4])
                     if yrs and not (min(yrs) - 1 <= vy <= max(yrs) + 1):
-                        hard.append(f"{vid}: dated {vy} but its Ogden entry covers {sorted(yrs)} — mis-attached schedule line")
+                        hard.append(f"{vid}: dated {vy} but its Ogden entry covers {sorted(yrs)}, mis-attached schedule line")
     except Exception:
         hard.append(f"{vid}: unparseable citations")
     for d in (r['date_from'], r['date_to']):

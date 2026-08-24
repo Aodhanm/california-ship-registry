@@ -64,7 +64,7 @@ ALIAS = {
  'horcasitas': 'orcasitas', 'orcasitas': 'orcasitas',
  'valdez': 'valdes', 'valdés': 'valdes',
  'santa saturnina': 'saturnina', 'saturnina': 'saturnina',
- 'erminia': 'ilmen[?]',   # probable Savage rendering of Il'mena — UNCONFIRMED, keep flagged
+ 'erminia': 'ilmen[?]',   # probable Savage rendering of Il'mena, UNCONFIRMED, keep flagged
  'lelia bird': 'lelia byrd', 'lelia byrd': 'lelia byrd',  # Savage spells her 'Bird'
  # 2026-07-27 OCR-garble merges (print-list twins folded into the real ship)
  'actwo': 'activo', 'actwwo': 'activo', 'chirtkov': 'chirikov', 'iimen': 'ilmen',

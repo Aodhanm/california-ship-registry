@@ -3,8 +3,8 @@
 *What Adele Ogden's vessel itineraries add to the registry, what Bancroft independently corroborates, and what is still garbled. Companion to `FALSE-POSITIVE-REGISTER.md` and `REVIEW-QUEUE.md`.*
 
 ## Sources in play
-- **Ogden itineraries** (`data/ogden-itineraries.csv`) — an **OCR extraction** of Adele Ogden's trading-vessel itineraries (*The California Sea Otter Trade, 1784–1848*, and her vessel card-file). **89 distinct vessels / 898 port-call rows.** It is OCR, not a clean transcription — garbles survive in it (e.g. the ship name literally stored as `CaAuIFrorniA`).
-- **Bancroft** — enters the registry two ways: (a) `[Bancroft list YYYY-Y]` = his printed **marine lists** in *History of California* (84 ship rows, mostly 1841–48, a **partial** ingest); (b) `ca-record` / `Bancroft Hist.Cal.` citations on the C-A-manuscript and narrative visits (the bulk of the dataset).
+- **Ogden itineraries** (`data/ogden-itineraries.csv`), an **OCR extraction** of Adele Ogden's trading-vessel itineraries (*The California Sea Otter Trade, 1784–1848*, and her vessel card-file). **89 distinct vessels / 898 port-call rows.** It is OCR, not a clean transcription, garbles survive in it (e.g. the ship name literally stored as `CaAuIFrorniA`).
+- **Bancroft**, enters the registry two ways: (a) `[Bancroft list YYYY-Y]` = his printed **marine lists** in *History of California* (84 ship rows, mostly 1841–48, a **partial** ingest); (b) `ca-record` / `Bancroft Hist.Cal.` citations on the C-A-manuscript and narrative visits (the bulk of the dataset).
 
 ## Headline numbers
 | | vessels |
@@ -17,23 +17,23 @@
 | Bancroft printed-marine-list ships (disjoint set) | **84** |
 | **Ogden ∩ Bancroft-marine-list (same ship_id)** | **0** |
 
-## Finding 1 — the two sources are siloed
+## Finding 1, the two sources are siloed
 No ship currently carries **both** an `[Ogden itinerary]` visit and a `[Bancroft list]` citation. Ogden's 64 and Bancroft's printed-list 84 are wholly disjoint ship_ids, even where they must be the same hull (e.g. Ogden's *Loo Choo* / *Don Quixote* also stand in Bancroft's 1840s marine lists). **The cross-link was never made.** ⇒ biggest remaining data-quality task: ingest Bancroft's full marine lists and merge against Ogden by name+year, so a vessel in both shows one row with two authorities.
 
 ⚠ **"Ogden-only" ≠ "absent from Bancroft's books."** It means *not yet cross-linked to a Bancroft/C-A row in our data*. Bancroft's *History* marine lists and Pioneer Register almost certainly contain most of the "Ogden-only" ships below; we just haven't ingested that slice.
 
-## Finding 2 — Ogden's real added value (the 41 "Ogden-only")
-These are overwhelmingly **real** Anglo-American / Hawaiian / Russian trading and otter-hunting vessels of the 1800s–1840s — exactly the traffic the Spanish/Mexican C-A manuscripts under-record. Ogden is the authority that captures them:
+## Finding 2, Ogden's real added value (the 41 "Ogden-only")
+These are overwhelmingly **real** Anglo-American / Hawaiian / Russian trading and otter-hunting vessels of the 1800s–1840s, exactly the traffic the Spanish/Mexican C-A manuscripts under-record. Ogden is the authority that captures them:
 
-*Well-documented real ships* — Loo Choo (41 visits), Waverly, Don Quixote, Owhyhee, O'Cain, Forester, Kutusov (Kutuzov), Ilmen, Alciope, Admittance, Avon, Maryland, Monsoon, Traveller, Harriet Blanchard, Griffon, Karimoku (Kalanimoku), Kamehameha, Okhotsk, Prince Lee Boo, Butterworth, Jackal, Diana, Isabella, Phoenix, Amethyst, Charon, Katherine, Becket, Crusader, Victoria, Morse, Clementine, Bordeaux Packet, Rasselas, Joseph Peabody, Tamana. → these are keep-and-corroborate: match each to a Bancroft marine-list line to move it from draft toward reviewed.
+*Well-documented real ships*, Loo Choo (41 visits), Waverly, Don Quixote, Owhyhee, O'Cain, Forester, Kutusov (Kutuzov), Ilmen, Alciope, Admittance, Avon, Maryland, Monsoon, Traveller, Harriet Blanchard, Griffon, Karimoku (Kalanimoku), Kamehameha, Okhotsk, Prince Lee Boo, Butterworth, Jackal, Diana, Isabella, Phoenix, Amethyst, Charon, Katherine, Becket, Crusader, Victoria, Morse, Clementine, Bordeaux Packet, Rasselas, Joseph Peabody, Tamana. → these are keep-and-corroborate: match each to a Bancroft marine-list line to move it from draft toward reviewed.
 
-## Finding 3 — still garbled (flagged, NOT minted)
+## Finding 3, still garbled (flagged, NOT minted)
 Resolve against Ogden's clean catalog before asserting a name:
-- **`caauifrornia` (7) + `califorma` (5)** — Ogden's file *does* list a vessel **"California"** (1823–1831 out of San Blas; and 1845–1846). So this is probably a **real trading vessel California**, distinct from the sunk place-phantom `california` — but the OCR is too mangled to mint the clean name safely. **Do not restore "california" as a ship_id** (it is HARD-guarded as a phantom); use a disambiguated id (e.g. `california-schr`) only after confirming the vessel and its dates in Ogden.
-- **`william inttle` (2)** — garble; likely *William Little* or *William & Ann*. One catalog check.
-- **`dhualle` (2)** — garble; unresolved.
+- **`caauifrornia` (7) + `califorma` (5)**, Ogden's file *does* list a vessel **"California"** (1823–1831 out of San Blas; and 1845–1846). So this is probably a **real trading vessel California**, distinct from the sunk place-phantom `california`, but the OCR is too mangled to mint the clean name safely. **Do not restore "california" as a ship_id** (it is HARD-guarded as a phantom); use a disambiguated id (e.g. `california-schr`) only after confirming the vessel and its dates in Ogden.
+- **`william inttle` (2)**, garble; likely *William Little* or *William & Ann*. One catalog check.
+- **`dhualle` (2)**, garble; unresolved.
 
-## Finding 4 — garbles already fixed this pass
+## Finding 4, garbles already fixed this pass
 Merged into the real ship (Ogden OCR twins): `actwo`+`actwwo`→*Activo*, `chirtkov`→*Chirikov*, `iimen`→*Ilmen*, `loussa`→*Louisa*, `maraquita`→*Mariquita*, `liclipse`→*Eclipse*; and the internal apostrophe twin `o' cain`→*o'cain*. All encoded in harvest `ALIAS`.
 
 ## Recommended next steps
@@ -45,70 +45,70 @@ Merged into the real ship (Ogden OCR twins): `actwo`+`actwwo`→*Activo*, `chirt
 
 # Bancroft marine-list ingest + three-source merge (2026-07-27, same day)
 
-Acted on Finding 1. The full Bancroft Mexican-period marine list was already staged in `data/mexlist-stage.csv` — **198 vessels** (Hist. Cal. vols III/IV/V, spans 1825-30 / 1831-5 / 1841-5 / 1846-8). Cross-matched it (ALIAS-aware) against the live roster:
+Acted on Finding 1. The full Bancroft Mexican-period marine list was already staged in `data/mexlist-stage.csv`, **198 vessels** (Hist. Cal. vols III/IV/V, spans 1825-30 / 1831-5 / 1841-5 / 1846-8). Cross-matched it (ALIAS-aware) against the live roster:
 
 | bucket | n | action |
 |---|---|---|
-| in **BOTH** Ogden & Bancroft-list | 17 | **corroborated** — added a Bancroft marine-list citation to each (kills the silo) |
+| in **BOTH** Ogden & Bancroft-list | 17 | **corroborated**, added a Bancroft marine-list citation to each (kills the silo) |
 | already present as a live ship | 123 | already covered |
 | genuinely **new** real vessel, clean name | 8 | **added** |
-| **phantom-name but real vessel (has tonnage)** | 10 | **flagged, NOT minted** — need the Bancroft page |
+| **phantom-name but real vessel (has tonnage)** | 10 | **flagged, NOT minted**, need the Bancroft page |
 | OCR garble / thin | ~40 | left in stage; need the suspects-triage fixes applied |
 
 **Corroborated (now Ogden + Bancroft):** convoy, eagle, griffon, mercury, okhotsk, washington, waverly, diana, crusader, mariquita, plant, volunteer, columbia, eliza, admittance, fama, louisa.
 
-**Added as new Bancroft-marine-list vessels (with tonnage):** *Pilgrim* (155t — Dana's ship), *Wilmington* (364t), *Paragon* (309t), *Peruvian* (331t), *Affiance*, *Bowditch*, *Huntress*, *Corea*. Registry now **393 ships / 2,090 visits**.
+**Added as new Bancroft-marine-list vessels (with tonnage):** *Pilgrim* (155t, Dana's ship), *Wilmington* (364t), *Paragon* (309t), *Peruvian* (331t), *Affiance*, *Bowditch*, *Huntress*, *Corea*. Registry now **393 ships / 2,090 visits**.
 
-## Finding 5 — the marine list has REAL vessels sharing a dropped phantom's name
-Bancroft's *List of vessels* records vessels **with tonnage** named `Sitka` (russia 202t, Monterey), `Times` (britain 407t), `Friend` (usa 404t), `Fernando` (mexico 344t), `Trinidad` (mexico 170t), `California` (usa 379t; usa 422t), `Tartar` (usa 301t), `American` (88t), `Expadon` (france 397t). These are **not** the narrative-word phantoms we sank (the month, the demonym, the place) — they are real hulls. **But** the whole stage file is raw OCR, and these names are exactly where OCR error hides, so they are **flagged, not minted**: confirm each against the actual Hist. Cal. marine-list page, then add under a disambiguated id (e.g. `sitka-vessel`) — never the bare phantom id (those are HARD-guarded).
+## Finding 5, the marine list has REAL vessels sharing a dropped phantom's name
+Bancroft's *List of vessels* records vessels **with tonnage** named `Sitka` (russia 202t, Monterey), `Times` (britain 407t), `Friend` (usa 404t), `Fernando` (mexico 344t), `Trinidad` (mexico 170t), `California` (usa 379t; usa 422t), `Tartar` (usa 301t), `American` (88t), `Expadon` (france 397t). These are **not** the narrative-word phantoms we sank (the month, the demonym, the place), they are real hulls. **But** the whole stage file is raw OCR, and these names are exactly where OCR error hides, so they are **flagged, not minted**: confirm each against the actual Hist. Cal. marine-list page, then add under a disambiguated id (e.g. `sitka-vessel`), never the bare phantom id (those are HARD-guarded).
 
 ## Still open
 - Apply the full `mexlist-suspects-triage.csv` garble fixes to the stage file, then re-run this match to trust the remaining ~40 stage vessels.
 - Verify + mint the 10 phantom-name real vessels from the Bancroft page.
-- **Coverage gap:** the staged list is Mexican-period only (1825-48). Bancroft's **Spanish-period** vessel list (Hist. Cal. I–II, pre-1825) is not ingested — the pre-1825 traffic rests on the C-A manuscripts alone.
+- **Coverage gap:** the staged list is Mexican-period only (1825-48). Bancroft's **Spanish-period** vessel list (Hist. Cal. I–II, pre-1825) is not ingested, the pre-1825 traffic rests on the C-A manuscripts alone.
 
 ---
 
 # Bancroft-page verification of the phantom-tonnage vessels (2026-07-27)
 
-Verified the 10 "phantom-name but has-tonnage" flags against Bancroft's actual *List of vessels* on Wikisource (hand-corrected transcription of Hist. Cal. vol III, ch.6, djvu p.146). **The pattern is confirmed: these are mostly mis-parses — the OCR grabbed a place/origin or an adjacent word and kept a neighbouring vessel's tonnage.**
+Verified the 10 "phantom-name but has-tonnage" flags against Bancroft's actual *List of vessels* on Wikisource (hand-corrected transcription of Hist. Cal. vol III, ch.6, djvu p.146). **The pattern is confirmed: these are mostly mis-parses, the OCR grabbed a place/origin or an adjacent word and kept a neighbouring vessel's tonnage.**
 
 | stage entry | verdict (verbatim Bancroft) |
 |---|---|
-| `Sitka` russia 202t | **mis-parse → the *Baikal*** — "*Baikal,* Russ. brig, 202 tons; up and down the coast from Ross to S. Diego each year 1826–30" (Sitka = her origin port). Already in registry. |
-| `Tartar` usa 301t | **→ *Young Tartar*** — "*Young Tartar* (or *Jóven Tartar*), Engl. schr, 95 tons; John Brown master, 1826-7." Name resolves to a ship we already hold; the 301t is spurious. |
-| `American` 88t | **not a vessel** — does not appear as a vessel name in the list (the demonym, as suspected). |
+| `Sitka` russia 202t | **mis-parse → the *Baikal***, "*Baikal,* Russ. brig, 202 tons; up and down the coast from Ross to S. Diego each year 1826–30" (Sitka = her origin port). Already in registry. |
+| `Tartar` usa 301t | **→ *Young Tartar***, "*Young Tartar* (or *Jóven Tartar*), Engl. schr, 95 tons; John Brown master, 1826-7." Name resolves to a ship we already hold; the 301t is spurious. |
+| `American` 88t | **not a vessel**, does not appear as a vessel name in the list (the demonym, as suspected). |
 | `California` 379t / 422t | **not a vessel name** in the 1825-30 detailed list (mis-parse). 1841-5 entries unverified (tooling); left flagged. |
-| `Times` britain 407t | **REAL — minted** as `times-whaler`: "*Times,* Engl. whaler, 407 tons; Wm Ross, master; at Sta B. Oct. 1828." Disambiguated id (never the dropped word `times`). |
+| `Times` britain 407t | **REAL, minted** as `times-whaler`: "*Times,* Engl. whaler, 407 tons; Wm Ross, master; at Sta B. Oct. 1828." Disambiguated id (never the dropped word `times`). |
 | `Friend` 404t | not in the 1825-30 list; 1831-40 unverified; left flagged. |
-| `Fernando`/`Trinidad`/`Expadon` (1841-5, Mexican/French, w/ tonnage) | **cannot verify on Wikisource** — only Hist. Cal. vol III (and VI) are transcribed there; vols I/II/IV/V are absent, so the 1841-5 list (vol IV) is unreachable without IA raw-OCR. Left flagged; could be real Mexican/French vessels or (per the proven pattern) mis-parses. |
+| `Fernando`/`Trinidad`/`Expadon` (1841-5, Mexican/French, w/ tonnage) | **cannot verify on Wikisource**, only Hist. Cal. vol III (and VI) are transcribed there; vols I/II/IV/V are absent, so the 1841-5 list (vol IV) is unreachable without IA raw-OCR. Left flagged; could be real Mexican/French vessels or (per the proven pattern) mis-parses. |
 
-**Net:** of the 10 flags, 2 are confirmed mis-parses of ships we already hold (Baikal, Young Tartar), 2 confirmed non-vessels (American, California-1825/30), **1 confirmed real and minted (Times)**, and 5 remain flagged — not because the work is undone but because **Bancroft vol IV is not transcribed on Wikisource** and IA raw-OCR fetches stall. **The discipline of flag-not-mint was correct** — blindly minting these would have re-created phantoms.
+**Net:** of the 10 flags, 2 are confirmed mis-parses of ships we already hold (Baikal, Young Tartar), 2 confirmed non-vessels (American, California-1825/30), **1 confirmed real and minted (Times)**, and 5 remain flagged, not because the work is undone but because **Bancroft vol IV is not transcribed on Wikisource** and IA raw-OCR fetches stall. **The discipline of flag-not-mint was correct**, blindly minting these would have re-created phantoms.
 
-## Task-3 note (Spanish-period ingest) — deferred
-Attempted to ingest Bancroft's Spanish-period (pre-1825) vessel lists (Hist. Cal. I–II). **Blocked at source: only vol III (and VI) of the *History of California* are transcribed on Wikisource — vols I and II are not there.** The only remaining path is Internet-Archive raw-OCR of the djvu, which stalled repeatedly (watchdog timeouts + mid-response connection drops). Not completed this session. **Mitigating fact:** the Spanish period is already the registry's best-covered era via the C-A manuscripts (e.g. *Princesa* 70 visits, plus Concepción, Activo, San Carlos, Favorita, Aránzazu…), so a Bancroft Spanish-period pass would mainly *corroborate* existing ships (as the Mexican-period pass did) rather than add many new vessels. Left as a future task.
+## Task-3 note (Spanish-period ingest), deferred
+Attempted to ingest Bancroft's Spanish-period (pre-1825) vessel lists (Hist. Cal. I–II). **Blocked at source: only vol III (and VI) of the *History of California* are transcribed on Wikisource, vols I and II are not there.** The only remaining path is Internet-Archive raw-OCR of the djvu, which stalled repeatedly (watchdog timeouts + mid-response connection drops). Not completed this session. **Mitigating fact:** the Spanish period is already the registry's best-covered era via the C-A manuscripts (e.g. *Princesa* 70 visits, plus Concepción, Activo, San Carlos, Favorita, Aránzazu…), so a Bancroft Spanish-period pass would mainly *corroborate* existing ships (as the Mexican-period pass did) rather than add many new vessels. Left as a future task.
 
 ---
 
 # RESOLVED via the vault (2026-07-27, evening): all 7 Bancroft volumes are local
 
-Aodhan had the full *History of California* (all 7 vols, plain text) in the vault at `~/vault/raw/papers/bancroft-history-california/vol{1-7}-*.txt`. This unblocked both stuck tasks — no Wikisource/IA needed.
+Aodhan had the full *History of California* (all 7 vols, plain text) in the vault at `~/vault/raw/papers/bancroft-history-california/vol{1-7}-*.txt`. This unblocked both stuck tasks, no Wikisource/IA needed.
 
-## Task 2 — phantom-tonnage flags, FINAL (verified against the vault text)
+## Task 2, phantom-tonnage flags, FINAL (verified against the vault text)
 | flag | verdict |
 |---|---|
-| `Times` britain 407t | **REAL — minted** `times-whaler`. (vol III: "Times, Engl. whaler, 407 tons; Wm Ross, master; at Sta B. Oct. 1828.") |
-| `Fernando` mex 344t | **REAL — minted** `fernando-brig`. (vol IV: "Fernando, Mex. brig. At S. Pedro in June 1842.") |
-| `Trinidad` mex 170t | **REAL — minted** `trinidad-brig`. (vol IV: "Trinidad, Mex. brig, 170 tons, 14 men; R. Menchaca, master; C. Lataillade, owner… detained by Com. Jones at Mont. in Oct." 1842.) |
-| `California` usa 379t/422t | **REAL — minted** `california-boston-ship`. The Boston hide ship (Bryant & Sturgis; 379t in vol III 1831-40, 422t / Jas P. Arther master, arr. Mont. from Boston Feb. 1842 in vol IV). |
-| `California` mex (small) | **REAL — minted** `california-mex-schr`: "California, Mex. schr, 83 tons; formerly the Clarion and Kanin… sold to Gov. Alvarado" 1837. |
+| `Times` britain 407t | **REAL, minted** `times-whaler`. (vol III: "Times, Engl. whaler, 407 tons; Wm Ross, master; at Sta B. Oct. 1828.") |
+| `Fernando` mex 344t | **REAL, minted** `fernando-brig`. (vol IV: "Fernando, Mex. brig. At S. Pedro in June 1842.") |
+| `Trinidad` mex 170t | **REAL, minted** `trinidad-brig`. (vol IV: "Trinidad, Mex. brig, 170 tons, 14 men; R. Menchaca, master; C. Lataillade, owner… detained by Com. Jones at Mont. in Oct." 1842.) |
+| `California` usa 379t/422t | **REAL, minted** `california-boston-ship`. The Boston hide ship (Bryant & Sturgis; 379t in vol III 1831-40, 422t / Jas P. Arther master, arr. Mont. from Boston Feb. 1842 in vol IV). |
+| `California` mex (small) | **REAL, minted** `california-mex-schr`: "California, Mex. schr, 83 tons; formerly the Clarion and Kanin… sold to Gov. Alvarado" 1837. |
 | `Sitka` russia 202t | mis-parse → the **Baikal** (already held). |
 | `Tartar` usa 301t | → **Young Tartar** (already held). |
 | `American` 88t | **not a vessel** (absent from vol III list). |
 | `Friend` usa 404t | **not a vessel** (absent from vol III list). |
-| `Expadon` fr 397t | **not a vessel** — the text has only "Exploring Expedition" (Wilkes); no such hull. |
+| `Expadon` fr 397t | **not a vessel**, the text has only "Exploring Expedition" (Wilkes); no such hull. |
 
 So **5 of the 10 flags were real vessels (now minted with disambiguated ids), 5 were mis-parses/non-vessels.** Bare ids (`california`, `fernando`, `trinidad`, `times`) remain HARD-guarded; the real vessels live under `*-brig` / `*-ship` / `*-schr` ids.
 
-## Task 3 — Spanish-period ingest: no list exists to ingest
-Checked vols I (1542-1800) and II (1801-1824) in the vault: **Bancroft has NO tabulated "List of vessels" for the Spanish period** — zero tonnage-table entries in either volume. He narrates the San Blas supply ships in prose ("the Activo, under Alférez Manuel de Murga, arrived at San Francisco July 23… and the Princesa…"), citing `Prov. St. Pap.` — i.e. the **same C-A manuscripts the registry is already built from.** The consolidated marine list is a Mexican-period (vol III+) feature only. Conclusion: there is nothing to "ingest"; the Spanish era is already covered from the primary source, and a Bancroft pass would only *corroborate* existing ships against a secondary narrative of the same records. **Task closed as a no-op with reason, not deferred.**
+## Task 3, Spanish-period ingest: no list exists to ingest
+Checked vols I (1542-1800) and II (1801-1824) in the vault: **Bancroft has NO tabulated "List of vessels" for the Spanish period**, zero tonnage-table entries in either volume. He narrates the San Blas supply ships in prose ("the Activo, under Alférez Manuel de Murga, arrived at San Francisco July 23… and the Princesa…"), citing `Prov. St. Pap.`, i.e. the **same C-A manuscripts the registry is already built from.** The consolidated marine list is a Mexican-period (vol III+) feature only. Conclusion: there is nothing to "ingest"; the Spanish era is already covered from the primary source, and a Bancroft pass would only *corroborate* existing ships against a secondary narrative of the same records. **Task closed as a no-op with reason, not deferred.**

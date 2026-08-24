@@ -55,7 +55,7 @@ print(f"\nTOTAL: {len(ALL)} entries")
 print("  with a flag:  ", sum(1 for r in ALL if r['flag']))
 print("  with a master:", sum(1 for r in ALL if r['master']))
 print("  with years:   ", sum(1 for r in ALL if r['years']))
-print("  flags:", dict(collections.Counter(r['flag'] or '—' for r in ALL).most_common()))
+print("  flags:", dict(collections.Counter(r['flag'] or ', ' for r in ALL).most_common()))
 json.dump(ALL, open('banc-vessel-entries.json','w'), ensure_ascii=False, indent=1)
 print("\nsample:")
 for r in sorted(ALL, key=lambda r: r['name'])[:14]:

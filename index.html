@@ -163,10 +163,10 @@
   <div class="sub">Documented vessel visits to the Californias · 1769–1846</div>
  </div>
  <div class="statrow">
-  <div><b id="stVisits">—</b><span>visits</span></div>
-  <div><b id="stShips">—</b><span>vessels</span></div>
-  <div><b id="stPorts">—</b><span>anchorages</span></div>
-  <div><b id="stVerified">—</b><span>verified</span></div>
+  <div><b id="stVisits">, </b><span>visits</span></div>
+  <div><b id="stShips">, </b><span>vessels</span></div>
+  <div><b id="stPorts">, </b><span>anchorages</span></div>
+  <div><b id="stVerified">, </b><span>verified</span></div>
  </div>
 </div></header>
 <div class="banner"><b>Draft.</b> Most rows are <i>status = draft</i>; the flag field is under audit for 1822 onward (see About &amp; method). Absence of a row is not absence of a ship.</div>
@@ -189,7 +189,7 @@
 
  <div class="scrub">
   <div class="scrub-head">
-   <span class="lbl">Years — drag to select</span>
+   <span class="lbl">Years, drag to select</span>
    <span class="rng"><span id="rngTxt">1769 – 1846</span><button type="button" id="rngReset">reset</button></span>
   </div>
   <svg id="band" viewBox="0 0 1000 34" preserveAspectRatio="none" role="img"
@@ -224,13 +224,13 @@
 </div>
 
 <div id="curve" class="pane"><div style="padding-top:16px"><svg id="svg"></svg></div>
- <div class="count">Documented ship events per year by flag. Click a bar to open that year in the register. Dashed lines mark reference events. This measures the archive's coverage as much as the traffic — see <a href="flags.html" style="color:var(--accent-deep)">Flags at anchor</a> for the same question handled as share rather than count.</div></div>
+ <div class="count">Documented ship events per year by flag. Click a bar to open that year in the register. Dashed lines mark reference events. This measures the archive's coverage as much as the traffic, see <a href="flags.html" style="color:var(--accent-deep)">Flags at anchor</a> for the same question handled as share rather than count.</div></div>
 
 <div id="copres" class="pane">
  <div class="filters" style="padding-top:16px"><select id="cpAnch"></select>
   <input id="cpY1" size="5" value="1767"><input id="cpY2" size="5" value="1846">
   <label style="font-size:.82em;color:var(--ink-faint);font-family:var(--mono)"><input type="checkbox" id="cpMulti" checked> only years with 2+ vessels</label></div>
- <div class="count">Vessels documented at the same anchorage in the same year — where encounters live. Year-level precision at this stage; the review pass will tighten to same-week where dates allow.</div>
+ <div class="count">Vessels documented at the same anchorage in the same year, where encounters live. Year-level precision at this stage; the review pass will tighten to same-week where dates allow.</div>
  <div id="cpOut"></div>
 </div>
 
@@ -242,10 +242,10 @@
 <div id="about" class="pane about">
  <h2>What this is</h2>
  <p>The first machine-readable registry of documented vessel visits to the Californias, 1769&ndash;1846.
- The unit of record is the <b>visit</b> &mdash; one vessel, one anchorage, one time &mdash; after the voyage-level
+ The unit of record is the <b>visit</b>, one vessel, one anchorage, one time, after the voyage-level
  design of <i>SlaveVoyages</i>. Every row carries its evidence and a stable identifier (<code>v0001</code>&hellip;)
  so a single visit can be cited. Fields and controlled vocabularies: <a href="./CODEBOOK.md">CODEBOOK.md</a>.
- Merging is conservative &mdash; two records collapse into one visit only on ship + year + (where present) month and
+ Merging is conservative, two records collapse into one visit only on ship + year + (where present) month and
  anchorage. Over-splitting is preferred to silent loss, and <code>sources_disagree</code> records a collation
  conflict rather than resolving it invisibly.</p>
 
@@ -253,31 +253,31 @@
  <p class="srcnote"><b>2,072 visits carry 2,900 citations.</b> Counts below are citations, not visits;
  a visit often carries two or three.</p>
 
- <h3>1 &middot; The Archives of California documentary calendar &mdash; 1,877 citations, 57 volumes</h3>
+ <h3>1 &middot; The Archives of California documentary calendar, 1,877 citations, 57 volumes</h3>
  <p>The author&rsquo;s item-level catalogue of BANC MSS C-A 1&ndash;63, the Savage transcripts of the Spanish and
  Mexican provincial archive burned in 1906. Most rows link to a specific manuscript leaf.
  Heaviest volumes: C-A 7 (116), 13 (114), 14 (109), 12 (100), 56 (95), 48 (94), 24 (88), 18 (84), 11 (82), 55 (76).<br>
  <span class="cit">Archives of California: A Documentary Calendar of the Savage Transcripts.
  <a href="https://archivesofcalifornia.com">archivesofcalifornia.com</a>. Zenodo DOI 10.5281/zenodo.21912644.</span></p>
 
- <h3>2 &middot; Bancroft&rsquo;s narrative &mdash; 396 citations</h3>
+ <h3>2 &middot; Bancroft&rsquo;s narrative, 396 citations</h3>
  <p>Vessels narrated in the running text of volumes I&ndash;II, never previously consolidated into a list.<br>
  <span class="cit">Hubert Howe Bancroft, <i>History of California</i>, 7 vols. San Francisco: The History Company,
  1884&ndash;1890. Vol. I (1542&ndash;1800); vol. II (1801&ndash;1824).</span></p>
 
- <h3>3 &middot; Bancroft&rsquo;s consolidated vessel lists &mdash; 164 citations</h3>
+ <h3>3 &middot; Bancroft&rsquo;s consolidated vessel lists, 164 citations</h3>
  <p>His own marine lists: &lsquo;List of vessels 1825&ndash;30&rsquo; and &lsquo;1831&ndash;5&rsquo; (vol. III),
  &lsquo;1841&ndash;5&rsquo; (vol. IV), &lsquo;1846&ndash;8&rsquo; (vol. V).
  <b class="warn">Partially merged.</b> 77 of the 198 vessels parsed from these lists are not yet in the registry,
  31 of them American; 63 names remain OCR-garbled. See <a href="./REVIEW-QUEUE.md">REVIEW-QUEUE.md</a>.<br>
  <span class="cit">Bancroft, <i>History of California</i>, vols. III&ndash;V, appended vessel lists.</span></p>
 
- <h3>4 &middot; Ogden&rsquo;s otter-trade appendix &mdash; 327 citations</h3>
+ <h3>4 &middot; Ogden&rsquo;s otter-trade appendix, 327 citations</h3>
  <p>Itineraries of the vessels in the California sea-otter trade, vessel by vessel and year by year.<br>
  <span class="cit">Adele Ogden, <i>The California Sea Otter Trade, 1784&ndash;1848</i>. Berkeley: University of
  California Press, 1941. Appendix, &lsquo;Identified Vessels in the California Sea Otter Trade&rsquo;.</span></p>
 
- <h3>5 &middot; The Russian layer &mdash; 52 citations</h3>
+ <h3>5 &middot; The Russian layer, 52 citations</h3>
  <p>Built from RAC and AVPRI-grounded notes and the C-A port-duty ledgers, <b>with absences stated</b> in
  <code>data/russian-absent.txt</code> rather than silently omitted.<br>
  <span class="cit">N. N. Bolkhovitinov (ed.), <i>Istoriia Russkoi Ameriki</i>, 3 vols. Moscow: Mezhdunarodnye
@@ -288,7 +288,7 @@
  Otto von Kotzebue, <i>A Voyage of Discovery into the South Sea and Beering&rsquo;s Straits</i> (London, 1821)
  &middot; V. M. Golovnin, <i>Around the World on the</i> Kamchatka, trans. Ella Wiswell (Hawaii, 1979).</span></p>
 
- <h3>6 &middot; Published voyage narratives and editions &mdash; 84 citations</h3>
+ <h3>6 &middot; Published voyage narratives and editions, 84 citations</h3>
  <p><span class="cit">
  Jean-Fran&ccedil;ois de Galaup de La P&eacute;rouse, <i>A Voyage Round the World</i>, trans. (London: Stockdale, 1799), chs. X&ndash;XI &middot;
  George Vancouver, <i>A Voyage of Discovery to the North Pacific Ocean</i>, 3 vols. (London, 1798) &middot;
@@ -322,11 +322,11 @@
  establishments &middot; C-A 40, the 1826&ndash;27 Santa B&aacute;rbara customs ledgers, leaf-verified.</span></p>
 
  <h2>Quality control</h2>
- <p><b>The false-positive register.</b> Seven documented classes of &ldquo;fake ship&rdquo; &mdash; decree phantoms,
+ <p><b>The false-positive register.</b> Seven documented classes of &ldquo;fake ship&rdquo;, decree phantoms,
  era conflations, persons read as vessels, places and demonyms, OCR garbles, mis-flags, and mentions read as visits.
  <b>Every new source re-triggers all seven.</b> See <a href="./FALSE-POSITIVE-REGISTER.md">FALSE-POSITIVE-REGISTER.md</a>.</p>
  <p><b>Leaf verification.</b> Manuscript-derived names are checked against the scanned leaf before entering the
- tables &mdash; a policy adopted after it caught real misreads (<i>Nilo</i> not &ldquo;Wilcox&rdquo;,
+ tables, a policy adopted after it caught real misreads (<i>Nilo</i> not &ldquo;Wilcox&rdquo;,
  <i>Jackman</i> not &ldquo;Jackson&rdquo;).</p>
  <p><b>Nothing is auto-accepted.</b> Uncertain rows stay <code>status = draft</code> and route to
  <a href="./REVIEW-QUEUE.md">REVIEW-QUEUE.md</a>. The stripe at the left of each row shows its status.</p>
@@ -389,9 +389,9 @@ function render(){
   const tr=document.createElement('tr');tr.className='st-'+v.status;
   const cites=v.citations.map(c=>c.url?'<a href="'+c.url+'" target="_blank">C-A '+c.ca+' d'+c.doc+'</a>':(c.type+' '+(c.ref||''))).join(' · ');
   tr.innerHTML='<td class="vid">'+v.visit_id+' <span class="draft">'+v.status+'</span></td>'+
-   '<td>'+(v.date_from||'—')+(v.date_to&&v.date_to!==v.date_from?'&nbsp;–&nbsp;'+v.date_to:'')+'</td>'+
+   '<td>'+(v.date_from||', ')+(v.date_to&&v.date_to!==v.date_from?'&nbsp;–&nbsp;'+v.date_to:'')+'</td>'+
    '<td><b>'+(v.ship_id==='(unnamed vessel)'?'<i>(unnamed)</i>':v.ship_id)+'</b>'+(v.name_as_written?'<br><span style="color:#777;font-size:.85em">as written: '+v.name_as_written+'</span>':'')+'</td>'+
-   '<td class="flag">'+femo(v.flag)+(v.flag||'')+(v.flag_basis&&v.flag_basis!=='stated'&&v.flag?'<span style="color:#999" title="flag by hand adjudication (attested/inferred) — see codebook">†</span>':'')+'</td><td>'+(v.anchorage||'')+'</td>'+
+   '<td class="flag">'+femo(v.flag)+(v.flag||'')+(v.flag_basis&&v.flag_basis!=='stated'&&v.flag?'<span style="color:#999" title="flag by hand adjudication (attested/inferred), see codebook">†</span>':'')+'</td><td>'+(v.anchorage||'')+'</td>'+
    '<td>'+v.purpose.replace(/\|/g,', ')+'</td><td>'+v.outcome.replace(/\|/g,', ')+'</td>'+
    '<td class="cite">'+cites+'<br><span style="color:#888;font-size:.82em">'+v.excerpt+'</span></td>';
   tb.appendChild(tr)});
@@ -435,14 +435,14 @@ document.getElementById('scount').textContent=S.length+' vessels (draft identiti
    if(multi&&!isEnc)return;
    nYears++;if(isEnc)nEnc++;
    html+='<div style="background:#fff;border:1px solid #e3ddce;border-radius:5px;padding:8px 12px;margin:8px 0'+(isEnc?';border-left:4px solid #1f3a5f':'')+'">'
-    +'<b style="font-size:1.05em">'+y+'</b> — '+Object.keys(byShip).length+' vessels'+(isEnc?' <span style="color:#1f3a5f;font-size:.85em">⚓ encounter year</span>':'')
+    +'<b style="font-size:1.05em">'+y+'</b>, '+Object.keys(byShip).length+' vessels'+(isEnc?' <span style="color:#1f3a5f;font-size:.85em">⚓ encounter year</span>':'')
     +Object.keys(byShip).sort().map(sh=>'<p style="margin:5px 0"><b>'+(sh==='(unnamed vessel)'?'<i>(unnamed)</i>':sh)+'</b>'
       +(byShip[sh][0].flag?' <span class="flag">'+femo(byShip[sh][0].flag)+byShip[sh][0].flag+'</span>':'')
-      +' — '+byShip[sh].map(v=>(v.date_from||'')+(v.outcome?' ('+v.outcome.split('|')[0]+')':'')).join('; ')
+      +', '+byShip[sh].map(v=>(v.date_from||'')+(v.outcome?' ('+v.outcome.split('|')[0]+')':'')).join('; ')
       +'<br><span style="color:#888;font-size:.85em">'+byShip[sh][0].excerpt+'</span></p>').join('')
     +'</div>'});
-  out.innerHTML='<h3>'+a+', '+y1+'–'+y2+'</h3><div class="count">'+nYears+' years shown'+(multi?' (encounter years only — untick to see all)':' · '+nEnc+' encounter years')+'</div>'+
-   (html||'<p style="color:#888">No matching years — widen the range or untick the encounters-only box.</p>');
+  out.innerHTML='<h3>'+a+', '+y1+'–'+y2+'</h3><div class="count">'+nYears+' years shown'+(multi?' (encounter years only, untick to see all)':' · '+nEnc+' encounter years')+'</div>'+
+   (html||'<p style="color:#888">No matching years, widen the range or untick the encounters-only box.</p>');
  }
  ['cpY1','cpY2','cpMulti'].forEach(id=>document.getElementById(id).addEventListener('input',cp));
  sel.addEventListener('input',cp);cp();
@@ -466,11 +466,11 @@ function renderCharts(){
   out.innerHTML=Object.keys(groups).map(era=>
    '<h3 style="margin:16px 0 6px;border-bottom:1px solid #ccc;padding-bottom:3px">'+esc(era)+'</h3>'+
    groups[era].map(c=>{
-    const live=c.tile_url?' <span style="color:#1e7e34">&#9679; georeferenced &mdash; available as a basemap</span>':' <span style="color:#999">&#9675; not yet georeferenced</span>';
+    const live=c.tile_url?' <span style="color:#1e7e34">&#9679; georeferenced, available as a basemap</span>':' <span style="color:#999">&#9675; not yet georeferenced</span>';
     const cite=[c.cartographer,('<i>'+esc(c.title)+'</i>'),(c.in?'in '+esc(c.in):''),c.date].filter(Boolean).join(', ');
     return '<div style="margin:0 0 14px;padding:8px 10px;background:#f7f5f0;border:1px solid #e0dccf;border-radius:4px;overflow:hidden">'+
-     (c.thumbnail?'<a href="'+esc(c.source_permalink)+'" target="_blank"><img src="'+esc(c.thumbnail)+'" alt="'+esc(c.short_title)+'" title="'+esc(c.short_title)+' — view source" style="float:right;width:150px;height:auto;margin:2px 0 6px 12px;border:1px solid #bbb;background:#fff" loading="lazy"></a>':'')+
-     '<div style="font-weight:600">'+esc(c.short_title)+' <span style="font-weight:400;color:#666">&mdash; '+esc(c.origin)+', '+esc(c.coverage)+', serves '+esc(c.region_served||'')+'</span></div>'+
+     (c.thumbnail?'<a href="'+esc(c.source_permalink)+'" target="_blank"><img src="'+esc(c.thumbnail)+'" alt="'+esc(c.short_title)+'" title="'+esc(c.short_title)+', view source" style="float:right;width:150px;height:auto;margin:2px 0 6px 12px;border:1px solid #bbb;background:#fff" loading="lazy"></a>':'')+
+     '<div style="font-weight:600">'+esc(c.short_title)+' <span style="font-weight:400;color:#666">, '+esc(c.origin)+', '+esc(c.coverage)+', serves '+esc(c.region_served||'')+'</span></div>'+
      '<div style="font-size:.9em;color:#333;margin:4px 0">'+cite+'.'+live+'</div>'+
      '<div style="font-size:.92em;line-height:1.4">'+esc(c.headnote)+'</div>'+
      (c.look_for?'<div style="font-size:.86em;color:#555;margin-top:3px"><b>Look for:</b> '+esc(c.look_for)+'</div>':'')+
@@ -499,7 +499,7 @@ function drawMarkers(){
      [...new Set(vs.map(v=>v.ship_id))].slice(0,14).join(', '))
    .addTo(_layer)});
 }
-// ── Historical period basemaps — derived from data/charts.json ──
+// ── Historical period basemaps, derived from data/charts.json ──
 // A chart appears as a selectable basemap once its `tile_url` is set (georeference it
 // via the Rumsey Georeferencer "Get links -> XYZ" or Allmaps, then paste the XYZ URL
 // into that chart's tile_url in data/charts.json and rebuild). Empty tile_url = skipped.
@@ -514,7 +514,7 @@ function initMap(){
  const bases={'OpenStreetMap':osm,'Light (Carto)':carto};
  HIST.forEach(h=>{if(!h.url)return; bases[h.name]=L.tileLayer(h.url,{attribution:h.attribution,maxZoom:h.maxZoom||9});});
  L.control.layers(bases,null,{position:'topright'}).addTo(_map);
- // opacity slider — appears only when a historical base is selected
+ // opacity slider, appears only when a historical base is selected
  let histActive=null;
  const op=L.control({position:'bottomright'});
  op.onAdd=function(){const d=L.DomUtil.create('div');d.style.cssText='background:#fff;padding:5px 8px;border:1px solid #ccc;border-radius:4px;font-size:11px;display:none';
@@ -529,7 +529,7 @@ function initMap(){
  document.getElementById('mapPurpose').addEventListener('input',drawMarkers);
  drawMarkers();
 }
-// curve — full-width stacked bars, y-axis, annotations, click-to-filter
+// curve, full-width stacked bars, y-axis, annotations, click-to-filter
 (function(){
  const byY={};V.forEach(v=>{const y=yr(v);if(!y||y<1769||y>1848)return;
   byY[y]=byY[y]||{};const f=v.flag||'unknown';byY[y][f]=(byY[y][f]||0)+1});
@@ -549,9 +549,9 @@ function initMap(){
   const tot=Object.values(d).reduce((a,b)=>a+b,0);
   flags.forEach(f=>{const n=d[f]||0;if(!n)return;
    const h=n/maxN*ph;
-   out+='<rect class="yb" data-y="'+y+'" x="'+(mx+i*bw)+'" y="'+(H-mb-acc-h)+'" width="'+Math.max(bw-1.2,2)+'" height="'+h+'" fill="'+cols[f]+'" style="cursor:pointer"><title>'+y+' — '+f+': '+n+' (year total '+tot+')</title></rect>';acc+=h});
+   out+='<rect class="yb" data-y="'+y+'" x="'+(mx+i*bw)+'" y="'+(H-mb-acc-h)+'" width="'+Math.max(bw-1.2,2)+'" height="'+h+'" fill="'+cols[f]+'" style="cursor:pointer"><title>'+y+', '+f+': '+n+' (year total '+tot+')</title></rect>';acc+=h});
   if(y%5===0)out+='<text x="'+(mx+i*bw)+'" y="'+(H-mb+14)+'" font-size="10" fill="#555">'+y+'</text>';});
- const ann=[[1769,'Alta CA founded'],[1775,'Trinidad possession'],[1796,'the Otter — first US ship'],[1806,'Rezanov / the Juno'],[1812,'Ross founded'],[1813,'Mercury seized'],[1821,'Mexican independence'],[1834,'secularization'],[1846,'US conquest']];
+ const ann=[[1769,'Alta CA founded'],[1775,'Trinidad possession'],[1796,'the Otter, first US ship'],[1806,'Rezanov / the Juno'],[1812,'Ross founded'],[1813,'Mercury seized'],[1821,'Mexican independence'],[1834,'secularization'],[1846,'US conquest']];
  ann.forEach((a,k)=>{const y=a[0],label=a[1];const i=y-1769;const x=mx+i*bw;
   out+='<line x1="'+x+'" y1="'+my+'" x2="'+x+'" y2="'+(H-mb)+'" stroke="#999" stroke-dasharray="3,3"/>'+
        '<text x="'+(x+3)+'" y="'+(my+10+(k%3)*13)+'" font-size="9.5" fill="#666">'+label+'</text>';});
@@ -651,7 +651,7 @@ function initMap(){
       r.setAttribute('y', (30 - h).toFixed(2)); r.setAttribute('height', h.toFixed(2));
       r.setAttribute('fill', FC[top] || 'var(--f-unknown)'); r.setAttribute('opacity', '.85');
       var t = document.createElementNS(NS, 'title');
-      t.textContent = y + ' — ' + b.n + ' visit' + (b.n === 1 ? '' : 's') + ', mostly ' + top;
+      t.textContent = y + ', ' + b.n + ' visit' + (b.n === 1 ? '' : 's') + ', mostly ' + top;
       r.appendChild(t);
     } else {
       r.setAttribute('y', '28'); r.setAttribute('height', '2');

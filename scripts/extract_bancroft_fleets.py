@@ -59,7 +59,7 @@ def extract(path, vol):
 ALL = collections.defaultdict(set)
 for vol, f in [('III','ia-v03.txt'), ('IV','ia-v04.txt'), ('V','ia-v05.txt')]:
     got = extract(f, vol)
-    print(f"vol {vol}: {len(got)} years — {sorted(got)}")
+    print(f"vol {vol}: {len(got)} years, {sorted(got)}")
     for y, ns in got.items(): ALL[y].update(ns)
 
 print()

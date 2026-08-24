@@ -4,7 +4,7 @@ visit-level rows + the ships table + the anchorage gazetteer.
 
 Conservative merge rule: two draft rows describe the SAME visit only when they
 share the ship, the year, and (when both have one) the month and the anchorage.
-Everything else stays separate — over-splitting is honest (a reviewer merges),
+Everything else stays separate, over-splitting is honest (a reviewer merges),
 over-merging is silent data loss. Every visit keeps ALL constituent citations.
 Adjudications encoded from the plan: the two Junos split by era; the 'William
 Shaler' cluster re-identified as the Lelia Byrd (the record names her master);
@@ -33,7 +33,7 @@ def _guard_curated():
     draft = os.path.join(DATA, 'visits-draft.csv')
     out = os.path.join(DATA, 'visits.csv')
     if not os.path.exists(draft):
-        sys.exit("merge.py: no data/visits-draft.csv here — the Phase-0 seed inputs live "
+        sys.exit("merge.py: no data/visits-draft.csv here, the Phase-0 seed inputs live "
                  "in the vault, not the published repo. Nothing to rebuild. (See PROVENANCE.md.)")
     if os.path.exists(out) and os.environ.get('SHIP_REGISTRY_ALLOW_RAW_BUILD') != '1':
         sys.exit("merge.py: refusing to overwrite the CURATED data/visits.csv with the raw "

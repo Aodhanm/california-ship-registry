@@ -1,6 +1,6 @@
-# Maritime traffic, 1769–1848 — the empirical shape
+# Maritime traffic, 1769–1848, the empirical shape
 
-*Derived from the registry's real visits (port-calls, offshore presence, residencies, sightings — excluding policy records and retrospective mentions). Draft analysis for the data paper; the figures below are the dataset's central empirical finding. Flags reflect the 2026-08-02 back-fill (San Blas royal fleet → spain/mexico; the Ogden traders → their documented nationality); the remaining unflagged real visits (329) are **mostly genuinely-unnamed vessels** (259) the sources never identify.*
+*Derived from the registry's real visits (port-calls, offshore presence, residencies, sightings, excluding policy records and retrospective mentions). Draft analysis for the data paper; the figures below are the dataset's central empirical finding. Flags reflect the 2026-08-02 back-fill (San Blas royal fleet → spain/mexico; the Ogden traders → their documented nationality); the remaining unflagged real visits (329) are **mostly genuinely-unnamed vessels** (259) the sources never identify.*
 
 ## Visits by half-decade × flag
 ```
@@ -25,15 +25,15 @@ period      spai  russ  brit   usa  mexi  fran  unkn   TOTAL
 ```
 
 ## Three empires, overlapping
-The data traces the imperial and commercial transformation of the coast — and shows the transitions were **gradual overlaps, not clean breaks**:
+The data traces the imperial and commercial transformation of the coast, and shows the transitions were **gradual overlaps, not clean breaks**:
 
-1. **The Spanish supply monopoly (1769–c.1810).** Traffic is the San Blas royal fleet — *Princesa*, *San Carlos*, *Favorita*, *Concepción*, *Aránzazu*, *Activo* — peaking at **116 Spanish visits in 1795–99** (the supply apparatus plus the Nootka-crisis mobilization). The first foreign hulls arrive in the 1790s: Vancouver's British warships (23 in 1790–94) and the first Yankee trader (the *Otter*, 1796).
+1. **The Spanish supply monopoly (1769–c.1810).** Traffic is the San Blas royal fleet, *Princesa*, *San Carlos*, *Favorita*, *Concepción*, *Aránzazu*, *Activo*, peaking at **116 Spanish visits in 1795–99** (the supply apparatus plus the Nootka-crisis mobilization). The first foreign hulls arrive in the 1790s: Vancouver's British warships (23 in 1790–94) and the first Yankee trader (the *Otter*, 1796).
 
-2. **The American otter incursion (c.1803–1821) — inside the Spanish period.** A striking finding: the Boston otter ships (*O'Cain*, *Mercury*, *Albatross*, *Eclipse*, *Peacock*) were already a **major contraband presence before independence — 121 U.S. visits in the Spanish era**, peaking at 42 in 1805–09. The American commercial conquest of the coast *began under Spanish rule*, as smuggling.
+2. **The American otter incursion (c.1803–1821), inside the Spanish period.** A striking finding: the Boston otter ships (*O'Cain*, *Mercury*, *Albatross*, *Eclipse*, *Peacock*) were already a **major contraband presence before independence, 121 U.S. visits in the Spanish era**, peaking at 42 in 1805–09. The American commercial conquest of the coast *began under Spanish rule*, as smuggling.
 
-3. **The Russian otter frontier (c.1805–1841).** The Russian-American Company enters from 1805, peaking at **38 visits in 1820–24** — the Fort Ross / Bodega supply runs (*Juno*, *Kutuzov*, *Baikal*, *Chirikov*). It fades after Ross is sold (1841).
+3. **The Russian otter frontier (c.1805–1841).** The Russian-American Company enters from 1805, peaking at **38 visits in 1820–24**, the Fort Ross / Bodega supply runs (*Juno*, *Kutuzov*, *Baikal*, *Chirikov*). It fades after Ross is sold (1841).
 
-4. **The American hide-and-tallow surge (1822–1846).** Independence opens the coast legally, and U.S. traffic explodes: **111 U.S. visits in 1825–29** — the peak half-decade in the whole series (234 total). Spanish traffic collapses (116 → single digits); the Boston hide ships (*Brookline*, *Pilgrim*, *Loo Choo*) dominate. By the 1840s the coast is an American commercial sphere on the eve of conquest.
+4. **The American hide-and-tallow surge (1822–1846).** Independence opens the coast legally, and U.S. traffic explodes: **111 U.S. visits in 1825–29**, the peak half-decade in the whole series (234 total). Spanish traffic collapses (116 → single digits); the Boston hide ships (*Brookline*, *Pilgrim*, *Loo Choo*) dominate. By the 1840s the coast is an American commercial sphere on the eve of conquest.
 
 ## New vessels first documented, by decade
 ```
@@ -41,16 +41,16 @@ The data traces the imperial and commercial transformation of the coast — and 
 1770s  8     1800s  23     1830s   61
 1780s 14     1810s  41     1840s   85
 ```
-The Spanish period is a **small closed fleet** (3–32 new hulls/decade); the **1820s explode to 124** as Mexican California opens to foreign trade — the clearest quantitative signature of the regime change.
+The Spanish period is a **small closed fleet** (3–32 new hulls/decade); the **1820s explode to 124** as Mexican California opens to foreign trade, the clearest quantitative signature of the regime change.
 
 ## By era (flags back-filled)
-- **Spanish (≤1821): 650 visits** — spain 306, **usa 121** (the otter incursion), russia 68, britain 47, unknown 106.
-- **Mexican (1822–46): 669 visits** — **usa 282**, russia 80, spain 36, britain 29, mexico 12, unknown 223.
+- **Spanish (≤1821): 650 visits**, spain 306, **usa 121** (the otter incursion), russia 68, britain 47, unknown 106.
+- **Mexican (1822–46): 669 visits**, **usa 282**, russia 80, spain 36, britain 29, mexico 12, unknown 223.
 
 The single sentence: *Spanish supply monopoly → American otter smuggling under Spanish rule → Russian Fort Ross frontier → American hide-trade dominance under Mexico.*
 
 ## Flag & completeness notes
-- Flag back-fill (2026-08-02): +16 royal-fleet + 315 Ogden-trader visits, basis=inferred. Unflagged real visits: 628 → **329**, of which **259 are unnamed vessels** the source never identifies (legitimately unflaggable) — so named-vessel flag coverage is now near-complete.
+- Flag back-fill (2026-08-02): +16 royal-fleet + 315 Ogden-trader visits, basis=inferred. Unflagged real visits: 628 → **329**, of which **259 are unnamed vessels** the source never identifies (legitimately unflaggable), so named-vessel flag coverage is now near-complete.
 - Completeness caveat stands: contraband is under-recorded by design; these counts are a floor, and the Spanish-period American figure in particular is a **lower bound** (successful smugglers left no record).
 
 *Reuse: these tables + a stacked-area figure (visits/half-decade by flag) are the data paper's key exhibit.*

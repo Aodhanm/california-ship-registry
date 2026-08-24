@@ -3,21 +3,21 @@
 Single-file pattern (the calendar's): all data embedded as JSON; Leaflet from
 CDN for the map.
 
-⛔ QUARANTINED 2026-08-24 — DO NOT RUN. index.html has DIVERGED from this template:
+⛔ QUARANTINED 2026-08-24, DO NOT RUN. index.html has DIVERGED from this template:
 the live page was hand-maintained on 2026-08-23 (the full "Sources"/"What this
 registry does not know"/"Cite this registry" source apparatus, the Flags-at-Anchor
 link, and CSS fixes) WITHOUT updating this file. Running this REGRESSES all of that.
 Until this template is reconciled with the live index.html (a tracked follow-up in
-REVIEW-QUEUE.md), update the page by SPLICING corrected data into the existing
-index.html, not by regenerating it. To run anyway (only after reconciling), set
-SHIP_REGISTRY_ALLOW_SITE_REBUILD=1.
+REVIEW-QUEUE.md), update the page with `python3 scripts/update_data.py`, which splices
+only the embedded data arrays and leaves the hand-written HTML untouched. To run this
+generator anyway (only after reconciling), set SHIP_REGISTRY_ALLOW_SITE_REBUILD=1.
 """
 import csv, json, os, html, subprocess, sys
 if os.environ.get('SHIP_REGISTRY_ALLOW_SITE_REBUILD') != '1':
     sys.exit(__doc__.strip().split('\n\n')[1])  # print the quarantine notice and stop
 g = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'check.py')])
 if g.returncode != 0:
-    sys.exit('GUARDS FAILED — index.html NOT rebuilt')
+    sys.exit('GUARDS FAILED, index.html NOT rebuilt')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -72,7 +72,7 @@ page = """<!DOCTYPE html>
 </style></head><body>
 <header><h1>California Ship Registry, 1769&ndash;1846</h1>
 <div class="sub">A registry of documented vessel visits to the Californias &middot; companion to the <i>Archives of California</i> calendar</div></header>
-<div class="banner">v0.2 DRAFT (live for review) &mdash; machine-seeded from the C-A calendar + first curated expedition rows; most rows status=draft; Bancroft/Ogden/Russian source families pending (see About &amp; method)</div>
+<div class="banner">v0.2 DRAFT (live for review), machine-seeded from the C-A calendar + first curated expedition rows; most rows status=draft; Bancroft/Ogden/Russian source families pending (see About &amp; method)</div>
 <nav>
  <button data-pane="visits" class="on">Visits (chronological)</button>
  <button data-pane="ships">Ships</button>
@@ -109,31 +109,31 @@ page = """<!DOCTYPE html>
  <div id="map"></div>
 </div>
 <div id="curve" class="pane"><svg id="svg"></svg>
- <div class="count">Documented ship events per year by flag hint. Click a bar to open that year's visits. Dashed lines mark reference events. Draft data: this measures the archive's coverage as much as the traffic &mdash; the Bancroft and Ogden layers (v0.2&ndash;0.3) will begin to separate the two.</div></div>
+ <div class="count">Documented ship events per year by flag hint. Click a bar to open that year's visits. Dashed lines mark reference events. Draft data: this measures the archive's coverage as much as the traffic, the Bancroft and Ogden layers (v0.2&ndash;0.3) will begin to separate the two.</div></div>
 <div id="copres" class="pane">
  <div class="filters"><select id="cpAnch"></select>
   <input id="cpY1" placeholder="from" size="6" value="1767"><input id="cpY2" placeholder="to" size="6" value="1846">
   <label style="font-size:.85em"><input type="checkbox" id="cpMulti" checked> only years with 2+ vessels (the encounters)</label></div>
- <div class="count">Vessels documented at the same anchorage in the same year &mdash; where encounters live. Year-level precision at this draft stage; the review pass will tighten to same-week where dates allow.</div>
+ <div class="count">Vessels documented at the same anchorage in the same year, where encounters live. Year-level precision at this draft stage; the review pass will tighten to same-week where dates allow.</div>
  <div id="cpOut"></div>
 </div>
 <div id="charts" class="pane">
- <div class="count">Charts of the coast &mdash; the period cartography that recorded the same coast these ships worked. Where georeferenced, each becomes a basemap under the visit dots (Map tab &rarr; layer switch &rarr; opacity). Charts hotlinked from their repositories; all attribution retained.</div>
+ <div class="count">Charts of the coast, the period cartography that recorded the same coast these ships worked. Where georeferenced, each becomes a basemap under the visit dots (Map tab &rarr; layer switch &rarr; opacity). Charts hotlinked from their repositories; all attribution retained.</div>
  <div class="filters"><select id="chartEra"><option value="">all eras</option></select></div>
  <div id="chartsOut"></div>
- <p class="count" style="margin-top:12px">Sources: <a href="https://www.davidrumsey.com">David Rumsey Map Collection</a>, the Internet Archive, and the Bancroft Library. Georeferencing via the Rumsey Georeferencer and <a href="https://allmaps.org">Allmaps</a>. 1840s charts drift at large zoom &mdash; the visit coordinates (gazetteer) are authoritative; the chart is context.</p>
+ <p class="count" style="margin-top:12px">Sources: <a href="https://www.davidrumsey.com">David Rumsey Map Collection</a>, the Internet Archive, and the Bancroft Library. Georeferencing via the Rumsey Georeferencer and <a href="https://allmaps.org">Allmaps</a>. 1840s charts drift at large zoom, the visit coordinates (gazetteer) are authoritative; the chart is context.</p>
 </div>
 <div id="about" class="pane about">
  <h2>About</h2>
  <p>The first machine-readable registry of documented vessel visits to the Californias, 1769&ndash;1846.
- Unit of record: the <b>visit</b> &mdash; one vessel, one anchorage, one time &mdash; each row carrying its evidence
+ Unit of record: the <b>visit</b>, one vessel, one anchorage, one time, each row carrying its evidence
  (currently: leaf-verified records of the Savage transcripts via the <a href="https://aodhanm.github.io/archives-of-california">Archives of California</a> calendar,
  with links to the manuscript scans). Fields and vocabularies: see CODEBOOK.md in this repository.</p>
  <p><b>v0.1 status.</b> Seeded from the calendar alone by a documented harvester. Every row is <i>draft</i>.
- Pending source families, in order: Bancroft's <i>History of California</i> narrative (1769&ndash;1824 &mdash; never before consolidated),
+ Pending source families, in order: Bancroft's <i>History of California</i> narrative (1769&ndash;1824, never before consolidated),
  Ogden&rsquo;s 1941 otter-trade appendix + Archer 1973, the Russian record (Gibson&ndash;Istomin, Khlebnikov, Tikhmenev, Ivashintsov),
  Howay and Cook cross-checks. Completeness is claimed for Alta California only; Baja rows are incidental after the 1804 division of the provinces.</p>
- <p><b>Absence of a row is not absence of a ship</b> &mdash; contraband was under-recorded by design; the asymmetry is a finding, not a flaw.</p>
+ <p><b>Absence of a row is not absence of a ship</b>, contraband was under-recorded by design; the asymmetry is a finding, not a flaw.</p>
 </div>
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -163,9 +163,9 @@ function render(){
   const tr=document.createElement('tr');tr.className='st-'+v.status;
   const cites=v.citations.map(c=>c.url?'<a href="'+c.url+'" target="_blank">C-A '+c.ca+' d'+c.doc+'</a>':(c.type+' '+(c.ref||''))).join(' · ');
   tr.innerHTML='<td class="vid">'+v.visit_id+' <span class="draft">'+v.status+'</span></td>'+
-   '<td>'+(v.date_from||'—')+(v.date_to&&v.date_to!==v.date_from?'&nbsp;–&nbsp;'+v.date_to:'')+'</td>'+
+   '<td>'+(v.date_from||', ')+(v.date_to&&v.date_to!==v.date_from?'&nbsp;–&nbsp;'+v.date_to:'')+'</td>'+
    '<td><b>'+(v.ship_id==='(unnamed vessel)'?'<i>(unnamed)</i>':v.ship_id)+'</b>'+(v.name_as_written?'<br><span style="color:#777;font-size:.85em">as written: '+v.name_as_written+'</span>':'')+'</td>'+
-   '<td class="flag">'+femo(v.flag)+(v.flag||'')+(v.flag_basis&&v.flag_basis!=='stated'&&v.flag?'<span style="color:#999" title="flag by hand adjudication (attested/inferred) — see codebook">†</span>':'')+'</td><td>'+(v.anchorage||'')+'</td>'+
+   '<td class="flag">'+femo(v.flag)+(v.flag||'')+(v.flag_basis&&v.flag_basis!=='stated'&&v.flag?'<span style="color:#999" title="flag by hand adjudication (attested/inferred), see codebook">†</span>':'')+'</td><td>'+(v.anchorage||'')+'</td>'+
    '<td>'+v.purpose.replace(/\\|/g,', ')+'</td><td>'+v.outcome.replace(/\\|/g,', ')+'</td>'+
    '<td class="cite">'+cites+'<br><span style="color:#888;font-size:.82em">'+v.excerpt+'</span></td>';
   tb.appendChild(tr)});
@@ -209,14 +209,14 @@ document.getElementById('scount').textContent=S.length+' vessels (draft identiti
    if(multi&&!isEnc)return;
    nYears++;if(isEnc)nEnc++;
    html+='<div style="background:#fff;border:1px solid #e3ddce;border-radius:5px;padding:8px 12px;margin:8px 0'+(isEnc?';border-left:4px solid #1f3a5f':'')+'">'
-    +'<b style="font-size:1.05em">'+y+'</b> — '+Object.keys(byShip).length+' vessels'+(isEnc?' <span style="color:#1f3a5f;font-size:.85em">⚓ encounter year</span>':'')
+    +'<b style="font-size:1.05em">'+y+'</b>, '+Object.keys(byShip).length+' vessels'+(isEnc?' <span style="color:#1f3a5f;font-size:.85em">⚓ encounter year</span>':'')
     +Object.keys(byShip).sort().map(sh=>'<p style="margin:5px 0"><b>'+(sh==='(unnamed vessel)'?'<i>(unnamed)</i>':sh)+'</b>'
       +(byShip[sh][0].flag?' <span class="flag">'+femo(byShip[sh][0].flag)+byShip[sh][0].flag+'</span>':'')
-      +' — '+byShip[sh].map(v=>(v.date_from||'')+(v.outcome?' ('+v.outcome.split('|')[0]+')':'')).join('; ')
+      +', '+byShip[sh].map(v=>(v.date_from||'')+(v.outcome?' ('+v.outcome.split('|')[0]+')':'')).join('; ')
       +'<br><span style="color:#888;font-size:.85em">'+byShip[sh][0].excerpt+'</span></p>').join('')
     +'</div>'});
-  out.innerHTML='<h3>'+a+', '+y1+'–'+y2+'</h3><div class="count">'+nYears+' years shown'+(multi?' (encounter years only — untick to see all)':' · '+nEnc+' encounter years')+'</div>'+
-   (html||'<p style="color:#888">No matching years — widen the range or untick the encounters-only box.</p>');
+  out.innerHTML='<h3>'+a+', '+y1+'–'+y2+'</h3><div class="count">'+nYears+' years shown'+(multi?' (encounter years only, untick to see all)':' · '+nEnc+' encounter years')+'</div>'+
+   (html||'<p style="color:#888">No matching years, widen the range or untick the encounters-only box.</p>');
  }
  ['cpY1','cpY2','cpMulti'].forEach(id=>document.getElementById(id).addEventListener('input',cp));
  sel.addEventListener('input',cp);cp();
@@ -240,11 +240,11 @@ function renderCharts(){
   out.innerHTML=Object.keys(groups).map(era=>
    '<h3 style="margin:16px 0 6px;border-bottom:1px solid #ccc;padding-bottom:3px">'+esc(era)+'</h3>'+
    groups[era].map(c=>{
-    const live=c.tile_url?' <span style="color:#1e7e34">&#9679; georeferenced &mdash; available as a basemap</span>':' <span style="color:#999">&#9675; not yet georeferenced</span>';
+    const live=c.tile_url?' <span style="color:#1e7e34">&#9679; georeferenced, available as a basemap</span>':' <span style="color:#999">&#9675; not yet georeferenced</span>';
     const cite=[c.cartographer,('<i>'+esc(c.title)+'</i>'),(c.in?'in '+esc(c.in):''),c.date].filter(Boolean).join(', ');
     return '<div style="margin:0 0 14px;padding:8px 10px;background:#f7f5f0;border:1px solid #e0dccf;border-radius:4px;overflow:hidden">'+
-     (c.thumbnail?'<a href="'+esc(c.source_permalink)+'" target="_blank"><img src="'+esc(c.thumbnail)+'" alt="'+esc(c.short_title)+'" title="'+esc(c.short_title)+' — view source" style="float:right;width:150px;height:auto;margin:2px 0 6px 12px;border:1px solid #bbb;background:#fff" loading="lazy"></a>':'')+
-     '<div style="font-weight:600">'+esc(c.short_title)+' <span style="font-weight:400;color:#666">&mdash; '+esc(c.origin)+', '+esc(c.coverage)+', serves '+esc(c.region_served||'')+'</span></div>'+
+     (c.thumbnail?'<a href="'+esc(c.source_permalink)+'" target="_blank"><img src="'+esc(c.thumbnail)+'" alt="'+esc(c.short_title)+'" title="'+esc(c.short_title)+', view source" style="float:right;width:150px;height:auto;margin:2px 0 6px 12px;border:1px solid #bbb;background:#fff" loading="lazy"></a>':'')+
+     '<div style="font-weight:600">'+esc(c.short_title)+' <span style="font-weight:400;color:#666">, '+esc(c.origin)+', '+esc(c.coverage)+', serves '+esc(c.region_served||'')+'</span></div>'+
      '<div style="font-size:.9em;color:#333;margin:4px 0">'+cite+'.'+live+'</div>'+
      '<div style="font-size:.92em;line-height:1.4">'+esc(c.headnote)+'</div>'+
      (c.look_for?'<div style="font-size:.86em;color:#555;margin-top:3px"><b>Look for:</b> '+esc(c.look_for)+'</div>':'')+
@@ -273,7 +273,7 @@ function drawMarkers(){
      [...new Set(vs.map(v=>v.ship_id))].slice(0,14).join(', '))
    .addTo(_layer)});
 }
-// ── Historical period basemaps — derived from data/charts.json ──
+// ── Historical period basemaps, derived from data/charts.json ──
 // A chart appears as a selectable basemap once its `tile_url` is set (georeference it
 // via the Rumsey Georeferencer "Get links -> XYZ" or Allmaps, then paste the XYZ URL
 // into that chart's tile_url in data/charts.json and rebuild). Empty tile_url = skipped.
@@ -288,7 +288,7 @@ function initMap(){
  const bases={'OpenStreetMap':osm,'Light (Carto)':carto};
  HIST.forEach(h=>{if(!h.url)return; bases[h.name]=L.tileLayer(h.url,{attribution:h.attribution,maxZoom:h.maxZoom||9});});
  L.control.layers(bases,null,{position:'topright'}).addTo(_map);
- // opacity slider — appears only when a historical base is selected
+ // opacity slider, appears only when a historical base is selected
  let histActive=null;
  const op=L.control({position:'bottomright'});
  op.onAdd=function(){const d=L.DomUtil.create('div');d.style.cssText='background:#fff;padding:5px 8px;border:1px solid #ccc;border-radius:4px;font-size:11px;display:none';
@@ -303,7 +303,7 @@ function initMap(){
  document.getElementById('mapPurpose').addEventListener('input',drawMarkers);
  drawMarkers();
 }
-// curve — full-width stacked bars, y-axis, annotations, click-to-filter
+// curve, full-width stacked bars, y-axis, annotations, click-to-filter
 (function(){
  const byY={};V.forEach(v=>{const y=yr(v);if(!y||y<1769||y>1848)return;
   byY[y]=byY[y]||{};const f=v.flag||'unknown';byY[y][f]=(byY[y][f]||0)+1});
@@ -323,9 +323,9 @@ function initMap(){
   const tot=Object.values(d).reduce((a,b)=>a+b,0);
   flags.forEach(f=>{const n=d[f]||0;if(!n)return;
    const h=n/maxN*ph;
-   out+='<rect class="yb" data-y="'+y+'" x="'+(mx+i*bw)+'" y="'+(H-mb-acc-h)+'" width="'+Math.max(bw-1.2,2)+'" height="'+h+'" fill="'+cols[f]+'" style="cursor:pointer"><title>'+y+' — '+f+': '+n+' (year total '+tot+')</title></rect>';acc+=h});
+   out+='<rect class="yb" data-y="'+y+'" x="'+(mx+i*bw)+'" y="'+(H-mb-acc-h)+'" width="'+Math.max(bw-1.2,2)+'" height="'+h+'" fill="'+cols[f]+'" style="cursor:pointer"><title>'+y+', '+f+': '+n+' (year total '+tot+')</title></rect>';acc+=h});
   if(y%5===0)out+='<text x="'+(mx+i*bw)+'" y="'+(H-mb+14)+'" font-size="10" fill="#555">'+y+'</text>';});
- const ann=[[1769,'Alta CA founded'],[1775,'Trinidad possession'],[1796,'the Otter — first US ship'],[1806,'Rezanov / the Juno'],[1812,'Ross founded'],[1813,'Mercury seized'],[1821,'Mexican independence'],[1834,'secularization'],[1846,'US conquest']];
+ const ann=[[1769,'Alta CA founded'],[1775,'Trinidad possession'],[1796,'the Otter, first US ship'],[1806,'Rezanov / the Juno'],[1812,'Ross founded'],[1813,'Mercury seized'],[1821,'Mexican independence'],[1834,'secularization'],[1846,'US conquest']];
  ann.forEach((a,k)=>{const y=a[0],label=a[1];const i=y-1769;const x=mx+i*bw;
   out+='<line x1="'+x+'" y1="'+my+'" x2="'+x+'" y2="'+(H-mb)+'" stroke="#999" stroke-dasharray="3,3"/>'+
        '<text x="'+(x+3)+'" y="'+(my+10+(k%3)*13)+'" font-size="9.5" fill="#666">'+label+'</text>';});
