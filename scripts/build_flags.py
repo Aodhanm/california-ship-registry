@@ -27,6 +27,11 @@ V = list(csv.DictReader(open(ROOT/"data"/"visits.csv")))
 
 Y0, Y1 = 1769, 1821
 WINDOW, MIN_WINDOW_N = 5, 20
+# A run of zeros this long or longer is absence, not a measurement, and is not
+# drawn. A single isolated zero inside a continuous presence IS a measurement
+# (that flag was here either side of it) and is kept, so the line does not
+# develop a one-year hole that reads as a rendering fault.
+MIN_ZERO_RUN = 2
 # Four flags carry enough records in this window to be a trend. France (7 rows)
 # and Argentina (2) do not: they are three discrete arrivals - La Perouse 1786,
 # Roquefeuil 1817, Bouchard 1818 - and a rolling share would draw three events as
@@ -79,6 +84,18 @@ for k in NAMED + ["other"]:
         n = n_by_year.get(y, 0)
         raw.append({"year": y, "n": n,
                     "share": round(100 * ann[y][k] / n, 1) if (n and arrived) else None})
+    # suppress sustained zero runs: a flag absent for several years running has no
+    # share to plot, and a flat line along the axis reads as presence-at-nil
+    i = 0
+    while i < len(smooth):
+        if smooth[i]["share"] == 0.0:
+            j = i
+            while j < len(smooth) and smooth[j]["share"] == 0.0: j += 1
+            if j - i >= MIN_ZERO_RUN:
+                for m in range(i, j): smooth[m]["share"] = None
+            i = j
+        else:
+            i += 1
     series[k], annual[k] = smooth, raw
 
 # the flag-integrity evidence, carried in the data file so the page cannot drift from it
@@ -191,8 +208,11 @@ out = {
     "43 visits dated 1822 or later are flagged Spanish, among them vessels named Morelos, Matamoros "
     "and Mariquita, and the American Brookline, Volunteer and Leonidas. 19% of post-1821 rows carry a "
     "vessel name that appears under a different flag elsewhere in the file, against 7% before 1822.",
-    "Each line begins at that flag's first recorded arrival and is blank before it: a flag that "
-    "has not yet come has no share, and a flat zero would draw absence as a measurement. "
+    "A line is drawn only where that flag was actually present. It begins at the flag's first "
+    "recorded arrival, and it stops again wherever the flag is absent for two years or more: a "
+    "flat line along the axis reads as 'here, at nil' rather than 'not here', which is why France "
+    "appears as three separate episodes rather than one long line at zero. A single isolated zero "
+    "inside a continuous presence is kept, because there it really is a measurement. "
     "The line is a 5-year centred rolling share, also blank wherever its window holds fewer than 20 records. "
     "Faint points behind it are the unsmoothed annual values; the strip beneath gives each year's n.",
     "Flag is the flag as attested or inferred in the record, not a vessel's registry. Within this window "
