@@ -34,7 +34,7 @@ WINDOW, MIN_WINDOW_N = 5, 20
 # denominator note below.
 NAMED = ["spain", "usa", "russia", "britain"]
 LABEL = {"spain": "Spain", "usa": "United States", "russia": "Russia",
-         "britain": "Britain", "other": "France, Argentina (shown as events)"}
+         "britain": "Britain", "other": "France and Argentina"}
 
 rows, out_of_scope, no_date, no_flag = [], 0, 0, 0
 for v in V:
@@ -87,6 +87,56 @@ for v in V:
     if nm and fl: byname[nm].add(fl)
 conflicted = sorted(n for n, f in byname.items() if len(f) > 1)
 
+
+# ---------------------------------------------------------------------------
+# FIRST VISIT PER FLAG. Curated, not derived: the earliest row per flag is not
+# always the earliest *arrival*. The registry's earliest American row is an
+# offshore sighting of 28 May 1796, reclassified as such on 2026-08-04; the
+# first American ship actually to enter a Californian port is the Otter, five
+# months later. Each entry below names the vessel, the date, the place and the
+# registry's own attestation, so a reader can weigh it.
+#
+# Verified against Bancroft, Hist. Cal. I: "The first intercourse of the
+# Californians with subjects of a foreign power was with the French under Jean
+# Francois Galaup de La Perouse in the autumn of 1786" - which he also calls
+# "the first visit of a foreigner to California". His chapter XXIV is headed
+# "Vancouver's First Visit, 1792-1794". There is no British arrival in Alta
+# California before Vancouver in November 1792. The nearest thing to one is the
+# BRITISH-BUILT hull Princesa Real - the sloop Princess Royal, seized from
+# Britain at Nootka in 1789 - which touched Monterey in September 1790 under
+# Manuel Quimper and SPANISH colours. A British ship, not a British visit.
+FIRST_VISITS = [
+  {"flag": "spain",   "label": "Spain",         "year": 1769, "date": "1769",
+   "vessels": "San Antonio · San Carlos (Sacred Expedition)", "place": "San Diego",
+   "who": "Portol\u00e1 and Serra", "attestation": "inferred / draft",
+   "note": "The founding voyages; the registry dates the first landfall to 1769."},
+  {"flag": "france",  "label": "France",        "year": 1786, "date": "14-24 Sept 1786",
+   "vessels": "Boussole · Astrolabe", "place": "Monterey",
+   "who": "La P\u00e9rouse", "attestation": "stated / reviewed",
+   "note": "The first visit by any foreign power. Bancroft: 'the first intercourse of "
+           "the Californians with subjects of a foreign power'."},
+  {"flag": "britain", "label": "Britain",       "year": 1792, "date": "14 Nov 1792",
+   "vessels": "Discovery", "place": "San Francisco",
+   "who": "Vancouver", "attestation": "stated / reviewed / exact date",
+   "note": "The first foreign warship into San Francisco Bay. Nothing British precedes it: "
+           "the Princesa Real at Monterey in 1790 was the captured British sloop Princess "
+           "Royal sailing under Spanish colours."},
+  {"flag": "usa",     "label": "United States", "year": 1796, "date": "29 Oct 1796",
+   "vessels": "Otter, of Boston", "place": "Monterey",
+   "who": "Dorr", "attestation": "reviewed / port-call",
+   "note": "The first American ship in a Californian port. An offshore sighting of 28 May "
+           "1796 precedes it but is a sighting, not an arrival."},
+  {"flag": "russia",  "label": "Russia",        "year": 1806, "date": "8 Apr 1806",
+   "vessels": "Juno", "place": "San Francisco",
+   "who": "Rezanov", "attestation": "VERIFIED / exact date",
+   "note": "Rezanov's provisioning voyage from Sitka; one of only thirteen rows in the "
+           "registry at verified status."},
+  {"flag": "argentina", "label": "Argentina",   "year": 1818, "date": "20 Nov 1818",
+   "vessels": "La Argentina · Santa Rosa", "place": "Monterey, then Refugio",
+   "who": "Bouchard", "attestation": "stated / reviewed",
+   "note": "Not a visit but an attack: the only foreign assault Spanish California suffered."},
+]
+
 # The arrivals too few to be a trend, named. Dates and vessels are the registry's own.
 EVENTS = [
   {"year": 1786, "date": "14–24 Sept 1786", "flag": "france",
@@ -132,6 +182,7 @@ out = {
         and (v.get("flag") or "").strip() == "spain"),
   },
   "events": EVENTS,
+  "first_visits": FIRST_VISITS,
   "review_flags": REVIEW_FLAGS,
   "caveats": [
     "Scope is 1769–1821. The registry's flag field is not reliable after Mexican independence: "

@@ -57,27 +57,27 @@
       a.textContent = ev[1] + ' \u2192'; svg.appendChild(a);
     });
 
-    // Named arrivals that are too few to be a trend. Three events, not a trickle:
-    // a rolling share of nine records would have drawn La Pérouse and Bouchard as noise.
-    (D.events || []).forEach(function (ev, i) {
-      var ex = x(ev.year), top = MT + ph;
-      svg.appendChild(el('line', { x1: ex, x2: ex, y1: top, y2: top - 26 - (i % 2) * 16,
-        stroke: 'var(--text-muted)', 'stroke-width': 1, opacity: .5, 'stroke-dasharray': '2 2' }));
-      svg.appendChild(el('circle', { cx: ex, cy: top, r: 3.5, fill: 'var(--text-secondary)',
+    // EVERY flag's first visit, marked and named. The whole point of a composition
+    // series is when each party arrives, so it is drawn, not left to be inferred
+    // from where a line lifts off the axis.
+    var FV = (D.first_visits || []).filter(function (f) { return f.year >= y0 && f.year <= y1; });
+    FV.forEach(function (f, i) {
+      var ex = x(f.year), base = MT + ph;
+      var col = SLOT[f.flag] || 'var(--text-secondary)';
+      var lift = 22 + (i % 3) * 15;
+      svg.appendChild(el('line', { x1: ex, x2: ex, y1: base, y2: base - lift,
+        stroke: col, 'stroke-width': 1, opacity: .55, 'stroke-dasharray': '2 2' }));
+      svg.appendChild(el('circle', { cx: ex, cy: base, r: 4, fill: col,
         stroke: 'var(--surface-1)', 'stroke-width': 2 }));
-      var ty = top - 30 - (i % 2) * 16;
-      var a = el('text', { x: ex, y: ty, class: 'g-axis-text', 'text-anchor': ev.year > 1810 ? 'end' : 'middle' });
-      a.setAttribute('font-size', '10'); a.setAttribute('fill', 'var(--text-secondary)');
-      a.setAttribute('font-weight', '700'); a.textContent = ev.label + ' ' + ev.year;
+      var anchor = f.year > 1812 ? 'end' : (f.year < 1775 ? 'start' : 'middle');
+      var dx = anchor === 'end' ? -5 : (anchor === 'start' ? 3 : 0);
+      var a = el('text', { x: ex + dx, y: base - lift - 4, 'text-anchor': anchor });
+      a.setAttribute('font-size', '10.5'); a.setAttribute('font-weight', '700');
+      a.setAttribute('fill', col); a.textContent = f.who + ' ' + f.year;
       svg.appendChild(a);
-    });
-
-    // first recorded arrival of each flag, ticked on the axis
-    order.forEach(function (k) {
-      var fy = D.first_arrival[k];
-      if (!fy || k === 'spain') return;
-      svg.appendChild(el('line', { x1: x(fy), x2: x(fy), y1: MT + ph, y2: MT + ph + 6,
-        stroke: SLOT[k], 'stroke-width': 2 }));
+      var b = el('text', { x: ex + dx, y: base - lift + 7, 'text-anchor': anchor });
+      b.setAttribute('font-size', '9'); b.setAttribute('fill', 'var(--text-muted)');
+      b.textContent = f.vessels.split(' \u00b7 ')[0]; svg.appendChild(b);
     });
 
     // annual scatter first, so the smoothed line sits on top of its own evidence
@@ -162,7 +162,7 @@
                '<span style="opacity:.6;font-size:.9em">&nbsp;from ' + (window.__D.first_arrival[k] || '') + '</span></span>';
       }).join('') +
       '<span style="opacity:.75"><i style="background:var(--text-muted);height:7px;width:7px;border-radius:50%"></i>a single year</span>' +
-      '<span style="opacity:.75"><i style="background:var(--text-secondary);height:7px;width:2px;border-radius:0"></i>a named arrival</span>';
+      '<span style="opacity:.75"><i style="background:var(--text-secondary);height:7px;width:7px;border-radius:50%"></i>first visit under that flag</span>';
   }
 
   function hover(svg, D, years, x, y, ML, MT, pw, ph) {
@@ -176,7 +176,7 @@
       var yr = years.reduce(function (a, b) { return Math.abs(x(b) - sx) < Math.abs(x(a) - sx) ? b : a; }, years[0]);
       cross.setAttribute('x1', x(yr)); cross.setAttribute('x2', x(yr)); cross.setAttribute('opacity', .35);
       var n = D.n_by_year[String(yr)] || 0;
-      var ev = (D.events || []).filter(function (e) { return e.year === yr; })[0];
+      var ev = (D.first_visits || []).filter(function (e) { return e.year === yr; })[0];
       var rows = D.order.filter(function (k) { return k !== 'other'; }).map(function (k) {
         var sm = D.series[k].filter(function (p) { return p.year === yr; })[0];
         var an = D.annual[k].filter(function (p) { return p.year === yr; })[0];
@@ -185,9 +185,11 @@
                '<span class="muted"> (' + (an && an.n ? an.share + '% of ' + an.n : 'no records') + ')</span></td></tr>';
       }).join('');
       tip.innerHTML = '<b>' + yr + '</b><table>' + rows + '</table>' +
-        (ev ? '<div style="margin-top:6px;padding-top:5px;border-top:1px solid var(--grid)"><b>' +
-              esc(ev.label) + '</b> \u00b7 ' + esc(ev.vessels) + '<br><span class="muted">' +
-              esc(ev.date) + ', ' + esc(ev.place) + '. ' + esc(ev.note) + '</span></div>' : '') +
+        (ev ? '<div style="margin-top:6px;padding-top:5px;border-top:1px solid var(--grid)">' +
+              '<b>First visit under the flag of ' + esc(ev.label) + '</b><br>' +
+              esc(ev.vessels) + ' \u00b7 ' + esc(ev.who) + '<br><span class="muted">' +
+              esc(ev.date) + ', ' + esc(ev.place) + '<br>' + esc(ev.note) +
+              '<br>attestation: ' + esc(ev.attestation) + '</span></div>' : '') +
         '<div class="muted" style="margin-top:5px">5-year mean, with that single year in brackets<br>n = ' + n + ' in ' + yr + '</div>';
       tip.style.opacity = 1;
       tip.style.left = Math.min(evt.pageX + 16, window.scrollX + document.documentElement.clientWidth - tip.offsetWidth - 10) + 'px';

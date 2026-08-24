@@ -167,3 +167,24 @@ under `review_flags`):
 - `france 1817-05-24 "Francia"` — probable duplicate of *Bordelais* the same day; the
   row's own excerpt glosses "la corveta Francia" as Roquefeuil's *Bordelais*.
   Class: era/name conflation.
+
+### De-garbling pass 1 — 2026-08-23
+
+`scripts/degarble_mexlist.py` → `data/mexlist-degarble-proposed.csv`. Each garbled string
+gets a candidate reading, tested against the full text of Bancroft III–V in the vault — not
+by raw frequency, which rewards common words, but by whether the candidate falls within 90
+characters of a ship word (ship / brig / schr / tons / Capt. / cargo).
+
+**13 CONFIRMED · 11 plausible · 7 ambiguous · 18 unresolved · 12 no candidate**
+
+Confirmed: *AijantcJio* → **Ayacucho**, *BamstaJble* → **Barnstable**, *BoUna* → **Bolivar**, *CaJalina* → **Catalina**, *Lconidatt* → **Leonidas**, *Lfonor* → **Leonor**, *MoreloB* → **Morelos**, *Pilrjrim* → **Pilgrim**, *PorahontciJi* → **Pocahontas**, *Soledtul* → **Soledad**, *SterUon* → **Sterling**, *Strrlimj* → **Sterling**, *Whafeman* → **Whaleman**.
+
+⚠ **AMBIGUOUS** marks readings whose candidate is also a common word or a frequent surname
+in Bancroft — Smith, Wilson, Rosa, Balance, Washington, Columbia, Russell. The hit count
+proves nothing about a vessel there, and the printed list has to settle them.
+
+⚠ **30 of 61 are not resolved by this method at all** and need the printed page:
+the OCR has lost too much. Nothing here has been applied to any data file.
+
+Notable: *AijantcJio* → **Ayacucho**, the vessel whose registry is already contested in the
+vault's Vallejo work — worth resolving alongside the flag audit above, not separately.
