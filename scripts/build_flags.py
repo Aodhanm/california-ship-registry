@@ -80,10 +80,14 @@ for k in NAMED + ["other"]:
         # measurement, and the eye reads it as "present, at nil" rather than
         # "not here yet". The line simply begins at the first recorded arrival.
         val = round(100 * wk / wn, 1) if (wn >= MIN_WINDOW_N and arrived) else None
-        smooth.append({"year": y, "share": val, "window_n": wn})
+        # carry the counts the share was computed from. A share alone invites
+        # "60% of what?" - and printing the year's own share beside the mean as a
+        # second percentage reads as a contradiction whenever the two disagree.
+        smooth.append({"year": y, "share": val, "window_n": wn, "window_count": wk})
         n = n_by_year.get(y, 0)
-        raw.append({"year": y, "n": n,
-                    "share": round(100 * ann[y][k] / n, 1) if (n and arrived) else None})
+        cnt = ann[y][k] if y in ann else 0
+        raw.append({"year": y, "n": n, "count": cnt,
+                    "share": round(100 * cnt / n, 1) if (n and arrived) else None})
     # suppress sustained zero runs: a flag absent for several years running has no
     # share to plot, and a flat line along the axis reads as presence-at-nil
     i = 0

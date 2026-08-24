@@ -188,3 +188,36 @@ the OCR has lost too much. Nothing here has been applied to any data file.
 
 Notable: *AijantcJio* → **Ayacucho**, the vessel whose registry is already contested in the
 vault's Vallejo work — worth resolving alongside the flag audit above, not separately.
+
+### 📄 SCAN INTEL — which Bancroft volumes need a better source (2026-08-23)
+
+**The finding.** The vault's Bancroft is a **Google Books OCR**
+(`~/vault/07 Files/Raw/papers/bancroft-history-california/`). Google's OCR is at its worst
+on tabular matter, and Bancroft's vessel lists are tables — which is exactly why the 63
+garbled names exist. Garble rate measured per volume:
+
+| Vol | Covers | Garble rate | Needs a better scan? | Why |
+|---|---|---|---|---|
+| I | 1542–1800 | 0.76% | no | narrative reads clean; the La Pérouse and Vancouver passages verified fine |
+| II | 1801–1824 | 0.47% | no | cleanest of the seven |
+| **III** | **1825–1840** | **1.60%** | **⚠ YES — first priority** | worst garble AND the most unmerged vessels (32 of 77) |
+| **IV** | **1840–1845** | 0.67% | **⚠ yes** | 27 unmerged vessels |
+| **V** | **1846–1848** | 1.11% | **⚠ yes** | 18 unmerged vessels |
+| VI–VII | 1848–1890 | 1.48% / 1.08% | no | out of period |
+
+**⭐ The important part: we probably don't need a different scan at all.** The page *images*
+are fine — only the OCR of them is bad. Reading the vessel-list pages as images is the same
+technique already documented for the C-A manuscripts (BookReader JPEG API, download to /tmp,
+read locally). That turns a sourcing problem into a reading task and is very likely faster
+than hunting a cleaner text.
+
+**Sources checked 2026-08-23:** Internet Archive surfaces History of California vols 1–2
+readily (`bancrofthistcal01bancroft`, `bancrofthistcal00bancroft`) but **not III–V** under the
+obvious identifiers or a creator+title search. Not yet tried: **HathiTrust** (usually holds
+the complete *Works* set), the **Bancroft Library's own digitisation**, and going back to
+**Google Books page images** directly, which is the option above.
+
+**⚑ AODHAN TO-DO:** decide whether to (a) hunt a cleaner full text of vols III–V, or (b) just
+read the vessel-list pages as images. Recommendation is (b). Either way this is the gate on
+the 30 unresolved garbled names, which is the gate on merging the 77 vessels, which is the
+gate on extending *Flags at Anchor* past 1821.

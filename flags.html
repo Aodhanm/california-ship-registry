@@ -100,7 +100,9 @@
   .tip b{display:block;margin-bottom:4px}
   .tip table{width:100%;border:0;background:none;font-size:1em}
   .tip td{padding:1px 0;border:0}
-  .tip td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  .tip td{font-variant-numeric:tabular-nums}
+  .tip td.own{text-align:right;color:var(--text-secondary)}
+  .tip tr.hdr td{font-size:.85em;color:var(--text-muted);padding-bottom:3px;border-bottom:1px solid var(--grid)}
   .tip i{width:9px;height:3px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:middle}
 
   details{margin:1.4em 0}
@@ -275,6 +277,6 @@ every number here).
 </main>
 
 <div class="tip" id="tip"></div>
-<script src="./assets/flags-chart.js?v=b15fa01f"></script>
+<script src="./assets/flags-chart.js?v=c7f684f5"></script>
 </body>
 </html>

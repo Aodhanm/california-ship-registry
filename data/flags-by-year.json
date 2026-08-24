@@ -154,1602 +154,1920 @@
    {
     "year": 1769,
     "share": null,
-    "window_n": 4
+    "window_n": 4,
+    "window_count": 4
    },
    {
     "year": 1770,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 8
    },
    {
     "year": 1771,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 8
    },
    {
     "year": 1772,
     "share": null,
-    "window_n": 5
+    "window_n": 5,
+    "window_count": 5
    },
    {
     "year": 1773,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 17
    },
    {
     "year": 1774,
     "share": 100.0,
-    "window_n": 28
+    "window_n": 28,
+    "window_count": 28
    },
    {
     "year": 1775,
     "share": 100.0,
-    "window_n": 29
+    "window_n": 29,
+    "window_count": 29
    },
    {
     "year": 1776,
     "share": 100.0,
-    "window_n": 35
+    "window_n": 35,
+    "window_count": 35
    },
    {
     "year": 1777,
     "share": 100.0,
-    "window_n": 43
+    "window_n": 43,
+    "window_count": 43
    },
    {
     "year": 1778,
     "share": 100.0,
-    "window_n": 33
+    "window_n": 33,
+    "window_count": 33
    },
    {
     "year": 1779,
     "share": 100.0,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 22
    },
    {
     "year": 1780,
     "share": 100.0,
-    "window_n": 21
+    "window_n": 21,
+    "window_count": 21
    },
    {
     "year": 1781,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 17
    },
    {
     "year": 1782,
     "share": null,
-    "window_n": 16
+    "window_n": 16,
+    "window_count": 16
    },
    {
     "year": 1783,
     "share": 100.0,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 22
    },
    {
     "year": 1784,
     "share": 94.7,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 36
    },
    {
     "year": 1785,
     "share": 95.5,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 42
    },
    {
     "year": 1786,
     "share": 95.5,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 42
    },
    {
     "year": 1787,
     "share": 94.6,
-    "window_n": 37
+    "window_n": 37,
+    "window_count": 35
    },
    {
     "year": 1788,
     "share": 94.1,
-    "window_n": 34
+    "window_n": 34,
+    "window_count": 32
    },
    {
     "year": 1789,
     "share": 100.0,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 38
    },
    {
     "year": 1790,
     "share": 88.7,
-    "window_n": 53
+    "window_n": 53,
+    "window_count": 47
    },
    {
     "year": 1791,
     "share": 74.7,
-    "window_n": 99
+    "window_n": 99,
+    "window_count": 74
    },
    {
     "year": 1792,
     "share": 76.8,
-    "window_n": 155
+    "window_n": 155,
+    "window_count": 119
    },
    {
     "year": 1793,
     "share": 75.6,
-    "window_n": 197
+    "window_n": 197,
+    "window_count": 149
    },
    {
     "year": 1794,
     "share": 75.0,
-    "window_n": 220
+    "window_n": 220,
+    "window_count": 165
    },
    {
     "year": 1795,
     "share": 79.6,
-    "window_n": 260
+    "window_n": 260,
+    "window_count": 207
    },
    {
     "year": 1796,
     "share": 84.5,
-    "window_n": 245
+    "window_n": 245,
+    "window_count": 207
    },
    {
     "year": 1797,
     "share": 83.2,
-    "window_n": 208
+    "window_n": 208,
+    "window_count": 173
    },
    {
     "year": 1798,
     "share": 85.5,
-    "window_n": 172
+    "window_n": 172,
+    "window_count": 147
    },
    {
     "year": 1799,
     "share": 85.7,
-    "window_n": 147
+    "window_n": 147,
+    "window_count": 126
    },
    {
     "year": 1800,
     "share": 77.9,
-    "window_n": 86
+    "window_n": 86,
+    "window_count": 67
    },
    {
     "year": 1801,
     "share": 65.8,
-    "window_n": 73
+    "window_n": 73,
+    "window_count": 48
    },
    {
     "year": 1802,
     "share": 56.8,
-    "window_n": 74
+    "window_n": 74,
+    "window_count": 42
    },
    {
     "year": 1803,
     "share": 56.0,
-    "window_n": 75
+    "window_n": 75,
+    "window_count": 42
    },
    {
     "year": 1804,
     "share": 34.1,
-    "window_n": 88
+    "window_n": 88,
+    "window_count": 30
    },
    {
     "year": 1805,
     "share": 33.3,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 35
    },
    {
     "year": 1806,
     "share": 30.2,
-    "window_n": 96
+    "window_n": 96,
+    "window_count": 29
    },
    {
     "year": 1807,
     "share": 29.8,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 25
    },
    {
     "year": 1808,
     "share": 23.8,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 20
    },
    {
     "year": 1809,
     "share": 30.4,
-    "window_n": 56
+    "window_n": 56,
+    "window_count": 17
    },
    {
     "year": 1810,
     "share": 22.2,
-    "window_n": 45
+    "window_n": 45,
+    "window_count": 10
    },
    {
     "year": 1811,
     "share": 22.5,
-    "window_n": 40
+    "window_n": 40,
+    "window_count": 9
    },
    {
     "year": 1812,
     "share": 18.4,
-    "window_n": 49
+    "window_n": 49,
+    "window_count": 9
    },
    {
     "year": 1813,
     "share": 11.9,
-    "window_n": 67
+    "window_n": 67,
+    "window_count": 8
    },
    {
     "year": 1814,
     "share": 12.4,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 13
    },
    {
     "year": 1815,
     "share": 14.3,
-    "window_n": 126
+    "window_n": 126,
+    "window_count": 18
    },
    {
     "year": 1816,
     "share": 11.0,
-    "window_n": 136
+    "window_n": 136,
+    "window_count": 15
    },
    {
     "year": 1817,
     "share": 20.0,
-    "window_n": 140
+    "window_n": 140,
+    "window_count": 28
    },
    {
     "year": 1818,
     "share": 23.6,
-    "window_n": 123
+    "window_n": 123,
+    "window_count": 29
    },
    {
     "year": 1819,
     "share": 25.7,
-    "window_n": 101
+    "window_n": 101,
+    "window_count": 26
    },
    {
     "year": 1820,
     "share": 30.0,
-    "window_n": 70
+    "window_n": 70,
+    "window_count": 21
    },
    {
     "year": 1821,
     "share": 38.9,
-    "window_n": 54
+    "window_n": 54,
+    "window_count": 21
    }
   ],
   "usa": [
    {
     "year": 1769,
     "share": null,
-    "window_n": 4
+    "window_n": 4,
+    "window_count": 0
    },
    {
     "year": 1770,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1771,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1772,
     "share": null,
-    "window_n": 5
+    "window_n": 5,
+    "window_count": 0
    },
    {
     "year": 1773,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1774,
     "share": null,
-    "window_n": 28
+    "window_n": 28,
+    "window_count": 0
    },
    {
     "year": 1775,
     "share": null,
-    "window_n": 29
+    "window_n": 29,
+    "window_count": 0
    },
    {
     "year": 1776,
     "share": null,
-    "window_n": 35
+    "window_n": 35,
+    "window_count": 0
    },
    {
     "year": 1777,
     "share": null,
-    "window_n": 43
+    "window_n": 43,
+    "window_count": 0
    },
    {
     "year": 1778,
     "share": null,
-    "window_n": 33
+    "window_n": 33,
+    "window_count": 0
    },
    {
     "year": 1779,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1780,
     "share": null,
-    "window_n": 21
+    "window_n": 21,
+    "window_count": 0
    },
    {
     "year": 1781,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1782,
     "share": null,
-    "window_n": 16
+    "window_n": 16,
+    "window_count": 0
    },
    {
     "year": 1783,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1784,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1785,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 0
    },
    {
     "year": 1786,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 0
    },
    {
     "year": 1787,
     "share": null,
-    "window_n": 37
+    "window_n": 37,
+    "window_count": 0
    },
    {
     "year": 1788,
     "share": null,
-    "window_n": 34
+    "window_n": 34,
+    "window_count": 0
    },
    {
     "year": 1789,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1790,
     "share": null,
-    "window_n": 53
+    "window_n": 53,
+    "window_count": 0
    },
    {
     "year": 1791,
     "share": null,
-    "window_n": 99
+    "window_n": 99,
+    "window_count": 0
    },
    {
     "year": 1792,
     "share": null,
-    "window_n": 155
+    "window_n": 155,
+    "window_count": 0
    },
    {
     "year": 1793,
     "share": null,
-    "window_n": 197
+    "window_n": 197,
+    "window_count": 0
    },
    {
     "year": 1794,
     "share": null,
-    "window_n": 220
+    "window_n": 220,
+    "window_count": 3
    },
    {
     "year": 1795,
     "share": null,
-    "window_n": 260
+    "window_n": 260,
+    "window_count": 3
    },
    {
     "year": 1796,
     "share": 2.9,
-    "window_n": 245
+    "window_n": 245,
+    "window_count": 7
    },
    {
     "year": 1797,
     "share": 4.3,
-    "window_n": 208
+    "window_n": 208,
+    "window_count": 9
    },
    {
     "year": 1798,
     "share": 5.8,
-    "window_n": 172
+    "window_n": 172,
+    "window_count": 10
    },
    {
     "year": 1799,
     "share": 6.1,
-    "window_n": 147
+    "window_n": 147,
+    "window_count": 9
    },
    {
     "year": 1800,
     "share": 10.5,
-    "window_n": 86
+    "window_n": 86,
+    "window_count": 9
    },
    {
     "year": 1801,
     "share": 20.5,
-    "window_n": 73
+    "window_n": 73,
+    "window_count": 15
    },
    {
     "year": 1802,
     "share": 35.1,
-    "window_n": 74
+    "window_n": 74,
+    "window_count": 26
    },
    {
     "year": 1803,
     "share": 37.3,
-    "window_n": 75
+    "window_n": 75,
+    "window_count": 28
    },
    {
     "year": 1804,
     "share": 54.5,
-    "window_n": 88
+    "window_n": 88,
+    "window_count": 48
    },
    {
     "year": 1805,
     "share": 58.1,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 61
    },
    {
     "year": 1806,
     "share": 56.2,
-    "window_n": 96
+    "window_n": 96,
+    "window_count": 54
    },
    {
     "year": 1807,
     "share": 54.8,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 46
    },
    {
     "year": 1808,
     "share": 58.3,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 49
    },
    {
     "year": 1809,
     "share": 48.2,
-    "window_n": 56
+    "window_n": 56,
+    "window_count": 27
    },
    {
     "year": 1810,
     "share": 42.2,
-    "window_n": 45
+    "window_n": 45,
+    "window_count": 19
    },
    {
     "year": 1811,
     "share": 47.5,
-    "window_n": 40
+    "window_n": 40,
+    "window_count": 19
    },
    {
     "year": 1812,
     "share": 44.9,
-    "window_n": 49
+    "window_n": 49,
+    "window_count": 22
    },
    {
     "year": 1813,
     "share": 37.3,
-    "window_n": 67
+    "window_n": 67,
+    "window_count": 25
    },
    {
     "year": 1814,
     "share": 41.9,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 44
    },
    {
     "year": 1815,
     "share": 34.1,
-    "window_n": 126
+    "window_n": 126,
+    "window_count": 43
    },
    {
     "year": 1816,
     "share": 35.3,
-    "window_n": 136
+    "window_n": 136,
+    "window_count": 48
    },
    {
     "year": 1817,
     "share": 32.1,
-    "window_n": 140
+    "window_n": 140,
+    "window_count": 45
    },
    {
     "year": 1818,
     "share": 30.9,
-    "window_n": 123
+    "window_n": 123,
+    "window_count": 38
    },
    {
     "year": 1819,
     "share": 20.8,
-    "window_n": 101
+    "window_n": 101,
+    "window_count": 21
    },
    {
     "year": 1820,
     "share": 24.3,
-    "window_n": 70
+    "window_n": 70,
+    "window_count": 17
    },
    {
     "year": 1821,
     "share": 16.7,
-    "window_n": 54
+    "window_n": 54,
+    "window_count": 9
    }
   ],
   "russia": [
    {
     "year": 1769,
     "share": null,
-    "window_n": 4
+    "window_n": 4,
+    "window_count": 0
    },
    {
     "year": 1770,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1771,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1772,
     "share": null,
-    "window_n": 5
+    "window_n": 5,
+    "window_count": 0
    },
    {
     "year": 1773,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1774,
     "share": null,
-    "window_n": 28
+    "window_n": 28,
+    "window_count": 0
    },
    {
     "year": 1775,
     "share": null,
-    "window_n": 29
+    "window_n": 29,
+    "window_count": 0
    },
    {
     "year": 1776,
     "share": null,
-    "window_n": 35
+    "window_n": 35,
+    "window_count": 0
    },
    {
     "year": 1777,
     "share": null,
-    "window_n": 43
+    "window_n": 43,
+    "window_count": 0
    },
    {
     "year": 1778,
     "share": null,
-    "window_n": 33
+    "window_n": 33,
+    "window_count": 0
    },
    {
     "year": 1779,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1780,
     "share": null,
-    "window_n": 21
+    "window_n": 21,
+    "window_count": 0
    },
    {
     "year": 1781,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1782,
     "share": null,
-    "window_n": 16
+    "window_n": 16,
+    "window_count": 0
    },
    {
     "year": 1783,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1784,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1785,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 0
    },
    {
     "year": 1786,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 0
    },
    {
     "year": 1787,
     "share": null,
-    "window_n": 37
+    "window_n": 37,
+    "window_count": 0
    },
    {
     "year": 1788,
     "share": null,
-    "window_n": 34
+    "window_n": 34,
+    "window_count": 0
    },
    {
     "year": 1789,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1790,
     "share": null,
-    "window_n": 53
+    "window_n": 53,
+    "window_count": 0
    },
    {
     "year": 1791,
     "share": null,
-    "window_n": 99
+    "window_n": 99,
+    "window_count": 0
    },
    {
     "year": 1792,
     "share": null,
-    "window_n": 155
+    "window_n": 155,
+    "window_count": 0
    },
    {
     "year": 1793,
     "share": null,
-    "window_n": 197
+    "window_n": 197,
+    "window_count": 0
    },
    {
     "year": 1794,
     "share": null,
-    "window_n": 220
+    "window_n": 220,
+    "window_count": 0
    },
    {
     "year": 1795,
     "share": null,
-    "window_n": 260
+    "window_n": 260,
+    "window_count": 0
    },
    {
     "year": 1796,
     "share": null,
-    "window_n": 245
+    "window_n": 245,
+    "window_count": 0
    },
    {
     "year": 1797,
     "share": null,
-    "window_n": 208
+    "window_n": 208,
+    "window_count": 0
    },
    {
     "year": 1798,
     "share": null,
-    "window_n": 172
+    "window_n": 172,
+    "window_count": 0
    },
    {
     "year": 1799,
     "share": null,
-    "window_n": 147
+    "window_n": 147,
+    "window_count": 0
    },
    {
     "year": 1800,
     "share": null,
-    "window_n": 86
+    "window_n": 86,
+    "window_count": 0
    },
    {
     "year": 1801,
     "share": null,
-    "window_n": 73
+    "window_n": 73,
+    "window_count": 0
    },
    {
     "year": 1802,
     "share": null,
-    "window_n": 74
+    "window_n": 74,
+    "window_count": 0
    },
    {
     "year": 1803,
     "share": null,
-    "window_n": 75
+    "window_n": 75,
+    "window_count": 0
    },
    {
     "year": 1804,
     "share": null,
-    "window_n": 88
+    "window_n": 88,
+    "window_count": 4
    },
    {
     "year": 1805,
     "share": null,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 4
    },
    {
     "year": 1806,
     "share": 6.2,
-    "window_n": 96
+    "window_n": 96,
+    "window_count": 6
    },
    {
     "year": 1807,
     "share": 9.5,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 8
    },
    {
     "year": 1808,
     "share": 11.9,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 10
    },
    {
     "year": 1809,
     "share": 16.1,
-    "window_n": 56
+    "window_n": 56,
+    "window_count": 9
    },
    {
     "year": 1810,
     "share": 31.1,
-    "window_n": 45
+    "window_n": 45,
+    "window_count": 14
    },
    {
     "year": 1811,
     "share": 30.0,
-    "window_n": 40
+    "window_n": 40,
+    "window_count": 12
    },
    {
     "year": 1812,
     "share": 28.6,
-    "window_n": 49
+    "window_n": 49,
+    "window_count": 14
    },
    {
     "year": 1813,
     "share": 43.3,
-    "window_n": 67
+    "window_n": 67,
+    "window_count": 29
    },
    {
     "year": 1814,
     "share": 39.0,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 41
    },
    {
     "year": 1815,
     "share": 39.7,
-    "window_n": 126
+    "window_n": 126,
+    "window_count": 50
    },
    {
     "year": 1816,
     "share": 41.2,
-    "window_n": 136
+    "window_n": 136,
+    "window_count": 56
    },
    {
     "year": 1817,
     "share": 38.6,
-    "window_n": 140
+    "window_n": 140,
+    "window_count": 54
    },
    {
     "year": 1818,
     "share": 35.0,
-    "window_n": 123
+    "window_n": 123,
+    "window_count": 43
    },
    {
     "year": 1819,
     "share": 41.6,
-    "window_n": 101
+    "window_n": 101,
+    "window_count": 42
    },
    {
     "year": 1820,
     "share": 40.0,
-    "window_n": 70
+    "window_n": 70,
+    "window_count": 28
    },
    {
     "year": 1821,
     "share": 40.7,
-    "window_n": 54
+    "window_n": 54,
+    "window_count": 22
    }
   ],
   "britain": [
    {
     "year": 1769,
     "share": null,
-    "window_n": 4
+    "window_n": 4,
+    "window_count": 0
    },
    {
     "year": 1770,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1771,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1772,
     "share": null,
-    "window_n": 5
+    "window_n": 5,
+    "window_count": 0
    },
    {
     "year": 1773,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1774,
     "share": null,
-    "window_n": 28
+    "window_n": 28,
+    "window_count": 0
    },
    {
     "year": 1775,
     "share": null,
-    "window_n": 29
+    "window_n": 29,
+    "window_count": 0
    },
    {
     "year": 1776,
     "share": null,
-    "window_n": 35
+    "window_n": 35,
+    "window_count": 0
    },
    {
     "year": 1777,
     "share": null,
-    "window_n": 43
+    "window_n": 43,
+    "window_count": 0
    },
    {
     "year": 1778,
     "share": null,
-    "window_n": 33
+    "window_n": 33,
+    "window_count": 0
    },
    {
     "year": 1779,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1780,
     "share": null,
-    "window_n": 21
+    "window_n": 21,
+    "window_count": 0
    },
    {
     "year": 1781,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1782,
     "share": null,
-    "window_n": 16
+    "window_n": 16,
+    "window_count": 0
    },
    {
     "year": 1783,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1784,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1785,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 0
    },
    {
     "year": 1786,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 0
    },
    {
     "year": 1787,
     "share": null,
-    "window_n": 37
+    "window_n": 37,
+    "window_count": 0
    },
    {
     "year": 1788,
     "share": null,
-    "window_n": 34
+    "window_n": 34,
+    "window_count": 0
    },
    {
     "year": 1789,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1790,
     "share": null,
-    "window_n": 53
+    "window_n": 53,
+    "window_count": 6
    },
    {
     "year": 1791,
     "share": null,
-    "window_n": 99
+    "window_n": 99,
+    "window_count": 25
    },
    {
     "year": 1792,
     "share": 23.2,
-    "window_n": 155
+    "window_n": 155,
+    "window_count": 36
    },
    {
     "year": 1793,
     "share": 24.4,
-    "window_n": 197
+    "window_n": 197,
+    "window_count": 48
    },
    {
     "year": 1794,
     "share": 23.6,
-    "window_n": 220
+    "window_n": 220,
+    "window_count": 52
    },
    {
     "year": 1795,
     "share": 19.2,
-    "window_n": 260
+    "window_n": 260,
+    "window_count": 50
    },
    {
     "year": 1796,
     "share": 12.7,
-    "window_n": 245
+    "window_n": 245,
+    "window_count": 31
    },
    {
     "year": 1797,
     "share": 12.5,
-    "window_n": 208
+    "window_n": 208,
+    "window_count": 26
    },
    {
     "year": 1798,
     "share": 8.7,
-    "window_n": 172
+    "window_n": 172,
+    "window_count": 15
    },
    {
     "year": 1799,
     "share": 8.2,
-    "window_n": 147
+    "window_n": 147,
+    "window_count": 12
    },
    {
     "year": 1800,
     "share": 11.6,
-    "window_n": 86
+    "window_n": 86,
+    "window_count": 10
    },
    {
     "year": 1801,
     "share": 13.7,
-    "window_n": 73
+    "window_n": 73,
+    "window_count": 10
    },
    {
     "year": 1802,
     "share": 8.1,
-    "window_n": 74
+    "window_n": 74,
+    "window_count": 6
    },
    {
     "year": 1803,
     "share": 6.7,
-    "window_n": 75
+    "window_n": 75,
+    "window_count": 5
    },
    {
     "year": 1804,
     "share": 6.8,
-    "window_n": 88
+    "window_n": 88,
+    "window_count": 6
    },
    {
     "year": 1805,
     "share": 4.8,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 5
    },
    {
     "year": 1806,
     "share": 6.2,
-    "window_n": 96
+    "window_n": 96,
+    "window_count": 6
    },
    {
     "year": 1807,
     "share": 4.8,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 4
    },
    {
     "year": 1808,
     "share": 4.8,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 4
    },
    {
     "year": 1809,
     "share": 3.6,
-    "window_n": 56
+    "window_n": 56,
+    "window_count": 2
    },
    {
     "year": 1810,
     "share": 2.2,
-    "window_n": 45
+    "window_n": 45,
+    "window_count": 1
    },
    {
     "year": 1811,
     "share": 0.0,
-    "window_n": 40
+    "window_n": 40,
+    "window_count": 0
    },
    {
     "year": 1812,
     "share": 8.2,
-    "window_n": 49
+    "window_n": 49,
+    "window_count": 4
    },
    {
     "year": 1813,
     "share": 7.5,
-    "window_n": 67
+    "window_n": 67,
+    "window_count": 5
    },
    {
     "year": 1814,
     "share": 6.7,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 7
    },
    {
     "year": 1815,
     "share": 8.7,
-    "window_n": 126
+    "window_n": 126,
+    "window_count": 11
    },
    {
     "year": 1816,
     "share": 8.1,
-    "window_n": 136
+    "window_n": 136,
+    "window_count": 11
    },
    {
     "year": 1817,
     "share": 5.0,
-    "window_n": 140
+    "window_n": 140,
+    "window_count": 7
    },
    {
     "year": 1818,
     "share": 5.7,
-    "window_n": 123
+    "window_n": 123,
+    "window_count": 7
    },
    {
     "year": 1819,
     "share": 5.9,
-    "window_n": 101
+    "window_n": 101,
+    "window_count": 6
    },
    {
     "year": 1820,
     "share": 2.9,
-    "window_n": 70
+    "window_n": 70,
+    "window_count": 2
    },
    {
     "year": 1821,
     "share": 3.7,
-    "window_n": 54
+    "window_n": 54,
+    "window_count": 2
    }
   ],
   "france": [
    {
     "year": 1769,
     "share": null,
-    "window_n": 4
+    "window_n": 4,
+    "window_count": 0
    },
    {
     "year": 1770,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1771,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1772,
     "share": null,
-    "window_n": 5
+    "window_n": 5,
+    "window_count": 0
    },
    {
     "year": 1773,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1774,
     "share": null,
-    "window_n": 28
+    "window_n": 28,
+    "window_count": 0
    },
    {
     "year": 1775,
     "share": null,
-    "window_n": 29
+    "window_n": 29,
+    "window_count": 0
    },
    {
     "year": 1776,
     "share": null,
-    "window_n": 35
+    "window_n": 35,
+    "window_count": 0
    },
    {
     "year": 1777,
     "share": null,
-    "window_n": 43
+    "window_n": 43,
+    "window_count": 0
    },
    {
     "year": 1778,
     "share": null,
-    "window_n": 33
+    "window_n": 33,
+    "window_count": 0
    },
    {
     "year": 1779,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1780,
     "share": null,
-    "window_n": 21
+    "window_n": 21,
+    "window_count": 0
    },
    {
     "year": 1781,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1782,
     "share": null,
-    "window_n": 16
+    "window_n": 16,
+    "window_count": 0
    },
    {
     "year": 1783,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1784,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 2
    },
    {
     "year": 1785,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 2
    },
    {
     "year": 1786,
     "share": 4.5,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 2
    },
    {
     "year": 1787,
     "share": 5.4,
-    "window_n": 37
+    "window_n": 37,
+    "window_count": 2
    },
    {
     "year": 1788,
     "share": 5.9,
-    "window_n": 34
+    "window_n": 34,
+    "window_count": 2
    },
    {
     "year": 1789,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1790,
     "share": null,
-    "window_n": 53
+    "window_n": 53,
+    "window_count": 0
    },
    {
     "year": 1791,
     "share": null,
-    "window_n": 99
+    "window_n": 99,
+    "window_count": 0
    },
    {
     "year": 1792,
     "share": null,
-    "window_n": 155
+    "window_n": 155,
+    "window_count": 0
    },
    {
     "year": 1793,
     "share": null,
-    "window_n": 197
+    "window_n": 197,
+    "window_count": 0
    },
    {
     "year": 1794,
     "share": null,
-    "window_n": 220
+    "window_n": 220,
+    "window_count": 0
    },
    {
     "year": 1795,
     "share": null,
-    "window_n": 260
+    "window_n": 260,
+    "window_count": 0
    },
    {
     "year": 1796,
     "share": null,
-    "window_n": 245
+    "window_n": 245,
+    "window_count": 0
    },
    {
     "year": 1797,
     "share": null,
-    "window_n": 208
+    "window_n": 208,
+    "window_count": 0
    },
    {
     "year": 1798,
     "share": null,
-    "window_n": 172
+    "window_n": 172,
+    "window_count": 0
    },
    {
     "year": 1799,
     "share": null,
-    "window_n": 147
+    "window_n": 147,
+    "window_count": 0
    },
    {
     "year": 1800,
     "share": null,
-    "window_n": 86
+    "window_n": 86,
+    "window_count": 0
    },
    {
     "year": 1801,
     "share": null,
-    "window_n": 73
+    "window_n": 73,
+    "window_count": 0
    },
    {
     "year": 1802,
     "share": null,
-    "window_n": 74
+    "window_n": 74,
+    "window_count": 0
    },
    {
     "year": 1803,
     "share": null,
-    "window_n": 75
+    "window_n": 75,
+    "window_count": 0
    },
    {
     "year": 1804,
     "share": null,
-    "window_n": 88
+    "window_n": 88,
+    "window_count": 0
    },
    {
     "year": 1805,
     "share": null,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 0
    },
    {
     "year": 1806,
     "share": 1.0,
-    "window_n": 96
+    "window_n": 96,
+    "window_count": 1
    },
    {
     "year": 1807,
     "share": 1.2,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 1
    },
    {
     "year": 1808,
     "share": 1.2,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 1
    },
    {
     "year": 1809,
     "share": 1.8,
-    "window_n": 56
+    "window_n": 56,
+    "window_count": 1
    },
    {
     "year": 1810,
     "share": 2.2,
-    "window_n": 45
+    "window_n": 45,
+    "window_count": 1
    },
    {
     "year": 1811,
     "share": null,
-    "window_n": 40
+    "window_n": 40,
+    "window_count": 0
    },
    {
     "year": 1812,
     "share": null,
-    "window_n": 49
+    "window_n": 49,
+    "window_count": 0
    },
    {
     "year": 1813,
     "share": null,
-    "window_n": 67
+    "window_n": 67,
+    "window_count": 0
    },
    {
     "year": 1814,
     "share": null,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 0
    },
    {
     "year": 1815,
     "share": 3.2,
-    "window_n": 126
+    "window_n": 126,
+    "window_count": 4
    },
    {
     "year": 1816,
     "share": 2.9,
-    "window_n": 136
+    "window_n": 136,
+    "window_count": 4
    },
    {
     "year": 1817,
     "share": 2.9,
-    "window_n": 140
+    "window_n": 140,
+    "window_count": 4
    },
    {
     "year": 1818,
     "share": 3.3,
-    "window_n": 123
+    "window_n": 123,
+    "window_count": 4
    },
    {
     "year": 1819,
     "share": 4.0,
-    "window_n": 101
+    "window_n": 101,
+    "window_count": 4
    },
    {
     "year": 1820,
     "share": null,
-    "window_n": 70
+    "window_n": 70,
+    "window_count": 0
    },
    {
     "year": 1821,
     "share": null,
-    "window_n": 54
+    "window_n": 54,
+    "window_count": 0
    }
   ],
   "other": [
    {
     "year": 1769,
     "share": null,
-    "window_n": 4
+    "window_n": 4,
+    "window_count": 0
    },
    {
     "year": 1770,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1771,
     "share": null,
-    "window_n": 8
+    "window_n": 8,
+    "window_count": 0
    },
    {
     "year": 1772,
     "share": null,
-    "window_n": 5
+    "window_n": 5,
+    "window_count": 0
    },
    {
     "year": 1773,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1774,
     "share": null,
-    "window_n": 28
+    "window_n": 28,
+    "window_count": 0
    },
    {
     "year": 1775,
     "share": null,
-    "window_n": 29
+    "window_n": 29,
+    "window_count": 0
    },
    {
     "year": 1776,
     "share": null,
-    "window_n": 35
+    "window_n": 35,
+    "window_count": 0
    },
    {
     "year": 1777,
     "share": null,
-    "window_n": 43
+    "window_n": 43,
+    "window_count": 0
    },
    {
     "year": 1778,
     "share": null,
-    "window_n": 33
+    "window_n": 33,
+    "window_count": 0
    },
    {
     "year": 1779,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1780,
     "share": null,
-    "window_n": 21
+    "window_n": 21,
+    "window_count": 0
    },
    {
     "year": 1781,
     "share": null,
-    "window_n": 17
+    "window_n": 17,
+    "window_count": 0
    },
    {
     "year": 1782,
     "share": null,
-    "window_n": 16
+    "window_n": 16,
+    "window_count": 0
    },
    {
     "year": 1783,
     "share": null,
-    "window_n": 22
+    "window_n": 22,
+    "window_count": 0
    },
    {
     "year": 1784,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1785,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 0
    },
    {
     "year": 1786,
     "share": null,
-    "window_n": 44
+    "window_n": 44,
+    "window_count": 0
    },
    {
     "year": 1787,
     "share": null,
-    "window_n": 37
+    "window_n": 37,
+    "window_count": 0
    },
    {
     "year": 1788,
     "share": null,
-    "window_n": 34
+    "window_n": 34,
+    "window_count": 0
    },
    {
     "year": 1789,
     "share": null,
-    "window_n": 38
+    "window_n": 38,
+    "window_count": 0
    },
    {
     "year": 1790,
     "share": null,
-    "window_n": 53
+    "window_n": 53,
+    "window_count": 0
    },
    {
     "year": 1791,
     "share": null,
-    "window_n": 99
+    "window_n": 99,
+    "window_count": 0
    },
    {
     "year": 1792,
     "share": null,
-    "window_n": 155
+    "window_n": 155,
+    "window_count": 0
    },
    {
     "year": 1793,
     "share": null,
-    "window_n": 197
+    "window_n": 197,
+    "window_count": 0
    },
    {
     "year": 1794,
     "share": null,
-    "window_n": 220
+    "window_n": 220,
+    "window_count": 0
    },
    {
     "year": 1795,
     "share": null,
-    "window_n": 260
+    "window_n": 260,
+    "window_count": 0
    },
    {
     "year": 1796,
     "share": null,
-    "window_n": 245
+    "window_n": 245,
+    "window_count": 0
    },
    {
     "year": 1797,
     "share": null,
-    "window_n": 208
+    "window_n": 208,
+    "window_count": 0
    },
    {
     "year": 1798,
     "share": null,
-    "window_n": 172
+    "window_n": 172,
+    "window_count": 0
    },
    {
     "year": 1799,
     "share": null,
-    "window_n": 147
+    "window_n": 147,
+    "window_count": 0
    },
    {
     "year": 1800,
     "share": null,
-    "window_n": 86
+    "window_n": 86,
+    "window_count": 0
    },
    {
     "year": 1801,
     "share": null,
-    "window_n": 73
+    "window_n": 73,
+    "window_count": 0
    },
    {
     "year": 1802,
     "share": null,
-    "window_n": 74
+    "window_n": 74,
+    "window_count": 0
    },
    {
     "year": 1803,
     "share": null,
-    "window_n": 75
+    "window_n": 75,
+    "window_count": 0
    },
    {
     "year": 1804,
     "share": null,
-    "window_n": 88
+    "window_n": 88,
+    "window_count": 0
    },
    {
     "year": 1805,
     "share": null,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 0
    },
    {
     "year": 1806,
     "share": null,
-    "window_n": 96
+    "window_n": 96,
+    "window_count": 0
    },
    {
     "year": 1807,
     "share": null,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 0
    },
    {
     "year": 1808,
     "share": null,
-    "window_n": 84
+    "window_n": 84,
+    "window_count": 0
    },
    {
     "year": 1809,
     "share": null,
-    "window_n": 56
+    "window_n": 56,
+    "window_count": 0
    },
    {
     "year": 1810,
     "share": null,
-    "window_n": 45
+    "window_n": 45,
+    "window_count": 0
    },
    {
     "year": 1811,
     "share": null,
-    "window_n": 40
+    "window_n": 40,
+    "window_count": 0
    },
    {
     "year": 1812,
     "share": null,
-    "window_n": 49
+    "window_n": 49,
+    "window_count": 0
    },
    {
     "year": 1813,
     "share": null,
-    "window_n": 67
+    "window_n": 67,
+    "window_count": 0
    },
    {
     "year": 1814,
     "share": null,
-    "window_n": 105
+    "window_n": 105,
+    "window_count": 0
    },
    {
     "year": 1815,
     "share": null,
-    "window_n": 126
+    "window_n": 126,
+    "window_count": 0
    },
    {
     "year": 1816,
     "share": null,
-    "window_n": 136
+    "window_n": 136,
+    "window_count": 2
    },
    {
     "year": 1817,
     "share": null,
-    "window_n": 140
+    "window_n": 140,
+    "window_count": 2
    },
    {
     "year": 1818,
     "share": 1.6,
-    "window_n": 123
+    "window_n": 123,
+    "window_count": 2
    },
    {
     "year": 1819,
     "share": 2.0,
-    "window_n": 101
+    "window_n": 101,
+    "window_count": 2
    },
    {
     "year": 1820,
     "share": 2.9,
-    "window_n": 70
+    "window_n": 70,
+    "window_count": 2
    },
    {
     "year": 1821,
     "share": 0.0,
-    "window_n": 54
+    "window_n": 54,
+    "window_count": 0
    }
   ]
  },
@@ -1758,266 +2076,319 @@
    {
     "year": 1769,
     "n": 4,
+    "count": 4,
     "share": 100.0
    },
    {
     "year": 1770,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1771,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1772,
     "n": 4,
+    "count": 4,
     "share": 100.0
    },
    {
     "year": 1773,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1774,
     "n": 1,
+    "count": 1,
     "share": 100.0
    },
    {
     "year": 1775,
     "n": 12,
+    "count": 12,
     "share": 100.0
    },
    {
     "year": 1776,
     "n": 11,
+    "count": 11,
     "share": 100.0
    },
    {
     "year": 1777,
     "n": 5,
+    "count": 5,
     "share": 100.0
    },
    {
     "year": 1778,
     "n": 6,
+    "count": 6,
     "share": 100.0
    },
    {
     "year": 1779,
     "n": 9,
+    "count": 9,
     "share": 100.0
    },
    {
     "year": 1780,
     "n": 2,
+    "count": 2,
     "share": 100.0
    },
    {
     "year": 1781,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1782,
     "n": 4,
+    "count": 4,
     "share": 100.0
    },
    {
     "year": 1783,
     "n": 2,
+    "count": 2,
     "share": 100.0
    },
    {
     "year": 1784,
     "n": 8,
+    "count": 8,
     "share": 100.0
    },
    {
     "year": 1785,
     "n": 8,
+    "count": 8,
     "share": 100.0
    },
    {
     "year": 1786,
     "n": 16,
+    "count": 14,
     "share": 87.5
    },
    {
     "year": 1787,
     "n": 10,
+    "count": 10,
     "share": 100.0
    },
    {
     "year": 1788,
     "n": 2,
+    "count": 2,
     "share": 100.0
    },
    {
     "year": 1789,
     "n": 1,
+    "count": 1,
     "share": 100.0
    },
    {
     "year": 1790,
     "n": 5,
+    "count": 5,
     "share": 100.0
    },
    {
     "year": 1791,
     "n": 20,
+    "count": 20,
     "share": 100.0
    },
    {
     "year": 1792,
     "n": 25,
+    "count": 19,
     "share": 76.0
    },
    {
     "year": 1793,
     "n": 48,
+    "count": 29,
     "share": 60.4
    },
    {
     "year": 1794,
     "n": 57,
+    "count": 46,
     "share": 80.7
    },
    {
     "year": 1795,
     "n": 47,
+    "count": 35,
     "share": 74.5
    },
    {
     "year": 1796,
     "n": 43,
+    "count": 36,
     "share": 83.7
    },
    {
     "year": 1797,
     "n": 65,
+    "count": 61,
     "share": 93.8
    },
    {
     "year": 1798,
     "n": 33,
+    "count": 29,
     "share": 87.9
    },
    {
     "year": 1799,
     "n": 20,
+    "count": 12,
     "share": 60.0
    },
    {
     "year": 1800,
     "n": 11,
+    "count": 9,
     "share": 81.8
    },
    {
     "year": 1801,
     "n": 18,
+    "count": 15,
     "share": 83.3
    },
    {
     "year": 1802,
     "n": 4,
+    "count": 2,
     "share": 50.0
    },
    {
     "year": 1803,
     "n": 20,
+    "count": 10,
     "share": 50.0
    },
    {
     "year": 1804,
     "n": 21,
+    "count": 6,
     "share": 28.6
    },
    {
     "year": 1805,
     "n": 12,
+    "count": 9,
     "share": 75.0
    },
    {
     "year": 1806,
     "n": 31,
+    "count": 3,
     "share": 9.7
    },
    {
     "year": 1807,
     "n": 21,
+    "count": 7,
     "share": 33.3
    },
    {
     "year": 1808,
     "n": 11,
+    "count": 4,
     "share": 36.4
    },
    {
     "year": 1809,
     "n": 9,
+    "count": 2,
     "share": 22.2
    },
    {
     "year": 1810,
     "n": 12,
+    "count": 4,
     "share": 33.3
    },
    {
     "year": 1811,
     "n": 3,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1812,
     "n": 10,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1813,
     "n": 6,
+    "count": 3,
     "share": 50.0
    },
    {
     "year": 1814,
     "n": 18,
+    "count": 2,
     "share": 11.1
    },
    {
     "year": 1815,
     "n": 30,
+    "count": 3,
     "share": 10.0
    },
    {
     "year": 1816,
     "n": 41,
+    "count": 5,
     "share": 12.2
    },
    {
     "year": 1817,
     "n": 31,
+    "count": 5,
     "share": 16.1
    },
    {
     "year": 1818,
     "n": 16,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1819,
     "n": 22,
+    "count": 15,
     "share": 68.2
    },
    {
     "year": 1820,
     "n": 13,
+    "count": 4,
     "share": 30.8
    },
    {
     "year": 1821,
     "n": 19,
+    "count": 2,
     "share": 10.5
    }
   ],
@@ -2025,266 +2396,319 @@
    {
     "year": 1769,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1770,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1771,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1772,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1773,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1774,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1775,
     "n": 12,
+    "count": 0,
     "share": null
    },
    {
     "year": 1776,
     "n": 11,
+    "count": 0,
     "share": null
    },
    {
     "year": 1777,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1778,
     "n": 6,
+    "count": 0,
     "share": null
    },
    {
     "year": 1779,
     "n": 9,
+    "count": 0,
     "share": null
    },
    {
     "year": 1780,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1781,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1782,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1783,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1784,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1785,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1786,
     "n": 16,
+    "count": 0,
     "share": null
    },
    {
     "year": 1787,
     "n": 10,
+    "count": 0,
     "share": null
    },
    {
     "year": 1788,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1789,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1790,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1791,
     "n": 20,
+    "count": 0,
     "share": null
    },
    {
     "year": 1792,
     "n": 25,
+    "count": 0,
     "share": null
    },
    {
     "year": 1793,
     "n": 48,
+    "count": 0,
     "share": null
    },
    {
     "year": 1794,
     "n": 57,
+    "count": 0,
     "share": null
    },
    {
     "year": 1795,
     "n": 47,
+    "count": 0,
     "share": null
    },
    {
     "year": 1796,
     "n": 43,
+    "count": 3,
     "share": 7.0
    },
    {
     "year": 1797,
     "n": 65,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1798,
     "n": 33,
+    "count": 4,
     "share": 12.1
    },
    {
     "year": 1799,
     "n": 20,
+    "count": 2,
     "share": 10.0
    },
    {
     "year": 1800,
     "n": 11,
+    "count": 1,
     "share": 9.1
    },
    {
     "year": 1801,
     "n": 18,
+    "count": 2,
     "share": 11.1
    },
    {
     "year": 1802,
     "n": 4,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1803,
     "n": 20,
+    "count": 10,
     "share": 50.0
    },
    {
     "year": 1804,
     "n": 21,
+    "count": 13,
     "share": 61.9
    },
    {
     "year": 1805,
     "n": 12,
+    "count": 3,
     "share": 25.0
    },
    {
     "year": 1806,
     "n": 31,
+    "count": 22,
     "share": 71.0
    },
    {
     "year": 1807,
     "n": 21,
+    "count": 13,
     "share": 61.9
    },
    {
     "year": 1808,
     "n": 11,
+    "count": 3,
     "share": 27.3
    },
    {
     "year": 1809,
     "n": 9,
+    "count": 5,
     "share": 55.6
    },
    {
     "year": 1810,
     "n": 12,
+    "count": 6,
     "share": 50.0
    },
    {
     "year": 1811,
     "n": 3,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1812,
     "n": 10,
+    "count": 5,
     "share": 50.0
    },
    {
     "year": 1813,
     "n": 6,
+    "count": 3,
     "share": 50.0
    },
    {
     "year": 1814,
     "n": 18,
+    "count": 8,
     "share": 44.4
    },
    {
     "year": 1815,
     "n": 30,
+    "count": 9,
     "share": 30.0
    },
    {
     "year": 1816,
     "n": 41,
+    "count": 19,
     "share": 46.3
    },
    {
     "year": 1817,
     "n": 31,
+    "count": 4,
     "share": 12.9
    },
    {
     "year": 1818,
     "n": 16,
+    "count": 8,
     "share": 50.0
    },
    {
     "year": 1819,
     "n": 22,
+    "count": 5,
     "share": 22.7
    },
    {
     "year": 1820,
     "n": 13,
+    "count": 2,
     "share": 15.4
    },
    {
     "year": 1821,
     "n": 19,
+    "count": 2,
     "share": 10.5
    }
   ],
@@ -2292,266 +2716,319 @@
    {
     "year": 1769,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1770,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1771,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1772,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1773,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1774,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1775,
     "n": 12,
+    "count": 0,
     "share": null
    },
    {
     "year": 1776,
     "n": 11,
+    "count": 0,
     "share": null
    },
    {
     "year": 1777,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1778,
     "n": 6,
+    "count": 0,
     "share": null
    },
    {
     "year": 1779,
     "n": 9,
+    "count": 0,
     "share": null
    },
    {
     "year": 1780,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1781,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1782,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1783,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1784,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1785,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1786,
     "n": 16,
+    "count": 0,
     "share": null
    },
    {
     "year": 1787,
     "n": 10,
+    "count": 0,
     "share": null
    },
    {
     "year": 1788,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1789,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1790,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1791,
     "n": 20,
+    "count": 0,
     "share": null
    },
    {
     "year": 1792,
     "n": 25,
+    "count": 0,
     "share": null
    },
    {
     "year": 1793,
     "n": 48,
+    "count": 0,
     "share": null
    },
    {
     "year": 1794,
     "n": 57,
+    "count": 0,
     "share": null
    },
    {
     "year": 1795,
     "n": 47,
+    "count": 0,
     "share": null
    },
    {
     "year": 1796,
     "n": 43,
+    "count": 0,
     "share": null
    },
    {
     "year": 1797,
     "n": 65,
+    "count": 0,
     "share": null
    },
    {
     "year": 1798,
     "n": 33,
+    "count": 0,
     "share": null
    },
    {
     "year": 1799,
     "n": 20,
+    "count": 0,
     "share": null
    },
    {
     "year": 1800,
     "n": 11,
+    "count": 0,
     "share": null
    },
    {
     "year": 1801,
     "n": 18,
+    "count": 0,
     "share": null
    },
    {
     "year": 1802,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1803,
     "n": 20,
+    "count": 0,
     "share": null
    },
    {
     "year": 1804,
     "n": 21,
+    "count": 0,
     "share": null
    },
    {
     "year": 1805,
     "n": 12,
+    "count": 0,
     "share": null
    },
    {
     "year": 1806,
     "n": 31,
+    "count": 4,
     "share": 12.9
    },
    {
     "year": 1807,
     "n": 21,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1808,
     "n": 11,
+    "count": 2,
     "share": 18.2
    },
    {
     "year": 1809,
     "n": 9,
+    "count": 2,
     "share": 22.2
    },
    {
     "year": 1810,
     "n": 12,
+    "count": 2,
     "share": 16.7
    },
    {
     "year": 1811,
     "n": 3,
+    "count": 3,
     "share": 100.0
    },
    {
     "year": 1812,
     "n": 10,
+    "count": 5,
     "share": 50.0
    },
    {
     "year": 1813,
     "n": 6,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1814,
     "n": 18,
+    "count": 4,
     "share": 22.2
    },
    {
     "year": 1815,
     "n": 30,
+    "count": 17,
     "share": 56.7
    },
    {
     "year": 1816,
     "n": 41,
+    "count": 15,
     "share": 36.6
    },
    {
     "year": 1817,
     "n": 31,
+    "count": 14,
     "share": 45.2
    },
    {
     "year": 1818,
     "n": 16,
+    "count": 6,
     "share": 37.5
    },
    {
     "year": 1819,
     "n": 22,
+    "count": 2,
     "share": 9.1
    },
    {
     "year": 1820,
     "n": 13,
+    "count": 6,
     "share": 46.2
    },
    {
     "year": 1821,
     "n": 19,
+    "count": 14,
     "share": 73.7
    }
   ],
@@ -2559,266 +3036,319 @@
    {
     "year": 1769,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1770,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1771,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1772,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1773,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1774,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1775,
     "n": 12,
+    "count": 0,
     "share": null
    },
    {
     "year": 1776,
     "n": 11,
+    "count": 0,
     "share": null
    },
    {
     "year": 1777,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1778,
     "n": 6,
+    "count": 0,
     "share": null
    },
    {
     "year": 1779,
     "n": 9,
+    "count": 0,
     "share": null
    },
    {
     "year": 1780,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1781,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1782,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1783,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1784,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1785,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1786,
     "n": 16,
+    "count": 0,
     "share": null
    },
    {
     "year": 1787,
     "n": 10,
+    "count": 0,
     "share": null
    },
    {
     "year": 1788,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1789,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1790,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1791,
     "n": 20,
+    "count": 0,
     "share": null
    },
    {
     "year": 1792,
     "n": 25,
+    "count": 6,
     "share": 24.0
    },
    {
     "year": 1793,
     "n": 48,
+    "count": 19,
     "share": 39.6
    },
    {
     "year": 1794,
     "n": 57,
+    "count": 11,
     "share": 19.3
    },
    {
     "year": 1795,
     "n": 47,
+    "count": 12,
     "share": 25.5
    },
    {
     "year": 1796,
     "n": 43,
+    "count": 4,
     "share": 9.3
    },
    {
     "year": 1797,
     "n": 65,
+    "count": 4,
     "share": 6.2
    },
    {
     "year": 1798,
     "n": 33,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1799,
     "n": 20,
+    "count": 6,
     "share": 30.0
    },
    {
     "year": 1800,
     "n": 11,
+    "count": 1,
     "share": 9.1
    },
    {
     "year": 1801,
     "n": 18,
+    "count": 1,
     "share": 5.6
    },
    {
     "year": 1802,
     "n": 4,
+    "count": 2,
     "share": 50.0
    },
    {
     "year": 1803,
     "n": 20,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1804,
     "n": 21,
+    "count": 2,
     "share": 9.5
    },
    {
     "year": 1805,
     "n": 12,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1806,
     "n": 31,
+    "count": 2,
     "share": 6.5
    },
    {
     "year": 1807,
     "n": 21,
+    "count": 1,
     "share": 4.8
    },
    {
     "year": 1808,
     "n": 11,
+    "count": 1,
     "share": 9.1
    },
    {
     "year": 1809,
     "n": 9,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1810,
     "n": 12,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1811,
     "n": 3,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1812,
     "n": 10,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1813,
     "n": 6,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1814,
     "n": 18,
+    "count": 4,
     "share": 22.2
    },
    {
     "year": 1815,
     "n": 30,
+    "count": 1,
     "share": 3.3
    },
    {
     "year": 1816,
     "n": 41,
+    "count": 2,
     "share": 4.9
    },
    {
     "year": 1817,
     "n": 31,
+    "count": 4,
     "share": 12.9
    },
    {
     "year": 1818,
     "n": 16,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1819,
     "n": 22,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1820,
     "n": 13,
+    "count": 1,
     "share": 7.7
    },
    {
     "year": 1821,
     "n": 19,
+    "count": 1,
     "share": 5.3
    }
   ],
@@ -2826,266 +3356,319 @@
    {
     "year": 1769,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1770,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1771,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1772,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1773,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1774,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1775,
     "n": 12,
+    "count": 0,
     "share": null
    },
    {
     "year": 1776,
     "n": 11,
+    "count": 0,
     "share": null
    },
    {
     "year": 1777,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1778,
     "n": 6,
+    "count": 0,
     "share": null
    },
    {
     "year": 1779,
     "n": 9,
+    "count": 0,
     "share": null
    },
    {
     "year": 1780,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1781,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1782,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1783,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1784,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1785,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1786,
     "n": 16,
+    "count": 2,
     "share": 12.5
    },
    {
     "year": 1787,
     "n": 10,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1788,
     "n": 2,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1789,
     "n": 1,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1790,
     "n": 5,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1791,
     "n": 20,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1792,
     "n": 25,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1793,
     "n": 48,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1794,
     "n": 57,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1795,
     "n": 47,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1796,
     "n": 43,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1797,
     "n": 65,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1798,
     "n": 33,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1799,
     "n": 20,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1800,
     "n": 11,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1801,
     "n": 18,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1802,
     "n": 4,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1803,
     "n": 20,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1804,
     "n": 21,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1805,
     "n": 12,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1806,
     "n": 31,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1807,
     "n": 21,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1808,
     "n": 11,
+    "count": 1,
     "share": 9.1
    },
    {
     "year": 1809,
     "n": 9,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1810,
     "n": 12,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1811,
     "n": 3,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1812,
     "n": 10,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1813,
     "n": 6,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1814,
     "n": 18,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1815,
     "n": 30,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1816,
     "n": 41,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1817,
     "n": 31,
+    "count": 4,
     "share": 12.9
    },
    {
     "year": 1818,
     "n": 16,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1819,
     "n": 22,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1820,
     "n": 13,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1821,
     "n": 19,
+    "count": 0,
     "share": 0.0
    }
   ],
@@ -3093,266 +3676,319 @@
    {
     "year": 1769,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1770,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1771,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1772,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1773,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1774,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1775,
     "n": 12,
+    "count": 0,
     "share": null
    },
    {
     "year": 1776,
     "n": 11,
+    "count": 0,
     "share": null
    },
    {
     "year": 1777,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1778,
     "n": 6,
+    "count": 0,
     "share": null
    },
    {
     "year": 1779,
     "n": 9,
+    "count": 0,
     "share": null
    },
    {
     "year": 1780,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1781,
     "n": 0,
+    "count": 0,
     "share": null
    },
    {
     "year": 1782,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1783,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1784,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1785,
     "n": 8,
+    "count": 0,
     "share": null
    },
    {
     "year": 1786,
     "n": 16,
+    "count": 0,
     "share": null
    },
    {
     "year": 1787,
     "n": 10,
+    "count": 0,
     "share": null
    },
    {
     "year": 1788,
     "n": 2,
+    "count": 0,
     "share": null
    },
    {
     "year": 1789,
     "n": 1,
+    "count": 0,
     "share": null
    },
    {
     "year": 1790,
     "n": 5,
+    "count": 0,
     "share": null
    },
    {
     "year": 1791,
     "n": 20,
+    "count": 0,
     "share": null
    },
    {
     "year": 1792,
     "n": 25,
+    "count": 0,
     "share": null
    },
    {
     "year": 1793,
     "n": 48,
+    "count": 0,
     "share": null
    },
    {
     "year": 1794,
     "n": 57,
+    "count": 0,
     "share": null
    },
    {
     "year": 1795,
     "n": 47,
+    "count": 0,
     "share": null
    },
    {
     "year": 1796,
     "n": 43,
+    "count": 0,
     "share": null
    },
    {
     "year": 1797,
     "n": 65,
+    "count": 0,
     "share": null
    },
    {
     "year": 1798,
     "n": 33,
+    "count": 0,
     "share": null
    },
    {
     "year": 1799,
     "n": 20,
+    "count": 0,
     "share": null
    },
    {
     "year": 1800,
     "n": 11,
+    "count": 0,
     "share": null
    },
    {
     "year": 1801,
     "n": 18,
+    "count": 0,
     "share": null
    },
    {
     "year": 1802,
     "n": 4,
+    "count": 0,
     "share": null
    },
    {
     "year": 1803,
     "n": 20,
+    "count": 0,
     "share": null
    },
    {
     "year": 1804,
     "n": 21,
+    "count": 0,
     "share": null
    },
    {
     "year": 1805,
     "n": 12,
+    "count": 0,
     "share": null
    },
    {
     "year": 1806,
     "n": 31,
+    "count": 0,
     "share": null
    },
    {
     "year": 1807,
     "n": 21,
+    "count": 0,
     "share": null
    },
    {
     "year": 1808,
     "n": 11,
+    "count": 0,
     "share": null
    },
    {
     "year": 1809,
     "n": 9,
+    "count": 0,
     "share": null
    },
    {
     "year": 1810,
     "n": 12,
+    "count": 0,
     "share": null
    },
    {
     "year": 1811,
     "n": 3,
+    "count": 0,
     "share": null
    },
    {
     "year": 1812,
     "n": 10,
+    "count": 0,
     "share": null
    },
    {
     "year": 1813,
     "n": 6,
+    "count": 0,
     "share": null
    },
    {
     "year": 1814,
     "n": 18,
+    "count": 0,
     "share": null
    },
    {
     "year": 1815,
     "n": 30,
+    "count": 0,
     "share": null
    },
    {
     "year": 1816,
     "n": 41,
+    "count": 0,
     "share": null
    },
    {
     "year": 1817,
     "n": 31,
+    "count": 0,
     "share": null
    },
    {
     "year": 1818,
     "n": 16,
+    "count": 2,
     "share": 12.5
    },
    {
     "year": 1819,
     "n": 22,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1820,
     "n": 13,
+    "count": 0,
     "share": 0.0
    },
    {
     "year": 1821,
     "n": 19,
+    "count": 0,
     "share": 0.0
    }
   ]

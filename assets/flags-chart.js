@@ -186,17 +186,22 @@
       var rows = D.order.filter(function (k) { return k !== 'other'; }).map(function (k) {
         var sm = D.series[k].filter(function (p) { return p.year === yr; })[0];
         var an = D.annual[k].filter(function (p) { return p.year === yr; })[0];
-        return '<tr><td><i style="background:' + SLOT[k] + '"></i>' + esc(D.labels[k]) + '</td><td>' +
-               (sm && sm.share != null ? sm.share + '%' : '—') +
-               '<span class="muted"> (' + (an && an.n ? an.share + '% of ' + an.n : 'no records') + ')</span></td></tr>';
+        var mean = (sm && sm.share != null)
+          ? sm.share + '% <span class="muted">' + sm.window_count + ' of ' + sm.window_n + '</span>'
+          : '<span class="muted">—</span>';
+        var own = an ? (an.n ? an.count + ' of ' + an.n : 'no records') : '';
+        return '<tr><td><i style="background:' + SLOT[k] + '"></i>' + esc(D.labels[k]) + '</td>' +
+               '<td>' + mean + '</td><td class="own">' + own + '</td></tr>';
       }).join('');
-      tip.innerHTML = '<b>' + yr + '</b><table>' + rows + '</table>' +
+      tip.innerHTML = '<b>' + yr + '</b>' +
+        '<table><tr class="hdr"><td></td><td>5-yr mean</td><td class="own">' + yr + ' alone</td></tr>' + rows + '</table>' +
         (ev ? '<div style="margin-top:6px;padding-top:5px;border-top:1px solid var(--grid)">' +
               '<b>First visit under the flag of ' + esc(ev.label) + '</b><br>' +
               esc(ev.vessels) + ' \u00b7 ' + esc(ev.who) + '<br><span class="muted">' +
               esc(ev.date) + ', ' + esc(ev.place) + '<br>' + esc(ev.note) +
               '<br>attestation: ' + esc(ev.attestation) + '</span></div>' : '') +
-        '<div class="muted" style="margin-top:5px">5-year mean, with that single year in brackets<br>n = ' + n + ' in ' + yr + '</div>';
+        '<div class="muted" style="margin-top:5px">Counts are visits. ' + n + ' recorded in ' + yr +
+        '; the mean is taken over ' + yr + '\u00b12 years.</div>';
       tip.style.opacity = 1;
       tip.style.left = Math.min(evt.pageX + 16, window.scrollX + document.documentElement.clientWidth - tip.offsetWidth - 10) + 'px';
       tip.style.top = (evt.pageY - 10) + 'px';
@@ -207,15 +212,18 @@
 
   function table(D) {
     var ORD = D.order.filter(function (k) { return k !== 'other'; });
-    var h = '<table><thead><tr><th>Year</th>' + ORD.map(function (k) { return '<th>' + esc(D.labels[k]) + '</th>'; }).join('') + '<th>n</th></tr></thead><tbody>';
+    var h = '<p class="muted" style="font-size:.9em;margin:.4em 0">Each cell gives the five-year mean share, then the visits it was computed from, then that single year\u2019s own count.</p>' +
+      '<table><thead><tr><th>Year</th>' + ORD.map(function (k) { return '<th>' + esc(D.labels[k]) + '</th>'; }).join('') + '<th>visits</th></tr></thead><tbody>';
     D.years.forEach(function (yr) {
       var n = D.n_by_year[String(yr)] || 0;
       h += '<tr><td>' + yr + '</td>';
       ORD.forEach(function (k) {
         var sm = D.series[k].filter(function (p) { return p.year === yr; })[0];
         var an = D.annual[k].filter(function (p) { return p.year === yr; })[0];
-        h += '<td>' + (sm && sm.share != null ? sm.share + '%' : '<span class="muted">—</span>') +
-             (an && an.n ? ' <span class="muted">(' + an.share + '%)</span>' : '') + '</td>';
+        h += '<td>' + (sm && sm.share != null
+              ? sm.share + '% <span class="muted">' + sm.window_count + '/' + sm.window_n + '</span>'
+              : '<span class="muted">—</span>') +
+             (an && an.n ? ' <span class="muted">· ' + an.count + ' this yr</span>' : '') + '</td>';
       });
       h += '<td>' + (n || '<span class="muted">0</span>') + '</td></tr>';
     });
