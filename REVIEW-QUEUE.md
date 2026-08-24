@@ -2,6 +2,28 @@
 
 *The confident merges/drops are applied (see harvest.py ALIAS + STOP_NAMES). These need a human ruling or a source check. Add rulings here; the alias table encodes them.*
 
+---
+
+## ⭐ DOI-readiness status (2026-08-24) — READ FIRST
+
+**The registry as it stands (2,072 visits / 401 ships, `check.py` HARD 0) is already a legitimate, citable v1.0.** Almost everything below this line is **expansion backlog** (how many MORE rows to fold from staged source families), NOT a correctness defect. A DOI does not require every possible row; it requires the rows present to be trustworthy, which they are.
+
+**What was actually closed for DOI-readiness (this pass):**
+- ✅ **Post-1821 `spain` flag artifact fixed.** All 43 rows corrected per-row from their own text (`scripts/apply_flag_fixes_2026-08-24.py`): Chilean insurgent navy (La Independencia, El Alción) → chile; Mexican national/San Blas vessels → mexico; 4 Bancroft-verbatim corrections (María Ester, Clarita, Cowlitz, Ayacucho); the *Asia* kept as the one genuine post-1821 Spanish visit; the rest left **blank** rather than guessed. A **post-1821 Spain ceiling guard** in `check.py` makes the artifact un-re-mintable.
+- ✅ **2 place-as-ship phantoms dropped** (verbatim-confirmed): *paraje* San Antonio, *viña* Santa Gertrudis.
+- ✅ **Reproducibility documented** (`PROVENANCE.md`): the register is curated, not script-generated; `check.py` is the reproducible guarantee; `merge.py` is now gated so it cannot clobber the curated file.
+- ✅ Codebook frozen; DATA-PAPER counts refreshed; LICENSE (CC-BY + MIT) confirmed present.
+
+**Residual flag work for a LATER version (documented, not blocking):**
+- ⚠ **`volunteer`** carries 8 spurious `russia` visit-flags (it is the American hide brig, Bryant & Sturgis) — a pre-existing bug, left untouched this pass; needs a per-row fix.
+- ⚠ **`mexicana` (1791–1831) and `san carlos` (1769–1822)** are era-conflations: a 1792 Spanish exploration vessel + an 1820s Mexican reuse of the name share one ship_id. Visit-level flags are correct; split the ship_ids in v1.1.
+- **`brookline`, `volunteer`, `leonor`** post-1821 flags left blank pending a verbatim Bancroft flag (American/Mexican per the audit prose, not yet page-confirmed).
+- **`don quijote`** v2048: excerpt is a timber decree with no ship support — flag blanked; confirm the vessel or drop.
+
+**The two genuine gates left are Aodhan's:** (1) the interpretive **frame** for the data paper; (2) the **Zenodo login** to mint. See RELEASE-CHECKLIST.md.
+
+---
+
 ## ⭐ C-A 40 INGEST — RE-STAGED, LEAF-VERIFIED (2026-07-16, NOT yet merged)
 First staged then retracted (first-pass name errors), now **re-built from a careful leaf-by-leaf re-read** (scale 2–3) of both customs ledgers. Files: `data/ca40-new.csv` (**13 visits, 6 new ships**) + `data/ca40-attach.csv` (**8 corroborations**). Guard vocab + citations validated; all `status=draft`.
 - **Leaf-verified names** (correcting the first pass): brig ***Nilo*** (not "Wilcox", d7 n5), frigate ***Jackman*** + pailebot ***Spy*** (not "Jackson", d9/d68), the 1826 goleta ***Spry[?]*** likely = existing ship ***Spray*** (attach), ***Tomasa*** = a name-variant of ***Thomas Nowlan*** (existing).

@@ -57,6 +57,12 @@ def _before_floor(date, floor):
         if a < b: return True
         if a > b: return False
     return False  # equal at the row's precision -> not provably before
+# 2026-08-24: Spain had no California trade after independence (1821), and Bancroft records
+# zero Spanish vessels in HoC III-V. A PORT-LEVEL spain flag dated 1822+ is a harvest artifact
+# (the Phase-0 harvester read Spanish-LANGUAGE records as Spanish-FLAG). A HARD ceiling, the
+# mirror of FLAG_FLOORS, with an explicit allowlist for the one genuine case. mention/sighting/
+# reported? are exempt (a *reported* Spanish-warship threat is legitimately flagged spain).
+SPAIN_POST1821_OK = {'v1389', 'v1393'}  # the Navio Asia capitulation at Monterey, 1825
 hard, warn = [], []
 rows = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'visits.csv'))))
 seen_ids = set()
@@ -76,6 +82,11 @@ for r in rows:
             and _before_floor(r['date_from'], FLAG_FLOORS[r['flag']])):
         hard.append(f"{vid}: flag {r['flag']!r} dated {r['date_from']} — before that nation's first "
                     f"documented hull in California ({FLAG_FLOORS[r['flag']]}); phantom or mis-flag")
+    if (r['flag'] == 'spain' and r['visit_type'] not in ('sighting', 'reported?', 'mention')
+            and r['date_from'][:4].isdigit() and int(r['date_from'][:4]) >= 1822
+            and vid not in SPAIN_POST1821_OK):
+        hard.append(f"{vid}: spain flag dated {r['date_from']} (post-1821) — Spain had no California "
+                    f"trade after independence; harvest artifact, or add to SPAIN_POST1821_OK if genuine")
     try:
         c = json.loads(r['citations'])
         if not c: hard.append(f"{vid}: no citations")

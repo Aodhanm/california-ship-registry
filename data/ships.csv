@@ -31,7 +31,7 @@ astrolabe,Astrolabe (1),france,1786,1786,1,reviewed
 atala,Atala (2),usa,1815,1816,2,reviewed
 atrevida,Atrevida (Santa Rufina) (1),spain,1791,1791,1,draft
 avon,Avon (6),,1817,1835,6,reviewed
-ayacucho,Ayacucho (10),spain,1830,1839,10,reviewed
+ayacucho,Ayacucho (10),britain,1830,1839,10,reviewed
 baihtl,Baihtl (1),russia,1845,1845,1,reviewed
 baikal,Baikal (11); Baikal; Vaycal (1); Baykal (1); Bagol (1),russia,1825,1846,14,reviewed
 bajio,Bajio (1),,1842,1842,1,reviewed
@@ -62,7 +62,7 @@ californio,Californio (2),britain,1785,1800,2,reviewed
 cariotide,Cariótide (1),britain,1841,1841,1,reviewed
 carmen,Carmen (2),,1809,1827,2,reviewed
 caroline,Caroline (2),usa,1843,1846,2,reviewed
-catalina,Catalina (12); CATALINA (1),spain,1825,1844,13,reviewed
+catalina,Catalina (12); CATALINA (1),mexico,1825,1844,13,reviewed
 cazadora,Cazadora (2),britain,1817,1817,2,reviewed
 chalcedony,Chalcedony (2),usa,1830,1832,2,reviewed
 charon,Charon (1),,1812,1812,1,reviewed
@@ -71,7 +71,7 @@ chato,Chato (1),mexico,1841,1841,1,reviewed
 chirikov,Chirikov (4); Chirtkov (4),russia,1811,1817,8,reviewed
 clara,Clara (2),,1840,1844,2,reviewed
 clarion,Clarion (1),usa,1818,1818,1,reviewed
-clarita,Clarita (5),spain,1840,1845,5,reviewed
+clarita,Clarita (5),mexico,1840,1845,5,reviewed
 claudine,Claudine (1),britain,1822,1822,1,reviewed
 clementina,Clementina (2),,1836,1839,2,reviewed
 clementine,Clementine (2),,1837,1837,2,reviewed
@@ -92,7 +92,7 @@ corsario,Corsario (1),russia,1839,1839,1,reviewed
 cossack,Cosak (6); Cossack (3); Cosak; Cossack (1),usa,1815,1823,10,reviewed
 courier,Courier (4),russia,1825,1827,4,reviewed
 covington,Covington (1),usa,1846,1846,1,reviewed
-cowlitz,Cowlitz (1),usa,1841,1841,1,reviewed
+cowlitz,Cowlitz (1),britain,1841,1841,1,reviewed
 cruiser,Diga (1),russia,1823,1823,1,reviewed
 crusader,Crusader (1); Mcujruder (1),,1831,1832,2,reviewed
 curacoa,Curacoa (1),britain,1841,1841,1,reviewed
@@ -106,14 +106,14 @@ descubierta-rus,La Descubierta (1); Descubierta (1),russia,1819,1821,2,reviewed
 dhualle,Dhualle (2),usa,1829,1829,2,reviewed
 diana,Diana (3),,1829,1836,3,reviewed
 discovery,Discovery (8); Descubierta; Discovery (2); La Descubierta (1),britain,1792,1794,11,reviewed
-don quijote,Don Quijote (3),spain,1834,1845,3,reviewed
+don quijote,Don Quijote (3),,1834,1845,3,reviewed
 don quixote,Don Quixote (11),,1834,1836,11,reviewed
 dos hermanos,Dos Hermanos (1),usa,1829,1829,1,reviewed
 dromo,Dromo (1),usa,1808,1808,1,reviewed
 eagle,Eagle (11),usa,1807,1825,11,reviewed
 eagle-frigate,Eagle (1),spain,1814,1814,1,reviewed
 eclipse,Liclipse (3),,1806,1806,3,reviewed
-el alcion,El Alción (2),spain,1820,1822,2,reviewed
+el alcion,El Alción (2),chile,1820,1822,2,reviewed
 el aventurero,El Aventurero (1),spain,1819,1819,1,reviewed
 el pelao,El Pelao (1),,1781,1781,1,reviewed
 el rey,El Rey (1),,1781,1781,1,reviewed
@@ -210,11 +210,11 @@ la argentina,La Argentina (1),argentina,1818,1818,1,reviewed
 la catalina,LA CATALINA (1),usa,1803,1803,1,reviewed
 la fama,La Fama (1),,1797,1797,1,reviewed
 la hermosa mexicana,La Hermosa Mexicana (1),spain,1817,1817,1,reviewed
-la independencia,La Independencia (1),spain,1822,1822,1,reviewed
+la independencia,La Independencia (1),chile,1822,1822,1,reviewed
 lagoda,Lagoda (1),usa,1833,1833,1,reviewed
 lama,Lama (1),usa,1837,1837,1,reviewed
 las dos hermanas,Las dos hermanas (1),usa,1823,1823,1,reviewed
-legaspi,Legaspi (1),spain,1833,1833,1,reviewed
+legaspi,Legaspi (1),,1833,1833,1,reviewed
 lelia byrd,LELIA BIRD; Lelia Bird (1); Lelia Bird (1); Lelia Byrd (1); Lelia Byrd; William Shaler (1),usa,1803,1805,4,reviewed
 leon,Leon (1),,1835,1835,1,reviewed
 leonidas,Leonidas (3); Lconidatt (1),spain,1836,1841,4,reviewed
@@ -229,14 +229,14 @@ magallanes,Magallanes (2),spain,1797,1797,2,reviewed
 magnet,Magnet (1),usa,1846,1846,1,reviewed
 magnolia,Magnolia (1),usa,1846,1846,1,reviewed
 marcus,Marcus (1),,1831,1831,1,reviewed
-margarita,Margarita (3),spain,1831,1834,3,reviewed
+margarita,Margarita (3),mexico,1831,1834,3,reviewed
 maria,María (3),russia,1814,1845,3,reviewed
-maria ester,María Ester (13); María Esther (3); María Ester; Santa María Ester (1),spain,1826,1835,17,reviewed
-mariquita,Mariquita (3); Maraquita (2),spain,1831,1834,5,reviewed
+maria ester,María Ester (13); María Esther (3); María Ester; Santa María Ester (1),mexico,1826,1835,17,reviewed
+mariquita,Mariquita (3); Maraquita (2),mexico,1831,1834,5,reviewed
 maryland,Maryland (7),,1842,1842,7,reviewed
 massachusetts,Massachusetts (1),usa,1827,1827,1,reviewed
 matador,Matador (1),mexico,1835,1835,1,reviewed
-matamoros,Matamoros (1),spain,1827,1827,1,reviewed
+matamoros,Matamoros (1),mexico,1827,1827,1,reviewed
 mcculloch,McCulloch[?] (1),usa,1826,1826,1,reviewed
 mentor,Mentor (2); Mntkar (1),usa,1823,1841,3,reviewed
 mercedes,Mercedes (4),spain,1797,1801,4,reviewed
@@ -249,7 +249,7 @@ mona,Mona (1),,1841,1841,1,reviewed
 monmouth,Monmouth (1),,1844,1844,1,reviewed
 monsoon,Monsoon (5),,1839,1839,5,reviewed
 moor,Moor (1),,1825,1825,1,reviewed
-morelos,Morelos (16),russia,1825,1833,16,reviewed
+morelos,Morelos (16),mexico,1825,1833,16,reviewed
 morelos-corvette,Morelos (3),mexico,1834,1834,3,reviewed
 morgan,Morgan (1),usa,1843,1843,1,reviewed
 morison,Morison (1),,1840,1840,1,reviewed
@@ -331,7 +331,7 @@ sabine,Sabine (1),usa,1848,1848,1,reviewed
 sachem,Sachem (7); Jáchem; Sachem (1),usa,1822,1826,8,reviewed
 sacramento,Sacramento (2),,1841,1844,2,reviewed
 sagadahoc,Sagadahoc (1),usa,1846,1846,1,reviewed
-san antonio,San Antonio (4); San Antonio (El Príncipe) (1),spain,1769,1839,5,reviewed
+san antonio,San Antonio (4); San Antonio (El Príncipe) (1),spain,1769,1839,4,reviewed
 san carlos,San Carlos (53); S. Carlos (4); S. Carlos; San Carlos (2); La Carlos (1); El Carlos (1); San Carlos (Toisón de Oro) (1),spain,1769,1822,62,reviewed
 san francisco de paula,San Francisco de Paula (1),,1786,1786,1,reviewed
 san francisco javier,San Francisco Javier (2),spain,1820,1821,2,reviewed
@@ -340,7 +340,7 @@ san joaquin,San Joaquín (2),,1803,1805,2,reviewed
 san jose,San José (5),spain,1779,1795,5,reviewed
 san jose de filipinas,San José de Filipinas (1),spain,1793,1793,1,reviewed
 santa elena,Santa Elena (1),russia,1825,1825,1,reviewed
-santa gertrudis,Santa Gertrudis (5); Sta Gertrudis (2),spain,1785,1849,7,reviewed
+santa gertrudis,Santa Gertrudis (5); Sta Gertrudis (2),spain,1785,1849,6,reviewed
 santa maria,Santa María (1),,1835,1835,1,reviewed
 santa rosa,Santa Rosa (2),russia,1823,1831,2,reviewed
 santa-rosa-1818,Santa Rosa (1),argentina,1818,1818,1,reviewed
@@ -348,7 +348,7 @@ santiago,Santiago (12); Santiago (Nueva Galicia) (1),spain,1774,1794,13,reviewed
 sapphire,Sapphire (1),,1841,1841,1,reviewed
 saturnina,Saturnina (16); Santa Saturnina (4),spain,1791,1803,20,reviewed
 senoriano,Señoriano (2),spain,1821,1822,2,reviewed
-sirena,Sirena (1),spain,1827,1827,1,reviewed
+sirena,Sirena (1),mexico,1827,1827,1,reviewed
 snipe,Snipe (2),britain,1822,1822,2,reviewed
 soberana guelman,Soberana Guelman (1),,1826,1826,1,reviewed
 solitude,Solitude (1),usa,1825,1825,1,reviewed
@@ -387,7 +387,7 @@ verale,Verale (1),usa,1828,1828,1,reviewed
 vesper,Vesper (1),usa,1847,1847,1,reviewed
 victoria,Victoria (1),,1832,1832,1,reviewed
 vincennes,Vincennes (1),usa,1841,1841,1,reviewed
-vitor,Vitor (1),spain,1830,1830,1,reviewed
+vitor,Vitor (1),,1830,1830,1,reviewed
 volga,Volga (2),russia,1822,1822,2,reviewed
 voluntario,Voluntario (1),,1829,1829,1,reviewed
 volunteer,Volunteer (13),usa,1829,1833,13,reviewed

@@ -9,11 +9,11 @@
  ],
  "generated_from": "data/visits.csv",
  "n_in_scope": 847,
- "n_total": 2074,
+ "n_total": 2072,
  "excluded": {
-  "after_1821": 572,
+  "after_1821": 554,
   "no_date": 9,
-  "no_flag": 646
+  "no_flag": 662
  },
  "labels": {
   "spain": "Spain",
@@ -3994,16 +3994,13 @@
   ]
  },
  "flag_integrity": {
-  "conflicted_names": 39,
+  "conflicted_names": 35,
   "examples": [
-   "ayacucho",
-   "brookline",
-   "catalina",
    "columbia",
    "cossack",
    "eagle"
   ],
-  "post_1821_spain_rows": 43
+  "post_1821_spain_rows": 4
  },
  "events": [
   {

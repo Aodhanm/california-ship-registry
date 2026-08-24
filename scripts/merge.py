@@ -9,11 +9,32 @@ over-merging is silent data loss. Every visit keeps ALL constituent citations.
 Adjudications encoded from the plan: the two Junos split by era; the 'William
 Shaler' cluster re-identified as the Lelia Byrd (the record names her master);
 '[Erminia?]' stays flagged. All rows keep status=draft until reviewed.
+
+⛔ THIS SCRIPT ONLY REBUILDS THE PHASE-0 SEED (~1,294 draft visits) FROM
+`data/visits-draft.csv`. The published `data/visits.csv` is a CURATED artifact
+built ON TOP of that seed by a year of documented source-family folds, hand
+adjudications, and phantom purges (see PROVENANCE.md). Running this over the
+canonical file would DISCARD all of that. It is therefore gated: it refuses to
+overwrite an existing curated visits.csv unless SHIP_REGISTRY_ALLOW_RAW_BUILD=1.
+The reproducible guarantee for the curated dataset is `scripts/check.py`
+(every invariant), NOT re-running this. See PROVENANCE.md.
 """
-import csv, os, re, json, collections, unicodedata
+import csv, os, re, json, collections, unicodedata, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, '..', 'data')
+
+def _guard_curated():
+    """Refuse to clobber the curated visits.csv with the Phase-0 seed."""
+    draft = os.path.join(DATA, 'visits-draft.csv')
+    out = os.path.join(DATA, 'visits.csv')
+    if not os.path.exists(draft):
+        sys.exit("merge.py: no data/visits-draft.csv here — the Phase-0 seed inputs live "
+                 "in the vault, not the published repo. Nothing to rebuild. (See PROVENANCE.md.)")
+    if os.path.exists(out) and os.environ.get('SHIP_REGISTRY_ALLOW_RAW_BUILD') != '1':
+        sys.exit("merge.py: refusing to overwrite the CURATED data/visits.csv with the raw "
+                 "Phase-0 seed. This would discard a year of documented curation. To rebuild the "
+                 "seed anyway, set SHIP_REGISTRY_ALLOW_RAW_BUILD=1. (See PROVENANCE.md.)")
 
 # ---- adjudications (plan §1a) ----
 def adjudicate(cluster, year):
@@ -61,6 +82,7 @@ def year_of(datestr):
     return m.group(1) if m else ''
 
 def main():
+    _guard_curated()
     rows = list(csv.DictReader(open(os.path.join(DATA, 'visits-draft.csv'))))
     for r in rows:
         r['ship_cluster'] = adjudicate(r['ship_cluster'], r['date'])

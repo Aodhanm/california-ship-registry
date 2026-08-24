@@ -9,7 +9,7 @@
 - alt framing foregrounding the method: "Publishing a Dataset's Refusals: The California Ship Registry, 1769–1846"
 
 ## Abstract *(150–200 words, Aodhan writes)*
-Beats to hit: what it is (first machine-readable registry of documented vessel visits to Alta California, founding→gold rush) · unit = the visit, each with manuscript-leaf citations + scan links · sources (C-A calendar → Bancroft → Ogden) · size (392 ships / 2,108 visits, 100% source-reviewed) · the distinctive contribution (the phantom taxonomy; the dataset publishes its refusals) · the empirical payoff (the four-empire traffic shift). Source: README + TRAFFIC.md.
+Beats to hit: what it is (first machine-readable registry of documented vessel visits to Alta California, founding→gold rush) · unit = the visit, each with manuscript-leaf citations + scan links · sources (C-A calendar → Bancroft → Ogden) · size (401 ships / 2,072 visits, 100% source-reviewed) · the distinctive contribution (the phantom taxonomy; the dataset publishes its refusals) · the empirical payoff (the four-empire traffic shift). Source: README + TRAFFIC.md.
 
 ## (1) Context / Overview *(Aodhan writes)*
 - **The gap:** no machine-readable register of pre-1846 California shipping exists; the maritime record is scattered across the destroyed C-A originals (Savage transcripts), Bancroft, Ogden, Howay, the Russian archives. Source: lit context in METHOD.md + the historiography.
@@ -21,7 +21,7 @@ Beats to hit: what it is (first machine-readable registry of documented vessel v
 - **Corroboration:** roster-wide audit against Bancroft (all 7 vols) + Ogden (1941 appendix); every ship traced to a reliable source. Source: OGDEN-RECONCILIATION.md, the corroboration audit in FALSE-POSITIVE-REGISTER.md.
 - **⭐ The phantom taxonomy — the methodological contribution.** "A dataset's credibility lives in its refusals." The seven false-ship classes (policy phantom, era-conflation, person-as-ship, place-as-ship, OCR garble, mis-flagging, retrospective mention), each with its detection test and guard. This is what distinguishes the dataset from a naive name-scrape and is the paper's citable idea. Source: PHANTOM-SHIPS.md + FALSE-POSITIVE-REGISTER.md.
 - **Quality control:** the draft→reviewed→verified tiers; the verification protocol (all firsts + ⭐-records + a seeded ≥10% sample, logged); the excerpt-integrity audit (266/337 links machine-validated). Source: CODEBOOK.md verification protocol, verification-log.csv, EXCERPT-AUDIT.md.
-- **Limitations (state them plainly):** contraband under-recorded by design (counts are a floor); Alta-only completeness; flag inference on ~half the visits; the excerpt is a snippet, not evidence. Source: CODEBOOK limits, TRAFFIC.md caveats.
+- **Limitations (state them plainly):** contraband under-recorded by design (counts are a floor); Alta-only completeness; **flag reliability is period-dependent** — strong for the Spanish era, weaker for the Mexican (1822+), where a documented flag audit corrected 43 harvest-artifact `spain` rows and installed a post-1821 Spain ceiling guard (CODEBOOK "Flag reliability"; the *Asia* is the one genuine post-1821 Spanish visit); the excerpt is a snippet, not evidence. Source: CODEBOOK limits, PROVENANCE.md, TRAFFIC.md caveats.
 
 ## (3) Dataset description *(mostly structured fields — Aodhan fills the DOI/version)*
 | item | value |
@@ -35,7 +35,7 @@ Beats to hit: what it is (first machine-readable registry of documented vessel v
 | Repository / DOI | github.com/Aodhanm/california-ship-registry · Zenodo DOI *(pending Phase 1 mint)* |
 | Temporal coverage | 1767–1848 (title span 1769–1846) |
 | Spatial coverage | Alta California (Baja incidental) |
-| Size | 392 vessels · 2,108 visits |
+| Size | 401 vessels · 2,072 visits |
 
 ## (4) Reuse potential *(Aodhan writes)*
 - Borderlands / Pacific-world historians: quantified traffic, per-vessel itineraries, leaf-linked evidence.
