@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -133,13 +133,13 @@ flag. This is that change, year by year, from the registry's own visit records.<
   <div class="viz-root" data-palette="#2a78d6,#eb6834,#1baf7a,#eda100,#e87ba4">
     <div class="legend" id="legend"></div>
     <div class="viz-scroll"><svg id="chart" viewBox="0 0 880 430" role="img"
-      aria-label="Share of recorded arrivals in California by flag, each year from 1769 to 1821, as a five-year centred mean. Spain begins at 100 percent and falls to about 11 percent. The United States rises from zero to a peak near 58 percent. Russia appears after 1806 and peaks above 40 percent in the 1810s. Britain peaks around 25 percent in the mid 1790s."></svg></div>
+      aria-label="Line chart. Share of recorded arrivals in California by flag, each year from 1769 to 1821, as a five-year centred mean. Spain begins at 100 percent and falls to about 11 percent. The United States rises from zero to a peak near 58 percent. Russia appears after 1806 and peaks above 40 percent in the 1810s. Britain peaks around 25 percent in the mid 1790s."></svg></div>
   </div>
   <figcaption><b>Figure 1.</b> Share of recorded arrivals by flag, every year from 1769 to
-  1821. The line is a five-year centred mean; the faint points behind it are each single
-  year's own share, sized by how many records that year holds. The line breaks wherever its
-  window falls below twenty records, and the strip beneath gives <i>n</i> for every year, so
-  no point is read without the evidence under it.</figcaption>
+  1821, as a five-year centred mean. Each year's own unsmoothed share is available on hover
+  and in the table. The line breaks wherever its window falls below twenty records, and the
+  strip beneath gives <i>n</i> for every year, so no stretch of the curve is read without the
+  evidence under it.</figcaption>
 </figure>
 
 <div class="note">
@@ -254,9 +254,10 @@ balance in the <i>Commercial and Political Atlas</i> of 1786, and the elements h
 labelled axes, a recessive grid, one line per series, direct labels at the ends — are
 his. Two later rules govern the rest. Edward Tufte's: spend the ink on data and take it
 off everything else, which is why the grid is a hairline and no line carries a number at
-every point. Tufte's other one is that a chart should show the data it was computed
-from: the smoothed line is drawn over the annual points it averages, not in place of
-them, so the reader can see how much scatter each part of the curve is hiding. Colours are not chosen by eye. The four series hues were run through a
+every point. Tufte's other one is that a chart should show the data it was computed from — met
+here by the <i>n</i> strip beneath the plot and by the table, which carry every annual
+value the curve averages, rather than by scattering fifty-three years of points across the
+plot itself. Colours are not chosen by eye. The four series hues were run through a
 colour-vision check in both light and dark mode: the closest adjacent pair
 (Britain against Russia) separates by ΔE&nbsp;9.1 under simulated protanopia and
 ΔE&nbsp;22.9 under normal vision, against thresholds of 8 and 15. Two of the light-mode

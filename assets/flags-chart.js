@@ -35,7 +35,7 @@
     t.textContent = 'Whose ships were in California waters, 1769–1821'; svg.appendChild(t);
     var s2 = el('text', { x: 0, y: 38, class: 'g-sub' });
     s2.textContent = 'share of recorded arrivals · 5-year centred mean over ' + D.n_in_scope.toLocaleString() +
-                     ' visits · annual values behind the line';
+                     ' visits · each year’s own value on hover and in the table';
     svg.appendChild(s2);
 
     [0, 25, 50, 75, 100].forEach(function (v) {
@@ -93,16 +93,6 @@
       a.setAttribute('font-size', '10'); a.setAttribute('font-weight', '700');
       a.setAttribute('fill', col); a.textContent = f.who + ' ' + f.year;
       svg.appendChild(a);
-    });
-
-    // annual scatter first, so the smoothed line sits on top of its own evidence
-    order.forEach(function (k) {
-      D.annual[k].forEach(function (p) {
-        if (p.share == null || !p.n) return;
-        svg.appendChild(el('circle', { cx: x(p.year), cy: y(p.share),
-          r: Math.max(1.4, Math.min(4, Math.sqrt(p.n) * 0.62)),
-          fill: SLOT[k], opacity: .2 }));
-      });
     });
 
     var ends = [];
@@ -177,7 +167,7 @@
         return '<span><i style="background:' + SLOT[k] + '"></i>' + esc(lab[k]) +
                '<span style="opacity:.6;font-size:.9em">&nbsp;from ' + (window.__D.first_arrival[k] || '') + '</span></span>';
       }).join('') +
-      '<span style="opacity:.75"><i style="background:var(--text-muted);height:7px;width:7px;border-radius:50%"></i>a single year</span>' +
+
       '<span style="opacity:.75"><i style="background:var(--text-secondary);height:7px;width:7px;border-radius:50%"></i>first visit under that flag</span>';
   }
 
