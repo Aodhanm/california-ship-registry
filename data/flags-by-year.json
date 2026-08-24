@@ -20,13 +20,15 @@
   "usa": "United States",
   "russia": "Russia",
   "britain": "Britain",
-  "other": "France and Argentina"
+  "france": "France",
+  "other": "Argentina"
  },
  "order": [
   "spain",
   "usa",
   "russia",
   "britain",
+  "france",
   "other"
  ],
  "first_arrival": {
@@ -34,7 +36,8 @@
   "usa": 1796,
   "russia": 1806,
   "britain": 1792,
-  "other": 1786
+  "france": 1786,
+  "other": 1818
  },
  "years": [
   1769,
@@ -442,37 +445,37 @@
    },
    {
     "year": 1774,
-    "share": 0.0,
+    "share": null,
     "window_n": 28
    },
    {
     "year": 1775,
-    "share": 0.0,
+    "share": null,
     "window_n": 29
    },
    {
     "year": 1776,
-    "share": 0.0,
+    "share": null,
     "window_n": 35
    },
    {
     "year": 1777,
-    "share": 0.0,
+    "share": null,
     "window_n": 43
    },
    {
     "year": 1778,
-    "share": 0.0,
+    "share": null,
     "window_n": 33
    },
    {
     "year": 1779,
-    "share": 0.0,
+    "share": null,
     "window_n": 22
    },
    {
     "year": 1780,
-    "share": 0.0,
+    "share": null,
     "window_n": 21
    },
    {
@@ -487,67 +490,67 @@
    },
    {
     "year": 1783,
-    "share": 0.0,
+    "share": null,
     "window_n": 22
    },
    {
     "year": 1784,
-    "share": 0.0,
+    "share": null,
     "window_n": 38
    },
    {
     "year": 1785,
-    "share": 0.0,
+    "share": null,
     "window_n": 44
    },
    {
     "year": 1786,
-    "share": 0.0,
+    "share": null,
     "window_n": 44
    },
    {
     "year": 1787,
-    "share": 0.0,
+    "share": null,
     "window_n": 37
    },
    {
     "year": 1788,
-    "share": 0.0,
+    "share": null,
     "window_n": 34
    },
    {
     "year": 1789,
-    "share": 0.0,
+    "share": null,
     "window_n": 38
    },
    {
     "year": 1790,
-    "share": 0.0,
+    "share": null,
     "window_n": 53
    },
    {
     "year": 1791,
-    "share": 0.0,
+    "share": null,
     "window_n": 99
    },
    {
     "year": 1792,
-    "share": 0.0,
+    "share": null,
     "window_n": 155
    },
    {
     "year": 1793,
-    "share": 0.0,
+    "share": null,
     "window_n": 197
    },
    {
     "year": 1794,
-    "share": 0.0,
+    "share": null,
     "window_n": 220
    },
    {
     "year": 1795,
-    "share": 0.0,
+    "share": null,
     "window_n": 260
    },
    {
@@ -709,37 +712,37 @@
    },
    {
     "year": 1774,
-    "share": 0.0,
+    "share": null,
     "window_n": 28
    },
    {
     "year": 1775,
-    "share": 0.0,
+    "share": null,
     "window_n": 29
    },
    {
     "year": 1776,
-    "share": 0.0,
+    "share": null,
     "window_n": 35
    },
    {
     "year": 1777,
-    "share": 0.0,
+    "share": null,
     "window_n": 43
    },
    {
     "year": 1778,
-    "share": 0.0,
+    "share": null,
     "window_n": 33
    },
    {
     "year": 1779,
-    "share": 0.0,
+    "share": null,
     "window_n": 22
    },
    {
     "year": 1780,
-    "share": 0.0,
+    "share": null,
     "window_n": 21
    },
    {
@@ -754,117 +757,117 @@
    },
    {
     "year": 1783,
-    "share": 0.0,
+    "share": null,
     "window_n": 22
    },
    {
     "year": 1784,
-    "share": 0.0,
+    "share": null,
     "window_n": 38
    },
    {
     "year": 1785,
-    "share": 0.0,
+    "share": null,
     "window_n": 44
    },
    {
     "year": 1786,
-    "share": 0.0,
+    "share": null,
     "window_n": 44
    },
    {
     "year": 1787,
-    "share": 0.0,
+    "share": null,
     "window_n": 37
    },
    {
     "year": 1788,
-    "share": 0.0,
+    "share": null,
     "window_n": 34
    },
    {
     "year": 1789,
-    "share": 0.0,
+    "share": null,
     "window_n": 38
    },
    {
     "year": 1790,
-    "share": 0.0,
+    "share": null,
     "window_n": 53
    },
    {
     "year": 1791,
-    "share": 0.0,
+    "share": null,
     "window_n": 99
    },
    {
     "year": 1792,
-    "share": 0.0,
+    "share": null,
     "window_n": 155
    },
    {
     "year": 1793,
-    "share": 0.0,
+    "share": null,
     "window_n": 197
    },
    {
     "year": 1794,
-    "share": 0.0,
+    "share": null,
     "window_n": 220
    },
    {
     "year": 1795,
-    "share": 0.0,
+    "share": null,
     "window_n": 260
    },
    {
     "year": 1796,
-    "share": 0.0,
+    "share": null,
     "window_n": 245
    },
    {
     "year": 1797,
-    "share": 0.0,
+    "share": null,
     "window_n": 208
    },
    {
     "year": 1798,
-    "share": 0.0,
+    "share": null,
     "window_n": 172
    },
    {
     "year": 1799,
-    "share": 0.0,
+    "share": null,
     "window_n": 147
    },
    {
     "year": 1800,
-    "share": 0.0,
+    "share": null,
     "window_n": 86
    },
    {
     "year": 1801,
-    "share": 0.0,
+    "share": null,
     "window_n": 73
    },
    {
     "year": 1802,
-    "share": 0.0,
+    "share": null,
     "window_n": 74
    },
    {
     "year": 1803,
-    "share": 0.0,
+    "share": null,
     "window_n": 75
    },
    {
     "year": 1804,
-    "share": 0.0,
+    "share": null,
     "window_n": 88
    },
    {
     "year": 1805,
-    "share": 0.0,
+    "share": null,
     "window_n": 105
    },
    {
@@ -976,37 +979,37 @@
    },
    {
     "year": 1774,
-    "share": 0.0,
+    "share": null,
     "window_n": 28
    },
    {
     "year": 1775,
-    "share": 0.0,
+    "share": null,
     "window_n": 29
    },
    {
     "year": 1776,
-    "share": 0.0,
+    "share": null,
     "window_n": 35
    },
    {
     "year": 1777,
-    "share": 0.0,
+    "share": null,
     "window_n": 43
    },
    {
     "year": 1778,
-    "share": 0.0,
+    "share": null,
     "window_n": 33
    },
    {
     "year": 1779,
-    "share": 0.0,
+    "share": null,
     "window_n": 22
    },
    {
     "year": 1780,
-    "share": 0.0,
+    "share": null,
     "window_n": 21
    },
    {
@@ -1021,47 +1024,47 @@
    },
    {
     "year": 1783,
-    "share": 0.0,
+    "share": null,
     "window_n": 22
    },
    {
     "year": 1784,
-    "share": 0.0,
+    "share": null,
     "window_n": 38
    },
    {
     "year": 1785,
-    "share": 0.0,
+    "share": null,
     "window_n": 44
    },
    {
     "year": 1786,
-    "share": 0.0,
+    "share": null,
     "window_n": 44
    },
    {
     "year": 1787,
-    "share": 0.0,
+    "share": null,
     "window_n": 37
    },
    {
     "year": 1788,
-    "share": 0.0,
+    "share": null,
     "window_n": 34
    },
    {
     "year": 1789,
-    "share": 0.0,
+    "share": null,
     "window_n": 38
    },
    {
     "year": 1790,
-    "share": 0.0,
+    "share": null,
     "window_n": 53
    },
    {
     "year": 1791,
-    "share": 0.0,
+    "share": null,
     "window_n": 99
    },
    {
@@ -1215,7 +1218,7 @@
     "window_n": 54
    }
   ],
-  "other": [
+  "france": [
    {
     "year": 1769,
     "share": null,
@@ -1243,37 +1246,37 @@
    },
    {
     "year": 1774,
-    "share": 0.0,
+    "share": null,
     "window_n": 28
    },
    {
     "year": 1775,
-    "share": 0.0,
+    "share": null,
     "window_n": 29
    },
    {
     "year": 1776,
-    "share": 0.0,
+    "share": null,
     "window_n": 35
    },
    {
     "year": 1777,
-    "share": 0.0,
+    "share": null,
     "window_n": 43
    },
    {
     "year": 1778,
-    "share": 0.0,
+    "share": null,
     "window_n": 33
    },
    {
     "year": 1779,
-    "share": 0.0,
+    "share": null,
     "window_n": 22
    },
    {
     "year": 1780,
-    "share": 0.0,
+    "share": null,
     "window_n": 21
    },
    {
@@ -1288,17 +1291,17 @@
    },
    {
     "year": 1783,
-    "share": 0.0,
+    "share": null,
     "window_n": 22
    },
    {
     "year": 1784,
-    "share": 0.0,
+    "share": null,
     "window_n": 38
    },
    {
     "year": 1785,
-    "share": 0.0,
+    "share": null,
     "window_n": 44
    },
    {
@@ -1453,22 +1456,289 @@
    },
    {
     "year": 1816,
-    "share": 4.4,
+    "share": 2.9,
     "window_n": 136
    },
    {
     "year": 1817,
-    "share": 4.3,
+    "share": 2.9,
     "window_n": 140
    },
    {
     "year": 1818,
-    "share": 4.9,
+    "share": 3.3,
     "window_n": 123
    },
    {
     "year": 1819,
-    "share": 5.9,
+    "share": 4.0,
+    "window_n": 101
+   },
+   {
+    "year": 1820,
+    "share": 0.0,
+    "window_n": 70
+   },
+   {
+    "year": 1821,
+    "share": 0.0,
+    "window_n": 54
+   }
+  ],
+  "other": [
+   {
+    "year": 1769,
+    "share": null,
+    "window_n": 4
+   },
+   {
+    "year": 1770,
+    "share": null,
+    "window_n": 8
+   },
+   {
+    "year": 1771,
+    "share": null,
+    "window_n": 8
+   },
+   {
+    "year": 1772,
+    "share": null,
+    "window_n": 5
+   },
+   {
+    "year": 1773,
+    "share": null,
+    "window_n": 17
+   },
+   {
+    "year": 1774,
+    "share": null,
+    "window_n": 28
+   },
+   {
+    "year": 1775,
+    "share": null,
+    "window_n": 29
+   },
+   {
+    "year": 1776,
+    "share": null,
+    "window_n": 35
+   },
+   {
+    "year": 1777,
+    "share": null,
+    "window_n": 43
+   },
+   {
+    "year": 1778,
+    "share": null,
+    "window_n": 33
+   },
+   {
+    "year": 1779,
+    "share": null,
+    "window_n": 22
+   },
+   {
+    "year": 1780,
+    "share": null,
+    "window_n": 21
+   },
+   {
+    "year": 1781,
+    "share": null,
+    "window_n": 17
+   },
+   {
+    "year": 1782,
+    "share": null,
+    "window_n": 16
+   },
+   {
+    "year": 1783,
+    "share": null,
+    "window_n": 22
+   },
+   {
+    "year": 1784,
+    "share": null,
+    "window_n": 38
+   },
+   {
+    "year": 1785,
+    "share": null,
+    "window_n": 44
+   },
+   {
+    "year": 1786,
+    "share": null,
+    "window_n": 44
+   },
+   {
+    "year": 1787,
+    "share": null,
+    "window_n": 37
+   },
+   {
+    "year": 1788,
+    "share": null,
+    "window_n": 34
+   },
+   {
+    "year": 1789,
+    "share": null,
+    "window_n": 38
+   },
+   {
+    "year": 1790,
+    "share": null,
+    "window_n": 53
+   },
+   {
+    "year": 1791,
+    "share": null,
+    "window_n": 99
+   },
+   {
+    "year": 1792,
+    "share": null,
+    "window_n": 155
+   },
+   {
+    "year": 1793,
+    "share": null,
+    "window_n": 197
+   },
+   {
+    "year": 1794,
+    "share": null,
+    "window_n": 220
+   },
+   {
+    "year": 1795,
+    "share": null,
+    "window_n": 260
+   },
+   {
+    "year": 1796,
+    "share": null,
+    "window_n": 245
+   },
+   {
+    "year": 1797,
+    "share": null,
+    "window_n": 208
+   },
+   {
+    "year": 1798,
+    "share": null,
+    "window_n": 172
+   },
+   {
+    "year": 1799,
+    "share": null,
+    "window_n": 147
+   },
+   {
+    "year": 1800,
+    "share": null,
+    "window_n": 86
+   },
+   {
+    "year": 1801,
+    "share": null,
+    "window_n": 73
+   },
+   {
+    "year": 1802,
+    "share": null,
+    "window_n": 74
+   },
+   {
+    "year": 1803,
+    "share": null,
+    "window_n": 75
+   },
+   {
+    "year": 1804,
+    "share": null,
+    "window_n": 88
+   },
+   {
+    "year": 1805,
+    "share": null,
+    "window_n": 105
+   },
+   {
+    "year": 1806,
+    "share": null,
+    "window_n": 96
+   },
+   {
+    "year": 1807,
+    "share": null,
+    "window_n": 84
+   },
+   {
+    "year": 1808,
+    "share": null,
+    "window_n": 84
+   },
+   {
+    "year": 1809,
+    "share": null,
+    "window_n": 56
+   },
+   {
+    "year": 1810,
+    "share": null,
+    "window_n": 45
+   },
+   {
+    "year": 1811,
+    "share": null,
+    "window_n": 40
+   },
+   {
+    "year": 1812,
+    "share": null,
+    "window_n": 49
+   },
+   {
+    "year": 1813,
+    "share": null,
+    "window_n": 67
+   },
+   {
+    "year": 1814,
+    "share": null,
+    "window_n": 105
+   },
+   {
+    "year": 1815,
+    "share": null,
+    "window_n": 126
+   },
+   {
+    "year": 1816,
+    "share": null,
+    "window_n": 136
+   },
+   {
+    "year": 1817,
+    "share": null,
+    "window_n": 140
+   },
+   {
+    "year": 1818,
+    "share": 1.6,
+    "window_n": 123
+   },
+   {
+    "year": 1819,
+    "share": 2.0,
     "window_n": 101
    },
    {
@@ -1487,1336 +1757,1603 @@
   "spain": [
    {
     "year": 1769,
-    "share": 100.0,
-    "n": 4
+    "n": 4,
+    "share": 100.0
    },
    {
     "year": 1770,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1771,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1772,
-    "share": 100.0,
-    "n": 4
+    "n": 4,
+    "share": 100.0
    },
    {
     "year": 1773,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1774,
-    "share": 100.0,
-    "n": 1
+    "n": 1,
+    "share": 100.0
    },
    {
     "year": 1775,
-    "share": 100.0,
-    "n": 12
+    "n": 12,
+    "share": 100.0
    },
    {
     "year": 1776,
-    "share": 100.0,
-    "n": 11
+    "n": 11,
+    "share": 100.0
    },
    {
     "year": 1777,
-    "share": 100.0,
-    "n": 5
+    "n": 5,
+    "share": 100.0
    },
    {
     "year": 1778,
-    "share": 100.0,
-    "n": 6
+    "n": 6,
+    "share": 100.0
    },
    {
     "year": 1779,
-    "share": 100.0,
-    "n": 9
+    "n": 9,
+    "share": 100.0
    },
    {
     "year": 1780,
-    "share": 100.0,
-    "n": 2
+    "n": 2,
+    "share": 100.0
    },
    {
     "year": 1781,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1782,
-    "share": 100.0,
-    "n": 4
+    "n": 4,
+    "share": 100.0
    },
    {
     "year": 1783,
-    "share": 100.0,
-    "n": 2
+    "n": 2,
+    "share": 100.0
    },
    {
     "year": 1784,
-    "share": 100.0,
-    "n": 8
+    "n": 8,
+    "share": 100.0
    },
    {
     "year": 1785,
-    "share": 100.0,
-    "n": 8
+    "n": 8,
+    "share": 100.0
    },
    {
     "year": 1786,
-    "share": 87.5,
-    "n": 16
+    "n": 16,
+    "share": 87.5
    },
    {
     "year": 1787,
-    "share": 100.0,
-    "n": 10
+    "n": 10,
+    "share": 100.0
    },
    {
     "year": 1788,
-    "share": 100.0,
-    "n": 2
+    "n": 2,
+    "share": 100.0
    },
    {
     "year": 1789,
-    "share": 100.0,
-    "n": 1
+    "n": 1,
+    "share": 100.0
    },
    {
     "year": 1790,
-    "share": 100.0,
-    "n": 5
+    "n": 5,
+    "share": 100.0
    },
    {
     "year": 1791,
-    "share": 100.0,
-    "n": 20
+    "n": 20,
+    "share": 100.0
    },
    {
     "year": 1792,
-    "share": 76.0,
-    "n": 25
+    "n": 25,
+    "share": 76.0
    },
    {
     "year": 1793,
-    "share": 60.4,
-    "n": 48
+    "n": 48,
+    "share": 60.4
    },
    {
     "year": 1794,
-    "share": 80.7,
-    "n": 57
+    "n": 57,
+    "share": 80.7
    },
    {
     "year": 1795,
-    "share": 74.5,
-    "n": 47
+    "n": 47,
+    "share": 74.5
    },
    {
     "year": 1796,
-    "share": 83.7,
-    "n": 43
+    "n": 43,
+    "share": 83.7
    },
    {
     "year": 1797,
-    "share": 93.8,
-    "n": 65
+    "n": 65,
+    "share": 93.8
    },
    {
     "year": 1798,
-    "share": 87.9,
-    "n": 33
+    "n": 33,
+    "share": 87.9
    },
    {
     "year": 1799,
-    "share": 60.0,
-    "n": 20
+    "n": 20,
+    "share": 60.0
    },
    {
     "year": 1800,
-    "share": 81.8,
-    "n": 11
+    "n": 11,
+    "share": 81.8
    },
    {
     "year": 1801,
-    "share": 83.3,
-    "n": 18
+    "n": 18,
+    "share": 83.3
    },
    {
     "year": 1802,
-    "share": 50.0,
-    "n": 4
+    "n": 4,
+    "share": 50.0
    },
    {
     "year": 1803,
-    "share": 50.0,
-    "n": 20
+    "n": 20,
+    "share": 50.0
    },
    {
     "year": 1804,
-    "share": 28.6,
-    "n": 21
+    "n": 21,
+    "share": 28.6
    },
    {
     "year": 1805,
-    "share": 75.0,
-    "n": 12
+    "n": 12,
+    "share": 75.0
    },
    {
     "year": 1806,
-    "share": 9.7,
-    "n": 31
+    "n": 31,
+    "share": 9.7
    },
    {
     "year": 1807,
-    "share": 33.3,
-    "n": 21
+    "n": 21,
+    "share": 33.3
    },
    {
     "year": 1808,
-    "share": 36.4,
-    "n": 11
+    "n": 11,
+    "share": 36.4
    },
    {
     "year": 1809,
-    "share": 22.2,
-    "n": 9
+    "n": 9,
+    "share": 22.2
    },
    {
     "year": 1810,
-    "share": 33.3,
-    "n": 12
+    "n": 12,
+    "share": 33.3
    },
    {
     "year": 1811,
-    "share": 0.0,
-    "n": 3
+    "n": 3,
+    "share": 0.0
    },
    {
     "year": 1812,
-    "share": 0.0,
-    "n": 10
+    "n": 10,
+    "share": 0.0
    },
    {
     "year": 1813,
-    "share": 50.0,
-    "n": 6
+    "n": 6,
+    "share": 50.0
    },
    {
     "year": 1814,
-    "share": 11.1,
-    "n": 18
+    "n": 18,
+    "share": 11.1
    },
    {
     "year": 1815,
-    "share": 10.0,
-    "n": 30
+    "n": 30,
+    "share": 10.0
    },
    {
     "year": 1816,
-    "share": 12.2,
-    "n": 41
+    "n": 41,
+    "share": 12.2
    },
    {
     "year": 1817,
-    "share": 16.1,
-    "n": 31
+    "n": 31,
+    "share": 16.1
    },
    {
     "year": 1818,
-    "share": 0.0,
-    "n": 16
+    "n": 16,
+    "share": 0.0
    },
    {
     "year": 1819,
-    "share": 68.2,
-    "n": 22
+    "n": 22,
+    "share": 68.2
    },
    {
     "year": 1820,
-    "share": 30.8,
-    "n": 13
+    "n": 13,
+    "share": 30.8
    },
    {
     "year": 1821,
-    "share": 10.5,
-    "n": 19
+    "n": 19,
+    "share": 10.5
    }
   ],
   "usa": [
    {
     "year": 1769,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1770,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1771,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1772,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1773,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1774,
-    "share": 0.0,
-    "n": 1
+    "n": 1,
+    "share": null
    },
    {
     "year": 1775,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": null
    },
    {
     "year": 1776,
-    "share": 0.0,
-    "n": 11
+    "n": 11,
+    "share": null
    },
    {
     "year": 1777,
-    "share": 0.0,
-    "n": 5
+    "n": 5,
+    "share": null
    },
    {
     "year": 1778,
-    "share": 0.0,
-    "n": 6
+    "n": 6,
+    "share": null
    },
    {
     "year": 1779,
-    "share": 0.0,
-    "n": 9
+    "n": 9,
+    "share": null
    },
    {
     "year": 1780,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1781,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1782,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1783,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1784,
-    "share": 0.0,
-    "n": 8
+    "n": 8,
+    "share": null
    },
    {
     "year": 1785,
-    "share": 0.0,
-    "n": 8
+    "n": 8,
+    "share": null
    },
    {
     "year": 1786,
-    "share": 0.0,
-    "n": 16
+    "n": 16,
+    "share": null
    },
    {
     "year": 1787,
-    "share": 0.0,
-    "n": 10
+    "n": 10,
+    "share": null
    },
    {
     "year": 1788,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1789,
-    "share": 0.0,
-    "n": 1
+    "n": 1,
+    "share": null
    },
    {
     "year": 1790,
-    "share": 0.0,
-    "n": 5
+    "n": 5,
+    "share": null
    },
    {
     "year": 1791,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": null
    },
    {
     "year": 1792,
-    "share": 0.0,
-    "n": 25
+    "n": 25,
+    "share": null
    },
    {
     "year": 1793,
-    "share": 0.0,
-    "n": 48
+    "n": 48,
+    "share": null
    },
    {
     "year": 1794,
-    "share": 0.0,
-    "n": 57
+    "n": 57,
+    "share": null
    },
    {
     "year": 1795,
-    "share": 0.0,
-    "n": 47
+    "n": 47,
+    "share": null
    },
    {
     "year": 1796,
-    "share": 7.0,
-    "n": 43
+    "n": 43,
+    "share": 7.0
    },
    {
     "year": 1797,
-    "share": 0.0,
-    "n": 65
+    "n": 65,
+    "share": 0.0
    },
    {
     "year": 1798,
-    "share": 12.1,
-    "n": 33
+    "n": 33,
+    "share": 12.1
    },
    {
     "year": 1799,
-    "share": 10.0,
-    "n": 20
+    "n": 20,
+    "share": 10.0
    },
    {
     "year": 1800,
-    "share": 9.1,
-    "n": 11
+    "n": 11,
+    "share": 9.1
    },
    {
     "year": 1801,
-    "share": 11.1,
-    "n": 18
+    "n": 18,
+    "share": 11.1
    },
    {
     "year": 1802,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": 0.0
    },
    {
     "year": 1803,
-    "share": 50.0,
-    "n": 20
+    "n": 20,
+    "share": 50.0
    },
    {
     "year": 1804,
-    "share": 61.9,
-    "n": 21
+    "n": 21,
+    "share": 61.9
    },
    {
     "year": 1805,
-    "share": 25.0,
-    "n": 12
+    "n": 12,
+    "share": 25.0
    },
    {
     "year": 1806,
-    "share": 71.0,
-    "n": 31
+    "n": 31,
+    "share": 71.0
    },
    {
     "year": 1807,
-    "share": 61.9,
-    "n": 21
+    "n": 21,
+    "share": 61.9
    },
    {
     "year": 1808,
-    "share": 27.3,
-    "n": 11
+    "n": 11,
+    "share": 27.3
    },
    {
     "year": 1809,
-    "share": 55.6,
-    "n": 9
+    "n": 9,
+    "share": 55.6
    },
    {
     "year": 1810,
-    "share": 50.0,
-    "n": 12
+    "n": 12,
+    "share": 50.0
    },
    {
     "year": 1811,
-    "share": 0.0,
-    "n": 3
+    "n": 3,
+    "share": 0.0
    },
    {
     "year": 1812,
-    "share": 50.0,
-    "n": 10
+    "n": 10,
+    "share": 50.0
    },
    {
     "year": 1813,
-    "share": 50.0,
-    "n": 6
+    "n": 6,
+    "share": 50.0
    },
    {
     "year": 1814,
-    "share": 44.4,
-    "n": 18
+    "n": 18,
+    "share": 44.4
    },
    {
     "year": 1815,
-    "share": 30.0,
-    "n": 30
+    "n": 30,
+    "share": 30.0
    },
    {
     "year": 1816,
-    "share": 46.3,
-    "n": 41
+    "n": 41,
+    "share": 46.3
    },
    {
     "year": 1817,
-    "share": 12.9,
-    "n": 31
+    "n": 31,
+    "share": 12.9
    },
    {
     "year": 1818,
-    "share": 50.0,
-    "n": 16
+    "n": 16,
+    "share": 50.0
    },
    {
     "year": 1819,
-    "share": 22.7,
-    "n": 22
+    "n": 22,
+    "share": 22.7
    },
    {
     "year": 1820,
-    "share": 15.4,
-    "n": 13
+    "n": 13,
+    "share": 15.4
    },
    {
     "year": 1821,
-    "share": 10.5,
-    "n": 19
+    "n": 19,
+    "share": 10.5
    }
   ],
   "russia": [
    {
     "year": 1769,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1770,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1771,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1772,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1773,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1774,
-    "share": 0.0,
-    "n": 1
+    "n": 1,
+    "share": null
    },
    {
     "year": 1775,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": null
    },
    {
     "year": 1776,
-    "share": 0.0,
-    "n": 11
+    "n": 11,
+    "share": null
    },
    {
     "year": 1777,
-    "share": 0.0,
-    "n": 5
+    "n": 5,
+    "share": null
    },
    {
     "year": 1778,
-    "share": 0.0,
-    "n": 6
+    "n": 6,
+    "share": null
    },
    {
     "year": 1779,
-    "share": 0.0,
-    "n": 9
+    "n": 9,
+    "share": null
    },
    {
     "year": 1780,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1781,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1782,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1783,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1784,
-    "share": 0.0,
-    "n": 8
+    "n": 8,
+    "share": null
    },
    {
     "year": 1785,
-    "share": 0.0,
-    "n": 8
+    "n": 8,
+    "share": null
    },
    {
     "year": 1786,
-    "share": 0.0,
-    "n": 16
+    "n": 16,
+    "share": null
    },
    {
     "year": 1787,
-    "share": 0.0,
-    "n": 10
+    "n": 10,
+    "share": null
    },
    {
     "year": 1788,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1789,
-    "share": 0.0,
-    "n": 1
+    "n": 1,
+    "share": null
    },
    {
     "year": 1790,
-    "share": 0.0,
-    "n": 5
+    "n": 5,
+    "share": null
    },
    {
     "year": 1791,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": null
    },
    {
     "year": 1792,
-    "share": 0.0,
-    "n": 25
+    "n": 25,
+    "share": null
    },
    {
     "year": 1793,
-    "share": 0.0,
-    "n": 48
+    "n": 48,
+    "share": null
    },
    {
     "year": 1794,
-    "share": 0.0,
-    "n": 57
+    "n": 57,
+    "share": null
    },
    {
     "year": 1795,
-    "share": 0.0,
-    "n": 47
+    "n": 47,
+    "share": null
    },
    {
     "year": 1796,
-    "share": 0.0,
-    "n": 43
+    "n": 43,
+    "share": null
    },
    {
     "year": 1797,
-    "share": 0.0,
-    "n": 65
+    "n": 65,
+    "share": null
    },
    {
     "year": 1798,
-    "share": 0.0,
-    "n": 33
+    "n": 33,
+    "share": null
    },
    {
     "year": 1799,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": null
    },
    {
     "year": 1800,
-    "share": 0.0,
-    "n": 11
+    "n": 11,
+    "share": null
    },
    {
     "year": 1801,
-    "share": 0.0,
-    "n": 18
+    "n": 18,
+    "share": null
    },
    {
     "year": 1802,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1803,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": null
    },
    {
     "year": 1804,
-    "share": 0.0,
-    "n": 21
+    "n": 21,
+    "share": null
    },
    {
     "year": 1805,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": null
    },
    {
     "year": 1806,
-    "share": 12.9,
-    "n": 31
+    "n": 31,
+    "share": 12.9
    },
    {
     "year": 1807,
-    "share": 0.0,
-    "n": 21
+    "n": 21,
+    "share": 0.0
    },
    {
     "year": 1808,
-    "share": 18.2,
-    "n": 11
+    "n": 11,
+    "share": 18.2
    },
    {
     "year": 1809,
-    "share": 22.2,
-    "n": 9
+    "n": 9,
+    "share": 22.2
    },
    {
     "year": 1810,
-    "share": 16.7,
-    "n": 12
+    "n": 12,
+    "share": 16.7
    },
    {
     "year": 1811,
-    "share": 100.0,
-    "n": 3
+    "n": 3,
+    "share": 100.0
    },
    {
     "year": 1812,
-    "share": 50.0,
-    "n": 10
+    "n": 10,
+    "share": 50.0
    },
    {
     "year": 1813,
-    "share": 0.0,
-    "n": 6
+    "n": 6,
+    "share": 0.0
    },
    {
     "year": 1814,
-    "share": 22.2,
-    "n": 18
+    "n": 18,
+    "share": 22.2
    },
    {
     "year": 1815,
-    "share": 56.7,
-    "n": 30
+    "n": 30,
+    "share": 56.7
    },
    {
     "year": 1816,
-    "share": 36.6,
-    "n": 41
+    "n": 41,
+    "share": 36.6
    },
    {
     "year": 1817,
-    "share": 45.2,
-    "n": 31
+    "n": 31,
+    "share": 45.2
    },
    {
     "year": 1818,
-    "share": 37.5,
-    "n": 16
+    "n": 16,
+    "share": 37.5
    },
    {
     "year": 1819,
-    "share": 9.1,
-    "n": 22
+    "n": 22,
+    "share": 9.1
    },
    {
     "year": 1820,
-    "share": 46.2,
-    "n": 13
+    "n": 13,
+    "share": 46.2
    },
    {
     "year": 1821,
-    "share": 73.7,
-    "n": 19
+    "n": 19,
+    "share": 73.7
    }
   ],
   "britain": [
    {
     "year": 1769,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1770,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1771,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1772,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1773,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1774,
-    "share": 0.0,
-    "n": 1
+    "n": 1,
+    "share": null
    },
    {
     "year": 1775,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": null
    },
    {
     "year": 1776,
-    "share": 0.0,
-    "n": 11
+    "n": 11,
+    "share": null
    },
    {
     "year": 1777,
-    "share": 0.0,
-    "n": 5
+    "n": 5,
+    "share": null
    },
    {
     "year": 1778,
-    "share": 0.0,
-    "n": 6
+    "n": 6,
+    "share": null
    },
    {
     "year": 1779,
-    "share": 0.0,
-    "n": 9
+    "n": 9,
+    "share": null
    },
    {
     "year": 1780,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1781,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1782,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1783,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1784,
-    "share": 0.0,
-    "n": 8
+    "n": 8,
+    "share": null
    },
    {
     "year": 1785,
-    "share": 0.0,
-    "n": 8
+    "n": 8,
+    "share": null
    },
    {
     "year": 1786,
-    "share": 0.0,
-    "n": 16
+    "n": 16,
+    "share": null
    },
    {
     "year": 1787,
-    "share": 0.0,
-    "n": 10
+    "n": 10,
+    "share": null
    },
    {
     "year": 1788,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1789,
-    "share": 0.0,
-    "n": 1
+    "n": 1,
+    "share": null
    },
    {
     "year": 1790,
-    "share": 0.0,
-    "n": 5
+    "n": 5,
+    "share": null
    },
    {
     "year": 1791,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": null
    },
    {
     "year": 1792,
-    "share": 24.0,
-    "n": 25
+    "n": 25,
+    "share": 24.0
    },
    {
     "year": 1793,
-    "share": 39.6,
-    "n": 48
+    "n": 48,
+    "share": 39.6
    },
    {
     "year": 1794,
-    "share": 19.3,
-    "n": 57
+    "n": 57,
+    "share": 19.3
    },
    {
     "year": 1795,
-    "share": 25.5,
-    "n": 47
+    "n": 47,
+    "share": 25.5
    },
    {
     "year": 1796,
-    "share": 9.3,
-    "n": 43
+    "n": 43,
+    "share": 9.3
    },
    {
     "year": 1797,
-    "share": 6.2,
-    "n": 65
+    "n": 65,
+    "share": 6.2
    },
    {
     "year": 1798,
-    "share": 0.0,
-    "n": 33
+    "n": 33,
+    "share": 0.0
    },
    {
     "year": 1799,
-    "share": 30.0,
-    "n": 20
+    "n": 20,
+    "share": 30.0
    },
    {
     "year": 1800,
-    "share": 9.1,
-    "n": 11
+    "n": 11,
+    "share": 9.1
    },
    {
     "year": 1801,
-    "share": 5.6,
-    "n": 18
+    "n": 18,
+    "share": 5.6
    },
    {
     "year": 1802,
-    "share": 50.0,
-    "n": 4
+    "n": 4,
+    "share": 50.0
    },
    {
     "year": 1803,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": 0.0
    },
    {
     "year": 1804,
-    "share": 9.5,
-    "n": 21
+    "n": 21,
+    "share": 9.5
    },
    {
     "year": 1805,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": 0.0
    },
    {
     "year": 1806,
-    "share": 6.5,
-    "n": 31
+    "n": 31,
+    "share": 6.5
    },
    {
     "year": 1807,
-    "share": 4.8,
-    "n": 21
+    "n": 21,
+    "share": 4.8
    },
    {
     "year": 1808,
-    "share": 9.1,
-    "n": 11
+    "n": 11,
+    "share": 9.1
    },
    {
     "year": 1809,
-    "share": 0.0,
-    "n": 9
+    "n": 9,
+    "share": 0.0
    },
    {
     "year": 1810,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": 0.0
    },
    {
     "year": 1811,
-    "share": 0.0,
-    "n": 3
+    "n": 3,
+    "share": 0.0
    },
    {
     "year": 1812,
-    "share": 0.0,
-    "n": 10
+    "n": 10,
+    "share": 0.0
    },
    {
     "year": 1813,
-    "share": 0.0,
-    "n": 6
+    "n": 6,
+    "share": 0.0
    },
    {
     "year": 1814,
-    "share": 22.2,
-    "n": 18
+    "n": 18,
+    "share": 22.2
    },
    {
     "year": 1815,
-    "share": 3.3,
-    "n": 30
+    "n": 30,
+    "share": 3.3
    },
    {
     "year": 1816,
-    "share": 4.9,
-    "n": 41
+    "n": 41,
+    "share": 4.9
    },
    {
     "year": 1817,
-    "share": 12.9,
-    "n": 31
+    "n": 31,
+    "share": 12.9
    },
    {
     "year": 1818,
-    "share": 0.0,
-    "n": 16
+    "n": 16,
+    "share": 0.0
    },
    {
     "year": 1819,
-    "share": 0.0,
-    "n": 22
+    "n": 22,
+    "share": 0.0
    },
    {
     "year": 1820,
-    "share": 7.7,
-    "n": 13
+    "n": 13,
+    "share": 7.7
    },
    {
     "year": 1821,
-    "share": 5.3,
-    "n": 19
+    "n": 19,
+    "share": 5.3
+   }
+  ],
+  "france": [
+   {
+    "year": 1769,
+    "n": 4,
+    "share": null
+   },
+   {
+    "year": 1770,
+    "n": 0,
+    "share": null
+   },
+   {
+    "year": 1771,
+    "n": 0,
+    "share": null
+   },
+   {
+    "year": 1772,
+    "n": 4,
+    "share": null
+   },
+   {
+    "year": 1773,
+    "n": 0,
+    "share": null
+   },
+   {
+    "year": 1774,
+    "n": 1,
+    "share": null
+   },
+   {
+    "year": 1775,
+    "n": 12,
+    "share": null
+   },
+   {
+    "year": 1776,
+    "n": 11,
+    "share": null
+   },
+   {
+    "year": 1777,
+    "n": 5,
+    "share": null
+   },
+   {
+    "year": 1778,
+    "n": 6,
+    "share": null
+   },
+   {
+    "year": 1779,
+    "n": 9,
+    "share": null
+   },
+   {
+    "year": 1780,
+    "n": 2,
+    "share": null
+   },
+   {
+    "year": 1781,
+    "n": 0,
+    "share": null
+   },
+   {
+    "year": 1782,
+    "n": 4,
+    "share": null
+   },
+   {
+    "year": 1783,
+    "n": 2,
+    "share": null
+   },
+   {
+    "year": 1784,
+    "n": 8,
+    "share": null
+   },
+   {
+    "year": 1785,
+    "n": 8,
+    "share": null
+   },
+   {
+    "year": 1786,
+    "n": 16,
+    "share": 12.5
+   },
+   {
+    "year": 1787,
+    "n": 10,
+    "share": 0.0
+   },
+   {
+    "year": 1788,
+    "n": 2,
+    "share": 0.0
+   },
+   {
+    "year": 1789,
+    "n": 1,
+    "share": 0.0
+   },
+   {
+    "year": 1790,
+    "n": 5,
+    "share": 0.0
+   },
+   {
+    "year": 1791,
+    "n": 20,
+    "share": 0.0
+   },
+   {
+    "year": 1792,
+    "n": 25,
+    "share": 0.0
+   },
+   {
+    "year": 1793,
+    "n": 48,
+    "share": 0.0
+   },
+   {
+    "year": 1794,
+    "n": 57,
+    "share": 0.0
+   },
+   {
+    "year": 1795,
+    "n": 47,
+    "share": 0.0
+   },
+   {
+    "year": 1796,
+    "n": 43,
+    "share": 0.0
+   },
+   {
+    "year": 1797,
+    "n": 65,
+    "share": 0.0
+   },
+   {
+    "year": 1798,
+    "n": 33,
+    "share": 0.0
+   },
+   {
+    "year": 1799,
+    "n": 20,
+    "share": 0.0
+   },
+   {
+    "year": 1800,
+    "n": 11,
+    "share": 0.0
+   },
+   {
+    "year": 1801,
+    "n": 18,
+    "share": 0.0
+   },
+   {
+    "year": 1802,
+    "n": 4,
+    "share": 0.0
+   },
+   {
+    "year": 1803,
+    "n": 20,
+    "share": 0.0
+   },
+   {
+    "year": 1804,
+    "n": 21,
+    "share": 0.0
+   },
+   {
+    "year": 1805,
+    "n": 12,
+    "share": 0.0
+   },
+   {
+    "year": 1806,
+    "n": 31,
+    "share": 0.0
+   },
+   {
+    "year": 1807,
+    "n": 21,
+    "share": 0.0
+   },
+   {
+    "year": 1808,
+    "n": 11,
+    "share": 9.1
+   },
+   {
+    "year": 1809,
+    "n": 9,
+    "share": 0.0
+   },
+   {
+    "year": 1810,
+    "n": 12,
+    "share": 0.0
+   },
+   {
+    "year": 1811,
+    "n": 3,
+    "share": 0.0
+   },
+   {
+    "year": 1812,
+    "n": 10,
+    "share": 0.0
+   },
+   {
+    "year": 1813,
+    "n": 6,
+    "share": 0.0
+   },
+   {
+    "year": 1814,
+    "n": 18,
+    "share": 0.0
+   },
+   {
+    "year": 1815,
+    "n": 30,
+    "share": 0.0
+   },
+   {
+    "year": 1816,
+    "n": 41,
+    "share": 0.0
+   },
+   {
+    "year": 1817,
+    "n": 31,
+    "share": 12.9
+   },
+   {
+    "year": 1818,
+    "n": 16,
+    "share": 0.0
+   },
+   {
+    "year": 1819,
+    "n": 22,
+    "share": 0.0
+   },
+   {
+    "year": 1820,
+    "n": 13,
+    "share": 0.0
+   },
+   {
+    "year": 1821,
+    "n": 19,
+    "share": 0.0
    }
   ],
   "other": [
    {
     "year": 1769,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1770,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1771,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1772,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1773,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1774,
-    "share": 0.0,
-    "n": 1
+    "n": 1,
+    "share": null
    },
    {
     "year": 1775,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": null
    },
    {
     "year": 1776,
-    "share": 0.0,
-    "n": 11
+    "n": 11,
+    "share": null
    },
    {
     "year": 1777,
-    "share": 0.0,
-    "n": 5
+    "n": 5,
+    "share": null
    },
    {
     "year": 1778,
-    "share": 0.0,
-    "n": 6
+    "n": 6,
+    "share": null
    },
    {
     "year": 1779,
-    "share": 0.0,
-    "n": 9
+    "n": 9,
+    "share": null
    },
    {
     "year": 1780,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1781,
-    "share": null,
-    "n": 0
+    "n": 0,
+    "share": null
    },
    {
     "year": 1782,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1783,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1784,
-    "share": 0.0,
-    "n": 8
+    "n": 8,
+    "share": null
    },
    {
     "year": 1785,
-    "share": 0.0,
-    "n": 8
+    "n": 8,
+    "share": null
    },
    {
     "year": 1786,
-    "share": 12.5,
-    "n": 16
+    "n": 16,
+    "share": null
    },
    {
     "year": 1787,
-    "share": 0.0,
-    "n": 10
+    "n": 10,
+    "share": null
    },
    {
     "year": 1788,
-    "share": 0.0,
-    "n": 2
+    "n": 2,
+    "share": null
    },
    {
     "year": 1789,
-    "share": 0.0,
-    "n": 1
+    "n": 1,
+    "share": null
    },
    {
     "year": 1790,
-    "share": 0.0,
-    "n": 5
+    "n": 5,
+    "share": null
    },
    {
     "year": 1791,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": null
    },
    {
     "year": 1792,
-    "share": 0.0,
-    "n": 25
+    "n": 25,
+    "share": null
    },
    {
     "year": 1793,
-    "share": 0.0,
-    "n": 48
+    "n": 48,
+    "share": null
    },
    {
     "year": 1794,
-    "share": 0.0,
-    "n": 57
+    "n": 57,
+    "share": null
    },
    {
     "year": 1795,
-    "share": 0.0,
-    "n": 47
+    "n": 47,
+    "share": null
    },
    {
     "year": 1796,
-    "share": 0.0,
-    "n": 43
+    "n": 43,
+    "share": null
    },
    {
     "year": 1797,
-    "share": 0.0,
-    "n": 65
+    "n": 65,
+    "share": null
    },
    {
     "year": 1798,
-    "share": 0.0,
-    "n": 33
+    "n": 33,
+    "share": null
    },
    {
     "year": 1799,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": null
    },
    {
     "year": 1800,
-    "share": 0.0,
-    "n": 11
+    "n": 11,
+    "share": null
    },
    {
     "year": 1801,
-    "share": 0.0,
-    "n": 18
+    "n": 18,
+    "share": null
    },
    {
     "year": 1802,
-    "share": 0.0,
-    "n": 4
+    "n": 4,
+    "share": null
    },
    {
     "year": 1803,
-    "share": 0.0,
-    "n": 20
+    "n": 20,
+    "share": null
    },
    {
     "year": 1804,
-    "share": 0.0,
-    "n": 21
+    "n": 21,
+    "share": null
    },
    {
     "year": 1805,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": null
    },
    {
     "year": 1806,
-    "share": 0.0,
-    "n": 31
+    "n": 31,
+    "share": null
    },
    {
     "year": 1807,
-    "share": 0.0,
-    "n": 21
+    "n": 21,
+    "share": null
    },
    {
     "year": 1808,
-    "share": 9.1,
-    "n": 11
+    "n": 11,
+    "share": null
    },
    {
     "year": 1809,
-    "share": 0.0,
-    "n": 9
+    "n": 9,
+    "share": null
    },
    {
     "year": 1810,
-    "share": 0.0,
-    "n": 12
+    "n": 12,
+    "share": null
    },
    {
     "year": 1811,
-    "share": 0.0,
-    "n": 3
+    "n": 3,
+    "share": null
    },
    {
     "year": 1812,
-    "share": 0.0,
-    "n": 10
+    "n": 10,
+    "share": null
    },
    {
     "year": 1813,
-    "share": 0.0,
-    "n": 6
+    "n": 6,
+    "share": null
    },
    {
     "year": 1814,
-    "share": 0.0,
-    "n": 18
+    "n": 18,
+    "share": null
    },
    {
     "year": 1815,
-    "share": 0.0,
-    "n": 30
+    "n": 30,
+    "share": null
    },
    {
     "year": 1816,
-    "share": 0.0,
-    "n": 41
+    "n": 41,
+    "share": null
    },
    {
     "year": 1817,
-    "share": 12.9,
-    "n": 31
+    "n": 31,
+    "share": null
    },
    {
     "year": 1818,
-    "share": 12.5,
-    "n": 16
+    "n": 16,
+    "share": 12.5
    },
    {
     "year": 1819,
-    "share": 0.0,
-    "n": 22
+    "n": 22,
+    "share": 0.0
    },
    {
     "year": 1820,
-    "share": 0.0,
-    "n": 13
+    "n": 13,
+    "share": 0.0
    },
    {
     "year": 1821,
-    "share": 0.0,
-    "n": 19
+    "n": 19,
+    "share": 0.0
    }
   ]
  },
@@ -2944,9 +3481,9 @@
  ],
  "caveats": [
   "Scope is 1769–1821. The registry's flag field is not reliable after Mexican independence: 43 visits dated 1822 or later are flagged Spanish, among them vessels named Morelos, Matamoros and Mariquita, and the American Brookline, Volunteer and Leonidas. 19% of post-1821 rows carry a vessel name that appears under a different flag elsewhere in the file, against 7% before 1822.",
-  "The line is a 5-year centred rolling share, blank wherever its window holds fewer than 20 records. Faint points behind it are the unsmoothed annual values; the strip beneath gives each year's n.",
+  "Each line begins at that flag's first recorded arrival and is blank before it: a flag that has not yet come has no share, and a flat zero would draw absence as a measurement. The line is a 5-year centred rolling share, also blank wherever its window holds fewer than 20 records. Faint points behind it are the unsmoothed annual values; the strip beneath gives each year's n.",
   "Flag is the flag as attested or inferred in the record, not a vessel's registry. Within this window 56% of rows are 'attested/inferred' rather than plainly stated.",
   "Most visit rows remain at draft status in the registry's own review workflow.",
-  "The line is clamped to zero before each flag's first recorded arrival: a centred mean would otherwise show every flag appearing two years early."
+  "France is 7 records across three separate occasions, not a trend; two of them are flagged for review (an 1808 decree that is a mention rather than a visit, and a probable duplicate in 1817). Argentina is Bouchard alone and is shown only as an arrival."
  ]
 }

@@ -32,9 +32,9 @@ WINDOW, MIN_WINDOW_N = 5, 20
 # Roquefeuil 1817, Bouchard 1818 - and a rolling share would draw three events as
 # a trickle. They are emitted as named events instead, and excluded from the
 # denominator note below.
-NAMED = ["spain", "usa", "russia", "britain"]
+NAMED = ["spain", "usa", "russia", "britain", "france"]
 LABEL = {"spain": "Spain", "usa": "United States", "russia": "Russia",
-         "britain": "Britain", "other": "France and Argentina"}
+         "britain": "Britain", "france": "France", "other": "Argentina"}
 
 rows, out_of_scope, no_date, no_flag = [], 0, 0, 0
 for v in V:
@@ -71,12 +71,14 @@ for k in NAMED + ["other"]:
         wn = sum(n_by_year.get(w, 0) for w in win)
         wk = sum(ann[w][k] for w in win if w in ann)
         arrived = k in first_year and y >= first_year[k]
-        val = None
-        if wn >= MIN_WINDOW_N:
-            val = round(100 * wk / wn, 1) if arrived else 0.0
+        # No line before a flag arrives. A flat zero would draw absence as a
+        # measurement, and the eye reads it as "present, at nil" rather than
+        # "not here yet". The line simply begins at the first recorded arrival.
+        val = round(100 * wk / wn, 1) if (wn >= MIN_WINDOW_N and arrived) else None
         smooth.append({"year": y, "share": val, "window_n": wn})
         n = n_by_year.get(y, 0)
-        raw.append({"year": y, "share": round(100 * ann[y][k] / n, 1) if n else None, "n": n})
+        raw.append({"year": y, "n": n,
+                    "share": round(100 * ann[y][k] / n, 1) if (n and arrived) else None})
     series[k], annual[k] = smooth, raw
 
 # the flag-integrity evidence, carried in the data file so the page cannot drift from it
@@ -189,13 +191,16 @@ out = {
     "43 visits dated 1822 or later are flagged Spanish, among them vessels named Morelos, Matamoros "
     "and Mariquita, and the American Brookline, Volunteer and Leonidas. 19% of post-1821 rows carry a "
     "vessel name that appears under a different flag elsewhere in the file, against 7% before 1822.",
-    "The line is a 5-year centred rolling share, blank wherever its window holds fewer than 20 records. "
+    "Each line begins at that flag's first recorded arrival and is blank before it: a flag that "
+    "has not yet come has no share, and a flat zero would draw absence as a measurement. "
+    "The line is a 5-year centred rolling share, also blank wherever its window holds fewer than 20 records. "
     "Faint points behind it are the unsmoothed annual values; the strip beneath gives each year's n.",
     "Flag is the flag as attested or inferred in the record, not a vessel's registry. Within this window "
     "56% of rows are 'attested/inferred' rather than plainly stated.",
     "Most visit rows remain at draft status in the registry's own review workflow.",
-    "The line is clamped to zero before each flag's first recorded arrival: a centred mean would "
-    "otherwise show every flag appearing two years early.",
+    "France is 7 records across three separate occasions, not a trend; two of them are flagged for "
+    "review (an 1808 decree that is a mention rather than a visit, and a probable duplicate in 1817). "
+    "Argentina is Bouchard alone and is shown only as an arrival.",
   ],
 }
 p = ROOT/"data"/"flags-by-year.json"

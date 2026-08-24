@@ -37,6 +37,7 @@
     --series-2:#eb6834;  /* USA      */
     --series-3:#1baf7a;  /* Russia   */
     --series-4:#eda100;  /* Britain  */
+    --series-5:#e87ba4;  /* France   */
     --series-other:#9b9992;
     background:var(--surface-1);
     border:1px solid #e3ddd0;
@@ -49,7 +50,7 @@
       color-scheme:dark;
       --surface-1:#1a1a19; --grid:#33332f;
       --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8e8c84;
-      --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70; --series-4:#c98500;
+      --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70; --series-4:#c98500; --series-5:#d55181;
       --series-other:#7d7b74;
       border-color:#33332f;
     }
@@ -67,7 +68,7 @@
     color-scheme:dark;
     --surface-1:#1a1a19; --grid:#33332f;
     --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8e8c84;
-    --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70; --series-4:#c98500;
+    --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70; --series-4:#c98500; --series-5:#d55181;
     --series-other:#7d7b74;
     border-color:#33332f;
   }
@@ -129,7 +130,7 @@ Spain arrived alone, and within fifty years most vessels in Spanish harbours fle
 flag. This is that change, year by year, from the registry's own visit records.</p>
 
 <figure>
-  <div class="viz-root" data-palette="#2a78d6,#eb6834,#1baf7a,#eda100">
+  <div class="viz-root" data-palette="#2a78d6,#eb6834,#1baf7a,#eda100,#e87ba4">
     <div class="legend" id="legend"></div>
     <div class="viz-scroll"><svg id="chart" viewBox="0 0 880 430" role="img"
       aria-label="Share of recorded arrivals in California by flag, each year from 1769 to 1821, as a five-year centred mean. Spain begins at 100 percent and falls to about 11 percent. The United States rises from zero to a peak near 58 percent. Russia appears after 1806 and peaks above 40 percent in the 1810s. Britain peaks around 25 percent in the mid 1790s."></svg></div>
@@ -153,8 +154,8 @@ away. Where the window holds fewer than twenty records the line simply stops.
 </div>
 
 <div class="note">
-<b>Who arrived first, and on what authority.</b> Six first visits, each with the
-registry's own attestation printed beside it in the table:
+<b>Who arrived first, and on what authority.</b> Six first visits, marked in the lane
+beneath the plot and listed with the registry's own attestation in the table:
 <b>Spain</b> 1769, the founding voyages at San Diego (inferred, draft);
 <b>France</b> 14 September 1786, La Pérouse's <i>Boussole</i> and <i>Astrolabe</i> at
 Monterey (stated, reviewed);
@@ -220,12 +221,16 @@ as a step change in a shipping series.</p>
 <p><b>Britain is a spike, not a presence.</b> The British share peaks in the mid-1790s —
 Vancouver's surveys and the Nootka aftermath — and then subsides. It is an episode, where
 the American share is a trend.</p>
-<p><b>Every flag's first visit is marked on the plot, by name.</b> When each party
-arrives is the substance of a series like this, so it is drawn rather than left to be
-inferred from where a line lifts off the axis. France and Argentina never become a trend —
-nine records between them — and appear only as their arrivals: La Pérouse at Monterey in
-September 1786, and Bouchard's <i>La Argentina</i> and <i>Santa Rosa</i> at Monterey and
-Refugio in November 1818, the only foreign attack the province ever suffered.</p>
+<p><b>France is small, and shown anyway.</b> Seven records across three separate
+occasions — La Pérouse in 1786, a French matter in 1808, Roquefeuil's <i>Bordelais</i> in
+1817 — which is why the French line is three low bumps rather than a curve. Two of those
+seven are flagged for review. Argentina is Bouchard alone and appears only as an arrival.
+Both are kept visible rather than folded into a grey "other": a category with two records
+is still a category, and burying it hides which two.</p>
+<p><b>No line runs before its flag arrives.</b> A flat zero would draw absence as though it
+were a measurement, and the eye reads it as "present, at nil" rather than "not here yet".
+Each line simply begins at that flag's first recorded arrival, and the arrivals themselves
+sit in their own lane below the axis, out of the plot they would otherwise crowd.</p>
 <p class="note"><b>A caution on the last years.</b> The Spanish line does not fall to zero
 because the supply system never fully stopped, but the window's final years are also its
 thinnest: the war of independence cut the San Blas run and the record with it. Read the

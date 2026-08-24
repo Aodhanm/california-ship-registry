@@ -7,7 +7,7 @@
   'use strict';
   var SLOT = { spain: 'var(--series-1)', usa: 'var(--series-2)',
                russia: 'var(--series-3)', britain: 'var(--series-4)',
-               other: 'var(--series-other)' };
+               france: 'var(--series-5)', other: 'var(--series-other)' };
   var NS = 'http://www.w3.org/2000/svg';
   function el(n, a) { var e = document.createElementNS(NS, n); for (var k in a) if (a[k] != null) e.setAttribute(k, a[k]); return e; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
@@ -19,9 +19,10 @@
     window.__D = D;
     var lab = D.labels, years = D.years;
     var order = D.order.filter(function (k) { return k !== 'other'; });
-    var W = 900, H = 520, ML = 52, MR = 152, MT = 64, MB = 116;
+    var W = 900, H = 574, ML = 52, MR = 152, MT = 60, MB = 170;
     var pw = W - ML - MR, ph = H - MT - MB;
-    var STRIP_TOP = MT + ph + 52, STRIP_H = 26;
+    var LANE_TOP = MT + ph + 30, LANE_H = 46;
+    var STRIP_TOP = LANE_TOP + LANE_H + 34, STRIP_H = 24;
     var y0 = years[0], y1 = years[years.length - 1];
     var x = function (yr) { return ML + (yr - y0) / (y1 - y0) * pw; };
     var y = function (v) { return MT + ph - (v / 100) * ph; };
@@ -50,34 +51,48 @@
     }
 
     // the two events the series is read against, marked once each
-    [[1812, 'Ross founded', 12], [1810, 'war of independence begins', 28]].forEach(function (ev) {
-      svg.appendChild(el('line', { x1: x(ev[0]), x2: x(ev[0]), y1: MT, y2: MT + ph, stroke: 'var(--grid)', 'stroke-width': 1 }));
-      var a = el('text', { x: x(ev[0]) - 5, y: MT + ev[2], class: 'g-axis-text', 'text-anchor': 'end' });
-      a.setAttribute('fill', 'var(--text-muted)'); a.setAttribute('font-size', '10');
-      a.textContent = ev[1] + ' \u2192'; svg.appendChild(a);
+    [[1810, 'war of independence'], [1812, 'Ross founded']].forEach(function (ev, i) {
+      svg.appendChild(el('line', { x1: x(ev[0]), x2: x(ev[0]), y1: MT, y2: MT + ph,
+        stroke: 'var(--grid)', 'stroke-width': 1 }));
+      var a = el('text', { x: x(ev[0]) - 5, y: MT + 11 + i * 13, class: 'g-axis-text', 'text-anchor': 'end' });
+      a.setAttribute('fill', 'var(--text-muted)'); a.setAttribute('font-size', '9.5');
+      a.textContent = ev[1]; svg.appendChild(a);
     });
 
-    // EVERY flag's first visit, marked and named. The whole point of a composition
-    // series is when each party arrives, so it is drawn, not left to be inferred
-    // from where a line lifts off the axis.
+    // EVERY flag's first visit, in its own lane below the axis rather than on the
+    // plot. When each party arrives is the substance of the series, but inside the
+    // plot the labels collided with the data they were meant to explain.
     var FV = (D.first_visits || []).filter(function (f) { return f.year >= y0 && f.year <= y1; });
-    FV.forEach(function (f, i) {
-      var ex = x(f.year), base = MT + ph;
-      var col = SLOT[f.flag] || 'var(--text-secondary)';
-      var lift = 22 + (i % 3) * 15;
-      svg.appendChild(el('line', { x1: ex, x2: ex, y1: base, y2: base - lift,
-        stroke: col, 'stroke-width': 1, opacity: .55, 'stroke-dasharray': '2 2' }));
-      svg.appendChild(el('circle', { cx: ex, cy: base, r: 4, fill: col,
+    var lt = el('text', { x: 0, y: LANE_TOP + 4, class: 'g-axis-text' });
+    lt.setAttribute('font-size', '10'); lt.setAttribute('fill', 'var(--text-muted)');
+    lt.textContent = 'first visit'; svg.appendChild(lt);
+    svg.appendChild(el('line', { x1: ML, x2: ML + pw, y1: LANE_TOP, y2: LANE_TOP, class: 'g-grid' }));
+    // Greedy row packing: measure each label, drop to the next row only when it
+    // would actually overlap something already placed on that row.
+    var rows = [[], [], []];
+    FV.forEach(function (f) {
+      var ex = x(f.year), col = SLOT[f.flag] || 'var(--text-secondary)';
+      var txt = f.who + ' ' + f.year;
+      var w = txt.length * 5.6 + 10;                       // 10px bold Georgia, approx
+      var atEnd = ex > ML + pw - w;
+      var x0 = atEnd ? ex - w : ex, x1 = atEnd ? ex : ex + w;
+      var row = 0;
+      for (var r = 0; r < rows.length; r++) {
+        var clash = rows[r].some(function (q) { return x0 < q.x1 + 8 && x1 > q.x0 - 8; });
+        if (!clash) { row = r; break; }
+        row = r;
+      }
+      rows[row].push({ x0: x0, x1: x1 });
+      var ly = LANE_TOP + 12 + row * 15;
+      svg.appendChild(el('line', { x1: ex, x2: ex, y1: LANE_TOP, y2: ly - 7,
+        stroke: col, 'stroke-width': 1, opacity: .5 }));
+      svg.appendChild(el('circle', { cx: ex, cy: LANE_TOP, r: 3.5, fill: col,
         stroke: 'var(--surface-1)', 'stroke-width': 2 }));
-      var anchor = f.year > 1812 ? 'end' : (f.year < 1775 ? 'start' : 'middle');
-      var dx = anchor === 'end' ? -5 : (anchor === 'start' ? 3 : 0);
-      var a = el('text', { x: ex + dx, y: base - lift - 4, 'text-anchor': anchor });
-      a.setAttribute('font-size', '10.5'); a.setAttribute('font-weight', '700');
+      var anchor = atEnd ? 'end' : 'start';
+      var a = el('text', { x: ex + (anchor === 'end' ? -5 : 5), y: ly, 'text-anchor': anchor });
+      a.setAttribute('font-size', '10'); a.setAttribute('font-weight', '700');
       a.setAttribute('fill', col); a.textContent = f.who + ' ' + f.year;
       svg.appendChild(a);
-      var b = el('text', { x: ex + dx, y: base - lift + 7, 'text-anchor': anchor });
-      b.setAttribute('font-size', '9'); b.setAttribute('fill', 'var(--text-muted)');
-      b.textContent = f.vessels.split(' \u00b7 ')[0]; svg.appendChild(b);
     });
 
     // annual scatter first, so the smoothed line sits on top of its own evidence
@@ -128,7 +143,7 @@
     var maxN = Math.max.apply(null, years.map(function (yr) { return D.n_by_year[String(yr)] || 0; }));
     var st = el('text', { x: 0, y: STRIP_TOP - 8, class: 'g-axis-text' });
     st.setAttribute('fill', 'var(--text-muted)'); st.setAttribute('font-size', '10');
-    st.textContent = 'records per year (n), peak ' + maxN; svg.appendChild(st);
+    st.textContent = 'records per year (n), peak ' + maxN + ' in ' + peakYearOf(D, years); svg.appendChild(st);
     var bw = Math.max(2, pw / years.length - 2);
     years.forEach(function (yr) {
       var n = D.n_by_year[String(yr)] || 0;
@@ -137,14 +152,10 @@
       svg.appendChild(el('rect', { x: x(yr) - bw / 2, y: STRIP_TOP + (STRIP_H - h),
         width: bw, height: h, fill: 'var(--series-1)', opacity: .3, rx: 1 }));
     });
-    var peakYear = years.reduce(function (a, b) {
-      return (D.n_by_year[String(b)] || 0) > (D.n_by_year[String(a)] || 0) ? b : a; }, years[0]);
-    var pk = el('text', { x: x(peakYear), y: STRIP_TOP + STRIP_H + 13, class: 'g-axis-text', 'text-anchor': 'middle' });
-    pk.setAttribute('font-size', '10'); pk.setAttribute('fill', 'var(--text-secondary)');
-    pk.textContent = peakYear + ': ' + maxN; svg.appendChild(pk);
+
     var gap = years.filter(function (yr) { return !(D.n_by_year[String(yr)] || 0); });
     if (gap.length) {
-      var gt = el('text', { x: ML + pw, y: STRIP_TOP + STRIP_H + 30, class: 'g-axis-text', 'text-anchor': 'end' });
+      var gt = el('text', { x: ML + pw, y: STRIP_TOP + STRIP_H + 15, class: 'g-axis-text', 'text-anchor': 'end' });
       gt.setAttribute('font-size', '10'); gt.setAttribute('fill', 'var(--text-muted)');
       gt.textContent = 'no records at all: ' + gap.join(', '); svg.appendChild(gt);
     }
@@ -153,6 +164,11 @@
     hover(svg, D, years, x, y, ML, MT, pw, ph);
     table(D);
     caveats(D);
+  }
+
+  function peakYearOf(D, years) {
+    return years.reduce(function (a, b) {
+      return (D.n_by_year[String(b)] || 0) > (D.n_by_year[String(a)] || 0) ? b : a; }, years[0]);
   }
 
   function legend(order, lab) {
