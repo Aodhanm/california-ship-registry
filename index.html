@@ -119,11 +119,40 @@
  /* charts pane is retired from the nav but kept in the DOM so its renderer never faults */
  #charts{display:none!important}
 
+ .about h3{font-family:var(--serif);font-size:1.02em;color:var(--accent-deep);font-weight:600;margin:1.5em 0 .2em}
+ .about .cit{font-size:.88em;color:var(--ink-faint);line-height:1.6}
+ .about .cit i{color:var(--ink-soft)}
+ .about .srcnote{font-family:var(--mono);font-size:.8em;color:var(--ink-faint);border-left:2px solid var(--rule);padding-left:12px}
+ .about b.warn{color:var(--warn)}
+ .about code{font-family:var(--mono);font-size:.86em;color:var(--accent-deep)}
  footer{max-width:1200px;margin:0 auto;padding:26px 22px 50px;color:var(--ink-faint);font-size:12px;border-top:1px solid var(--rule)}
  footer a{color:var(--accent-deep)}
  .banner{background:rgba(203,166,78,.1);border-left:3px solid var(--brass);color:var(--ink-soft);
   padding:9px 22px;font-size:.82em}
  .banner b{color:var(--brass)}
+
+ /* ── re-theme the renderers' inline light-mode styles ──────────────────────
+    render(), spark() and cp() emit hardcoded #fff / #888 / #1f3a5f inline.
+    Inline styles beat stylesheets, so these overrides carry !important. Doing
+    it here rather than editing the renderers keeps the data+logic script
+    byte-identical to the pre-Waterline original. */
+ #cpOut h3{font-family:var(--serif);font-size:1.2em;font-weight:600;color:var(--ink);margin:18px 0 2px}
+ #cpOut > div{background:var(--plate)!important;border:1px solid var(--rule)!important;border-radius:3px!important}
+ #cpOut > div[style*="border-left"]{border-left:4px solid var(--accent)!important}
+ #cpOut > div > b{color:var(--ink)}
+ #cpOut p{color:var(--ink-soft)}
+ #cpOut p b{color:var(--ink)}
+ #cpOut span[style*="1f3a5f"]{color:var(--accent-deep)!important}
+ #cpOut span[style*="#888"],#cpOut p[style*="#888"]{color:var(--ink-faint)!important}
+ #cpOut > p[style*="#888"]{color:var(--ink-faint)!important}
+ /* the per-row sparkline in the register */
+ #tbl svg.spark rect[fill="#fff"],#tbl svg.spark rect[fill="#f7f5f0"]{fill:var(--plate-2)!important}
+ #tbl svg.spark rect[fill="#e3ddce"]{fill:var(--rule)!important}
+ #tbl svg.spark rect[fill="#1f3a5f"],#tbl svg.spark rect[fill="#2d4a73"]{fill:var(--accent)!important}
+ #tbl svg.spark text{fill:var(--ink-faint)!important}
+ /* muted greys the register writes inline */
+ #tbl span[style*="#777"],#tbl span[style*="#888"],#tbl span[style*="#999"],
+ #stbl span[style*="#777"],#stbl span[style*="#888"],#stbl span[style*="#999"]{color:var(--ink-faint)!important}
  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head>
 <body>
@@ -211,29 +240,114 @@
 </div>
 
 <div id="about" class="pane about">
- <h2>About</h2>
- <p>The first machine-readable registry of documented vessel visits to the Californias, 1769–1846.
- Unit of record: the <b>visit</b> — one vessel, one anchorage, one time — each row carrying its evidence
- (leaf-verified records of the Savage transcripts via the <a href="https://archivesofcalifornia.com">Archives of California</a> calendar,
- with links to the manuscript scans). Fields and vocabularies: see <code>CODEBOOK.md</code> in the repository.</p>
- <h2>Sources, in the order they were added</h2>
- <p>The <i>Archives of California</i> documentary calendar; Bancroft's <i>History of California</i> I–II narrative;
- Bancroft's consolidated vessel lists (III–V); Ogden (1941) otter-trade itineraries; a Russian layer from
- RAC/AVPRI-grounded notes <b>with absences stated</b> rather than silently omitted; curated canonical voyages;
- and ongoing ingests as the calendar grows.</p>
+ <h2>What this is</h2>
+ <p>The first machine-readable registry of documented vessel visits to the Californias, 1769&ndash;1846.
+ The unit of record is the <b>visit</b> &mdash; one vessel, one anchorage, one time &mdash; after the voyage-level
+ design of <i>SlaveVoyages</i>. Every row carries its evidence and a stable identifier (<code>v0001</code>&hellip;)
+ so a single visit can be cited. Fields and controlled vocabularies: <a href="./CODEBOOK.md">CODEBOOK.md</a>.
+ Merging is conservative &mdash; two records collapse into one visit only on ship + year + (where present) month and
+ anchorage. Over-splitting is preferred to silent loss, and <code>sources_disagree</code> records a collation
+ conflict rather than resolving it invisibly.</p>
+
+ <h2>Sources</h2>
+ <p class="srcnote"><b>2,074 visits carry 2,902 citations.</b> Counts below are citations, not visits;
+ a visit often carries two or three.</p>
+
+ <h3>1 &middot; The Archives of California documentary calendar &mdash; 1,877 citations, 57 volumes</h3>
+ <p>The author&rsquo;s item-level catalogue of BANC MSS C-A 1&ndash;63, the Savage transcripts of the Spanish and
+ Mexican provincial archive burned in 1906. Most rows link to a specific manuscript leaf.
+ Heaviest volumes: C-A 7 (116), 13 (114), 14 (109), 12 (100), 56 (95), 48 (94), 24 (88), 18 (84), 11 (82), 55 (76).<br>
+ <span class="cit">Archives of California: A Documentary Calendar of the Savage Transcripts.
+ <a href="https://archivesofcalifornia.com">archivesofcalifornia.com</a>. Zenodo DOI 10.5281/zenodo.21912644.</span></p>
+
+ <h3>2 &middot; Bancroft&rsquo;s narrative &mdash; 396 citations</h3>
+ <p>Vessels narrated in the running text of volumes I&ndash;II, never previously consolidated into a list.<br>
+ <span class="cit">Hubert Howe Bancroft, <i>History of California</i>, 7 vols. San Francisco: The History Company,
+ 1884&ndash;1890. Vol. I (1542&ndash;1800); vol. II (1801&ndash;1824).</span></p>
+
+ <h3>3 &middot; Bancroft&rsquo;s consolidated vessel lists &mdash; 164 citations</h3>
+ <p>His own marine lists: &lsquo;List of vessels 1825&ndash;30&rsquo; and &lsquo;1831&ndash;5&rsquo; (vol. III),
+ &lsquo;1841&ndash;5&rsquo; (vol. IV), &lsquo;1846&ndash;8&rsquo; (vol. V).
+ <b class="warn">Partially merged.</b> 77 of the 198 vessels parsed from these lists are not yet in the registry,
+ 31 of them American; 63 names remain OCR-garbled. See <a href="./REVIEW-QUEUE.md">REVIEW-QUEUE.md</a>.<br>
+ <span class="cit">Bancroft, <i>History of California</i>, vols. III&ndash;V, appended vessel lists.</span></p>
+
+ <h3>4 &middot; Ogden&rsquo;s otter-trade appendix &mdash; 327 citations</h3>
+ <p>Itineraries of the vessels in the California sea-otter trade, vessel by vessel and year by year.<br>
+ <span class="cit">Adele Ogden, <i>The California Sea Otter Trade, 1784&ndash;1848</i>. Berkeley: University of
+ California Press, 1941. Appendix, &lsquo;Identified Vessels in the California Sea Otter Trade&rsquo;.</span></p>
+
+ <h3>5 &middot; The Russian layer &mdash; 52 citations</h3>
+ <p>Built from RAC and AVPRI-grounded notes and the C-A port-duty ledgers, <b>with absences stated</b> in
+ <code>data/russian-absent.txt</code> rather than silently omitted.<br>
+ <span class="cit">N. N. Bolkhovitinov (ed.), <i>Istoriia Russkoi Ameriki</i>, 3 vols. Moscow: Mezhdunarodnye
+ otnosheniia, 1997&ndash;1999 &middot; James R. Gibson and Alexei A. Istomin (eds.), <i>Russian California
+ 1806&ndash;1860: A History in Documents</i>, Hakluyt Society, 3rd ser. (2014) &middot; Kirill Khlebnikov,
+ <i>Colonial Russian America</i>, trans. Basil Dmytryshyn and E. A. P. Crownhart-Vaughan (Oregon Historical
+ Society, 1976) &middot; AVPRI doc. 2: Rezanov to Alexander I, 5/17 May 1806, San Francisco &middot;
+ Otto von Kotzebue, <i>A Voyage of Discovery into the South Sea and Beering&rsquo;s Straits</i> (London, 1821)
+ &middot; V. M. Golovnin, <i>Around the World on the</i> Kamchatka, trans. Ella Wiswell (Hawaii, 1979).</span></p>
+
+ <h3>6 &middot; Published voyage narratives and editions &mdash; 84 citations</h3>
+ <p><span class="cit">
+ Jean-Fran&ccedil;ois de Galaup de La P&eacute;rouse, <i>A Voyage Round the World</i>, trans. (London: Stockdale, 1799), chs. X&ndash;XI &middot;
+ George Vancouver, <i>A Voyage of Discovery to the North Pacific Ocean</i>, 3 vols. (London, 1798) &middot;
+ W. Kaye Lamb (ed.), <i>The Voyage of George Vancouver 1791&ndash;1795</i>, Hakluyt Society, 2nd ser. 163&ndash;166 (1984) &middot;
+ Archibald Menzies, journal, California portion, ed. Alice Eastwood, <i>California Historical Society Quarterly</i> 2:4 (1924): 265&ndash;340 &middot;
+ Benito de la Sierra, &lsquo;Account of the Hezeta Expedition&rsquo;, ed. Henry R. Wagner, <i>CHSQ</i> 9:3 (1930) &middot;
+ Fray Vicente de Santa Mar&iacute;a, <i>The First Spanish Entry into San Francisco Bay, 1775</i>, ed. John Galvin (John Howell Books, 1971) &middot;
+ Vicente Vila, <i>Diary of the</i> San Carlos, ed. Robert Selden Rose, Academy of Pacific Coast History 2:1 (1911) &middot;
+ Miguel Costans&oacute;, <i>Diario hist&oacute;rico</i> (1770), ed. Frederick J. Teggart, APCH 2:4 (1911) &middot;
+ Herbert E. Bolton, <i>Fray Juan Cresp&iacute;: Missionary Explorer</i> (UC Press, 1927) &middot;
+ Herbert K. Beals, <i>Juan P&eacute;rez on the Northwest Coast</i> (Oregon Historical Society Press, 1989) &middot;
+ <i>Relaci&oacute;n del viage hecho por las goletas</i> Sutil <i>y</i> Mexicana <i>en el a&ntilde;o de 1792</i> (Madrid: Imprenta Real, 1802) &middot;
+ John Kendrick (ed.), <i>The Voyage of</i> Sutil <i>and</i> Mexicana, 1792 (Arthur H. Clark, 1991) &middot;
+ Alejandro Malaspina, <i>Viaje pol&iacute;tico-cient&iacute;fico alrededor del mundo</i>, ed. Pedro de Novo y Colson (Madrid, 1885) &middot;
+ Andrew David, Felipe Fern&aacute;ndez-Armesto et al. (eds.), <i>The Malaspina Expedition 1789&ndash;1794</i>, Hakluyt Society, 3rd ser. II (2003) &middot;
+ Donald C. Cutter, <i>Malaspina in California</i> (John Howell&ndash;Books, 1960) &middot;
+ W. R. Broughton, <i>A Voyage of Discovery to the North Pacific Ocean&hellip; 1795&ndash;1798</i> (London, 1804) &middot;
+ F. W. Beechey, <i>Narrative of a Voyage to the Pacific and Beering&rsquo;s Strait&hellip; in H.M.S.</i> Blossom (London: Colburn &amp; Bentley, 1831) &middot;
+ Charles Wilkes, <i>Narrative of the United States Exploring Expedition&hellip; 1838&ndash;1842</i> (Philadelphia, 1844) &middot;
+ Peter Corney, <i>Voyages in the Northern Pacific&hellip; 1813 to 1818</i> (Honolulu: Thrum, 1896) &middot;
+ George Simpson, <i>Narrative of a Journey Round the World</i>, 2 vols. (London, 1847) &middot;
+ Peter Uhrowczik, <i>The Burning of Monterey: The 1818 Attack on California by the Privateer Bouchard</i> (Cyril Books, 2001) &middot;
+ Freeman M. Tovell, <i>At the Far Reaches of Empire: The Life of Juan Francisco de la Bodega y Quadra</i> (UBC Press, 2008) &middot;
+ Warren L. Cook, <i>Flood Tide of Empire: Spain and the Pacific Northwest, 1543&ndash;1819</i> (Yale, 1973) &middot;
+ Henry R. Wagner, <i>Spanish Explorations in the Strait of Juan de Fuca</i> (Fine Arts Press, 1933) and
+ <i>The Cartography of the Northwest Coast of America to the Year 1800</i> (UC Press, 1937).</span></p>
+
+ <h3>7 &middot; Archival, direct</h3>
+ <p><span class="cit">AGI, Californias, leg. 8, exp. 3, ff. 71&ndash;75v: Sol&aacute; to the Viceroy, no. 168, 5 Oct 1818 &middot;
+ AGI, ESTADO, 43, N.12 (PARES): the Mart&iacute;nez and L&oacute;pez de Haro expedition in search of the Russian
+ establishments &middot; C-A 40, the 1826&ndash;27 Santa B&aacute;rbara customs ledgers, leaf-verified.</span></p>
+
+ <h2>Quality control</h2>
+ <p><b>The false-positive register.</b> Seven documented classes of &ldquo;fake ship&rdquo; &mdash; decree phantoms,
+ era conflations, persons read as vessels, places and demonyms, OCR garbles, mis-flags, and mentions read as visits.
+ <b>Every new source re-triggers all seven.</b> See <a href="./FALSE-POSITIVE-REGISTER.md">FALSE-POSITIVE-REGISTER.md</a>.</p>
+ <p><b>Leaf verification.</b> Manuscript-derived names are checked against the scanned leaf before entering the
+ tables &mdash; a policy adopted after it caught real misreads (<i>Nilo</i> not &ldquo;Wilcox&rdquo;,
+ <i>Jackman</i> not &ldquo;Jackson&rdquo;).</p>
+ <p><b>Nothing is auto-accepted.</b> Uncertain rows stay <code>status = draft</code> and route to
+ <a href="./REVIEW-QUEUE.md">REVIEW-QUEUE.md</a>. The stripe at the left of each row shows its status.</p>
+
  <h2>What this registry does not know</h2>
- <p><b>Absence of a row is not absence of a ship.</b> Contraband was under-recorded by design, so the record gaps
- sit exactly where the activity was. Counts reflect record survival and harvest coverage as much as traffic, and
- roughly a quarter of rows name no vessel at all — evidence of traffic that cannot be attributed to a hull.</p>
- <p><b>The flag field is not sound after 1821.</b> Forty-three post-independence visits are flagged Spanish;
- Bancroft's lists contain no Spanish-flagged vessel for 1825–48, and thirty-nine vessel names in the file carry
- more than one flag. The audit and its proposed corrections are in <code>REVIEW-QUEUE.md</code>; until it is done,
- any analysis by flag should stop at 1821 — which is why <a href="flags.html">Flags at anchor</a> does.</p>
- <h2>Companions</h2>
- <p><a href="flags.html">Flags at anchor</a> — whose ships were in California waters, year by year, 1769–1821.<br>
- <a href="key-voyages.html">Key voyages</a> — a curated timeline of the arrivals that mattered.<br>
- <a href="https://maps.archivesofcalifornia.com" target="_blank" rel="noopener">Maps of California</a> — the period cartography,
- including the coastal charts that used to live in this registry as a tab.</p>
+ <p><b>Absence of a row is not absence of a ship.</b> Contraband was under-recorded by design, so the gaps in the
+ record sit exactly where the activity was. The asymmetry is a finding, not a flaw.</p>
+ <p><b>Counts measure the archive as much as the traffic.</b> Decade totals reflect record survival and harvest
+ coverage; the 1830s and 1840s are coverage-thin pending the full Bancroft-list merge. Roughly a quarter of rows
+ name no vessel at all &mdash; evidence of traffic that cannot be attributed to a hull.</p>
+ <p><b class="warn">The flag field is not sound after 1821.</b> Forty-three post-independence visits are flagged
+ Spanish; Bancroft&rsquo;s lists contain no Spanish-flagged vessel for 1825&ndash;48, and 39 vessel names in the file
+ carry more than one flag. Any analysis by flag should stop at 1821 &mdash; which is why
+ <a href="flags.html">Flags at anchor</a> does. The audit and its 59 proposed corrections are in the review queue.</p>
+
+ <h2>Cite this registry</h2>
+ <p class="cit">Aodhan Coyne, <i>California Ship Registry: Documented Vessel Visits to the Californias, 1769&ndash;1846</i>.
+ <a href="https://ships.archivesofcalifornia.com">ships.archivesofcalifornia.com</a>. Individual visits are citable by
+ identifier, e.g. <code>v0143</code>.<br>
+ Data and code: <a href="https://github.com/Aodhanm/california-ship-registry">github.com/Aodhanm/california-ship-registry</a>
+ &middot; <a href="./METHOD.md">METHOD.md</a> &middot; <a href="./CODEBOOK.md">CODEBOOK.md</a></p>
 </div>
 </main>
 <footer>
