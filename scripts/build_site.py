@@ -1,9 +1,20 @@
 #!/usr/bin/env python3
 """Generate the self-contained index.html viewer from data/*.csv.
 Single-file pattern (the calendar's): all data embedded as JSON; Leaflet from
-CDN for the map. Regenerate after any data change: python3 scripts/build_site.py
+CDN for the map.
+
+⛔ QUARANTINED 2026-08-24 — DO NOT RUN. index.html has DIVERGED from this template:
+the live page was hand-maintained on 2026-08-23 (the full "Sources"/"What this
+registry does not know"/"Cite this registry" source apparatus, the Flags-at-Anchor
+link, and CSS fixes) WITHOUT updating this file. Running this REGRESSES all of that.
+Until this template is reconciled with the live index.html (a tracked follow-up in
+REVIEW-QUEUE.md), update the page by SPLICING corrected data into the existing
+index.html, not by regenerating it. To run anyway (only after reconciling), set
+SHIP_REGISTRY_ALLOW_SITE_REBUILD=1.
 """
 import csv, json, os, html, subprocess, sys
+if os.environ.get('SHIP_REGISTRY_ALLOW_SITE_REBUILD') != '1':
+    sys.exit(__doc__.strip().split('\n\n')[1])  # print the quarantine notice and stop
 g = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'check.py')])
 if g.returncode != 0:
     sys.exit('GUARDS FAILED — index.html NOT rebuilt')

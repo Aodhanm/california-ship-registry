@@ -18,6 +18,10 @@ canonical file would DISCARD all of that. It is therefore gated: it refuses to
 overwrite an existing curated visits.csv unless SHIP_REGISTRY_ALLOW_RAW_BUILD=1.
 The reproducible guarantee for the curated dataset is `scripts/check.py`
 (every invariant), NOT re-running this. See PROVENANCE.md.
+
+⚠ Note: `scripts/build_site.py` is likewise quarantined (the live index.html is
+hand-maintained and has diverged from its template). Update the page by splicing
+corrected data into index.html, not by regenerating. See build_site.py header.
 """
 import csv, os, re, json, collections, unicodedata, sys
 

@@ -19,6 +19,7 @@
 - ⚠ **`mexicana` (1791–1831) and `san carlos` (1769–1822)** are era-conflations: a 1792 Spanish exploration vessel + an 1820s Mexican reuse of the name share one ship_id. Visit-level flags are correct; split the ship_ids in v1.1.
 - **`brookline`, `volunteer`, `leonor`** post-1821 flags left blank pending a verbatim Bancroft flag (American/Mexican per the audit prose, not yet page-confirmed).
 - **`don quijote`** v2048: excerpt is a timber decree with no ship support — flag blanked; confirm the vessel or drop.
+- ⚠ **`scripts/build_site.py` is QUARANTINED and needs reconciliation.** The live `index.html` was hand-maintained on 2026-08-23 (the full Sources / "What this registry does not know" / Cite apparatus, the Flags-at-Anchor link, CSS fixes) without updating the generator, so running it regresses the page. For now the page is updated by splicing corrected data into `index.html` directly. Follow-up: port the hand edits into `build_site.py` so builds are reproducible again, then remove the quarantine.
 
 **The two genuine gates left are Aodhan's:** (1) the interpretive **frame** for the data paper; (2) the **Zenodo login** to mint. See RELEASE-CHECKLIST.md.
 
