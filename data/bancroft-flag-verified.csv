@@ -1,0 +1,11 @@
+vessel,registry_flag,bancroft_flag,verdict,bancroft_entry_verbatim,vol
+Maria Ester,spain,mexico,CORRECT-THE-REGISTRY,"Maria Ester, Mex. brig, 170 or 93 tons; owned by Henry Virmond, who was on board in 1828; Davis, master",III
+Clarita,russia|spain,mexico,CORRECT-THE-REGISTRY,"Clarita, Mex. bark, 202 tons; Chas Wolter, master. Paid $382 in spring of 1841",IV
+Cowlitz,usa,britain,CORRECT-THE-REGISTRY,"Cowlitz, Engl. bark, 312 or 345 tons; Wm Brotchie, master. At Mont. Aug.-Oct. 1841 from Col. Riv.",IV
+Guadalupe,spain,mexico,CORRECT-THE-REGISTRY,"Guadalupe, Cal. schr, 60 tons; built by Jos Chapman, and launched at S. Pedro in 1831",III
+Ayacucho,britain|russia|spain,britain AND mexico,ERA-CONFLATION-NOT-ERROR,"vol III: 'Ayacucho, Engl. brig, 232 tons; Joseph Snook, master; arr. Mont. from Honolulu Oct. 1830' || vol IV: 'Ayacucho, Mex. schr, 93 tons; J. Blanca, master'",III+IV
+Fanny,france,france,REGISTRY-ALREADY-RIGHT,"Fanny, Fr. whaler, 409 or 364 tons; Duval, master",IV
+Maria,russia,germany|denmark,UNCERTAIN-IN-SOURCE,"Maria, Hamburg or Danish brig, 109 tons; W. Holstein, master",IV
+Juanita,mexico,hawaii?,UNCERTAIN-IN-SOURCE,"Juanita, Haw. (?) schr, 102 or 126 tons; John Wilson, master",IV
+Triton,france,none-given,NO-FLAG-IN-SOURCE,"Triton, whaler, 300 tons, 1825-6; Jean Opham, or Ibre Albet (?), masters. Perhaps two vessels.",III
+Clementine,usa,britain,SOURCE-SAYS-CONFUSED,"Clementine, Engl. brig, 93, 76, or 160 tons. (The records are inextricably confused, and there may have been 2 vessels of this name)",IV

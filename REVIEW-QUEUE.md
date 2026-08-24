@@ -242,7 +242,9 @@ Detail: vault `02 Source Material/bancroft-cleaner-scans-2026-08-23.md`.
 Flags: **usa 97 · mexico 28 · britain 15 · russia 3 · france 2 · hawaii 1 · SPAIN 0.**
 An independent confirmation of the flag audit: Bancroft records no Spanish vessel in this period.
 
-#### ⚑ Output 1 — `data/bancroft-missing-vessels-proposed.csv` (70 rows)
+#### ⚠⚠ BOTH OUTPUTS BELOW WERE WITHDRAWN 2026-08-23 — see "Why the automated parse was not applied" at the foot of this section.
+
+#### ⚑ Output 1 (WITHDRAWN) — `data/bancroft-missing-vessels-proposed.csv` (70 rows)
 Vessels Bancroft records that the registry does not hold: **63 clean, 7 with the name still
 garbled**. By flag: 33 American, 13 Mexican, 9 British, 2 French, 6 unflagged.
 Notable: *Sulphur* (Belcher's survey ship), *Cadboro* and *Cowlitz* (HBC), *Vancouver*,
@@ -250,7 +252,7 @@ Notable: *Sulphur* (Belcher's survey ship), *Cadboro* and *Cowlitz* (HBC), *Vanc
 ⚠ 13 further rows were rejected as parser artefacts, not vessels (`Total`, `English`,
 `Amer. brig`, `Bchr`…) — they are excluded, not hidden.
 
-#### ⚑ Output 2 — `data/bancroft-flag-disagreements.csv` (16 rows)
+#### ⚑ Output 2 (WITHDRAWN) — `data/bancroft-flag-disagreements.csv` (16 rows)
 Vessels the registry already holds where **Bancroft's flag contradicts ours**, with his tonnage
 and master as corroboration. Includes the two that matter most:
 - ***Ayacucho*** — Bancroft: **Mexican** (67t, Geo. F. Comfort; and 93t, J. Blanca).
@@ -266,3 +268,51 @@ and master as corroboration. Includes the two that matter most:
   (*Broohline* = Brookline, *Maynolia* = Magnolia, *Paraqon* = Paragon, *Ccdifornia* = California,
   *Lconor* = Leonor). Legible, but should be normalised before merging.
 - **Nothing has been applied to `visits.csv`.** Both files are proposals.
+
+### ⛔ Why the automated Bancroft parse was NOT applied — 2026-08-23
+
+Instructed to verify everything and add no fake ships, I hand-checked the parser's output
+against the printed entries. **It did not survive.** Both generated files are deleted; nothing
+was written to `visits.csv`, which is unchanged at 2,074 visits.
+
+**Four successive parsers, four distinct failure modes:**
+
+| | failure | evidence |
+|---|---|---|
+| v1 | anchored on `<n> tons` and walked back for a name — caught **masters and citations as ships** | `Auguste Duhaut-Cilly, 249t` is the *master* of the *Héros*; 249t is the *Huascar*. `Cooper, 314t` is the citation "Cooper, Log of the Cal., MS."; 314t is the *Tasso*. `Gray, 34t` is "E. Gray, master"; 34t is the *Antoñita*. |
+| v2 | too strict — dropped real vessels | lost *Héros*, *Huascar*, *Tasso* entirely |
+| v3 | read nationality from trailing context — **imported the NEXT entry's flag** | inverted *Elena*, *Okhotsk*, *Argosy*, *Natalia*, *Index* |
+| v4/v5 | descriptor class excluded periods, so `Russ. brig` / `Amer. ship` never matched | silently dropped a third of all entries |
+
+**Hand-verification score: 3 of 6.** On the six flags I read from the page myself, the parser
+got three right. **A file that is half wrong cannot be merged into a dataset whose whole value
+is that its rows are trustworthy.**
+
+#### What hand-reading actually established → `data/bancroft-flag-verified.csv`
+
+Ten rows, each carrying Bancroft's sentence verbatim. Only **four** are real corrections:
+
+- ***Maria Ester*** — "Mex. brig, 170 or 93 tons; owned by Henry Virmond" → registry says **spain**. Correct it.
+- ***Clarita*** — "Mex. bark, 202 tons; Chas Wolter, master" → registry says russia|spain. Correct it.
+- ***Cowlitz*** — "Engl. bark, 312 or 345 tons; Wm Brotchie" → registry says usa. Correct it (an HBC vessel).
+- ***Guadalupe*** — "Cal. schr, 60 tons; built by Jos Chapman, launched at S. Pedro 1831" → registry says spain. Californian-built, so Mexican.
+
+And six that are **not** corrections, which is the more important result:
+
+- ⭐ ***Ayacucho*** — **two different vessels, and the registry is right about both.** Vol III:
+  "Engl. brig, 232 tons; Joseph Snook, master; arr. Mont. from Honolulu Oct. 1830." Vol IV:
+  "Mex. schr, 93 tons; J. Blanca, master." This is **Class 2 era-conflation, not a mis-flag**, and
+  the automated file would have wrongly overwritten a correct record. It also means the long-running
+  *Ayacucho* registry question has an answer: there were two.
+- ***Fanny*** — "Fr. whaler" — registry already right; the parser said mexico.
+- ***Maria*** — "Hamburg **or Danish** brig" — Bancroft himself is unsure.
+- ***Juanita*** — "Haw. **(?)** schr" — Bancroft's own question mark.
+- ***Triton*** — "whaler, 300 tons… **Perhaps two vessels**" — no nationality given at all.
+- ***Clementine*** — "the records are **inextricably confused**, and there may have been 2 vessels."
+
+#### The standing lesson
+
+Bancroft's lists are dense, abbreviated, and run entries together without reliable delimiters.
+**They are a reading task, not a parsing task.** The cleaner scans make them readable; they do not
+make them machine-parseable. Anything merged from them should be hand-entered, in batches, with
+the verbatim entry stored beside it — the way `bancroft-flag-verified.csv` is built.
