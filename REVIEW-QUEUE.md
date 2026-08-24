@@ -221,3 +221,48 @@ the complete *Works* set), the **Bancroft Library's own digitisation**, and goin
 read the vessel-list pages as images. Recommendation is (b). Either way this is the gate on
 the 30 unresolved garbled names, which is the gate on merging the 77 vessels, which is the
 gate on extending *Flags at Anchor* past 1821.
+
+### 📗 BANCROFT RE-PARSED FROM CLEANER SCANS — 2026-08-23
+
+**The scan problem is solved.** IA holds the 1885 originals (`historyofcalifor03banc` / `04` / `05`),
+public domain, now in the vault beside the Google texts. Quality **inside the vessel lists**:
+vol III **6.64% → 1.38% garble** (4.8×), vol IV 3.72% → 3.04%, vol V clean in both.
+Detail: vault `02 Source Material/bancroft-cleaner-scans-2026-08-23.md`.
+
+**Where the lists actually are.** Two different structures, and the earlier work conflated them:
+- **Annual fleet footnotes** — `Vessels of 1832: American, Anchorite, Ayacucho, Balance, …`
+  Names only. ⚠ These footnotes are **interrupted by page-body prose and running heads**, then
+  resume, which is why a naive regex truncates them.
+- **Range list sections** — `List of vessels in Californian ports, 1825-30` / `1831-5` / `1841-5` /
+  `1846-8`. **These are the rich ones**: `Adam, Amer. ship, 296 tons; Daniel Fallon, master;
+  at S. Francisco in Oct. 1826.` Name + flag + tonnage + master + years + ports.
+  `scripts/parse_bancroft_lists.py` anchors on the `<n> tons` tokens, which occur nowhere else.
+
+**Yield: 169 vessel entries** — 146 with a flag, 142 with a master, 149 with years.
+Flags: **usa 97 · mexico 28 · britain 15 · russia 3 · france 2 · hawaii 1 · SPAIN 0.**
+An independent confirmation of the flag audit: Bancroft records no Spanish vessel in this period.
+
+#### ⚑ Output 1 — `data/bancroft-missing-vessels-proposed.csv` (70 rows)
+Vessels Bancroft records that the registry does not hold: **63 clean, 7 with the name still
+garbled**. By flag: 33 American, 13 Mexican, 9 British, 2 French, 6 unflagged.
+Notable: *Sulphur* (Belcher's survey ship), *Cadboro* and *Cowlitz* (HBC), *Vancouver*,
+*Sarah and Caroline*, *John Jay*, *Harvest*, *Kent*, *Trident*, *Sterling*.
+⚠ 13 further rows were rejected as parser artefacts, not vessels (`Total`, `English`,
+`Amer. brig`, `Bchr`…) — they are excluded, not hidden.
+
+#### ⚑ Output 2 — `data/bancroft-flag-disagreements.csv` (16 rows)
+Vessels the registry already holds where **Bancroft's flag contradicts ours**, with his tonnage
+and master as corroboration. Includes the two that matter most:
+- ***Ayacucho*** — Bancroft: **Mexican** (67t, Geo. F. Comfort; and 93t, J. Blanca).
+  Registry carries britain / russia / spain across its rows. This is the contested registry
+  already flagged in the Vallejo work; Bancroft settles it as Mexican.
+- ***Maria Ester*** — Bancroft: **Mexican**. Registry: Spanish. One of the 43 post-1821 Spanish rows.
+- Also *Clarita*, *Guadalupe* (registry Spanish, Bancroft Mexican/American).
+
+#### Still to do
+- Only **7 annual fleets** re-parsed (1832–33, 1836, 1841–44). Years 1825–31, 1834–35, 1837–40,
+  1845–48 need the interrupted-footnote handling finished — or a page read.
+- The 7 garbled names in output 1, and ~20 of the 63 clean names carry minor OCR damage
+  (*Broohline* = Brookline, *Maynolia* = Magnolia, *Paraqon* = Paragon, *Ccdifornia* = California,
+  *Lconor* = Leonor). Legible, but should be normalised before merging.
+- **Nothing has been applied to `visits.csv`.** Both files are proposals.
