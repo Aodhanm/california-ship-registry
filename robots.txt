@@ -1,0 +1,6 @@
+# California Ship Registry. All crawlers welcome, including AI crawlers.
+# Data CC BY 4.0.
+User-agent: *
+Allow: /
+
+Sitemap: https://ships.archivesofcalifornia.com/sitemap.xml

@@ -1,0 +1,55 @@
+/* Static-page layer for the California Ship Registry. Tokens copied verbatim
+   from index.html's inline theme so the generated pages match it. Emitted by
+   scripts/build_ship_pages.py; do not edit by hand. */
+:root{
+  --deep:#0A141C; --ground:#0E1A24; --plate:#132330; --plate-2:#182936;
+  --ink:#E2E8EC; --ink-soft:#A8BCC9; --ink-faint:#7E96A6;
+  --rule:#223644; --rule-soft:#16242F;
+  --accent:#5FA8C4; --accent-deep:#8FCDE2; --brass:#CBA64E;
+  --ok:#6FB9AA; --warn:#D3A44A; --miss:#D9705F;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --body:Charter,Georgia,"Iowan Old Style",Cambria,serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);
+  font-size:16px;line-height:1.55}
+a{color:var(--accent-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+header.top{background:var(--deep);border-bottom:1px solid var(--rule);padding:14px 22px;
+  display:flex;align-items:baseline;gap:0 16px;flex-wrap:wrap}
+header.top .wordmark{font-family:var(--serif);font-size:19px;color:var(--ink)}
+header.top nav{margin-left:auto;display:flex;flex-wrap:wrap}
+header.top nav a{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-faint);padding:6px 10px}
+header.top nav a:hover{color:var(--accent-deep);text-decoration:none}
+main{max-width:880px;margin:0 auto;padding:24px 22px 40px}
+h1{font-family:var(--serif);font-size:31px;line-height:1.15;margin:0 0 6px;color:var(--ink)}
+h2{font-family:var(--serif);font-size:20px;margin:28px 0 8px;color:var(--accent-deep);
+  border-bottom:1px solid var(--rule);padding-bottom:5px}
+.kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-faint);margin:0 0 14px}
+.summ{color:var(--ink-soft)}
+dl.facts{display:grid;grid-template-columns:auto 1fr;margin:16px 0;border-top:1px solid var(--rule-soft)}
+dl.facts dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-faint);padding:9px 18px 9px 0;border-bottom:1px solid var(--rule-soft);white-space:nowrap}
+dl.facts dd{margin:0;padding:9px 0;border-bottom:1px solid var(--rule-soft)}
+table{border-collapse:collapse;width:100%;font-size:14px;background:var(--plate);
+  border:1px solid var(--rule);margin-top:10px}
+th{background:var(--plate-2);color:var(--ink-faint);text-align:left;padding:8px 9px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+td{padding:8px 9px;border-top:1px solid var(--rule-soft);vertical-align:top;color:var(--ink-soft)}
+ul.plain{list-style:none;padding:0}
+ul.plain li{padding:7px 0;border-bottom:1px solid var(--rule-soft)}
+ul.src li{font-size:14px;color:var(--ink-faint)}
+.cols{columns:2;column-gap:26px}
+.visit{border:1px solid var(--rule);background:var(--plate);padding:12px 14px;margin:12px 0}
+.visit .when{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--brass)}
+.visit .exc{margin:7px 0 0;color:var(--ink)}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-faint);border:1px solid var(--rule);padding:1px 6px;margin-right:5px}
+footer{max-width:880px;margin:0 auto;padding:16px 22px 46px;border-top:1px solid var(--rule);
+  font-size:13px;color:var(--ink-faint)}
+footer p{margin:5px 0}
+@media(max-width:640px){.cols{columns:1}h1{font-size:25px}
+  dl.facts{grid-template-columns:1fr}dl.facts dt{padding-bottom:0;border-bottom:none}}
