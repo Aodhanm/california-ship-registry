@@ -111,3 +111,44 @@ Trigger: *Loo Choo* rows dated decades before the ship existed. **Ogden's actual
 **New HARD guard** (`check.py`): every Ogden-cited visit's year must fall inside its own entry label's year span (±1), a mis-attached schedule line can never ship again.
 
 **Re-parse debt (the swallowed vessels, headers found in the appendix txt):** Jenny 1794 (line 83) · Garland 1798 (102) · Derby 1807 (265) · Dromo 1809 (319) · Cossack 1817 (604) · Loriot 1833–34 (1015; + garble "Lorwot, 1836" at 1082) · Bolívar Liberator ×3 garbled headers (1035/1052/1190) · Lama 1837–38 + two 1838 trips (1093/1104/1109) · California 1840/1842–44/1845–46 (1139/1181/1217; cf. existing `california-sanblas`/`california-1845`). These vessels' Ogden itineraries are MISSING from the registry (undercount, not corruption), mint them by reading each entry directly, per the leaf-verify rule. Also: one stray year-mismatch row in staging s.v. "O'Cain, 1810-1811" (never merged).
+
+## Sweep log, 2026-08-28 (adjudicating `mexlist-degarble-proposed.csv`, Class 5)
+
+The 61-row degarble queue opened 2026-08-23 had sat un-adjudicated. Verdict: **LIVE, but it must
+NOT be applied as a batch.** No rows minted, no rows dropped, `visits.csv` and `ships.csv`
+untouched. This entry exists so the queue is not re-opened as if undecided.
+
+**What the queue actually contains.** 61 garbled print-list names, tiered CONFIRMED 13 ·
+plausible 11 · AMBIGUOUS 7 · UNRESOLVED 18 · NO CANDIDATE 12. 49 rows carry a proposed reading.
+Split by whether that reading already exists in `ships.csv`:
+
+- **23 proposed readings ALREADY name a ship we hold.** These are safe in principle: the garble
+  is simply a print-list rendering of a hull already attested from other sources. Recording them
+  would be a `name_variants` "var:" merge, the same treatment the 2026-07-27 pass gave
+  `actwwo`→*activo*. Not done here: `name_variants` also carries derived visit counts, so writing
+  into it is a build concern, not a hand edit.
+- **26 proposed readings name NO ship in the set.** Applying these would MINT 26 new hulls out of
+  OCR conjecture. Only 4 of the 26 are CONFIRMED tier; the other 22 are plausible, AMBIGUOUS or
+  UNRESOLVED.
+
+**Why the tiers do not authorise minting.** The tier measures confidence that the garbled STRING
+resolves to a given name. It says nothing about whether that vessel ever came to California. A
+CONFIRMED degarble means we are confident `ArmcUa` reads *Amelia*; it is not evidence that an
+*Amelia* visited. Minting on that basis is exactly the failure this register's Class 5 standing
+rule forbids: *route uncertain names to review, never mint*. It is also the failure retracted the
+same day in `5180aad`, where four Bancroft parsers were withdrawn for manufacturing ships out of
+masters and citations.
+
+⚠ **Do not confuse this queue with the withdrawn Bancroft parse.** `5180aad` (2026-08-23) deleted
+the *Bancroft* print-list parser's generated files. This is the separate *mexlist* degarble queue,
+which that commit did not touch and did not supersede. Overlap with the `DROPPED_SHIP_IDS` HARD
+guard in `check.py` is **zero**, confirming the queue is live rather than already adjudicated.
+
+**Triage false positives found (3).** `Bowditch`, `Huntress` and `Spy` are listed as garbles at
+tier NO CANDIDATE, and all three are already live in `ships.csv`. They are ordinary English vessel
+names, not OCR damage. The triage over-flagged them; they need no repair and should stop reading
+as unresolved defects.
+
+**If this queue is ever worked:** take the 23 already-attested readings as a `name_variants` merge
+through the build, and leave all 26 unattested readings in review. A degarble may recover a NAME.
+It may never, on its own, create a VISIT.
