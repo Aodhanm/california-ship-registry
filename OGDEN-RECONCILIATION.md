@@ -63,9 +63,21 @@ Acted on Finding 1. The full Bancroft Mexican-period marine list was already sta
 Bancroft's *List of vessels* records vessels **with tonnage** named `Sitka` (russia 202t, Monterey), `Times` (britain 407t), `Friend` (usa 404t), `Fernando` (mexico 344t), `Trinidad` (mexico 170t), `California` (usa 379t; usa 422t), `Tartar` (usa 301t), `American` (88t), `Expadon` (france 397t). These are **not** the narrative-word phantoms we sank (the month, the demonym, the place), they are real hulls. **But** the whole stage file is raw OCR, and these names are exactly where OCR error hides, so they are **flagged, not minted**: confirm each against the actual Hist. Cal. marine-list page, then add under a disambiguated id (e.g. `sitka-vessel`), never the bare phantom id (those are HARD-guarded).
 
 ## Still open
-- Apply the full `mexlist-suspects-triage.csv` garble fixes to the stage file, then re-run this match to trust the remaining ~40 stage vessels.
-- Verify + mint the 10 phantom-name real vessels from the Bancroft page.
-- **Coverage gap:** the staged list is Mexican-period only (1825-48). Bancroft's **Spanish-period** vessel list (Hist. Cal. I–II, pre-1825) is not ingested, the pre-1825 traffic rests on the C-A manuscripts alone.
+*(Status re-checked 2026-08-28. Two of the three original items were closed further down THIS FILE
+on the same day they were opened, which is easy to miss when grepping. Only the first survives.)*
+- ▶ **THE ONE LIVE ITEM.** Apply the garble fixes to the stage file, then re-run this match to trust
+  the remaining ~40 stage vessels. ⭐ Now genuinely actionable, for two reasons: the Bancroft text
+  is local (see the path above), so "confirm against the actual Hist. Cal. marine-list page" is a
+  desk task; and the 2026-08-28 adjudication of `mexlist-degarble-proposed.csv` (recorded in
+  FALSE-POSITIVE-REGISTER.md) has already sorted that queue into what is safe and what is not.
+  ⚠ Carry its ruling over: a degarble may recover a NAME, never on its own a VISIT. 26 of its 49
+  proposed readings name no ship in the set and must not be minted.
+- ~~Verify + mint the 10 phantom-name real vessels from the Bancroft page.~~ **CLOSED**, see
+  "Task 2, phantom-tonnage flags, FINAL" below: 5 minted under disambiguated ids, 5 refuted.
+- ~~Coverage gap: Bancroft's Spanish-period vessel list is not ingested.~~ **CLOSED as a no-op with
+  reason**, see "Task 3" below: Bancroft has NO tabulated Spanish-period vessel list. Vols I-II
+  narrate the San Blas ships in prose citing `Prov. St. Pap.`, i.e. the same C-A manuscripts the
+  registry is already built from. There is nothing to ingest.
 
 ---
 
@@ -92,7 +104,7 @@ Attempted to ingest Bancroft's Spanish-period (pre-1825) vessel lists (Hist. Cal
 
 # RESOLVED via the vault (2026-07-27, evening): all 7 Bancroft volumes are local
 
-Aodhan had the full *History of California* (all 7 vols, plain text) in the vault at `~/vault/raw/papers/bancroft-history-california/vol{1-7}-*.txt`. This unblocked both stuck tasks, no Wikisource/IA needed.
+Aodhan had the full *History of California* (all 7 vols, plain text) in the vault at `~/vault/07 Files/Raw/papers/bancroft-history-california/vol{1-7}-*.txt` ⚠ (path corrected 2026-08-28: the original note said `~/vault/raw/papers/...`, which stopped resolving after the 2026-08-15 vault scaffold migration moved Raw under `07 Files/` and introduced spaces in vault paths. Quote the path in shell.). This unblocked both stuck tasks, no Wikisource/IA needed.
 
 ## Task 2, phantom-tonnage flags, FINAL (verified against the vault text)
 | flag | verdict |
