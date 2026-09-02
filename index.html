@@ -162,8 +162,10 @@
  #tbl span[style*="#777"],#tbl span[style*="#888"],#tbl span[style*="#999"],
  #stbl span[style*="#777"],#stbl span[style*="#888"],#stbl span[style*="#999"]{color:var(--ink-faint)!important}
  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.skiplink{position:absolute;left:-9999px;top:0;z-index:2000;background:#c9a227;color:#111;padding:10px 16px;font:12px ui-monospace,Menlo,monospace;text-decoration:none}.skiplink:focus{left:0}
 </style></head>
 <body>
+<a class="skiplink" href="#main">Skip to the content</a>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <header><div class="mast">
  <div>
@@ -190,7 +192,7 @@
  <a class="navlink" href="key-voyages.html" title="A curated timeline of the most important voyages">★ Key voyages</a>
  <a class="navlink" href="https://maps.archivesofcalifornia.com" target="_blank" rel="noopener" title="Historical maps of California, including the coastal charts">◈ Maps ↗</a>
 </div></nav>
-<main>
+<main id="main">
 <div id="visits" class="pane on">
 
  <div class="rail" id="portRail"><span class="rail-label">Anchorage</span></div>
@@ -332,7 +334,8 @@
  <h2>Quality control</h2>
  <p><b>The false-positive register.</b> Seven documented classes of &ldquo;fake ship&rdquo;, decree phantoms,
  era conflations, persons read as vessels, places and demonyms, OCR garbles, mis-flags, and mentions read as visits.
- <b>Every new source re-triggers all seven.</b> See <a href="./FALSE-POSITIVE-REGISTER.md">FALSE-POSITIVE-REGISTER.md</a>.</p>
+ <b>Every new source re-triggers all seven.</b> See <a href="./FALSE-POSITIVE-REGISTER.md">FALSE-POSITIVE-REGISTER.md</a>, and <a href="./PHANTOM-SHIPS.md">PHANTOM-SHIPS.md</a> for the vessels that were removed and why.</p>
+<p><b>Measured, not asserted.</b> A seeded random sample of 107 visits, about 5 per cent of the registry, was traced back to its cited source on 18 July 2026: every visit in the automatable tier was supported by its citation, and citation-level fidelity was 98.8 per cent, the single defect being the order of two citations rather than an invented visit. The full working is in <a href="./AUDIT-2026-07-18.md">AUDIT-2026-07-18.md</a>.</p>
  <p><b>Leaf verification.</b> Manuscript-derived names are checked against the scanned leaf before entering the
  tables, a policy adopted after it caught real misreads (<i>Nilo</i> not &ldquo;Wilcox&rdquo;,
  <i>Jackman</i> not &ldquo;Jackson&rdquo;).</p>
@@ -364,7 +367,8 @@
  DOI: <a href="https://doi.org/10.5281/zenodo.22105908">10.5281/zenodo.22105908</a> (Zenodo, 2026).
  Individual visits are citable by identifier, e.g. <code>v0143</code>.<br>
  Data and code: <a href="https://github.com/Aodhanm/california-ship-registry">github.com/Aodhanm/california-ship-registry</a>
- &middot; <a href="./METHOD.md">METHOD.md</a> &middot; <a href="./CODEBOOK.md">CODEBOOK.md</a></p>
+ &middot; <a href="./METHOD.md">METHOD.md</a> &middot; <a href="./CODEBOOK.md">CODEBOOK.md</a> &middot; <a href="./AUDIT-2026-07-18.md">audit</a><br>
+Corrections and questions: <a href="mailto:aodhancoyne@gmail.com">aodhancoyne@gmail.com</a>. If a document you hold contradicts a row here, the document wins.</p>
 </div>
 </main>
 <footer>
