@@ -423,6 +423,13 @@ function render(){
    '<td>'+v.purpose.replace(/\|/g,', ')+'</td><td>'+v.outcome.replace(/\|/g,', ')+'</td>'+
    '<td class="cite">'+cites+'<br><span style="color:#888;font-size:.82em">'+v.excerpt+'</span></td>';
   tb.appendChild(tr)});
+ // The count above reports every matching visit, but the table renders 800 for
+ // speed. Say so, or the two silently disagree and the table looks complete.
+ if(rows.length>800){const tr=document.createElement('tr');
+  tr.innerHTML='<td colspan="8" style="padding:14px 10px;color:#6b675e;font-size:.9em;'+
+   'border-top:2px solid #d8d2c4">Showing the first 800 of '+rows.length.toLocaleString()+
+   ' matching visits. Narrow the search, flag, anchorage or year range to reach the rest.</td>';
+  tb.appendChild(tr)}
 }
 ['q','fFlag','fPurpose','fOutcome','fAnch','y1','y2'].forEach(id=>document.getElementById(id).addEventListener('input',render));
 render();
