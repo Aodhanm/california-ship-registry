@@ -78,6 +78,19 @@ def write(relpath, text):
         f.write(text)
 
 
+def year_span(s):
+    """"1806 to 1826", or "1846" when a vessel is recorded in one year only.
+
+    240 of the 401 vessels have first_seen == last_seen, so joining the two
+    unconditionally would print "1846 to 1846" on most of the registry.
+    """
+    f = (s.get('first_seen') or '').strip()
+    l = (s.get('last_seen') or '').strip()
+    if f and l:
+        return f if f == l else f'{f} to {l}'
+    return f or l
+
+
 def primary_name(variants):
     """name_variants looks like "Princesa (71); La Princesa (1)"."""
     first = (variants or '').split(';')[0].strip()
@@ -211,26 +224,31 @@ def main():
         seen[base] += 1
         slugs[s['ship_id']] = base if seen[base] == 1 else f'{base}-{seen[base]}'
 
-    # Several distinct vessels share a name (Fama, Morelos, Santa Rosa, Eagle and
-    # others). Duplicate <title> tags are a real problem, so add the recorded span
-    # and then the flag until every title in a colliding group is distinct.
+    # Every title carries its recorded years. A bare vessel name is unwinnable in
+    # search when the name is also a city, a newspaper or a queen: "Moscow",
+    # "Times" and "Victoria" all ranked past position 70 with zero clicks. The
+    # year is what a reader actually pairs with a vessel name, and it doubles as
+    # the disambiguator for the several names carried by more than one hull
+    # (Fama, Morelos, Santa Rosa, Eagle); where the span alone does not separate
+    # them, the flag and then the id still do.
     name_groups = collections.defaultdict(list)
     for s_ in real:
         name_groups[primary_name(s_['name_variants'])].append(s_)
     title_of = {}
     for nm, grp in name_groups.items():
         if len(grp) == 1:
-            title_of[grp[0]['ship_id']] = nm
+            sp = year_span(grp[0])
+            title_of[grp[0]['ship_id']] = f'{nm} ({sp})' if sp else nm
             continue
         for disc in ('span', 'flag', 'id'):
             cand = {}
             for s_ in grp:
                 if disc == 'span':
-                    sp = ' to '.join(x for x in [s_.get('first_seen'), s_.get('last_seen')] if x)
+                    sp = year_span(s_)
                     cand[s_['ship_id']] = f'{nm} ({sp})' if sp else nm
                 elif disc == 'flag':
                     fl = FLAG_LABEL.get((s_.get('flag_guess') or '').strip(), '')
-                    sp = ' to '.join(x for x in [s_.get('first_seen'), s_.get('last_seen')] if x)
+                    sp = year_span(s_)
                     cand[s_['ship_id']] = f'{nm} ({sp}, {fl})' if fl else f'{nm} ({sp})'
                 else:
                     cand[s_['ship_id']] = f"{nm} [{s_['ship_id']}]"
