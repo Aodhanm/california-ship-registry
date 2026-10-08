@@ -152,3 +152,78 @@ as unresolved defects.
 **If this queue is ever worked:** take the 23 already-attested readings as a `name_variants` merge
 through the build, and leave all 26 unattested readings in review. A degarble may recover a NAME.
 It may never, on its own, create a VISIT.
+
+## Class 8, the Spanish abbreviation twin *(added 2026-10-08)*
+The same hull mints twice because the normaliser folds accents and case but **not Spanish scribal abbreviations**.
+- **Examples found:** `Ntra Sra del Rosario` + `Nuestra Señora del Rosario` (one lancha built at San Blas for Mission Todos Santos, $3,902; C-A 22 d282 and C-A 15 d283) · `Ntra. Sra. del Carmen` + `Nuestra Señora del Carmen`.
+- **Tell:** two ship_ids that differ only by an abbreviation (`Ntra/Nra`→Nuestra, `Sra/Sa`→Señora, `Sn`→San, `Sta`→Santa, `Sto`→Santo, `Josef`→José, `Ntro`→Nuestro).
+- **Guard:** `check_abbreviation_twins()` in `check.py` — expands the abbreviation table before comparing and fails the build (HARD) on any collision. Verified to fire on the real defect before the fix.
+- **When adding sources:** Spanish devotional names are the high-risk set; the same hull appears abbreviated in a register and spelled out in a letter.
+
+---
+
+# Audit of 2026-10-08 (pre-Igler review)
+
+**Fixed this pass:**
+- `consecuencia` **dropped** — a word lifted from document prose ("en consecuencia de…") in the Bouchard-crew depositions, minted as a hull. Added to `DROPPED_SHIP_IDS`. (Class 1/4)
+- `v0115` **dropped** — the 1785–89 Loreto/Californias Cargo-y-Data fiscal account, minted as a *Sutil* visit. The *Sutil* was not built until c. 1791, so the date alone falsifies it. (Class 1)
+- Two **Class-8 abbreviation twins merged** (Rosario, Carmen) and the guard added.
+- `v2200` **era-split** out of `columbia` → `columbia-mex-1841`: the Bancroft-list garble "Columhiw," a Mexican 55-ton vessel of 1841 with master Manuel Turincio, had been clustered with the North West Company schooner *Columbia* of 1814–17. (Class 2 + Class 5)
+- `columbia` **flag corrected** `usa` → `britain`: the cluster's own excerpts call her "the NWC schooner" and "the English schooner" (Capt. Robson/Jennings, Peter Corney first officer). The split removed the ambiguity that had previously justified leaving it unfilled.
+
+**Counts after:** 2,070 visits · 399 ship rows (398 named + unnamed) · 2,897 citations. Guards HARD 0.
+
+**OPEN, needs Aodhan's decision — the flag-semantics question.**
+15 ships carry a ship-level `flag_guess` that most of their own visits contradict: `eagle` (usa / 8 russia), `volunteer` (usa / 8 russia), `louisa`, `convoy`, `lydia`, `courier`, `loriot`, `predpriatie`, `enterprise`, and others. **Most are Boston hulls on Russian-American Company contract hunts** — so the visit flag may legitimately encode *operating affiliation* while `flag_guess` encodes *nationality*. CODEBOOK.md defines `flag_basis` (how the flag is known) but **never states which of the two `flag` means**. Until it does, a user filtering by flag gets results that look wrong. **Decide the convention, state it in the codebook, then reconcile.**
+
+**Suspects still unadjudicated:** `baihtl` (probable garble of *Baikal*, an RAC vessel) · `copia` · `wa'oe` · `timorelan` (probable print-list garbles) · `san jose de filipinas` (the record is an arsenal-warehouse allocation, not a voyage) · `alabama`/`rambler` (share one identical excerpt) · `emilia` · `portsmouth` (likely a real hull with a mis-attached excerpt). Also open: whether *lanchas built at San Blas for missions* belong in a register of visits **to** California.
+
+## Citation-integrity pass, 2026-10-08 (two attempts; read the second)
+
+**ATTEMPT 1 WAS WRONG AND WAS REVERTED.** It assumed the C-A catalogue's `doc_id` was the
+authority and re-pointed 404 leaves to match it. A content test then showed the opposite:
+at ca1 leaf n20 the catalogue holds doc 13, *"Estado y Reglamento del rancho ... del paquebote
+**San Carlos**"* - i.e. the registry's **leaf was right and its doc id was stale**. The blanket
+fix would have moved 327 good links off the page that actually names the vessel. Reverted.
+
+**ATTEMPT 2, evidence-based, is what shipped.** For every `ca-record` citation the ship name was
+tested against (a) the catalogue record with the cited doc id and (b) the catalogue record(s)
+spanning the cited leaf, and whichever **names the vessel** was treated as the reliable half:
+| outcome | n | action |
+|---|---|---|
+| both agree | 870 | left alone |
+| **leaf names the ship, doc id stale** | **327** | doc id re-pointed to the record at that leaf |
+| doc names the ship, leaf stale | 20 | leaf re-pointed to the document |
+| neither names the ship | 177 | aligned to the **leaf** (it proved right 16x more often), marked **UNVERIFIED alignment** in the note |
+| no catalogue record at the cited leaf | 3 | aligned to the document |
+
+**Measured result: citations landing on a record that names the ship rose from 70.7% to 93.1%.**
+The residual ~90 are records whose summary refers to a vessel without naming it; they are not
+necessarily errors. 45 citations still carry a doc id absent from the catalogue (stale numbering,
+leaf retained) and are tracked as WARN.
+Every corrected citation carries a dated `note` saying what changed and why. 10 of 307 corrected
+URLs were spot-tested after the fix: all HTTP 200.
+
+## Flag semantics, resolved by under-claiming (2026-10-08)
+15 ships carried a `flag_guess` that most of their own visit records contradicted (`eagle` usa/8 russia, `volunteer` usa/8 russia, `louisa`, `convoy`, `lydia`, `courier`, `loriot`, `predpriatie`, `enterprise`, `columbia`, `california-sanblas`, `leonidas`, `leonor`, `morelos-corvette`, `nieves`). Most are Boston hulls on Russian-American Company contract hunts, where the visit flag plausibly records operating affiliation rather than nationality.
+**Decision: do not guess. All 15 ship-level flags BLANKED**, each annotated with the disagreeing counts. Under-claim rather than assert a nationality the records do not agree on. ⚠ CODEBOOK.md still needs to state what `flag` means (hull nationality vs operating affiliation) before these are refilled.
+
+## Drift guard installed, 2026-10-08 — so this cannot recur silently
+`check_citation_drift()` in `check.py` now cross-checks **every** `ca-record` citation against `~/archives-of-california/ca-catalog-export.json`, which is the authority for where a document sits. It runs on every build and is tiered:
+- **HARD** — the cited leaf falls outside the catalogue's range for that document. This is the failure that sends a reader to the wrong page; the build fails. *Currently 0.*
+- **WARN** — the cited `doc_id` is not in the catalogue at all. These are **stale IDs from an earlier C-A numbering** (the registry cites ca54 d1077/d2013/d4068; the catalogue's ca54 now tops out at 287). The leaf is still the evidence and the link still works, so this is a resolvable-reference problem, not a wrong-page one. *Currently 94 — open work.*
+- If the catalogue is not present on the machine the check prints a notice and skips, so the build still runs elsewhere.
+**Why drift happened:** the registry harvested its leaf numbers once; the C-A catalogue has been corrected repeatedly since (span defects, missing leaves, errata) and nothing compared the two. It will drift again every time the catalogue is corrected — **the guard is what catches it.**
+
+## Ogden layer verified against the source, 2026-10-08
+All 323 `s.v.` references were checked against the **actual text of Ogden's 1941 appendix** (*Identified Vessels Engaged in the California Sea Otter Trade, 1786–1848*), held at `07 Files/Raw/papers/ogden-appendix-identified-vessels-1941.txt`.
+- **123 of 124 unique vessel/year keys found in the appendix text.** ✅
+- **1 failure: `'CaAuIFrorniA, 1823-1831'`**, an OCR garble of *California* — corrected across 7 citations.
+⚠ Ogden's appendix is keyed by vessel and year (*s.v.*), not paginated, so there are no page numbers to verify; the vessel-name match against her own text is the available check and it now passes.
+
+## Known limitation — the evidence links and the BookReader
+The C-A items on the Internet Archive are **Bancroft microfilm whose only image derivative is a very large JP2 zip** (e.g. 349 MB for C-A 1). They are **free and not in copyright** (no lending restriction, verified in the IA metadata), but the standard BookReader frequently fails to page them and renders a blank screen.
+**Working alternatives, both verified 2026-10-08:**
+- IIIF (stable, no server discovery): `https://iiif.archive.org/iiif/{item}%24{leaf}/full/pct:50/0/default.jpg` — returns the leaf as a JPEG.
+- BookReader image API (needs `server`/`dir` from `archive.org/metadata/{item}`): `.../BookReader/BookReaderImages.php?id={item}&itemPath={dir}&server={server}&page=n{leaf}&scale=4&rotate=0`.
+**Open:** add one of these as a direct-image fallback beside each evidence link, so a reader always sees the leaf.

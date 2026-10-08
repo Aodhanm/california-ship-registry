@@ -29,6 +29,11 @@ DROPPED_SHIP_IDS = {
     'net-siut','tester','vinas','san francisco','santa barbara','bruja','reisos','ynez','cadiac','la elisa','tic-me-mash','javier sartar','diga',
     # 2026-08-04 phantom purge: the 1767 Cadiz Juno (never in CA; distinct from the 1806 Russian Juno)
     'juno-1767',
+    # 2026-10-08 audit: a word lifted from document prose ('en consecuencia de...') in the
+    # Bouchard-crew depositions (C-A), minted as a hull. Class 1/4.
+    'consecuencia',
+    # 2026-10-08 audit: Spanish abbreviation twins, merged into their spelled-out form (Class 8)
+    'ntra sra del rosario', 'ntra. sra. del carmen',
 }
 # 2026-08-04: C-A records adjudicated as NON-ship documents (policy/person/no-hull; see
 # FALSE-POSITIVE-REGISTER.md). A re-harvest must not re-mint visits from them.
@@ -118,6 +123,104 @@ for r in rows:
         if k in spans and not r['sources_disagree']:
             warn.append(f"{vid}: possible dup of {spans[k]} ({k})")
         spans[k] = vid
+# --- Class 8 guard (added 2026-10-08): the SPANISH ABBREVIATION TWIN -------------
+# 'Ntra. Sra. del Rosario' and 'Nuestra Senora del Rosario' are one hull. The alias
+# matcher folds accents and case but not scribal abbreviations, so the same vessel
+# minted twice. Expand abbreviations BEFORE comparing, and fail the build on collision.
+_ABBREV = [
+    (r'\bntra\b|\bnra\b', 'nuestra'), (r'\bsra\b|\bsa\b', 'senora'),
+    (r'\bsn\b', 'san'), (r'\bsta\b', 'santa'), (r'\bsto\b', 'santo'),
+    (r'\bjosef\b', 'jose'), (r'\bntro\b', 'nuestro'),
+]
+def _expand(name):
+    import unicodedata
+    n = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode().lower()
+    n = re.sub(r'[^a-z0-9 ]', ' ', n)
+    for pat, rep in _ABBREV:
+        n = re.sub(pat, rep, n)
+    return re.sub(r'\s+', ' ', n).strip()
+
+def check_abbreviation_twins(ships):
+    """HARD: no two ship_ids may collide once Spanish abbreviations are expanded."""
+    seen, errs = {}, []
+    for s in ships:
+        k = _expand(s['ship_id'])
+        if k in seen:
+            errs.append("abbreviation twin: %r and %r both normalise to %r"
+                        % (seen[k], s['ship_id'], k))
+        seen[k] = s['ship_id']
+    return errs
+
+# --- Citation-drift guard (added 2026-10-08) --------------------------------------
+# WHY THIS EXISTS. Every `ca-record` citation names a leaf in the Archives of California.
+# The C-A catalogue is the AUTHORITY for which leaf a document sits on, and that catalogue
+# keeps being corrected (span defects, missing leaves, errata). This registry harvested its
+# leaf numbers once and they went stale: an audit on 2026-10-08 found 404 of 1,762
+# comparable citations (23%) pointing OUTSIDE the catalogue's range for the document
+# they cite - whole volumes wrong (ca1, ca11, ca25, ca47 at 100%). Clicking "evidence"
+# and landing on the wrong leaf is worse than having no link. This guard makes that
+# class of drift impossible to reintroduce silently.
+#
+# It degrades gracefully: if the catalogue is not on this machine the check is skipped
+# with a notice rather than failing the build.
+CA_CATALOGUE = os.path.expanduser('~/archives-of-california/ca-catalog-export.json')
+
+def _leaf_range(scan):
+    ns = [int(m) for m in re.findall(r'n(\d+)', scan or '')]
+    return (min(ns), max(ns)) if ns else None
+
+def check_citation_drift(rows):
+    """Returns (hard, warn).
+
+    HARD  = the citation names a leaf OUTSIDE the catalogue's range for that document.
+            That link sends a reader to the wrong page; it must never ship.
+    WARN  = the cited doc_id is not in the catalogue at all. These are stale IDs from an
+            earlier C-A numbering (e.g. ca54 d1077/d2013/d4068 against a catalogue whose
+            ca54 now tops out at 287). The LEAF in these rows is still the evidence, so the
+            link works; only the doc reference cannot be resolved. 94 as of 2026-10-08.
+    """
+    if not os.path.exists(CA_CATALOGUE):
+        print("  note: C-A catalogue not found, citation-drift check SKIPPED")
+        return [], []
+    cat = {}
+    for r in json.load(open(CA_CATALOGUE)):
+        cat[(str(r.get('ca_volume')), str(r.get('doc_id')))] = str(r.get('scan') or '')
+    errs, stale, checked = [], [], 0
+    for r in rows:
+        try:
+            cites = json.loads(r['citations'] or '[]')
+        except Exception:
+            continue
+        for c in cites:
+            if c.get('type') != 'ca-record':
+                continue
+            key = (str(c.get('ca')), str(c.get('doc')))
+            if key not in cat:
+                stale.append("%s: cites ca%s-d%s, a doc id not in the current C-A catalogue "
+                             "(stale numbering; leaf retained)" % (r['visit_id'], key[0], key[1]))
+                continue
+            want, got = _leaf_range(cat[key]), _leaf_range(c.get('scan'))
+            if not want or not got:
+                continue
+            checked += 1
+            if not (got[0] >= want[0] - 1 and got[1] <= want[1] + 1):
+                errs.append("%s: ca%s-d%s cites leaf %s but the catalogue has %s (drift)"
+                            % (r['visit_id'], key[0], key[1], c.get('scan'), cat[key]))
+    print("  citation-drift: %d ca-record leaves checked against the C-A catalogue "
+          "| %d wrong-leaf | %d stale doc id" % (checked, len(errs), len(stale)))
+    return errs, stale
+
+# run the Class-8 guard before reporting
+try:
+    _ships = list(csv.DictReader(open(os.path.join(ROOT,'data','ships.csv'))))
+except Exception:
+    _ships = list(csv.DictReader(open('data/ships.csv')))
+for _e in check_abbreviation_twins(_ships):
+    hard.append(_e)
+_drift_hard, _drift_warn = check_citation_drift(rows)
+hard.extend(_drift_hard)
+warn.extend(_drift_warn)
+
 print(f"guards: {len(rows)} rows | HARD {len(hard)} | warn {len(warn)}")
 for h in hard[:15]: print("  HARD:", h)
 if warn: print(f"  (first warns) " + "; ".join(warn[:5]))
