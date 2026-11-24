@@ -178,10 +178,9 @@
   <div><b id="stVisits">, </b><span>visits</span></div>
   <div><b id="stShips">, </b><span>vessels</span></div>
   <div><b id="stPorts">, </b><span>anchorages</span></div>
-  <div><b id="stVerified">, </b><span>verified</span></div>
  </div>
 </div></header>
-<div class="banner"><b>Draft (v0.2).</b> Most rows are <i>status = draft</i> pending leaf verification; the Spanish period (1769&ndash;1821) is the reliable core, while the Mexican period (1822 on) is still being completed and its flags are less reliable (see About &amp; method). Absence of a row is not absence of a ship.</div>
+<div class="banner"><b>Version 0.2.</b> The Spanish period (1769&ndash;1821) is the most complete; the Mexican period (1822 on) is still being extended, and its flags are less certain (see About &amp; method). Absence of a row is not absence of a ship.</div>
 <nav><div class="navinner">
  <button data-pane="visits" class="on">The register</button>
  <button data-pane="ships">Vessels</button>
@@ -646,7 +645,7 @@ function initMap(){
     $('stVisits').textContent = V.length.toLocaleString();
     $('stShips').textContent = Object.keys(ships).length.toLocaleString();
     $('stPorts').textContent = Object.keys(ports).length.toLocaleString();
-    $('stVerified').textContent = ver.toLocaleString();
+    if ($('stVerified')) $('stVerified').textContent = ver.toLocaleString();
   })();
 
   /* ---- port rail: the primary way in ---- */
